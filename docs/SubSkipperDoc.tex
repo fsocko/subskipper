@@ -1,0 +1,129 @@
+%%--SubSkipper Documentation
+%%--Modified 25/07/15
+
+\documentclass{article}
+
+%%--packages
+\usepackage{hyperref}
+
+%%--commands
+\newcommand{\degree}{$^{\circ}$}
+
+\author{Filip Socko}
+\title{SubSkipper Documentation}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The GitHub SubSkipper repository contains the core logic of the app, such that it can be verified or used for other projects. The documentation contains the principles and equations on which the logic is based, and some method documentation.
+
+The main purpose of the repository and documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
+\\ \\
+The Android App will be developed from this repository as a separate, polished product.
+
+\section{Requirements}
+The Requirements for SubSkipper are the following:
+
+\begin{itemize}
+\item{Calculate Torpedo Solutions using the following methods:}
+	\begin{itemize}
+	\item{Dick O'Kane method}
+	\end{itemize}
+\item{Show a representation of the \emph{Is/Was} or \emph{AngriffScheibe} calculator for easy input, along with its data}
+\item{Calculate target location with a course and speed}
+\item{Calculate \emph{AOB} from aspect ratio}
+\item{Calculate Speed via \emph{Fixed Wire} method}
+\item{Feature a Modular timer/stopwatch}
+\end{itemize}
+
+\pagebreak
+\section{Unit Conversions}
+\subsection{Speed}
+
+\begin{tabular}{ c c }
+Knot to NM/h & \\
+m/s to knot & \\
+\end{tabular}
+
+\subsection{Length}
+\begin{tabular}{ c c }
+Foot to m & \\
+NM to Km  & \\
+Yard to M & \\
+Yard to NM & \\
+\end{tabular}
+
+\section{Calculating Distance To Target}
+
+While distance to target is usually calculated using the periscope stadimeter, it is sometimes necessary to make these calculations by hand.
+
+\emph{Angular Length} (Henceforth shortened to \emph{AngLen}) is the number of degrees covered by an object. It is determined by counting the number of degrees the object subtends. This is usually done using the periscope horizontal degree scale. It is a component of distance and AOB calculations.
+
+\section{Calculating AOB Based on Aspect Ratio}
+
+AOB can be determined given the following data:
+\begin{itemize}
+\item{Observed Mast Height}
+\item{Observed Ship Length}
+\item{Reference Mast Height}
+\item{Reference Ship Length}
+\end{itemize}
+1. Determine an observed and reference \emph{aspect ratio}.
+$$AR_{observed} = \frac{Observed Length}{Mast Height}$$
+Do the same with data from the recognition manual for the reference Aspect Ratio (\emph{ARreference}). \\ \\
+2.
+$$AOB = arcSin \frac{AR_{observed}}{AR_{reference}}$$
+N.B: This method is less accurate as AOB approaches 0.
+
+
+
+
+
+
+
+\section{O'Kane Torpedo Solution}
+The Dick O'Kane method was devised by members of the Subsim.com forums. It is a constant bearing method which relies on calculating a lead angle -- an angle on which torpedoes, if launched will intercept the course of the target-- to which the periscope is pointed. As parts of the target ship cross the bearing, torpedoes are fired along it. The O'Kane method relies on being ahead of the target, and the final AOB -- at which the torpedo strikes the target-- to be 90\degree .
+
+Calculates \emph{lead angle} based on target and torpedo speed.\\
+The solution requires submarine to be ahead of target.\\
+Captain inserts target speed into TDC, puts the scope on the lead bearing, fires as the target crosses the bearing.
+
+The Equation for lead angle is as follows:
+
+$$ LeadAngle = 90 - \arctan\left( \frac{Torpedo Speed}{TargetSpeed} \right) $$
+
+\section{Find the speed of a target with constant relative bearing}
+
+This technique takes advantage of the fact that if you are on a convergent course (moving towards each other), and the target’s bearing is not changing over time, then you are actually on a collision course. Since you know your Uboat’s speed and two angles of the triangle (AOB and target bearing), you can calculate the target’s speed.
+
+$$Target speed = Own speed \left( \frac{sin(TB)}{sin (AOB)} \right)$$
+
+You are maintaining 2 knots on an intercept course with a potential target. At the original observation, it was on a bearing of 280\degree with an observed angle on the bow of 20 \degree starboard. After several minutes, the bearing was still 280\degree.
+
+Note: Although you may not be able to achieve an attack position, this technique will also work to calculate the target’s speed if you are on divergent courses. !If an angle is greater than 90\degree, then simply subtract it from 180\degree (since the sine function is symmetrical around 90\degree).
+
+$$Target speed = Own speed \left( \frac{sin(180-TB)}{sin (180-AOB)} \right)$$
+
+\section{Determine the distance to the track of a target}
+
+As you manoeuver into a firing position, it is useful to know your distance to the track of your target. Knowing the range and AOB of the target:
+
+Track: intersection point between Submarine course and the current target course.
+
+$$Distance to Track = Range \left( sin(AOB) \right)$$
+
+\section{Determine an optimum speed for attack position}
+
+
+\pagebreak
+\section{References}
+
+Kriegsmarine Angriffscheibe Handbuch, H{\"a}hl, 2008 (packaged with u-jagd tools)
+
+Torpedo Vorhaltrechner Project, 2015
+\url{http://www.tvre.org/en/acquiring-torpedo-firing-data}
+
+\end{document}
+
