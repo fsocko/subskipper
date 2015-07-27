@@ -66,6 +66,8 @@ public class OKane {
 		else if(stbd == false){
 			solBearing = 0 + okaneLead(torpFireS, targS);
 		}
+		
+		
 		return solBearing; //tSpeed into TDC, set your scope to this bearing, fire
 		}
 	

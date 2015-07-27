@@ -17,6 +17,13 @@ public class MethodTest {
 		//oKSolution(int AOB, double targS, char selSpeed, Torpedo fireTorp)
 		System.out.println("AOB: " + AOB + " targSpeed: " + targS +" TorpSpeed: " +selSpeed + fireTorp.getName());
 		System.out.println("Scope Bearing: " + test1.oKSolution(AOB, targS, selSpeed, fireTorp));
+		
+		OutFormat toDeg = new OutFormat();
+		
+		for(int i = 0; i<361; i++){
+		System.out.println(toDeg.degreeOut(i));
+		}
+	
 	}
 	
 
