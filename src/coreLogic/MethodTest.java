@@ -1,5 +1,7 @@
 package coreLogic;
 
+import xmlParser.ReadShips;
+
 public class MethodTest {
 
 	public static void main(String[] args) 
@@ -23,6 +25,12 @@ public class MethodTest {
 		for(int i = 0; i<361; i++){
 		System.out.println(toDeg.degreeOut(i));
 		}
+		
+		//readShips from file:
+		ReadShips readTest = new ReadShips();
+		readTest.readShip("shipData/Sea/AuxSubchaser/AuxSubchaser.cfg");
+		
+		
 	
 	}
 	
