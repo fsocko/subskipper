@@ -90,5 +90,8 @@ SurvivalPercentage=20 --Not used
 	}
 	
 	//call methods for formatting public array tempShip into format suitable for Ship.class
+	//probably OK to change values directly in array.
 			
 }
+
+
