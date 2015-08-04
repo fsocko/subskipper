@@ -28,49 +28,55 @@ SurvivalRate=70 --Not used
 SurvivalPercentage=20 --Not used
 */
 	   
-	
+	public String tempShip[] = new String[8];
+	//array of strings read from SCAF file
+	//public so other methods can edit the array later.
 	
 	
 	//read from the file and construct a single Ship object.
 	public void readShip(String file){
 		
-		String tempShip[] = new String[10];//array of strings read from SCAF file
+		
 		
 		 FileInputStream fs = null;
 		 try{ 
 			 fs= new FileInputStream(file);
 			 BufferedReader br = new BufferedReader(new InputStreamReader(fs));
 			 int i =0;
-			 while(i<9){
-				 String curLine = br.readLine().trim();
-				 //System.out.println("Curent Line:" +curLine);
+			 String curLine = "";
+			 int append = 0; // incremented when adding to tempShip array so we don't add nulls.
+			 while(!(curLine.contains("Displacement"))){
+				 
+				 curLine = br.readLine().trim();
+				 
+				 //TODO: set a boolean to make sure file is valid
 				 if(curLine.contains("[Unit]")){//checks if the record is valid
-					 i = 0; //index from [Unit]
-					 curLine = "a null?"; //TODO: just format the strings from index 1 to index 8.
+					 curLine = br.readLine().trim(); //move to next line after check
 					 System.out.println("Valid Record, Start index now.");	 
 				 }
-				 /*
-				 if(curLine.contains("3DModel")){ //we want to skip over the line containing 3DModel filepath
-					 i++; //TODO: why does this make the array cell null?
-				 }
-				 */
 				 
-				 if(curLine.contains("Displacement")){ //we have reached the last useful line.
+				 if(curLine.contains("3DModel")){ //we want to skip over the line containing 3DModel filepath
+					 curLine = br.readLine().trim();
+				 }
+				 
+				 if(curLine.contains("Displacement")){
 					 break;
 				 }
 				 
 				 //start saving to temp array of lines. Each array creates one ship
 				 else if(!(curLine.equals(null) || curLine.equals(""))){
-					 tempShip[i] = curLine;
+					 
+					 tempShip[append] = curLine;
+					 append ++;
 				 }
 				 
-				 i++; 
+				 i++;
 				 }
 			
 			 //Print tempShip to make sure there's no mistake.
 			 for(int j = 0; j<tempShip.length -1; j++){
-				 if(j==0){System.out.println("Starting tempShip dump:");}
-				 System.out.println(tempShip[j]);
+				 if(j==0){System.out.println("\n\n Starting tempShip dump:");}
+				 System.out.println(j + " " + tempShip[j]);
 			 }
 				
 		 }
@@ -83,6 +89,6 @@ SurvivalPercentage=20 --Not used
          }   
 	}
 	
-	
+	//call methods for formatting public array tempShip into format suitable for Ship.class
 			
 }
