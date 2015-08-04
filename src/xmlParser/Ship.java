@@ -13,6 +13,7 @@ public class Ship {
 	private double width;
 	private double mast;
 	private double draft;
+	private double refAspect;
 	
 	//construct an empty ship
 	public Ship(){
@@ -25,7 +26,7 @@ public class Ship {
 		this.width = 0;
 		this.mast = 0;
 		this.draft = 0;
-	
+		this.refAspect = 0;
 	}
 	
 	public Ship(String className, int unitType, double maxSpeed, double length,
@@ -41,6 +42,10 @@ public class Ship {
 				this.width = width;
 				this.mast = mast;
 				this.draft = draft;
+				this.refAspect = length / mast;
+				//pre-calculating this for the aspect AOB method ought to make everything run faster.
+				//cost in storage is negligible
+				
 			}
 	
 	public void setClassName(String className) {
@@ -75,11 +80,14 @@ public class Ship {
 		this.draft = draft;
 	}
 
-
 	@Override
 	public String toString() {
-		return "Ship [className=" + className + ", unitType=" + unitType + ", image=" + image + ", maxSpeed=" + maxSpeed
-				+ ", length=" + length + ", width=" + width + ", mast=" + mast + ", draft=" + draft + "]";
+		return "Ship [className=" + className + ", unitType=" + unitType + ", unitTypeName=" + unitTypeName + ", image="
+				+ image + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width + ", mast=" + mast
+				+ ", draft=" + draft + ", refAspect=" + refAspect + "]";
 	}
+
+
+	
 	
 }
