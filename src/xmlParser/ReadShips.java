@@ -4,7 +4,7 @@
 package xmlParser;
 import java.io.*;
 import java.nio.file.Path;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.*;
 
 public class ReadShips {
@@ -28,17 +28,13 @@ SurvivalRate=70 --Not used
 SurvivalPercentage=20 --Not used
 */
 	//Luckily, this data is all in metric. 
-	
-	private String tempShips[] = new String[8]; //Array of useful strings copied from SCAF file.
-	//later, a Ship object is constructed from this data.
-	
-	
 	private String namesPath = "shipData/Roster/Names.cfg"; //path to Names file
 	
-	
-	//read from the file and construct a single Ship object.
-	public void readShipRecord(String file){
+	//read from the file and return an array of useful lines from SCAF record.
+	private String[] readShipRecord(String file){
 
+		String[] tempShips = new String[8];
+		
 		 FileInputStream fs = null;
 		 try{ 
 			 fs= new FileInputStream(file);
@@ -80,12 +76,14 @@ SurvivalPercentage=20 --Not used
              e.printStackTrace();
              System.out.println("could not read file.");
          }   
+	
+		 return tempShips;
 	}
 	
 	//methods for formatting public array tempShips into format suitable for Ship.class
 	//after that construct an instance of the ship, to be later parsed to XML.
 	//takes no arguments
-	public void stripVars(){ //Strips incompatible data from array.
+	public void stripVars(String[] tempShips){ //Strips incompatible data from array created by readShips
 		String curTempShip = "";
 		for(int i = 0; i<tempShips.length;i++){ //go through all array cells.
 			
@@ -101,12 +99,8 @@ SurvivalPercentage=20 --Not used
 		}
 	}
 	
-	public void printTempShips(){
-		 //Print tempShips to make sure there's no mistake.
-		 for(int j = 0; j<tempShips.length; j++){
-			 if(j==0){System.out.println("\n\n Starting tempShips dump:");}
-			 System.out.println(j + " " + tempShips[j]);
-		 }
+	public void printTempShip(String path){
+		System.out.println(Arrays.toString(readShipRecord(path)));
 	}
 	
 	//This method formats the type Number, and uses nameLookup to return a typeName
@@ -163,15 +157,19 @@ SurvivalPercentage=20 --Not used
 	}
 
 	//Format and construct a ship object using data in tempShips
-	public Ship makeShip(){
-		//public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, 
-		//double length, double width, double mast, double draft, double disp)
-		stripVars(); //remove descriptor strings.
+	public Ship makeShip(String path){
+		String [] tempShips = readShipRecord(path);
+		stripVars(tempShips); //remove descriptor strings.
 		
 		String name = nameLookup(tempShips[0]);
 		int type = Integer.parseInt(tempShips[1]);
 		String typeName = typeNameLookup(tempShips[1]);
-		String imagePath = "A PATH."; //TODO: implement recursive ship browsing.
+		
+		String imagePath = path.substring(0, path.length()-4);
+		//this cuts off the last 4 letters in the string. Usually, this would be .cfg, but it might not be. 
+		//TODO: implement a better solution for finding the imagePath.
+		imagePath += "_sil.dds";
+		
 		double maxSpeed = Double.parseDouble(tempShips[2]);
 		double length = Double.parseDouble(tempShips[3]);
 		double width = Double.parseDouble(tempShips[4]);
