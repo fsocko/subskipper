@@ -30,8 +30,8 @@ SurvivalPercentage=20 --Not used
 	//Luckily, this data is all in metric. 
 	
 	
-	   
-	private String tempShips[] = new String[8]; //Array of useful strings copied from SCAF file.
+	   //TODO: change this back to private once testing is done
+	public String tempShips[] = new String[8]; //Array of useful strings copied from SCAF file.
 	//later, a Ship object is constructed from this data.
 	
 	
@@ -83,10 +83,7 @@ SurvivalPercentage=20 --Not used
              System.out.println("could not read file.");
          }   
 		
-		printTempShips(); //print results.
-		stripVars(); //run method for stripping SCAF artefacts.
-		System.out.println(nameLookup(tempShips[0])); //find the name for this ship
-		printTempShips(); //print results.
+		
 	}
 	
 	//methods for formatting public array tempShips into format suitable for Ship.class
@@ -124,7 +121,10 @@ SurvivalPercentage=20 --Not used
 	
 	//this method looks up a query from names.cfg using a linear line-by-line search.
 	//takes the short className from the Ship file as its input, and returns a stripped ship name.
-	
+	public String typeNameLookup(String typeNum){
+		typeNum = "Type" + typeNum.trim();
+		return nameLookup(typeNum);
+	}
 	
 	public String nameLookup(String query){
 		

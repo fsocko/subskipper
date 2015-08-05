@@ -29,7 +29,7 @@ public class Ship {
 		this.mast = mast;
 		this.draft = draft;
 		this.disp = disp;
-		this.refAspect = refAspect;
+		this.refAspect = width / mast;
 	}
 
 	public String getName() {
