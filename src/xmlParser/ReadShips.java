@@ -3,8 +3,9 @@
 
 package xmlParser;
 import java.io.*;
-import java.nio.file.Path;
+import java.nio.file.Path; //TODO: don't remember what this is for, it's never used.
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.regex.*;
 
 public class ReadShips {
@@ -30,11 +31,37 @@ SurvivalPercentage=20 --Not used
 	//Luckily, this data is all in metric. 
 	private String namesPath = "shipData/Roster/Names.cfg"; //path to Names file
 	
-	//read from the file and return an array of useful lines from SCAF record.
-	private String[] readShipRecord(String file){
+	public ArrayList<File> shipFiles = new ArrayList<File>();
+	
+	public void printShipFiles(){
+		listf("shipData\\Sea", shipFiles);
+		for(int i = 0; i < shipFiles.size(); i++){
+			System.out.println(shipFiles.get(i).toString());
+		}
+	}
+	
+	public void listf(String directoryName, ArrayList<File> files) {
+	    File directory = new File(directoryName);
 
+	    // recursively list files in directory and sub directories.
+	    File[] fList = directory.listFiles();
+	    for (File file : fList){
+	        if (file.isFile() && !(file.toString().toLowerCase().contains("walleye")) && 
+	        		(file.toString().toLowerCase().endsWith(".cfg")))
+	        {
+	        	//file extension filter. We're only interested in .cfg and .dds
+	        	//Also, filters out the Walleye: data is completely broken
+	            files.add(file);
+	        } else if (file.isDirectory()) {
+	            listf(file.getPath(), files);
+	        }
+	    }
+	}
+	
+	//TODO: RYUUN maru? it seems to have been broken in SCAF. Ditto Walleye
+	//read from the file and return an array of useful lines from SCAF record.
+		private String[] readShipRecord(String file){ //TODO: set this back to private after test.
 		String[] tempShips = new String[8];
-		
 		 FileInputStream fs = null;
 		 try{ 
 			 fs= new FileInputStream(file);
@@ -44,6 +71,12 @@ SurvivalPercentage=20 --Not used
 			 while(br.ready()){ 
 				 
 				 curLine = br.readLine().trim();
+				 //SCAF files use semiColon for comments. This breaks everything.
+				 if(curLine.contains(";")){
+					 curLine = curLine.substring(0, curLine.indexOf(";")-1);
+				 }
+				 
+				 
 				 if(curLine.contains("[Unit]")){//checks if the record is valid
 					 curLine = br.readLine().trim(); //move to next line after check	 
 				 }
@@ -54,7 +87,7 @@ SurvivalPercentage=20 --Not used
 				 }
 				 
 				 //We extracted all the useful records.
-				 if(curLine.contains("Renown")){
+				 if(curLine.contains("Renown") || curLine.contains("DisplacementVariation")){
 					 br.close();
 					 break;
 				 }

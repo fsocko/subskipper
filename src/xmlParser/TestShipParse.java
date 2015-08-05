@@ -1,15 +1,22 @@
 package xmlParser;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class TestShipParse {
 
 	public static void main(String[] args) {
 
-		//readShips from file:
 		ReadShips readTest = new ReadShips();
-		readTest.printTempShip("shipData/Sea/COKaibokan2/COKaibokan2.cfg");
-		Ship USSEnterprise = readTest.makeShip("shipData/Sea/COKaibokan2/COKaibokan2.cfg");
+
+		//create and print objects of all available .cfg files.
+		readTest.printShipFiles();
 		
-		System.out.println(USSEnterprise.toString());
+		
+		for(int i = 0; i < readTest.shipFiles.size(); i++){
+			System.out.println(readTest.makeShip(readTest.shipFiles.get(i).toString()).toString());
+		}
 
 		
 	}
