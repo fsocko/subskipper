@@ -31,13 +31,14 @@ SurvivalPercentage=20 --Not used
 	
 	
 	   
-	private String tempShips[] = new String[7]; //accessible only to this class.
-	//array of strings read from SCAF file
+	private String tempShips[] = new String[8]; //Array of useful strings copied from SCAF file.
+	//later, a Ship object is constructed from this data.
+	
 	private String namesPath = "shipData/Roster/Names.cfg"; //path to Names file
 	
 	
 	//read from the file and construct a single Ship object.
-	public void readShip(String file){
+	public void readShipRecord(String file){
 
 		 FileInputStream fs = null;
 		 try{ 
@@ -45,29 +46,27 @@ SurvivalPercentage=20 --Not used
 			 BufferedReader br = new BufferedReader(new InputStreamReader(fs));
 			 String curLine = "";
 			 int append = 0; // incremented when adding to tempShips array so we don't add nulls.
-			 while(!(curLine.contains("Renown"))){
+			 while(br.ready()){ 
 				 
 				 curLine = br.readLine().trim();
-				 
 				 if(curLine.contains("[Unit]")){//checks if the record is valid
 					 curLine = br.readLine().trim(); //move to next line after check	 
 				 }
 				 
-				 //We have to pass a file path argument either way. Not sure how consistent
-				 //the 3D model path field is compared to the imagePath.
+				 //Skip this line as it is unused.
 				 if(curLine.contains("3DModel")){
-					 br.readLine();
-					 curLine = br.readLine().trim(); //Skipping 2 lines should take us over UnitType
+					 curLine = br.readLine().trim();
 				 }
 				 
-				 if(curLine.contains("RenownAwarded")){
-					 fs.close();
+				 //We extracted all the useful records.
+				 if(curLine.contains("Renown")){
+					 br.close();
 					 break;
 				 }
 				 
 				 //start saving to temp array of lines. Each array creates one ship
 				 //Skip any blank lines.
-				 else if(!(curLine.equals(null) || curLine.equals("") || curLine.equals("null"))){
+				 else if(!(curLine.equals(null) || curLine.equals("") || curLine==null)){
 					 
 					 tempShips[append] = curLine;
 					 append ++;
@@ -95,9 +94,16 @@ SurvivalPercentage=20 --Not used
 	public void stripVars(){ //Strips incompatible data from array.
 		String curTempShip = "";
 		for(int i = 0; i<tempShips.length;i++){ //go through all array cells.
-			curTempShip = tempShips[i];
-			curTempShip = curTempShip.substring(curTempShip.indexOf("=")+1, curTempShip.length());
-			tempShips[i] = curTempShip;
+			
+			if(tempShips[i]==null){
+				break;
+			}
+			
+			else{
+				curTempShip = tempShips[i];
+				curTempShip = curTempShip.substring(curTempShip.indexOf("=")+1, curTempShip.length());
+				tempShips[i] = curTempShip;
+			}
 		}
 	}
 	
@@ -109,7 +115,7 @@ SurvivalPercentage=20 --Not used
 		 }
 	}
 	
-	//this method looks up the name, as stated in names.cfg using a linear line-by-line search.
+	//this method looks up a query from names.cfg using a linear line-by-line search.
 	//takes the short className from the Ship file as its input, and returns a stripped ship name.
 	public void nameLookup(String query){
 		
@@ -127,9 +133,8 @@ SurvivalPercentage=20 --Not used
 				 if (! br.ready()){
 					 System.out.println("Reached Names.cfg EOF. Breaking.");
 					 break;}
-				 
+
 				 curLine = br.readLine().trim();
-				 System.out.println(curLine);
 				 
 				 if(curLine.contains(query)){ //we found the name, change tempShips[0]
 						curLine = curLine.substring(curLine.indexOf("=")+1, curLine.length());
