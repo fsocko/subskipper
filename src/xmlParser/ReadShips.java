@@ -85,7 +85,7 @@ SurvivalPercentage=20 --Not used
 		
 		printTempShips(); //print results.
 		stripVars(); //run method for stripping SCAF artefacts.
-		nameLookup("bigasstitties"); //find the name for this ship
+		System.out.println(nameLookup(tempShips[0])); //find the name for this ship
 		printTempShips(); //print results.
 	}
 	
@@ -116,14 +116,21 @@ SurvivalPercentage=20 --Not used
 		 }
 	}
 	
+	//This method formats the type Number, and uses nameLookup to return a typeName
+	public String typeLookup(String typeNum){
+		String typeName = "";
+		return typeName;
+	}
+	
 	//this method looks up a query from names.cfg using a linear line-by-line search.
 	//takes the short className from the Ship file as its input, and returns a stripped ship name.
-	public void nameLookup(String query){
+	
+	
+	public String nameLookup(String query){
 		
 		System.out.println("Query: " + query);
 		boolean found = false;
-		String curLine = "";
-		String name = "ReadShips.nameLookup() failed";
+		String curLine = "ReadShips.nameLookup() failed";
 		FileInputStream fs = null;
 				 
 		 try{ 
@@ -139,7 +146,6 @@ SurvivalPercentage=20 --Not used
 				 
 				 if(curLine.contains(query)){ //we found the name, change tempShips[0]
 						curLine = curLine.substring(curLine.indexOf("=")+1, curLine.length());
-						name = curLine;
 						br.close();
 						found = true;
 				 }
@@ -154,9 +160,11 @@ SurvivalPercentage=20 --Not used
          }   
 		 
 		 if(found){
-			 tempShips[0] = name;
+			 return curLine;
 		 }
-		 else{tempShips[0] = tempShips[0] + " | ERROR: \"" +query +"\" not found in ReadShips.nameLookup().";}
+		 
+		 else{
+			 return curLine + " | ERROR: \"" +query +"\" not found in ReadShips.nameLookup().";}
 		 //this ought to show up in XML if nameLookup fails, and make debugging easier
  
 	}

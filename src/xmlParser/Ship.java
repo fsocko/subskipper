@@ -5,7 +5,8 @@ package xmlParser;
 public class Ship {
 
 	private String name;
-	private String type;
+	private int type;
+	private String typeName;
 	private String imagePath;
 	private double maxSpeed;
 	private double length;
@@ -15,46 +16,32 @@ public class Ship {
 	private double disp;
 	private double refAspect;
 	
-	//construct an empty ship
-	public Ship(){
-	
-		this.name = "";
-		this.type = "";
-		this.imagePath = ""; 
-		this.maxSpeed = 0;
-		this.length = 0;
-		this.width = 0;
-		this.mast = 0;
-		this.draft = 0;
-		this.disp = 0;
-		this.refAspect = 0;
+	public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
+			double mast, double draft, double disp, double refAspect) {
+		super();
+		this.name = name;
+		this.type = type;
+		this.typeName = typeName;
+		this.imagePath = imagePath;
+		this.maxSpeed = maxSpeed;
+		this.length = length;
+		this.width = width;
+		this.mast = mast;
+		this.draft = draft;
+		this.disp = disp;
+		this.refAspect = refAspect;
 	}
-	
-	public Ship(String name, int unitType, double maxSpeed, double length,
-			double width, double mast, double draft, double disp) {
-
-				this.name = name;
-				this.type = "";
-				this.imagePath = this.name + "_sil.dds";
-				//This seems to be how ship images are assigned paths in SCAF
-				this.maxSpeed = maxSpeed;
-				this.length = length;
-				this.width = width;
-				this.mast = mast;
-				this.draft = draft;
-				this.disp = disp;
-				this.refAspect = length / mast;
-				//pre-calculating this for the aspect AOB method ought to make everything run faster.
-				//cost in storage is negligible
-				
-			}
 
 	public String getName() {
 		return name;
 	}
-	
-	public String getType() {
+
+	public int getType() {
 		return type;
+	}
+
+	public String getTypeName() {
+		return typeName;
 	}
 
 	public String getImagePath() {
@@ -88,15 +75,7 @@ public class Ship {
 	public double getRefAspect() {
 		return refAspect;
 	}
-
-	@Override
-	public String toString() {
-		return "Ship [name=" + name + ", imagePath=" + imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length
-				+ ", width=" + width + ", mast=" + mast + ", draft=" + draft + ", disp=" + disp + ", refAspect="
-				+ refAspect + "]";
-	}
-
-
 	
+		
 	
 }
