@@ -39,18 +39,19 @@ SurvivalPercentage=20 --Not used
 			System.out.println(shipFiles.get(i).toString());
 		}
 	}
-	
+	  
 	public void listf(String directoryName, ArrayList<File> files) {
 	    File directory = new File(directoryName);
 
 	    // recursively list files in directory and sub directories.
 	    File[] fList = directory.listFiles();
 	    for (File file : fList){
-	        if (file.isFile() && !(file.toString().toLowerCase().contains("walleye")) && 
-	        		(file.toString().toLowerCase().endsWith(".cfg")))
-	        {
-	        	//file extension filter. We're only interested in .cfg and .dds
-	        	//Also, filters out the Walleye: data is completely broken
+	        if (!((file.toString().toLowerCase().contains("walleye")) || 
+	        	 (file.toString().toLowerCase().contains("nde_parker")) ||
+	        	 (file.toString().toLowerCase().contains("ryuun"))) 
+	        	 && file.isFile() && file.toString().toLowerCase().endsWith(".cfg")){        
+	        	//file extension filter. We're only interested in .cfg
+	        	//Also, filters out ships which for whatever reason have bad data in SCAF
 	            files.add(file);
 	        } else if (file.isDirectory()) {
 	            listf(file.getPath(), files);
