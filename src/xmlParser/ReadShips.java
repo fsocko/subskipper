@@ -34,6 +34,7 @@ SurvivalPercentage=20 --Not used
 	private String tempShips[] = new String[8]; //Array of useful strings copied from SCAF file.
 	//later, a Ship object is constructed from this data.
 	
+	
 	private String namesPath = "shipData/Roster/Names.cfg"; //path to Names file
 	
 	

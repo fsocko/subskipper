@@ -5,6 +5,7 @@ package xmlParser;
 public class Ship {
 
 	private String name;
+	private String type;
 	private String imagePath;
 	private double maxSpeed;
 	private double length;
@@ -18,6 +19,7 @@ public class Ship {
 	public Ship(){
 	
 		this.name = "";
+		this.type = "";
 		this.imagePath = ""; 
 		this.maxSpeed = 0;
 		this.length = 0;
@@ -32,6 +34,7 @@ public class Ship {
 			double width, double mast, double draft, double disp) {
 
 				this.name = name;
+				this.type = "";
 				this.imagePath = this.name + "_sil.dds";
 				//This seems to be how ship images are assigned paths in SCAF
 				this.maxSpeed = maxSpeed;
@@ -48,6 +51,10 @@ public class Ship {
 
 	public String getName() {
 		return name;
+	}
+	
+	public String getType() {
+		return type;
 	}
 
 	public String getImagePath() {

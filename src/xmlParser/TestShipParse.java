@@ -6,7 +6,7 @@ public class TestShipParse {
 
 		//readShips from file:
 		ReadShips readTest = new ReadShips();
-		readTest.readShip("shipData/Sea/NCA_Mogami/NCA_Mogami.cfg");
+		readTest.readShipRecord("shipData/Sea/NCA_Mogami/NCA_Mogami.cfg");
 
 	}
 
