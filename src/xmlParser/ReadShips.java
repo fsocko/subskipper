@@ -166,6 +166,8 @@ SurvivalPercentage=20 --Not used
 	public Ship makeShip(){
 		//public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, 
 		//double length, double width, double mast, double draft, double disp)
+		stripVars(); //remove descriptor strings.
+		
 		String name = nameLookup(tempShips[0]);
 		int type = Integer.parseInt(tempShips[1]);
 		String typeName = typeNameLookup(tempShips[1]);

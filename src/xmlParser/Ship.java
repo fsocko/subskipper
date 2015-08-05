@@ -80,6 +80,13 @@ public class Ship {
 	public double getRefAspect() {
 		return refAspect;
 	}
+
+	@Override
+	public String toString() {
+		return "Ship [name=" + name + ", type=" + type + ", typeName=" + typeName + ", imagePath=" + imagePath
+				+ ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width + ", mast=" + mast + ", draft="
+				+ draft + ", disp=" + disp + ", refAspect=" + refAspect + "]";
+	}
 	
 		
 	
