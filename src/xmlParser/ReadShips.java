@@ -13,7 +13,7 @@ public class ReadShips {
 An Example SCAF ship record. starts with empty line, ends with 2 trailing empty lines
 
 [Unit] -- Detect this and start reading
-ClassName=COKaibokan2 -- TODO: Not sure what this does yet, need to see roster/names.cfg
+ClassName=COKaibokan2
 3DModelFileName=data/Sea/COKaibokan/COKaibokan -- not used
 UnitType=1 -- Not Used
 MaxSpeed=19 
@@ -49,7 +49,6 @@ SurvivalPercentage=20 --Not used
 				 
 				 curLine = br.readLine().trim();
 				 
-				 //TODO: set a boolean to make sure file is valid
 				 if(curLine.contains("[Unit]")){//checks if the record is valid
 					 curLine = br.readLine().trim(); //move to next line after check	 
 				 }
@@ -151,7 +150,7 @@ SurvivalPercentage=20 --Not used
 		 if(found){
 			 tempShips[0] = name;
 		 }
-		 else{tempShips[0] = tempShips[0] + " | ERROR: " +query +"not found.";}
+		 else{tempShips[0] = tempShips[0] + " | ERROR: \"" +query +"\" not found in ReadShips.nameLookup().";}
 		 //this ought to show up in XML if nameLookup fails, and make debugging easier
  
 	}
