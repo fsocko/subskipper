@@ -28,13 +28,14 @@ CrewComplement=30 --Not used
 SurvivalRate=70 --Not used
 SurvivalPercentage=20 --Not used
 */
-	//Luckily, this data is all in metric. 
-	private String namesPath = "shipData/Roster/Names.cfg"; //path to Names file
+	//Luckily, this data is all in metric.
+	//TODO: make namesPath searchable, rather than hardcoded
+	private String namesPath = "shipData/SCAF for TMO_2/Data/Roster/Names.cfg"; //path to Names file
 	
 	public ArrayList<File> shipFiles = new ArrayList<File>();
 	
 	public void printShipFiles(){
-		listf("shipData\\Sea", shipFiles);
+		listf("shipData", shipFiles);
 		for(int i = 0; i < shipFiles.size(); i++){
 			System.out.println(shipFiles.get(i).toString());
 		}
@@ -42,16 +43,21 @@ SurvivalPercentage=20 --Not used
 	  
 	public void listf(String directoryName, ArrayList<File> files) {
 	    File directory = new File(directoryName);
-
+	    //TODO: exclude: Data/Roster, Data/Menu
 	    // recursively list files in directory and sub directories.
 	    File[] fList = directory.listFiles();
 	    for (File file : fList){
-	        if (!((file.toString().toLowerCase().contains("walleye")) || 
+	        if (file.isFile() && //If a file
+	        	//Exclude these:
+	        	!((file.toString().toLowerCase().contains("walleye")) || 
 	        	 (file.toString().toLowerCase().contains("nde_parker")) ||
-	        	 (file.toString().toLowerCase().contains("ryuun"))) 
-	        	 && file.isFile() && file.toString().toLowerCase().endsWith(".cfg")){        
-	        	//file extension filter. We're only interested in .cfg
-	        	//Also, filters out ships which for whatever reason have bad data in SCAF
+	        	 (file.toString().toLowerCase().contains("ryuun")) ||
+	        	 (file.toString().toLowerCase().contains("cargodef")) ||
+	        	 (file.toString().toLowerCase().contains("roster")))
+	        	 //file extension filter. We're only interested in .cfg 
+	        	 && file.toString().toLowerCase().endsWith(".cfg")
+	           )
+	        {        
 	            files.add(file);
 	        } else if (file.isDirectory()) {
 	            listf(file.getPath(), files);
