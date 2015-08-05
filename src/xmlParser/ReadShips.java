@@ -31,23 +31,21 @@ SurvivalPercentage=20 --Not used
 	
 	
 	   
-	private String tempShips[] = new String[7]; //accessible only to this class.
+	private String tempShips[] = new String[8]; //accessible only to this class.
 	//array of strings read from SCAF file
 	//public so other methods can edit the array later.
 	
 	
 	//read from the file and construct a single Ship object.
 	public void readShip(String file){
-		
-		
-		
+
 		 FileInputStream fs = null;
 		 try{ 
 			 fs= new FileInputStream(file);
 			 BufferedReader br = new BufferedReader(new InputStreamReader(fs));
 			 String curLine = "";
 			 int append = 0; // incremented when adding to tempShips array so we don't add nulls.
-			 while(!(curLine.contains("Displacement"))){
+			 while(!(curLine.contains("Renown"))){
 				 
 				 curLine = br.readLine().trim();
 				 
@@ -62,7 +60,7 @@ SurvivalPercentage=20 --Not used
 					 curLine = br.readLine().trim();
 				 }
 				 
-				 if(curLine.contains("Displacement")){
+				 if(curLine.contains("RenownAwarded")){
 					 break;
 				 }
 				 
