@@ -20,15 +20,18 @@ MaxSpeed=19
 Length=89.5
 Width=11.1
 Mast=27.7
-Draft=3.4  -- ALL WE NEED IS 8 LINES FROM THE RECORD
+Draft=3.4  -- ALL WE NEED IS 7 LINES FROM THE RECORD
 Displacement=900 --Not used
 RenownAwarded=120 --Not used
 CrewComplement=30 --Not used
 SurvivalRate=70 --Not used
 SurvivalPercentage=20 --Not used
 */
+	//Luckily, this data is all in metric. 
+	
+	
 	   
-	public String tempShip[] = new String[8];
+	private String tempShips[] = new String[7]; //accessible only to this class.
 	//array of strings read from SCAF file
 	//public so other methods can edit the array later.
 	
@@ -42,17 +45,15 @@ SurvivalPercentage=20 --Not used
 		 try{ 
 			 fs= new FileInputStream(file);
 			 BufferedReader br = new BufferedReader(new InputStreamReader(fs));
-			 int i =0;
 			 String curLine = "";
-			 int append = 0; // incremented when adding to tempShip array so we don't add nulls.
+			 int append = 0; // incremented when adding to tempShips array so we don't add nulls.
 			 while(!(curLine.contains("Displacement"))){
 				 
 				 curLine = br.readLine().trim();
 				 
 				 //TODO: set a boolean to make sure file is valid
 				 if(curLine.contains("[Unit]")){//checks if the record is valid
-					 curLine = br.readLine().trim(); //move to next line after check
-					 System.out.println("Valid Record, Start index now.");	 
+					 curLine = br.readLine().trim(); //move to next line after check	 
 				 }
 				 
 				 //We have to pass a file path argument either way. Not sure how consistent
@@ -66,21 +67,14 @@ SurvivalPercentage=20 --Not used
 				 }
 				 
 				 //start saving to temp array of lines. Each array creates one ship
-				 else if(!(curLine.equals(null) || curLine.equals(""))){
+				 //Skip any blank lines.
+				 else if(!(curLine.equals(null) || curLine.equals("") || curLine.equals("null"))){
 					 
-					 tempShip[append] = curLine;
+					 tempShips[append] = curLine;
 					 append ++;
 				 }
-				 
-				 i++;
-				 }
-			
-			 //Print tempShip to make sure there's no mistake.
-			 for(int j = 0; j<tempShip.length -1; j++){
-				 if(j==0){System.out.println("\n\n Starting tempShip dump:");}
-				 System.out.println(j + " " + tempShip[j]);
 			 }
-				
+			
 		 }
 		 catch(FileNotFoundException F){
 			 System.out.println("IOexception while reading.");}
@@ -89,11 +83,38 @@ SurvivalPercentage=20 --Not used
              e.printStackTrace();
              System.out.println("could not read file.");
          }   
+		
+		printTempShips(); //print results.
+		stripVars(); //run method for stripping SCAF artefacts.
+		printTempShips(); //print results.
 	}
 	
-	//call methods for formatting public array tempShip into format suitable for Ship.class
-	//probably OK to change values directly in array.
-			
-}
-
+	//methods for formatting public array tempShips into format suitable for Ship.class
+	//after that construct an instance of the ship, to be later parsed to XML.
+	//takes no arguments
+	public void stripVars(){ //Strips incompatible data from array.
+		String curTempShip = "";
+		for(int i = 0; i<tempShips.length;i++){ //go through all array cells.
+			curTempShip = tempShips[i];
+			curTempShip = curTempShip.substring(curTempShip.indexOf("=")+1, curTempShip.length());
+			tempShips[i] = curTempShip;
+		}
+	}
+	
+	public void printTempShips(){
+		 //Print tempShips to make sure there's no mistake.
+		 for(int j = 0; j<tempShips.length; j++){
+			 if(j==0){System.out.println("\n\n Starting tempShips dump:");}
+			 System.out.println(j + " " + tempShips[j]);
+		 }
+	}
+	
+	
+	public void formatShip(){
+		
+		
+		
+		Ship SCAFShip = new Ship();
+	}
+}//EOF
 
