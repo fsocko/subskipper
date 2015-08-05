@@ -15,7 +15,7 @@ An Example SCAF ship record. starts with empty line, ends with 2 trailing empty 
 [Unit] -- Detect this and start reading
 ClassName=COKaibokan2 -- TODO: Not sure what this does yet, need to see roster/names.cfg
 3DModelFileName=data/Sea/COKaibokan/COKaibokan -- not used
-UnitType=1 -- TODO: type appears in roster/names.cfg
+UnitType=1 -- Not Used
 MaxSpeed=19 
 Length=89.5
 Width=11.1
@@ -31,9 +31,9 @@ SurvivalPercentage=20 --Not used
 	
 	
 	   
-	private String tempShips[] = new String[8]; //accessible only to this class.
+	private String tempShips[] = new String[7]; //accessible only to this class.
 	//array of strings read from SCAF file
-	//public so other methods can edit the array later.
+	private String namesPath = "shipData/Roster/Names.cfg"; //path to Names file
 	
 	
 	//read from the file and construct a single Ship object.
@@ -57,10 +57,12 @@ SurvivalPercentage=20 --Not used
 				 //We have to pass a file path argument either way. Not sure how consistent
 				 //the 3D model path field is compared to the imagePath.
 				 if(curLine.contains("3DModel")){
-					 curLine = br.readLine().trim();
+					 br.readLine();
+					 curLine = br.readLine().trim(); //Skipping 2 lines should take us over UnitType
 				 }
 				 
 				 if(curLine.contains("RenownAwarded")){
+					 fs.close();
 					 break;
 				 }
 				 
@@ -107,12 +109,33 @@ SurvivalPercentage=20 --Not used
 		 }
 	}
 	
-	
-	public void formatShip(){
+	//this method looks up the name, as stated in names.cfg
+	//takes the short className from the Ship file
+	public void nameLookup(String className){
 		
+		 FileInputStream fs = null;
+		 try{ 
+			 fs= new FileInputStream(namesPath);
+			 BufferedReader br = new BufferedReader(new InputStreamReader(fs));
+			 boolean found = false;
+			 
+			 while(!found){
+			 }
+				 
+
+
+			
+		 }
+		 catch(FileNotFoundException F){
+			 System.out.println("IOexception while reading.");}
+		 
+		 catch (IOException e){
+             e.printStackTrace();
+             System.out.println("could not read file.");
+         }   
 		
-		
-		Ship SCAFShip = new Ship();
 	}
+
+	
 }//EOF
 

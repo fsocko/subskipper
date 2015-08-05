@@ -4,9 +4,7 @@ package xmlParser;
 
 public class Ship {
 
-	private String className;
-	private int unitType;
-	private String unitTypeName;
+	private String name;
 	private String imagePath;
 	private double maxSpeed;
 	private double length;
@@ -19,9 +17,8 @@ public class Ship {
 	//construct an empty ship
 	public Ship(){
 	
-		this.className = "";
+		this.name = "";
 		this.imagePath = ""; 
-		this.unitType = 0;
 		this.maxSpeed = 0;
 		this.length = 0;
 		this.width = 0;
@@ -31,14 +28,12 @@ public class Ship {
 		this.refAspect = 0;
 	}
 	
-	public Ship(String className, int unitType, double maxSpeed, double length,
+	public Ship(String name, int unitType, double maxSpeed, double length,
 			double width, double mast, double draft, double disp) {
 
-				this.className = className;
-				this.imagePath = this.className + "_sil.dds";
+				this.name = name;
+				this.imagePath = this.name + "_sil.dds";
 				//This seems to be how ship images are assigned paths in SCAF
-				this.unitType = unitType;
-				this.unitTypeName = ""; //TODO: set this once we are reading names.cfg
 				this.maxSpeed = maxSpeed;
 				this.length = length;
 				this.width = width;
@@ -51,16 +46,8 @@ public class Ship {
 				
 			}
 
-	public String getClassName() {
-		return className;
-	}
-
-	public int getUnitType() {
-		return unitType;
-	}
-
-	public String getUnitTypeName() {
-		return unitTypeName;
+	public String getName() {
+		return name;
 	}
 
 	public String getImagePath() {
@@ -97,11 +84,12 @@ public class Ship {
 
 	@Override
 	public String toString() {
-		return "Ship [className=" + className + ", unitType=" + unitType + ", unitTypeName=" + unitTypeName
-				+ ", imagePath=" + imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width
-				+ ", mast=" + mast + ", draft=" + draft + ", disp=" + disp + ", refAspect=" + refAspect + "]";
+		return "Ship [name=" + name + ", imagePath=" + imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length
+				+ ", width=" + width + ", mast=" + mast + ", draft=" + draft + ", disp=" + disp + ", refAspect="
+				+ refAspect + "]";
 	}
-	
+
+
 	
 	
 }
