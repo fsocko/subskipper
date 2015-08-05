@@ -7,7 +7,7 @@ public class Ship {
 	private String className;
 	private int unitType;
 	private String unitTypeName;
-	private String image;
+	private String imagePath;
 	private double maxSpeed;
 	private double length;
 	private double width;
@@ -19,7 +19,7 @@ public class Ship {
 	public Ship(){
 	
 		this.className = "";
-		this.image = ""; 
+		this.imagePath = ""; 
 		this.unitType = 0;
 		this.maxSpeed = 0;
 		this.length = 0;
@@ -33,7 +33,7 @@ public class Ship {
 			double width, double mast, double draft) {
 
 				this.className = className;
-				this.image = this.className + "_sil.dds"; 
+				this.imagePath = this.className + "_sil.dds";
 				//This seems to be how ship images are assigned paths in SCAF
 				this.unitType = unitType;
 				this.unitTypeName = ""; //TODO: set this once we are reading names.cfg
@@ -56,8 +56,8 @@ public class Ship {
 		this.unitType = unitType;
 	}
 
-	public void setImage(String image) {
-		this.image = image;
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
 	}
 
 	public void setMaxSpeed(double maxSpeed) {
@@ -83,7 +83,7 @@ public class Ship {
 	@Override
 	public String toString() {
 		return "Ship [className=" + className + ", unitType=" + unitType + ", unitTypeName=" + unitTypeName + ", image="
-				+ image + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width + ", mast=" + mast
+				+ imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width + ", mast=" + mast
 				+ ", draft=" + draft + ", refAspect=" + refAspect + "]";
 	}
 

@@ -55,7 +55,9 @@ SurvivalPercentage=20 --Not used
 					 System.out.println("Valid Record, Start index now.");	 
 				 }
 				 
-				 if(curLine.contains("3DModel")){ //we want to skip over the line containing 3DModel filepath
+				 //We have to pass a file path argument either way. Not sure how consistent
+				 //the 3D model path field is compared to the imagePath.
+				 if(curLine.contains("3DModel")){
 					 curLine = br.readLine().trim();
 				 }
 				 
