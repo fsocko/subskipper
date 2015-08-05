@@ -13,6 +13,7 @@ public class Ship {
 	private double width;
 	private double mast;
 	private double draft;
+	private double disp;
 	private double refAspect;
 	
 	//construct an empty ship
@@ -26,11 +27,12 @@ public class Ship {
 		this.width = 0;
 		this.mast = 0;
 		this.draft = 0;
+		this.disp = 0;
 		this.refAspect = 0;
 	}
 	
 	public Ship(String className, int unitType, double maxSpeed, double length,
-			double width, double mast, double draft) {
+			double width, double mast, double draft, double disp) {
 
 				this.className = className;
 				this.imagePath = this.className + "_sil.dds";
@@ -42,52 +44,64 @@ public class Ship {
 				this.width = width;
 				this.mast = mast;
 				this.draft = draft;
+				this.disp = disp;
 				this.refAspect = length / mast;
 				//pre-calculating this for the aspect AOB method ought to make everything run faster.
 				//cost in storage is negligible
 				
 			}
-	
-	public void setClassName(String className) {
-		this.className = className;
+
+	public String getClassName() {
+		return className;
 	}
 
-	public void setUnitType(int unitType) {
-		this.unitType = unitType;
+	public int getUnitType() {
+		return unitType;
 	}
 
-	public void setImagePath(String imagePath) {
-		this.imagePath = imagePath;
+	public String getUnitTypeName() {
+		return unitTypeName;
 	}
 
-	public void setMaxSpeed(double maxSpeed) {
-		this.maxSpeed = maxSpeed;
+	public String getImagePath() {
+		return imagePath;
 	}
 
-	public void setLength(double length) {
-		this.length = length;
+	public double getMaxSpeed() {
+		return maxSpeed;
 	}
 
-	public void setWidth(double width) {
-		this.width = width;
+	public double getLength() {
+		return length;
 	}
 
-	public void setMast(double mast) {
-		this.mast = mast;
+	public double getWidth() {
+		return width;
 	}
 
-	public void setDraft(double draft) {
-		this.draft = draft;
+	public double getMast() {
+		return mast;
+	}
+
+	public double getDraft() {
+		return draft;
+	}
+
+	public double getDisp() {
+		return disp;
+	}
+
+	public double getRefAspect() {
+		return refAspect;
 	}
 
 	@Override
 	public String toString() {
-		return "Ship [className=" + className + ", unitType=" + unitType + ", unitTypeName=" + unitTypeName + ", image="
-				+ imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width + ", mast=" + mast
-				+ ", draft=" + draft + ", refAspect=" + refAspect + "]";
+		return "Ship [className=" + className + ", unitType=" + unitType + ", unitTypeName=" + unitTypeName
+				+ ", imagePath=" + imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width
+				+ ", mast=" + mast + ", draft=" + draft + ", disp=" + disp + ", refAspect=" + refAspect + "]";
 	}
-
-
+	
 	
 	
 }
