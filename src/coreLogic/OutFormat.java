@@ -6,7 +6,6 @@ public class OutFormat {
 
 	    public String degreeOut(double degIn){
  
-	    	double amount = degIn;
 	    	DecimalFormat formatter = new DecimalFormat("000");
 	    	String out = formatter.format(degIn) + "\u00b0";
 	    	return out;

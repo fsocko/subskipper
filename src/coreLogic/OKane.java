@@ -77,7 +77,6 @@ public class OKane {
 			return -1;}
 		double lead = 0;
 		//90 - inverseTan(torpS/targS)
-		double rad = (torpS/targS);
 		lead =  90-Math.toDegrees(Math.atan(torpS/targS));
 		if(lead > 90){
 			lead = -1;} //Okane relies on being ahead of the target,
