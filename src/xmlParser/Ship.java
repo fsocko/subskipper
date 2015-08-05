@@ -17,7 +17,7 @@ public class Ship {
 	private double refAspect;
 	
 	public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
-			double mast, double draft, double disp, double refAspect) {
+			double mast, double draft, double disp) {
 		super();
 		this.name = name;
 		this.type = type;
@@ -29,7 +29,12 @@ public class Ship {
 		this.mast = mast;
 		this.draft = draft;
 		this.disp = disp;
-		this.refAspect = width / mast;
+		this.refAspect = length / mast;
+	}
+
+	//TODO: Should probably delete this later.
+	public Ship() {
+		
 	}
 
 	public String getName() {

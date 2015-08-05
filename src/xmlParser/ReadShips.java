@@ -29,9 +29,7 @@ SurvivalPercentage=20 --Not used
 */
 	//Luckily, this data is all in metric. 
 	
-	
-	   //TODO: change this back to private once testing is done
-	public String tempShips[] = new String[8]; //Array of useful strings copied from SCAF file.
+	private String tempShips[] = new String[8]; //Array of useful strings copied from SCAF file.
 	//later, a Ship object is constructed from this data.
 	
 	
@@ -82,8 +80,6 @@ SurvivalPercentage=20 --Not used
              e.printStackTrace();
              System.out.println("could not read file.");
          }   
-		
-		
 	}
 	
 	//methods for formatting public array tempShips into format suitable for Ship.class
@@ -127,8 +123,6 @@ SurvivalPercentage=20 --Not used
 	}
 	
 	public String nameLookup(String query){
-		
-		System.out.println("Query: " + query);
 		boolean found = false;
 		String curLine = "ReadShips.nameLookup() failed";
 		FileInputStream fs = null;
@@ -166,9 +160,27 @@ SurvivalPercentage=20 --Not used
 		 else{
 			 return curLine + " | ERROR: \"" +query +"\" not found in ReadShips.nameLookup().";}
 		 //this ought to show up in XML if nameLookup fails, and make debugging easier
- 
 	}
 
+	//Format and construct a ship object using data in tempShips
+	public Ship makeShip(){
+		//public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, 
+		//double length, double width, double mast, double draft, double disp)
+		String name = nameLookup(tempShips[0]);
+		int type = Integer.parseInt(tempShips[1]);
+		String typeName = typeNameLookup(tempShips[1]);
+		String imagePath = "A PATH."; //TODO: implement recursive ship browsing.
+		double maxSpeed = Double.parseDouble(tempShips[2]);
+		double length = Double.parseDouble(tempShips[3]);
+		double width = Double.parseDouble(tempShips[4]);
+		double mast = Double.parseDouble(tempShips[5]);
+		double draft = Double.parseDouble(tempShips[6]);
+		double disp = Double.parseDouble(tempShips[7]);
+		
+		Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
+		return testShip;
+	}
+	
 	
 }//EOF
 
