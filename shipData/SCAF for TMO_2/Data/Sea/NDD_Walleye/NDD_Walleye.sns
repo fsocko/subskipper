@@ -1,0 +1,42 @@
+; sensor configuration file
+
+[Sensor 1]
+NodeName=O01
+LinkName=NULL
+StartDate=19380101
+EndDate=19451231
+
+;Hydrophone
+[Sensor 2]
+NodeName=H01
+LinkName=NULL
+StartDate=19380101
+EndDate=19451231
+
+;Sonar
+[Sensor 3]
+NodeName=N01
+LinkName=NULL
+StartDate=19380101
+EndDate=19451231
+
+;Radar
+[Sensor 4]
+NodeName=R01
+LinkName=NULL
+StartDate=19380101
+EndDate=19451231
+
+;RadioDF
+[Sensor 5]
+NodeName=D01
+LinkName=NULL
+StartDate=19380101
+EndDate=19451231
+
+;Radar Warning
+[Sensor 6]
+NodeName=C01
+LinkName=NULL
+StartDate=19380101
+EndDate=19451231

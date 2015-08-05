@@ -32,18 +32,10 @@ SurvivalPercentage=20 --Not used
 	//TODO: make namesPath searchable, rather than hardcoded
 	private String namesPath = "shipData/SCAF for TMO_2/Data/Roster/Names.cfg"; //path to Names file
 	
-	public ArrayList<File> shipFiles = new ArrayList<File>();
-	
-	public void printShipFiles(){
-		listf("shipData", shipFiles);
-		for(int i = 0; i < shipFiles.size(); i++){
-			System.out.println(shipFiles.get(i).toString());
-		}
-	}
 	  
-	public void listf(String directoryName, ArrayList<File> files) {
+	//recursively goes through directories, filters out ship cfg files.
+	public void listFile(String directoryName, ArrayList<File> files) {
 	    File directory = new File(directoryName);
-	    //TODO: exclude: Data/Roster, Data/Menu
 	    // recursively list files in directory and sub directories.
 	    File[] fList = directory.listFiles();
 	    for (File file : fList){
@@ -60,14 +52,12 @@ SurvivalPercentage=20 --Not used
 	        {        
 	            files.add(file);
 	        } else if (file.isDirectory()) {
-	            listf(file.getPath(), files);
+	            listFile(file.getPath(), files);
 	        }
 	    }
 	}
 	
-	//TODO: RYUUN maru? it seems to have been broken in SCAF. Ditto Walleye
-	//read from the file and return an array of useful lines from SCAF record.
-		private String[] readShipRecord(String file){ //TODO: set this back to private after test.
+		private String[] readShipRecord(String file){
 		String[] tempShips = new String[8];
 		 FileInputStream fs = null;
 		 try{ 
@@ -198,6 +188,9 @@ SurvivalPercentage=20 --Not used
 
 	//Format and construct a ship object using data in tempShips
 	public Ship makeShip(String path){
+		//First run listF
+		ArrayList<File> shipFiles = new ArrayList<File>();
+		listFile("shipData", shipFiles);
 		String [] tempShips = readShipRecord(path);
 		stripVars(tempShips); //remove descriptor strings.
 		
@@ -220,7 +213,25 @@ SurvivalPercentage=20 --Not used
 		Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
 		return testShip;
 	}
+	//Prints all useful SCAF files.
+	public void printShipFiles(){
+		ArrayList<File> shipFiles = new ArrayList<File>();
+		System.out.println("\nPrint all ships:\n************************************************************\n");
+		listFile("shipData", shipFiles);
+		for(int i = 0; i < shipFiles.size(); i++){
+			System.out.println(shipFiles.get(i).toString());
+		}
+	}
 	
+	//Makes and prints toString of all the ships in SCAF
+	public void makeAllShips(){
+		ArrayList<File> shipFiles = new ArrayList<File>();
+		listFile("shipData", shipFiles);
+		System.out.println("\nMake all ships:\n************************************************************\n");
+		for(int i = 0; i < shipFiles.size(); i++){
+			System.out.println(makeShip(shipFiles.get(i).toString()).toString());
+		}	
+	}
 	
 }//EOF
 
