@@ -220,7 +220,7 @@ Do the same with data from the recognition manual for the reference Aspect Ratio
 2.
 $$AOB = arcSin \frac{AR_{observed}}{AR_{reference}}$$
 Note: This method is less accurate as AOB approaches 0.
-Note: This method does not compute whether the AOB is on the port or starboard side.
+Note: This method does not compute whether the AOB is on the port or starboard side. The user must first give an approximate AOB, or take away the AOB from 180\degree 
 
 \end{document}
 
