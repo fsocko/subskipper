@@ -7,28 +7,25 @@ import javax.xml.bind.Marshaller;
 
 public class WriteShipXML {
 	
-	public void writeCustomer() {
+	public void writeXMLShip(Ship xmlShip){
 
-	  ShipToXML customer = new ShipToXML();
-	  customer.setId(100);
-	  customer.setName("mkyong");
-	  customer.setAge(29);
-
+	  	  
 	  try {
 
-		File file = new File("\file.xml");
-		JAXBContext jaxbContext = JAXBContext.newInstance(ShipToXML.class);
+		File file = new File("shipData/testShip.xml");
+		JAXBContext jaxbContext = JAXBContext.newInstance(Ship.class);
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
 		// output pretty printed
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-		jaxbMarshaller.marshal(customer, file);
-		jaxbMarshaller.marshal(customer, System.out);
+		jaxbMarshaller.marshal(xmlShip, file);
+		jaxbMarshaller.marshal(xmlShip, System.out);
 
-	      } catch (JAXBException e) {
-		e.printStackTrace();
-	      }
+	  } 
+	  
+	  catch (JAXBException e) {
+		  e.printStackTrace();}
 
 	}
 }

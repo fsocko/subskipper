@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 
-public class ReadShips {
+public class ReadSCAF {
 
 /*
 An Example SCAF ship record. starts with empty line, ends with 2 trailing empty lines
@@ -31,14 +31,14 @@ SurvivalPercentage=20 --Not used
 	//TODO: make namesPath searchable, rather than hardcoded
 	private String namesPath = "shipData/SCAF for TMO_2/Data/Roster/Names.cfg"; //path to Names file
 	
-	  
+	
 	//recursively goes through directories, filters out ship cfg files.
 	public void listFile(String directoryName, ArrayList<File> files) {
 	    File directory = new File(directoryName);
 	    // recursively list files in directory and sub directories.
 	    File[] fList = directory.listFiles();
 	    for (File file : fList){
-	        if (file.isFile() && //If a file
+	        if (file.isFile() &&
 	        	//Exclude these:
 	        	!((file.toString().toLowerCase().contains("walleye")) || 
 	        	 (file.toString().toLowerCase().contains("nde_parker")) ||
@@ -213,7 +213,7 @@ SurvivalPercentage=20 --Not used
 		return testShip;
 	}
 	//Prints all useful SCAF files.
-	public void printShipFiles(){
+	public void printSCAFFiles(){
 		ArrayList<File> shipFiles = new ArrayList<File>();
 		System.out.println("\nPrint all ships:\n************************************************************\n");
 		listFile("shipData", shipFiles);
@@ -222,15 +222,19 @@ SurvivalPercentage=20 --Not used
 		}
 	}
 	
-	//Makes and prints toString of all the ships in SCAF
-	public void makeAllShips(){
+	//Returns an arrayList of Ship objects, for passing to WriteShipXML
+	public ArrayList<Ship> makeAllShips(){
 		ArrayList<File> shipFiles = new ArrayList<File>();
+		ArrayList<Ship> shipData = new ArrayList<Ship>();
+		Ship writeShip = new Ship();
+		
 		listFile("shipData", shipFiles);
-		System.out.println("\nMake all ships:\n************************************************************\n");
+		
 		for(int i = 0; i < shipFiles.size(); i++){
+			makeShip(shipFiles.get(i).toString());
 			System.out.println(makeShip(shipFiles.get(i).toString()).toString());
-		}	
+		}
+		return shipData;
 	}
-	
 }//EOF
 

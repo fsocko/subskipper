@@ -9,12 +9,12 @@ public class TestShipParse {
 
 	public static void main(String[] args){
 
-		ReadShips readTest = new ReadShips();	
-		//readTest.printShipFiles();
-		//readTest.makeAllShips();
+		ReadSCAF readTest = new ReadSCAF();	
+		readTest.printSCAFFiles();
+		readTest.makeAllShips();
 		
-		WriteShipXML customer = new WriteShipXML();
-		customer.writeCustomer();
+		//WriteShipXML testXMLShip = new WriteShipXML();
+		//testXMLShip.writeXMLShip();
 		
 	}
 
