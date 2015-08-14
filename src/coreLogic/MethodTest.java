@@ -10,18 +10,36 @@ public class MethodTest {
 		Torpedo mk14 = new Torpedo("Mk. 14", 31, 46, 8200, 4100);
 		Torpedo mk16 = new Torpedo("Mk. 16", 46, -1, 12500, -1);
 		
+		//Format to degrees
 		OutFormat toDeg = new OutFormat();
-		
-		int AOB = 0;
+		//Okane parameters
+		int AOB =95;
 		double targS = 6;
-		char selSpeed = 'f';
-		Torpedo fireTorp = mk14; 
-		//oKSolution(int AOB, double targS, char selSpeed, Torpedo fireTorp)
-		System.out.println("AOB: " + AOB + " targSpeed: " + targS +" TorpSpeed: " +selSpeed + fireTorp.getName());
-		System.out.println("Scope Bearing: " + toDeg.degreeOut(test1.oKSolution(AOB, targS, selSpeed, fireTorp)));
-		
+		double torpFireS = 46;
 
-	}
-	
-
+		//360AOB, 0-60 targS, 
+		System.out.println("*********************AOBSweep: \n");
+		for(AOB = 0; AOB<360; AOB++){
+			torpFireS = 46;
+			targS = 12;
+			System.out.println("AOB: " + AOB + " targSpeed: " + targS +" TorpSpeed: " +torpFireS);
+			System.out.println("Scope Bearing: " + toDeg.degreeOut(test1.OKSolution(AOB, targS, torpFireS)));
+		}
+		System.out.println("*********************targS sweep: \n");	
+		for(targS = -1; targS < 70; targS++)
+		{
+			torpFireS = 46;
+			AOB = 275;
+			System.out.println("AOB: " + AOB + " targSpeed: " + targS +" TorpSpeed: " +torpFireS);
+			System.out.println("Scope Bearing: " + toDeg.degreeOut(test1.OKSolution(AOB, targS, torpFireS)));
+		}
+		System.out.println("*********************torpFireS sweep: \n");		
+		for(torpFireS = -1; torpFireS < 80; torpFireS++){
+			targS = 12;
+			AOB = 80;
+			System.out.println("AOB: " + AOB + " targSpeed: " + targS +" TorpSpeed: " +torpFireS);
+			System.out.println("Scope Bearing: " + toDeg.degreeOut(test1.OKSolution(AOB, targS, torpFireS)));
+			
+		}			
+	}	
 }
