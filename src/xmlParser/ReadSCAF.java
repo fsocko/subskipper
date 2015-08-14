@@ -223,7 +223,7 @@ SurvivalPercentage=20 --Not used
 	}
 	
 	//Returns an arrayList of Ship objects, for passing to WriteShipXML
-	public ArrayList<Ship> makeAllShips(){
+	public ArrayList<Ship> makeShips(){
 		ArrayList<File> shipFiles = new ArrayList<File>();
 		ArrayList<Ship> shipData = new ArrayList<Ship>();
 		Ship writeShip = new Ship();

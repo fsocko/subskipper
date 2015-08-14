@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import javax.xml.bind.JAXBException;
+
 public class TestShipParse {
 
 	public static void main(String[] args){
@@ -12,7 +14,12 @@ public class TestShipParse {
 		ReadSCAF readTest = new ReadSCAF();	
 		WriteShipXML testXMLShip = new WriteShipXML();
 
-		testXMLShip.writeShipXML();	
+		try {
+			testXMLShip.marshalingExample();
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public static void printShips(ArrayList shipData){

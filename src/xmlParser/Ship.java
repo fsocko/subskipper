@@ -2,12 +2,16 @@
 //by SubSkipper Android.
 package xmlParser;
 
-import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+
+@XmlRootElement(name = "ship")
+@XmlAccessorType (XmlAccessType.FIELD)
+
 public class Ship {
-	
 	
 	private int ID;
 	private String name;
@@ -57,7 +61,7 @@ public class Ship {
 	public int getID() {
 		return ID;
 	}
-	@XmlAttribute
+	
 	public void setID(int iD) {
 		ID = iD;
 	}
@@ -65,7 +69,7 @@ public class Ship {
 	public String getName() {
 		return name;
 	}
-	@XmlElement
+	
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -73,7 +77,7 @@ public class Ship {
 	public int getType() {
 		return type;
 	}
-	@XmlElement
+	
 	public void setType(int type) {
 		this.type = type;
 	}
@@ -81,7 +85,7 @@ public class Ship {
 	public String getTypeName() {
 		return typeName;
 	}
-	@XmlElement
+	
 	public void setTypeName(String typeName) {
 		this.typeName = typeName;
 	}
@@ -89,7 +93,7 @@ public class Ship {
 	public String getImagePath() {
 		return imagePath;
 	}
-	@XmlElement
+	
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
@@ -97,7 +101,7 @@ public class Ship {
 	public double getMaxSpeed() {
 		return maxSpeed;
 	}
-	@XmlElement
+	
 	public void setMaxSpeed(double maxSpeed) {
 		this.maxSpeed = maxSpeed;
 	}
@@ -105,7 +109,7 @@ public class Ship {
 	public double getLength() {
 		return length;
 	}
-	@XmlElement
+	
 	public void setLength(double length) {
 		this.length = length;
 	}
@@ -113,7 +117,7 @@ public class Ship {
 	public double getWidth() {
 		return width;
 	}
-	@XmlElement
+	
 	public void setWidth(double width) {
 		this.width = width;
 	}
@@ -121,7 +125,7 @@ public class Ship {
 	public double getMast() {
 		return mast;
 	}
-	@XmlElement
+	
 	public void setMast(double mast) {
 		this.mast = mast;
 	}
@@ -129,7 +133,7 @@ public class Ship {
 	public double getDraft() {
 		return draft;
 	}
-	@XmlElement
+	
 	public void setDraft(double draft) {
 		this.draft = draft;
 	}
@@ -137,7 +141,7 @@ public class Ship {
 	public double getDisp() {
 		return disp;
 	}
-	@XmlElement
+	
 	public void setDisp(double disp) {
 		this.disp = disp;
 	}
@@ -145,7 +149,7 @@ public class Ship {
 	public double getRefAspect() {
 		return refAspect;
 	}
-	@XmlElement
+	
 	public void setRefAspect(double refAspect) {
 		this.refAspect = refAspect;
 	}

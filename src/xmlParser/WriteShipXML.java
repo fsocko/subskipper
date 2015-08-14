@@ -1,36 +1,39 @@
 package xmlParser;
 
 import java.io.File;
+import java.util.ArrayList;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import java.util.ArrayList;
+import javax.xml.bind.Unmarshaller;
 
-public class WriteShipXML {
+
+
+public class WriteShipXML
+{
+	static Ships employees = new Ships();
 	
-	public void writeShipXML(){
-		ReadSCAF SCAFToXML = new ReadSCAF();
-		ArrayList<Ship> shipData = SCAFToXML.makeAllShips();
-		for(int i = 0; i<shipData.size(); i++){
-			writeXMLShip(shipData.get(i));
-		}
+	static 
+	{
+		employees.setEmployees(new ArrayList<Ship>());
+		
+		Ship emp = new Ship();
+		emp.setID(1);
+		emp.setName("Lokesh");
+				
+		
+		employees.getEmployees().add(emp);
 	}
 	
-	public void writeXMLShip(Ship xmlShip){
 
-	  try {
-		File file = new File("shipData/shipData.xml");
-		JAXBContext jaxbContext = JAXBContext.newInstance(Ship.class);
+	 public void marshalingExample() throws JAXBException {
+		JAXBContext jaxbContext = JAXBContext.newInstance(Ships.class);
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-
+ 
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-		jaxbMarshaller.marshal(xmlShip, file);
-		jaxbMarshaller.marshal(xmlShip, System.out);
-	  } 
-	  
-	  catch (JAXBException e) {
-		  e.printStackTrace();}
-
+ 
+		jaxbMarshaller.marshal(employees, System.out);
+		jaxbMarshaller.marshal(employees, new File("/temp/employees.xml"));
 	}
 }
