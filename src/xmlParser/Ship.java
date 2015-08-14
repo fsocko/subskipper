@@ -3,7 +3,8 @@
 package xmlParser;
 
 public class Ship {
-
+	
+	private int ID;
 	private String name;
 	private int type;
 	private String typeName;
@@ -19,6 +20,7 @@ public class Ship {
 	public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
 			double mast, double draft, double disp) {
 		super();
+		this.ID = 0;
 		this.name = name;
 		this.type = type;
 		this.typeName = typeName;

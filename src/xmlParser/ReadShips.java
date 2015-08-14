@@ -3,10 +3,9 @@
 
 package xmlParser;
 import java.io.*;
-import java.nio.file.Path; //TODO: don't remember what this is for, it's never used.
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.util.regex.*;
+
 
 public class ReadShips {
 
