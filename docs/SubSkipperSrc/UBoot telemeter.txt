@@ -1,0 +1,35 @@
+German telemeter
+
+It seems that I finally found out how the telemeter scale in the german periscope really worked, and as I suspected, the "10" marks do NOT represent 10 degrees, but instead 6.25º. Thus the whole scale is not in the correct size and can't be used in SH3 for proper telemeter readings  (Though this won't affect the in-game stadimeter utility)
+
+So why the "10" mark? Well, because at 1.5x zoom you would get the distance to an object which touches that mark simply by multiplying its heigth x 10. Example: A 25 metres mast would mean the object is at 250 metres distance. For other distances you would multiply the heigth by 100 and then divide by the scale marks it covers or use the proportions that follow a 2x sequence (i.e. 10, 20, 40...). This allowed direct use of scale without using the stadimeter (Currently represented in game by the moving line for distance measurements) or in case of a stadimeter failiure. But also allowed a quick and easy speed measurement system when the target presented a zero Angle on the Bow (Precisely those situations where you can't use the fixed wire method).
+
+Here is a sketch I have done for a personal edition of the U-Boot Commander's Handbook I'm working on (Adding sketches and figures in the same style as those seen in german WW2 manuals):
+
+
+
+Translation for the speed method:
+
+1.- Measure the time it takes for the masts to double their size in the 1/10 scale.
+
+2. Mast (In Metres) x 10
+______________________ x 0,03 = Enemy speed in Knots
+Time (In Minutes)
+
+Consider the own submarine's speed while calculating!
+
+Now the question is, can we correct that in game by reworking the graded scale somehow, so that it can be used as intended? :hmm:
+
+
+I have given what I wrote some more thought. I probably wasn't very clear. It comes down to each small mark being 100th of a radian (0.572957795 deg) and 10 obviously a 10th of a radian (5.729577951 deg). The multiplication factor to use in multiplying mastheight would be 100/scopemarks. 
+
+So for the 10 mark : 100/10=10,
+for the 5th mark: 100/5=20
+for the 2.5th mark: 100/2.5=40
+for the 1th mark: 100/1=100
+
+If you zoom the object becomes bigger, so that 100 needs to be adjusted according to the zoom factor difference. So 400 for 6x vs. 100 for 1.5x.
+
+But if actuall ranges in the game don't match, a rescaling of the telemark scale probably is needed.
+
+
