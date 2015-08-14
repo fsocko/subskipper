@@ -231,8 +231,9 @@ SurvivalPercentage=20 --Not used
 		listFile("shipData", shipFiles);
 		
 		for(int i = 0; i < shipFiles.size(); i++){
-			makeShip(shipFiles.get(i).toString());
-			System.out.println(makeShip(shipFiles.get(i).toString()).toString());
+			writeShip = makeShip(shipFiles.get(i).toString());
+			writeShip.setID(i);
+			shipData.add(writeShip);
 		}
 		return shipData;
 	}

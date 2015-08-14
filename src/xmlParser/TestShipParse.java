@@ -10,12 +10,16 @@ public class TestShipParse {
 	public static void main(String[] args){
 
 		ReadSCAF readTest = new ReadSCAF();	
-		readTest.printSCAFFiles();
-		readTest.makeAllShips();
 		
 		//WriteShipXML testXMLShip = new WriteShipXML();
 		//testXMLShip.writeXMLShip();
 		
+		printShips(readTest.makeAllShips());
 	}
 
+	public static void printShips(ArrayList shipData){
+		for(int i = 0; i < shipData.size(); i++){
+			System.out.println(shipData.get(i).toString());
+		}
+	}
 }
