@@ -237,10 +237,14 @@ AOB can be determined given the following data:
 \item{Reference Aspect Ratio (i.e. $\frac{Reference Length}{Reference Mast Height}$)}
 \end{itemize}
 
-1. Determine an observed and reference \emph{aspect ratio}.
+\subsubsection{Determine an observed \emph{aspect ratio}.}
 $$AR_{observed} = \frac{Observed Length}{Observed Mast Height}$$
-Do the same with data from the recognition manual for the reference Aspect Ratio (\emph{ARreference}). \\ \\
-2.
+As the required figure is a ratio, it does not matter in what units the figures are given. For example, this could be the number of degrees Length and Mast Heigh subtend, the number of periscope graduations subtended or angular length in metres. It only matters that both units are the same.
+
+\subsubsection{Determine the Reference Apsect Ratio}
+Identify the target and find the Length and Mast Height as given in the recognition manual (if possible) or calculate these figures using the SubSkipper ship parser. Proceed as for the observed aspect ratio to get the Reference Aspect Ratio (\emph{ARreference}).
+
+\subsubsection{AOB calculation}
 $$AOB = arcSin \frac{AR_{observed}}{AR_{reference}}$$
 
 \begin{itemize}
