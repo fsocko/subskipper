@@ -242,8 +242,12 @@ $$AR_{observed} = \frac{Observed Length}{Observed Mast Height}$$
 Do the same with data from the recognition manual for the reference Aspect Ratio (\emph{ARreference}). \\ \\
 2.
 $$AOB = arcSin \frac{AR_{observed}}{AR_{reference}}$$
-Note: This method is less accurate as AOB approaches 0.
-Note: This method does not compute whether the AOB is on the port or starboard side. The user must first give an approximate AOB, or take away the AOB from 180\degree 
+
+\begin{itemize}
+\item{Note: This method is less accurate as AOB approaches 0.}
+\item{Note: This method does not compute whether the AOB is on the port or starboard side.}
+\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180." -UJagd Tools}
+\end{itemize}
 
 \end{document}
 
