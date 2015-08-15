@@ -14,13 +14,19 @@ public class TestShipParse {
 		Ships runShips = new Ships();
 		runShips.setShips(scaf.makeShips());
 		testXMLShip.marshalingExample(runShips);
+		
+		ReadShipXML readShips = new ReadShipXML();
+		System.out.println("********************************READING XML***********");
+		runShips = readShips.readXML("shipData/testFile.xml");
+		printShips(runShips);
 
 
 	}
 
-	public static void printShips(ArrayList shipData){
-		for(int i = 0; i < shipData.size(); i++){
-			System.out.println(shipData.get(i).toString());
+	public static void printShips(Ships printShips){
+		
+		for(int i = 0; i < printShips.getShips().size(); i++){
+			System.out.println(printShips.getShips().get(i).toString());
 		}
 	}
 }
