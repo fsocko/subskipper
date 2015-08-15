@@ -1,25 +1,21 @@
 package xmlParser;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import javax.xml.bind.JAXBException;
 
 public class TestShipParse {
 
-	public static void main(String[] args){
-
-		ReadSCAF readTest = new ReadSCAF();	
+	public static void main(String[] args) throws JAXBException{
+		
+		//write ships to file
 		WriteShipXML testXMLShip = new WriteShipXML();
+		ReadSCAF scaf = new ReadSCAF();
+		Ships runShips = new Ships();
+		
+		testXMLShip.marshalingExample();
 
-		try {
-			testXMLShip.marshalingExample();
-		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 	}
 
 	public static void printShips(ArrayList shipData){
