@@ -13,7 +13,7 @@ public class TestShipParse {
 		ReadSCAF scaf = new ReadSCAF();
 		Ships runShips = new Ships();
 		runShips.setShips(scaf.makeShips());
-		testXMLShip.marshalingExample(runShips);
+		testXMLShip.writeXML(runShips);
 		
 		ReadShipXML readShips = new ReadShipXML();
 		System.out.println("********************************READING XML***********");
