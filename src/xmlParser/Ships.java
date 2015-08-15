@@ -9,16 +9,21 @@ import javax.xml.bind.annotation.XmlRootElement;
  
 
 //Wrapper for martialing XML correctly. Stores Ship object as a list of Ships
-@XmlRootElement(name = "ROOOT")
-@XmlAccessorType (XmlAccessType.FIELD)
+@XmlRootElement(name = "ships")
 public class Ships
 {
-    ReadSCAF SCAFarray = new ReadSCAF();
-    private ArrayList<Ship> ship = SCAFarray.makeShips();
+    ArrayList<Ship> ships;
  
-    public ArrayList<Ship> getShips() {
-        return ship;
+    @XmlElement( name = "ship" )
+    public void setShips( ArrayList<Ship> ships)
+    {
+    this.ships = ships;
     }
- 
+
+	public ArrayList<Ship> getShips() {
+		return ships;
+	}
+    
+
 }
 

@@ -201,6 +201,7 @@ SurvivalPercentage=20 --Not used
 		//this cuts off the last 4 letters in the string. Usually, this would be .cfg, but it might not be. 
 		//TODO: implement a better solution for finding the imagePath.
 		imagePath += "_sil.dds";
+		imagePath = "\"" + imagePath + "\"";
 		
 		double maxSpeed = Double.parseDouble(tempShips[2]);
 		double length = Double.parseDouble(tempShips[3]);

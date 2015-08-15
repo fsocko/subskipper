@@ -12,8 +12,8 @@ public class TestShipParse {
 		WriteShipXML testXMLShip = new WriteShipXML();
 		ReadSCAF scaf = new ReadSCAF();
 		Ships runShips = new Ships();
-		
-		testXMLShip.marshalingExample();
+		runShips.setShips(scaf.makeShips());
+		testXMLShip.marshalingExample(runShips);
 
 
 	}

@@ -95,7 +95,7 @@ public class Ship {
 	}
 	
 	public void setImagePath(String imagePath) {
-		this.imagePath = imagePath;
+		this.imagePath = "\"" + imagePath + "\"";
 	}
 
 	public double getMaxSpeed() {

@@ -3,6 +3,7 @@ package xmlParser;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -12,10 +13,8 @@ import javax.xml.bind.Marshaller;
 
 public class WriteShipXML
 {
-	Ships shipWrap = new Ships();
-
-	
-			public void marshalingExample() throws JAXBException {
+		
+			public void marshalingExample(Ships shipWrap) throws JAXBException {
 				JAXBContext jaxbContext = JAXBContext.newInstance(Ships.class);
 				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 				File file = new File("shipData/testFile.xml");
