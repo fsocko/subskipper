@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
+import coreLogic.Ship;
  
 
 //Wrapper for martialing XML correctly. Stores Ship object as a list of Ships

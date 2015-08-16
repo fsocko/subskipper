@@ -11,6 +11,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import coreLogic.Ship;
+
 
 public class ReadSCAF {
 
@@ -34,7 +36,7 @@ SurvivalPercentage=20 --Not used
 */
 	//Luckily, this data is all in metric.
 	//TODO: make namesPath searchable, rather than hardcoded
-	private String namesPath = "shipData/SCAF for TMO_2/Data/Roster/Names.cfg"; //path to Names file
+	private String namesPath = "data/SCAF for TMO_2/Data/Roster/Names.cfg"; //path to Names file
 	
 	
 	//recursively goes through directories, filters out ship cfg files.
@@ -194,7 +196,7 @@ SurvivalPercentage=20 --Not used
 	public Ship makeShip(String path){
 		//First run listF
 		ArrayList<File> shipFiles = new ArrayList<File>();
-		listFile("shipData", shipFiles);
+		listFile("data", shipFiles);
 		String [] tempShips = readShipRecord(path);
 		stripVars(tempShips); //remove descriptor strings.
 		
@@ -222,7 +224,7 @@ SurvivalPercentage=20 --Not used
 	public void printSCAFFiles(){
 		ArrayList<File> shipFiles = new ArrayList<File>();
 		System.out.println("\nPrint all ships:\n************************************************************\n");
-		listFile("shipData", shipFiles);
+		listFile("data", shipFiles);
 		for(int i = 0; i < shipFiles.size(); i++){
 			System.out.println(shipFiles.get(i).toString());
 		}
@@ -234,7 +236,7 @@ SurvivalPercentage=20 --Not used
 		ArrayList<Ship> shipData = new ArrayList<Ship>();
 		Ship writeShip = new Ship();
 		
-		listFile("shipData", shipFiles);
+		listFile("data", shipFiles);
 		
 		for(int i = 0; i < shipFiles.size(); i++){
 			writeShip = makeShip(shipFiles.get(i).toString());

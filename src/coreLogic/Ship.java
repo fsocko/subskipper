@@ -1,6 +1,6 @@
 //Ship Object. Parse from file to this object, then write to XML file for use
 //by SubSkipper Android.
-package xmlParser;
+package coreLogic;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

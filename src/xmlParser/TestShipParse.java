@@ -17,7 +17,7 @@ public class TestShipParse {
 		
 		ReadShipXML readShips = new ReadShipXML();
 		System.out.println("********************************READING XML***********");
-		runShips = readShips.readXML("shipData/testFile.xml");
+		runShips = readShips.readXML("data/testFile.xml");
 		printShips(runShips);
 
 
