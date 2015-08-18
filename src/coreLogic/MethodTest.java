@@ -6,9 +6,9 @@ public class MethodTest {
 	public static void main(String[] args) 
 	{
 		AspectAOB testAOB = new AspectAOB();
-		double obsAR = 4.5633;
+		double obsAR = 5.25;
 		System.out.println(testAOB.calculateAOB(testAOB.getShip(30), obsAR));
-		System.out.println(180-(testAOB.calculateAOB(testAOB.getShip(30), obsAR)));
+		System.out.println(360-(180-(testAOB.calculateAOB(testAOB.getShip(30), obsAR))));
 	}
 	
 	
