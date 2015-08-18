@@ -43,6 +43,7 @@
 \maketitle
 \pagebreak
 \tableofcontents
+\pagebreak
 
 \section{Introduction}
 The GitHub SubSkipper repository contains the core logic of the app, such that it can be verified or used for other projects. The documentation contains the principles and equations on which the logic is based, and some method documentation.
@@ -93,6 +94,8 @@ $1.0$ m & $1.0936133$ yards\\
 \end{center}
 
 \section{Torpedo Data}
+
+The following is torpedo for American torpedo types as used predominantly in the Pacific theatre.
 
 Torpedo data adapted from \emph{SH4 V1.2 Ultimate Torpedo Guide} by Mechan, found at the ubisoft forums (http://forums.ubi.com/showthread.php/475595-SH4-V1-2-Ultimate-Torpedo-Guide-Forums). Dated: 06-22-2007, Accessed: 18.08.2015
 
@@ -335,9 +338,11 @@ No methods for calculating Distance To Target will be provided as solutions such
 
 \section{Calculating AOB Based on Aspect Ratio}
 
+Method adapted from Angriffscheibe Handbuch by Karl Hahn, 2008.
+
 AOB can be determined given the following data:
 \begin{itemize}
-\item{Range To Target}
+%%\item{Range To Target} - Not sure
 \item{Observed Mast Height}
 \item{Observed Ship Length}
 \item{Reference Aspect Ratio (i.e. $\frac{Reference Length}{Reference Mast Height}$)}
@@ -345,7 +350,7 @@ AOB can be determined given the following data:
 
 \subsubsection{Determine an observed \emph{aspect ratio}.}
 $$AR\_{observed} = \frac{Observed Length}{Observed Mast Height}$$
-As the required figure is a ratio, it does not matter in what units the figures are given. For example, this could be the number of degrees Length and Mast Heigh subtend, the number of periscope graduations subtended or angular length in metres. It only matters that both units are the same.
+As the required figure is a ratio, it does not matter in what units the figures are given. For example, this could be the number of degrees Length and Mast Heigh subtend, the number of periscope graduations subtended or angular length in metres. It only matters that units for Observed Mast Height and Observed Length are the same.
 
 \subsubsection{Determine the Reference Apsect Ratio}
 Identify the target and find the Length and Mast Height as given in the recognition manual (if possible) or calculate these figures using the SubSkipper ship parser. Proceed as for the observed aspect ratio to get the Reference Aspect Ratio (\emph{ARreference}).

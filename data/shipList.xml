@@ -5,7 +5,7 @@
         <name>Small Old Split Freighter</name>
         <type>16</type>
         <typeName>Elite Patrol Craft</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\AuxGunboat\AuxGunboat_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\AuxGunboat\AuxGunboat_sil.dds"</imagePath>
         <maxSpeed>17.0</maxSpeed>
         <length>80.5</length>
         <width>13.0</width>
@@ -19,7 +19,7 @@
         <name> Auxilary Subchaser</name>
         <type>1</type>
         <typeName>Corvette</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\AuxSubchaser\AuxSubchaser_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\AuxSubchaser\AuxSubchaser_sil.dds"</imagePath>
         <maxSpeed>17.0</maxSpeed>
         <length>63.0</length>
         <width>12.0</width>
@@ -33,7 +33,7 @@
         <name>Type C Escort</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\COKaibokan\COKaibokan_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\COKaibokan\COKaibokan_sil.dds"</imagePath>
         <maxSpeed>19.0</maxSpeed>
         <length>89.5</length>
         <width>11.1</width>
@@ -47,7 +47,7 @@
         <name>Type D Escort</name>
         <type>1</type>
         <typeName>Corvette</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\COKaibokan2\COKaibokan2_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\COKaibokan2\COKaibokan2_sil.dds"</imagePath>
         <maxSpeed>19.0</maxSpeed>
         <length>89.5</length>
         <width>11.1</width>
@@ -61,7 +61,7 @@
         <name>Fishing boat</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\JPFish01\JPFish01_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\JPFish01\JPFish01_sil.dds"</imagePath>
         <maxSpeed>10.0</maxSpeed>
         <length>38.0</length>
         <width>8.6</width>
@@ -75,7 +75,7 @@
         <name>Fishing boat</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\JPFish02\JPFish02_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\JPFish02\JPFish02_sil.dds"</imagePath>
         <maxSpeed>10.0</maxSpeed>
         <length>38.0</length>
         <width>8.5</width>
@@ -89,7 +89,7 @@
         <name>Atami Gunboat</name>
         <type>0</type>
         <typeName>Patrol Craft</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\JPGunBoat01\JPGunBoat01_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\JPGunBoat01\JPGunBoat01_sil.dds"</imagePath>
         <maxSpeed>20.0</maxSpeed>
         <length>45.0</length>
         <width>6.4</width>
@@ -103,7 +103,7 @@
         <name>Hira Gunboat</name>
         <type>0</type>
         <typeName>Patrol Craft</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\JPGunBoat02\JPGunBoat02_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\JPGunBoat02\JPGunBoat02_sil.dds"</imagePath>
         <maxSpeed>20.0</maxSpeed>
         <length>55.0</length>
         <width>7.9</width>
@@ -117,7 +117,7 @@
         <name>Armed Merchant Cruiser</name>
         <type>13</type>
         <typeName>Auxiliary Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NAMC\NAMC_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NAMC\NAMC_sil.dds"</imagePath>
         <maxSpeed>17.5</maxSpeed>
         <length>155.0</length>
         <width>18.7</width>
@@ -131,7 +131,7 @@
         <name>Tug Boat</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NATF\NATF_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NATF\NATF_sil.dds"</imagePath>
         <maxSpeed>15.0</maxSpeed>
         <length>63.0</length>
         <width>12.0</width>
@@ -145,7 +145,7 @@
         <name>Colorado Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Colorado\NBB_Colorado_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Colorado\NBB_Colorado_sil.dds"</imagePath>
         <maxSpeed>21.0</maxSpeed>
         <length>190.2</length>
         <width>30.2</width>
@@ -159,7 +159,7 @@
         <name>Fuso Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Fuso\NBB_Fuso_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Fuso\NBB_Fuso_sil.dds"</imagePath>
         <maxSpeed>24.7</maxSpeed>
         <length>212.0</length>
         <width>32.0</width>
@@ -173,7 +173,7 @@
         <name>Iowa Battleship</name>
         <type>20</type>
         <typeName>Super Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Iowa\NBB_Iowa_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Iowa\NBB_Iowa_sil.dds"</imagePath>
         <maxSpeed>33.0</maxSpeed>
         <length>270.4</length>
         <width>33.4</width>
@@ -187,7 +187,7 @@
         <name>Ise Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Ise\NBB_Ise_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Ise\NBB_Ise_sil.dds"</imagePath>
         <maxSpeed>25.6</maxSpeed>
         <length>220.0</length>
         <width>31.6</width>
@@ -201,7 +201,7 @@
         <name>Ise Battleship (Late War)</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Ise2\NBB_Ise2_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Ise2\NBB_Ise2_sil.dds"</imagePath>
         <maxSpeed>25.6</maxSpeed>
         <length>220.0</length>
         <width>31.6</width>
@@ -215,7 +215,7 @@
         <name>King George V Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_KGeorgeV\NBB_KGeorgeV_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_KGeorgeV\NBB_KGeorgeV_sil.dds"</imagePath>
         <maxSpeed>27.0</maxSpeed>
         <length>244.0</length>
         <width>37.0</width>
@@ -229,7 +229,7 @@
         <name>Kongo Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Kongo\NBB_Kongo_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Kongo\NBB_Kongo_sil.dds"</imagePath>
         <maxSpeed>30.5</maxSpeed>
         <length>220.0</length>
         <width>30.0</width>
@@ -243,7 +243,7 @@
         <name>Nevada Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Nevada\NBB_Nevada_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Nevada\NBB_Nevada_sil.dds"</imagePath>
         <maxSpeed>20.5</maxSpeed>
         <length>190.2</length>
         <width>30.2</width>
@@ -257,7 +257,7 @@
         <name>New Mexico Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_New_Mexico\NBB_New_Mexico_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_New_Mexico\NBB_New_Mexico_sil.dds"</imagePath>
         <maxSpeed>22.0</maxSpeed>
         <length>190.0</length>
         <width>30.0</width>
@@ -271,7 +271,7 @@
         <name>North Carolina Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_North_Carolina\NBB_North_Carolina_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_North_Carolina\NBB_North_Carolina_sil.dds"</imagePath>
         <maxSpeed>27.0</maxSpeed>
         <length>220.0</length>
         <width>33.0</width>
@@ -285,7 +285,7 @@
         <name>Pennsylvania Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Pennsylvania\NBB_Pennsylvania_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Pennsylvania\NBB_Pennsylvania_sil.dds"</imagePath>
         <maxSpeed>21.0</maxSpeed>
         <length>190.2</length>
         <width>30.2</width>
@@ -299,7 +299,7 @@
         <name>Tennessee Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Tennessee\NBB_Tennessee_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Tennessee\NBB_Tennessee_sil.dds"</imagePath>
         <maxSpeed>20.5</maxSpeed>
         <length>190.0</length>
         <width>30.0</width>
@@ -313,7 +313,7 @@
         <name>Tennessee Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_TennesseeEarly\NBB_TennesseeEarly_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_TennesseeEarly\NBB_TennesseeEarly_sil.dds"</imagePath>
         <maxSpeed>20.5</maxSpeed>
         <length>190.2</length>
         <width>30.2</width>
@@ -327,7 +327,7 @@
         <name>West Virginia Battleship</name>
         <type>11</type>
         <typeName>Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_West_Virginia\NBB_West_Virginia_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_West_Virginia\NBB_West_Virginia_sil.dds"</imagePath>
         <maxSpeed>21.0</maxSpeed>
         <length>190.0</length>
         <width>30.0</width>
@@ -341,7 +341,7 @@
         <name>Yamato Battleship</name>
         <type>20</type>
         <typeName>Super Battleship</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NBB_Yamato\NBB_Yamato_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NBB_Yamato\NBB_Yamato_sil.dds"</imagePath>
         <maxSpeed>27.4</maxSpeed>
         <length>263.0</length>
         <width>42.5</width>
@@ -355,7 +355,7 @@
         <name>Baltimore Heavy Cruiser</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Baltimore\NCA_Baltimore_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Baltimore\NCA_Baltimore_sil.dds"</imagePath>
         <maxSpeed>33.0</maxSpeed>
         <length>205.0</length>
         <width>21.0</width>
@@ -369,7 +369,7 @@
         <name>Pocket Battleship</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Deutschland\NCA_Deutschland_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Deutschland\NCA_Deutschland_sil.dds"</imagePath>
         <maxSpeed>28.5</maxSpeed>
         <length>183.0</length>
         <width>21.0</width>
@@ -383,7 +383,7 @@
         <name>Furutaka Heavy Cruiser</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Furutaka\NCA_Furutaka_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Furutaka\NCA_Furutaka_sil.dds"</imagePath>
         <maxSpeed>33.0</maxSpeed>
         <length>188.0</length>
         <width>21.0</width>
@@ -397,7 +397,7 @@
         <name>Kent Heavy Cruiser</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Kent\NCA_Kent_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Kent\NCA_Kent_sil.dds"</imagePath>
         <maxSpeed>31.5</maxSpeed>
         <length>183.0</length>
         <width>22.0</width>
@@ -411,7 +411,7 @@
         <name>Maya Heavy Cruiser</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Maya\NCA_Maya_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Maya\NCA_Maya_sil.dds"</imagePath>
         <maxSpeed>34.0</maxSpeed>
         <length>204.0</length>
         <width>22.0</width>
@@ -425,7 +425,7 @@
         <name>Mogami Heavy Cruiser</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Mogami\NCA_Mogami_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Mogami\NCA_Mogami_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>200.0</length>
         <width>21.3</width>
@@ -439,7 +439,7 @@
         <name>Northampton Heavy Cruiser</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Northampton\NCA_Northampton_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Northampton\NCA_Northampton_sil.dds"</imagePath>
         <maxSpeed>32.7</maxSpeed>
         <length>183.0</length>
         <width>21.0</width>
@@ -453,7 +453,7 @@
         <name>Takao Heavy Cruiser</name>
         <type>7</type>
         <typeName>Heavy Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCA_Takao\NCA_Takao_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCA_Takao\NCA_Takao_sil.dds"</imagePath>
         <maxSpeed>36.5</maxSpeed>
         <length>204.0</length>
         <width>23.0</width>
@@ -467,7 +467,7 @@
         <name>Agano Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Agano\NCL_Agano_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Agano\NCL_Agano_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>175.0</length>
         <width>14.0</width>
@@ -481,7 +481,7 @@
         <name>Brooklyn Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Brooklyn\NCL_Brooklyn_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Brooklyn\NCL_Brooklyn_sil.dds"</imagePath>
         <maxSpeed>32.5</maxSpeed>
         <length>185.0</length>
         <width>22.0</width>
@@ -495,7 +495,7 @@
         <name>Cleveland Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Cleveland\NCL_Cleveland_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Cleveland\NCL_Cleveland_sil.dds"</imagePath>
         <maxSpeed>32.5</maxSpeed>
         <length>185.0</length>
         <width>19.5</width>
@@ -509,7 +509,7 @@
         <name>Dido Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Dido\NCL_Dido_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Dido\NCL_Dido_sil.dds"</imagePath>
         <maxSpeed>32.0</maxSpeed>
         <length>156.0</length>
         <width>15.7</width>
@@ -523,7 +523,7 @@
         <name>Fiji Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Fiji\NCL_Fiji_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Fiji\NCL_Fiji_sil.dds"</imagePath>
         <maxSpeed>32.0</maxSpeed>
         <length>169.0</length>
         <width>18.9</width>
@@ -537,7 +537,7 @@
         <name>Kuma Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Kuma\NCL_Kuma_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Kuma\NCL_Kuma_sil.dds"</imagePath>
         <maxSpeed>36.0</maxSpeed>
         <length>163.0</length>
         <width>15.0</width>
@@ -551,7 +551,7 @@
         <name>Naka Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Naka\NCL_Naka_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Naka\NCL_Naka_sil.dds"</imagePath>
         <maxSpeed>35.25</maxSpeed>
         <length>162.0</length>
         <width>14.0</width>
@@ -565,7 +565,7 @@
         <name>Omaha Light Cruiser</name>
         <type>6</type>
         <typeName>Light Cruiser</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCL_Omaha\NCL_Omaha_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCL_Omaha\NCL_Omaha_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>168.0</length>
         <width>16.0</width>
@@ -579,7 +579,7 @@
         <name>Flower Corvette</name>
         <type>1</type>
         <typeName>Corvette</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCO_Flower\NCO_Flower_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCO_Flower\NCO_Flower_sil.dds"</imagePath>
         <maxSpeed>16.0</maxSpeed>
         <length>60.6</length>
         <width>9.7</width>
@@ -593,7 +593,7 @@
         <name>Akitsu Escort Carrier</name>
         <type>8</type>
         <typeName>Escort Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCVE_Akitsu\NCVE_Akitsu_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCVE_Akitsu\NCVE_Akitsu_sil.dds"</imagePath>
         <maxSpeed>20.0</maxSpeed>
         <length>143.75</length>
         <width>19.5</width>
@@ -607,7 +607,7 @@
         <name>Attacker Escort Carrier</name>
         <type>8</type>
         <typeName>Escort Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCVE_Attacker\NCVE_Attacker_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCVE_Attacker\NCVE_Attacker_sil.dds"</imagePath>
         <maxSpeed>18.0</maxSpeed>
         <length>152.0</length>
         <width>30.0</width>
@@ -621,7 +621,7 @@
         <name>Bogue Escort Carrier</name>
         <type>8</type>
         <typeName>Escort Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCVE_Bogue\NCVE_Bogue_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCVE_Bogue\NCVE_Bogue_sil.dds"</imagePath>
         <maxSpeed>18.0</maxSpeed>
         <length>152.0</length>
         <width>30.0</width>
@@ -635,7 +635,7 @@
         <name>Casablanca Escort Carrier</name>
         <type>8</type>
         <typeName>Escort Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCVE_Casablanca\NCVE_Casablanca_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCVE_Casablanca\NCVE_Casablanca_sil.dds"</imagePath>
         <maxSpeed>19.0</maxSpeed>
         <length>156.0</length>
         <width>33.0</width>
@@ -649,7 +649,7 @@
         <name>Taiyo Escort Carrier</name>
         <type>8</type>
         <typeName>Escort Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCVE_Taiyo\NCVE_Taiyo_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCVE_Taiyo\NCVE_Taiyo_sil.dds"</imagePath>
         <maxSpeed>21.0</maxSpeed>
         <length>180.1</length>
         <width>22.5</width>
@@ -663,7 +663,7 @@
         <name>Chitose Seaplane Tender</name>
         <type>8</type>
         <typeName>Escort Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCVS_Chitose\NCVS_Chitose_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCVS_Chitose\NCVS_Chitose_sil.dds"</imagePath>
         <maxSpeed>28.9</maxSpeed>
         <length>192.5</length>
         <width>20.8</width>
@@ -677,7 +677,7 @@
         <name>Hiryu Fleet Carrier</name>
         <type>9</type>
         <typeName>Fleet Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCV_Hiryu\NCV_Hiryu_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCV_Hiryu\NCV_Hiryu_sil.dds"</imagePath>
         <maxSpeed>34.3</maxSpeed>
         <length>223.3</length>
         <width>21.3</width>
@@ -691,7 +691,7 @@
         <name>Shokaku Fleet Carrier</name>
         <type>9</type>
         <typeName>Fleet Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCV_Shokaku\NCV_Shokaku_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCV_Shokaku\NCV_Shokaku_sil.dds"</imagePath>
         <maxSpeed>34.5</maxSpeed>
         <length>250.0</length>
         <width>26.0</width>
@@ -705,7 +705,7 @@
         <name>Taiho Fleet Carrier</name>
         <type>9</type>
         <typeName>Fleet Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCV_Taiho\NCV_Taiho_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCV_Taiho\NCV_Taiho_sil.dds"</imagePath>
         <maxSpeed>33.3</maxSpeed>
         <length>253.7</length>
         <width>27.8</width>
@@ -719,7 +719,7 @@
         <name>Fleet Carrier</name>
         <type>9</type>
         <typeName>Fleet Carrier</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NCV_USEarlyWar\NCV_USEarlyWar_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NCV_USEarlyWar\NCV_USEarlyWar_sil.dds"</imagePath>
         <maxSpeed>32.5</maxSpeed>
         <length>250.0</length>
         <width>33.5</width>
@@ -733,7 +733,7 @@
         <name>Akizuki Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Akizuki\NDD_Akizuki_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Akizuki\NDD_Akizuki_sil.dds"</imagePath>
         <maxSpeed>33.0</maxSpeed>
         <length>135.0</length>
         <width>11.6</width>
@@ -747,7 +747,7 @@
         <name>Asashio Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Asashio\NDD_Asashio_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Asashio\NDD_Asashio_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>118.0</length>
         <width>10.3</width>
@@ -761,7 +761,7 @@
         <name>Clemson Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Clemson\NDD_Clemson_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Clemson\NDD_Clemson_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>95.0</length>
         <width>9.4</width>
@@ -775,7 +775,7 @@
         <name>Fletcher Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Fletcher\NDD_Fletcher_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Fletcher\NDD_Fletcher_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>115.0</length>
         <width>14.0</width>
@@ -789,7 +789,7 @@
         <name>Fubuki Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Fubuki\NDD_Fubuki_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Fubuki\NDD_Fubuki_sil.dds"</imagePath>
         <maxSpeed>38.0</maxSpeed>
         <length>118.5</length>
         <width>10.3</width>
@@ -803,7 +803,7 @@
         <name>J Class Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_J\NDD_J_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_J\NDD_J_sil.dds"</imagePath>
         <maxSpeed>36.0</maxSpeed>
         <length>108.5</length>
         <width>12.0</width>
@@ -817,7 +817,7 @@
         <name>Minekaze Destroyer</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Minekaze\NDD_Minekaze_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Minekaze\NDD_Minekaze_sil.dds"</imagePath>
         <maxSpeed>39.0</maxSpeed>
         <length>102.6</length>
         <width>9.1</width>
@@ -831,7 +831,7 @@
         <name>Mutsuki Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Mutsuki\NDD_Mutsuki_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Mutsuki\NDD_Mutsuki_sil.dds"</imagePath>
         <maxSpeed>37.0</maxSpeed>
         <length>102.0</length>
         <width>9.1</width>
@@ -845,7 +845,7 @@
         <name>Shiratsuyu Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Shiratsuyu\NDD_Shiratsuyu_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Shiratsuyu\NDD_Shiratsuyu_sil.dds"</imagePath>
         <maxSpeed>34.0</maxSpeed>
         <length>108.0</length>
         <width>9.2</width>
@@ -859,7 +859,7 @@
         <name>Somers Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Somers\NDD_Somers_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Somers\NDD_Somers_sil.dds"</imagePath>
         <maxSpeed>37.0</maxSpeed>
         <length>116.0</length>
         <width>11.2</width>
@@ -873,7 +873,7 @@
         <name>Tribal Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Tribal\NDD_Tribal_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Tribal\NDD_Tribal_sil.dds"</imagePath>
         <maxSpeed>36.5</maxSpeed>
         <length>115.0</length>
         <width>11.1</width>
@@ -887,7 +887,7 @@
         <name>V&amp;W Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_V&amp;W\NDD_V&amp;W_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_V&amp;W\NDD_V&amp;W_sil.dds"</imagePath>
         <maxSpeed>34.0</maxSpeed>
         <length>95.0</length>
         <width>9.0</width>
@@ -901,7 +901,7 @@
         <name>Yugumo Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_Yugumo\NDD_Yugumo_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_Yugumo\NDD_Yugumo_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>118.0</length>
         <width>10.3</width>
@@ -915,7 +915,7 @@
         <name>Z Class Destroyer</name>
         <type>4</type>
         <typeName>Destroyer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDD_ZClass\NDD_ZClass_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDD_ZClass\NDD_ZClass_sil.dds"</imagePath>
         <maxSpeed>38.0</maxSpeed>
         <length>118.5</length>
         <width>10.3</width>
@@ -929,7 +929,7 @@
         <name>Akikaze Destroyer</name>
         <type>17</type>
         <typeName>Elite Destroyer escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_Akikaze\NDE_Akikaze_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_Akikaze\NDE_Akikaze_sil.dds"</imagePath>
         <maxSpeed>34.0</maxSpeed>
         <length>102.5</length>
         <width>8.9</width>
@@ -943,7 +943,7 @@
         <name>Buckley Destroyer Escort</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_Buckley\NDE_Buckley_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_Buckley\NDE_Buckley_sil.dds"</imagePath>
         <maxSpeed>24.0</maxSpeed>
         <length>93.2</length>
         <width>11.2</width>
@@ -957,7 +957,7 @@
         <name>Evarts Destroyer Escort</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_Evarts\NDE_Evarts_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_Evarts\NDE_Evarts_sil.dds"</imagePath>
         <maxSpeed>19.0</maxSpeed>
         <length>89.5</length>
         <width>11.1</width>
@@ -971,7 +971,7 @@
         <name>JC Butler Destroyer Escort</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_JCB\NDE_JCB_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_JCB\NDE_JCB_sil.dds"</imagePath>
         <maxSpeed>24.0</maxSpeed>
         <length>93.3</length>
         <width>11.1</width>
@@ -985,7 +985,7 @@
         <name>Kisaragi Destroyer</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_Kisaragi\NDE_Kisaragi_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_Kisaragi\NDE_Kisaragi_sil.dds"</imagePath>
         <maxSpeed>37.0</maxSpeed>
         <length>102.0</length>
         <width>9.1</width>
@@ -999,7 +999,7 @@
         <name>Momi Destroyer</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_Momi\NDE_Momi_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_Momi\NDE_Momi_sil.dds"</imagePath>
         <maxSpeed>18.0</maxSpeed>
         <length>102.6</length>
         <width>9.08</width>
@@ -1013,7 +1013,7 @@
         <name>Patrol Boat 102</name>
         <type>17</type>
         <typeName>Elite Destroyer escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_PB102\NDE_PB102_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_PB102\NDE_PB102_sil.dds"</imagePath>
         <maxSpeed>35.0</maxSpeed>
         <length>95.0</length>
         <width>9.4</width>
@@ -1027,7 +1027,7 @@
         <name>River class Frigate</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NDE_River\NDE_River_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NDE_River\NDE_River_sil.dds"</imagePath>
         <maxSpeed>20.0</maxSpeed>
         <length>91.5</length>
         <width>11.3</width>
@@ -1041,7 +1041,7 @@
         <name>Fishing Trawler</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NFishingTrawler\NFishingTrawler_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NFishingTrawler\NFishingTrawler_sil.dds"</imagePath>
         <maxSpeed>12.0</maxSpeed>
         <length>62.0</length>
         <width>11.0</width>
@@ -1055,7 +1055,7 @@
         <name>Fishing Boat</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NF_boat\NF_boat_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NF_boat\NF_boat_sil.dds"</imagePath>
         <maxSpeed>8.0</maxSpeed>
         <length>34.0</length>
         <width>8.6</width>
@@ -1069,7 +1069,7 @@
         <name>Nagara Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKLCS_Nagara\NKLCS_Nagara_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKLCS_Nagara\NKLCS_Nagara_sil.dds"</imagePath>
         <maxSpeed>19.0</maxSpeed>
         <length>137.0</length>
         <width>18.0</width>
@@ -1083,7 +1083,7 @@
         <name>Hakusika Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKLSS_Hakusika\NKLSS_Hakusika_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKLSS_Hakusika\NKLSS_Hakusika_sil.dds"</imagePath>
         <maxSpeed>12.0</maxSpeed>
         <length>135.0</length>
         <width>17.0</width>
@@ -1097,7 +1097,7 @@
         <name>Akita Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMCS_Akita\NKMCS_Akita_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMCS_Akita\NKMCS_Akita_sil.dds"</imagePath>
         <maxSpeed>13.5</maxSpeed>
         <length>105.0</length>
         <width>17.8</width>
@@ -1111,7 +1111,7 @@
         <name>Heito Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMCS_Heito\NKMCS_Heito_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMCS_Heito\NKMCS_Heito_sil.dds"</imagePath>
         <maxSpeed>17.0</maxSpeed>
         <length>103.6</length>
         <width>13.5</width>
@@ -1125,7 +1125,7 @@
         <name>Zinbu Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMCS_Zinbu\NKMCS_Zinbu_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMCS_Zinbu\NKMCS_Zinbu_sil.dds"</imagePath>
         <maxSpeed>10.0</maxSpeed>
         <length>120.0</length>
         <width>15.0</width>
@@ -1139,7 +1139,7 @@
         <name>Biyo Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMSS_Biyo\NKMSS_Biyo_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMSS_Biyo\NKMSS_Biyo_sil.dds"</imagePath>
         <maxSpeed>12.0</maxSpeed>
         <length>120.0</length>
         <width>15.0</width>
@@ -1153,7 +1153,7 @@
         <name>Momoyama Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMSS_HogIsland\NKMSS_HogIsland_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMSS_HogIsland\NKMSS_HogIsland_sil.dds"</imagePath>
         <maxSpeed>11.0</maxSpeed>
         <length>120.0</length>
         <width>15.0</width>
@@ -1167,7 +1167,7 @@
         <name>Momoyama Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMSS_HogIslandJPN\NKMSS_HogIslandJPN_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMSS_HogIslandJPN\NKMSS_HogIslandJPN_sil.dds"</imagePath>
         <maxSpeed>11.0</maxSpeed>
         <length>120.0</length>
         <width>15.0</width>
@@ -1181,7 +1181,7 @@
         <name>Kinposan Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMSS_Kinposan\NKMSS_Kinposan_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMSS_Kinposan\NKMSS_Kinposan_sil.dds"</imagePath>
         <maxSpeed>14.5</maxSpeed>
         <length>108.0</length>
         <width>14.3</width>
@@ -1195,7 +1195,7 @@
         <name>Old Raked Bow Split Merchant</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKMSS_WarMelody\NKMSS_WarMelody_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKMSS_WarMelody\NKMSS_WarMelody_sil.dds"</imagePath>
         <maxSpeed>11.0</maxSpeed>
         <length>120.0</length>
         <width>15.0</width>
@@ -1209,7 +1209,7 @@
         <name>Medium Modern Passenger/Freighter</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKPMCS_Express\NKPMCS_Express_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKPMCS_Express\NKPMCS_Express_sil.dds"</imagePath>
         <maxSpeed>16.0</maxSpeed>
         <length>105.0</length>
         <width>17.8</width>
@@ -1223,7 +1223,7 @@
         <name>Taihosan Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKSCS_Taihosan\NKSCS_Taihosan_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKSCS_Taihosan\NKSCS_Taihosan_sil.dds"</imagePath>
         <maxSpeed>13.0</maxSpeed>
         <length>80.5</length>
         <width>13.0</width>
@@ -1237,7 +1237,7 @@
         <name>Coastal Composite Freighter</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKSQ_\NKSQ__sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKSQ_\NKSQ__sil.dds"</imagePath>
         <maxSpeed>13.0</maxSpeed>
         <length>80.77</length>
         <width>11.58</width>
@@ -1251,7 +1251,7 @@
         <name>Kasagisan Maru</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKSSS_Kasagisan\NKSSS_Kasagisan_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKSSS_Kasagisan\NKSSS_Kasagisan_sil.dds"</imagePath>
         <maxSpeed>12.5</maxSpeed>
         <length>86.8</length>
         <width>12.8</width>
@@ -1265,7 +1265,7 @@
         <name>Small Split Freighter</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NKSs_\NKSs__sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NKSs_\NKSs__sil.dds"</imagePath>
         <maxSpeed>12.5</maxSpeed>
         <length>86.87</length>
         <width>12.8</width>
@@ -1279,7 +1279,7 @@
         <name>Liberty Cargo</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NLL\NLL_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NLL\NLL_sil.dds"</imagePath>
         <maxSpeed>13.0</maxSpeed>
         <length>147.0</length>
         <width>18.1</width>
@@ -1293,7 +1293,7 @@
         <name>Landing Ship Tank</name>
         <type>103</type>
         <typeName>Troop Transport</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NLST\NLST_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NLST\NLST_sil.dds"</imagePath>
         <maxSpeed>10.8</maxSpeed>
         <length>98.7</length>
         <width>15.0</width>
@@ -1307,7 +1307,7 @@
         <name>Okinoshima Minelayer</name>
         <type>12</type>
         <typeName>Minelayer</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NML_Okinoshima\NML_Okinoshima_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NML_Okinoshima\NML_Okinoshima_sil.dds"</imagePath>
         <maxSpeed>20.0</maxSpeed>
         <length>123.4</length>
         <width>15.6</width>
@@ -1321,7 +1321,7 @@
         <name>Shimushu Escort</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NMS_No13\NMS_NO13_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NMS_No13\NMS_NO13_sil.dds"</imagePath>
         <maxSpeed>20.0</maxSpeed>
         <length>70.0</length>
         <width>9.08</width>
@@ -1335,7 +1335,7 @@
         <name>Nippon Maru</name>
         <type>101</type>
         <typeName>Tanker</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NOL_Nippon\NOL_Nippon_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NOL_Nippon\NOL_Nippon_sil.dds"</imagePath>
         <maxSpeed>20.0</maxSpeed>
         <length>150.0</length>
         <width>19.2</width>
@@ -1349,7 +1349,7 @@
         <name>Large German Tanker</name>
         <type>101</type>
         <typeName>Tanker</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NOL_Schliemann\NOL_Schliemann_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NOL_Schliemann\NOL_Schliemann_sil.dds"</imagePath>
         <maxSpeed>18.0</maxSpeed>
         <length>190.0</length>
         <width>30.3</width>
@@ -1363,7 +1363,7 @@
         <name>Buzyun Maru</name>
         <type>101</type>
         <typeName>Tanker</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NOM_Buzyun\NOM_Buzyun_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NOM_Buzyun\NOM_Buzyun_sil.dds"</imagePath>
         <maxSpeed>11.0</maxSpeed>
         <length>103.0</length>
         <width>14.0</width>
@@ -1377,7 +1377,7 @@
         <name>British Medium Old Tanker</name>
         <type>101</type>
         <typeName>Tanker</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NOM_Paula\NOM_Paula_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NOM_Paula\NOM_Paula_sil.dds"</imagePath>
         <maxSpeed>10.0</maxSpeed>
         <length>91.5</length>
         <width>15.0</width>
@@ -1391,7 +1391,7 @@
         <name>Haruna Maru</name>
         <type>101</type>
         <typeName>Tanker</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NOS_Haruna\NOS_Haruna_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NOS_Haruna\NOS_Haruna_sil.dds"</imagePath>
         <maxSpeed>11.0</maxSpeed>
         <length>76.0</length>
         <width>11.0</width>
@@ -1405,7 +1405,7 @@
         <name>T3 Tanker</name>
         <type>101</type>
         <typeName>Tanker</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NOTMs_\NOTMs__sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NOTMs_\NOTMs__sil.dds"</imagePath>
         <maxSpeed>18.0</maxSpeed>
         <length>190.0</length>
         <width>30.3</width>
@@ -1419,7 +1419,7 @@
         <name>Wakatake Patrol Boat</name>
         <type>1</type>
         <typeName>Corvette</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPB_Wakatake\NPB_Wakatake_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPB_Wakatake\NPB_Wakatake_sil.dds"</imagePath>
         <maxSpeed>18.0</maxSpeed>
         <length>102.6</length>
         <width>9.08</width>
@@ -1433,7 +1433,7 @@
         <name>Black Swan Sloop</name>
         <type>2</type>
         <typeName>Frigate</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPC_Black_Swan\NPC_Black_Swan_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPC_Black_Swan\NPC_Black_Swan_sil.dds"</imagePath>
         <maxSpeed>19.5</maxSpeed>
         <length>91.3</length>
         <width>11.5</width>
@@ -1447,7 +1447,7 @@
         <name>Elite Black Swan Sloop</name>
         <type>17</type>
         <typeName>Elite Destroyer escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPC_Black_Swan_Elite\NPC_Black_Swan_Elite_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPC_Black_Swan_Elite\NPC_Black_Swan_Elite_sil.dds"</imagePath>
         <maxSpeed>19.5</maxSpeed>
         <length>91.3</length>
         <width>11.5</width>
@@ -1461,7 +1461,7 @@
         <name>Conte Verde Liner</name>
         <type>109</type>
         <typeName>Rare Troop Transport</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPL_Conte_Verde\NPL_Conte_Verde_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPL_Conte_Verde\NPL_Conte_Verde_sil.dds"</imagePath>
         <maxSpeed>21.0</maxSpeed>
         <length>173.74</length>
         <width>22.56</width>
@@ -1475,7 +1475,7 @@
         <name>Horai Maru</name>
         <type>103</type>
         <typeName>Troop Transport</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPL_Horai\NPL_Horai_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPL_Horai\NPL_Horai_sil.dds"</imagePath>
         <maxSpeed>17.0</maxSpeed>
         <length>137.46</length>
         <width>19.0</width>
@@ -1489,7 +1489,7 @@
         <name>Kiturin Maru</name>
         <type>103</type>
         <typeName>Troop Transport</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPL_Kiturin\NPL_Kiturin_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPL_Kiturin\NPL_Kiturin_sil.dds"</imagePath>
         <maxSpeed>18.5</maxSpeed>
         <length>130.0</length>
         <width>19.0</width>
@@ -1503,7 +1503,7 @@
         <name>Tyohei Maru</name>
         <type>103</type>
         <typeName>Troop Transport</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPS_Tyohei\NPS_Tyohei_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPS_Tyohei\NPS_Tyohei_sil.dds"</imagePath>
         <maxSpeed>13.0</maxSpeed>
         <length>79.0</length>
         <width>10.1</width>
@@ -1517,7 +1517,7 @@
         <name>Elco Torpedo Boat</name>
         <type>0</type>
         <typeName>Patrol Craft</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPT_Br\NPT_Br_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPT_Br\NPT_Br_sil.dds"</imagePath>
         <maxSpeed>44.0</maxSpeed>
         <length>24.7</length>
         <width>6.6</width>
@@ -1531,7 +1531,7 @@
         <name>Schnellboat</name>
         <type>0</type>
         <typeName>Patrol Craft</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NPT_Schnellboat\NPT_Schnellboat_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NPT_Schnellboat\NPT_Schnellboat_sil.dds"</imagePath>
         <maxSpeed>44.0</maxSpeed>
         <length>24.7</length>
         <width>6.6</width>
@@ -1545,7 +1545,7 @@
         <name>Sampan</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NSampan01\NSampan01_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NSampan01\NSampan01_sil.dds"</imagePath>
         <maxSpeed>10.0</maxSpeed>
         <length>19.5</length>
         <width>6.6</width>
@@ -1559,7 +1559,7 @@
         <name>Junk</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NSampan02\NSampan02_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NSampan02\NSampan02_sil.dds"</imagePath>
         <maxSpeed>10.0</maxSpeed>
         <length>19.6</length>
         <width>6.6</width>
@@ -1573,7 +1573,7 @@
         <name>Large Sampan</name>
         <type>104</type>
         <typeName>Coastal Vessel</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NSampan03\NSampan03_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NSampan03\NSampan03_sil.dds"</imagePath>
         <maxSpeed>10.0</maxSpeed>
         <length>35.0</length>
         <width>8.1</width>
@@ -1587,7 +1587,7 @@
         <name>Etorofu Escort</name>
         <type>3</type>
         <typeName>Destroyer Escort</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NSC_SubChaser\NSC_Subchaser_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NSC_SubChaser\NSC_Subchaser_sil.dds"</imagePath>
         <maxSpeed>19.7</maxSpeed>
         <length>66.0</length>
         <width>9.08</width>
@@ -1601,7 +1601,7 @@
         <name>Troop Transport</name>
         <type>103</type>
         <typeName>Troop Transport</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NTR\NTR_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NTR\NTR_sil.dds"</imagePath>
         <maxSpeed>16.0</maxSpeed>
         <length>152.0</length>
         <width>20.0</width>
@@ -1615,7 +1615,7 @@
         <name>Armed Trawler</name>
         <type>0</type>
         <typeName>Patrol Craft</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NTRW_\NTRW__sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NTRW_\NTRW__sil.dds"</imagePath>
         <maxSpeed>12.0</maxSpeed>
         <length>62.0</length>
         <width>11.0</width>
@@ -1629,7 +1629,7 @@
         <name>Victory Cargo</name>
         <type>102</type>
         <typeName>Cargo</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\NVV\NVV_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\NVV\NVV_sil.dds"</imagePath>
         <maxSpeed>17.0</maxSpeed>
         <length>139.6</length>
         <width>18.5</width>
@@ -1643,7 +1643,7 @@
         <name>Submarine Tender</name>
         <type>100</type>
         <typeName>Replenishment</typeName>
-        <imagePath>"shipData\SCAF for TMO_2\Data\Sea\Sub_Depot_Ship\Sub_Depot_Ship_sil.dds"</imagePath>
+        <imagePath>"data\SCAF for TMO_2\Data\Sea\Sub_Depot_Ship\Sub_Depot_Ship_sil.dds"</imagePath>
         <maxSpeed>18.0</maxSpeed>
         <length>201.0</length>
         <width>31.0</width>

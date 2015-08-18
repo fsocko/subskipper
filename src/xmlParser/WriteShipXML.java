@@ -15,9 +15,10 @@ public class WriteShipXML
 				try{
 					JAXBContext jaxbContext = JAXBContext.newInstance(Ships.class);
 					Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-					File file = new File("shipData/testFile.xml");
+					File file = new File("data/shipList.xml");
 					jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-					jaxbMarshaller.marshal(shipWrap, System.out);
+					//jaxbMarshaller.marshal(shipWrap, System.out); //Was used for debugging,
+					//but now it's just annoying.
 					jaxbMarshaller.marshal(shipWrap, file);
 				}
 				catch(JAXBException e){}

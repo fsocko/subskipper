@@ -10,11 +10,11 @@ import javax.xml.bind.Unmarshaller;
 
 public class ReadShipXML {
 
-	public Ships readXML(String filePath){
+	public Ships readXML(){
 		 
 		Ships shipsXML = new Ships();
 		try{
-	            File file = new File(filePath);
+	            File file = new File("data/shipList.xml");
 	            JAXBContext jaxbContext = JAXBContext.newInstance( Ships.class );
 
 	            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();

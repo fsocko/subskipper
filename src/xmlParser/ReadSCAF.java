@@ -9,7 +9,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import coreLogic.Ship;
 
@@ -62,7 +61,7 @@ SurvivalPercentage=20 --Not used
 	        }
 	    }
 	}
-	
+		//This method formats a SCAF record for parsing with makeShips()
 		private String[] readShipRecord(String file){
 		String[] tempShips = new String[8];
 		 FileInputStream fs = null;
@@ -116,7 +115,7 @@ SurvivalPercentage=20 --Not used
 		 return tempShips;
 	}
 	
-	//methods for formatting public array tempShips into format suitable for Ship.class
+	//methods for further formatting public array tempShips into format suitable for Ship.class
 	//after that construct an instance of the ship, to be later parsed to XML.
 	//takes no arguments
 	public void stripVars(String[] tempShips){ //Strips incompatible data from array created by readShips
@@ -134,16 +133,7 @@ SurvivalPercentage=20 --Not used
 			}
 		}
 	}
-	
-	public void printTempShip(String path){
-		System.out.println(Arrays.toString(readShipRecord(path)));
-	}
-	
-	//This method formats the type Number, and uses nameLookup to return a typeName
-	public String typeLookup(String typeNum){
-		String typeName = "";
-		return typeName;
-	}
+		
 	
 	//this method looks up a query from names.cfg using a linear line-by-line search.
 	//takes the short className from the Ship file as its input, and returns a stripped ship name.
@@ -152,6 +142,7 @@ SurvivalPercentage=20 --Not used
 		return nameLookup(typeNum);
 	}
 	
+	//Looks up a name using a String Query from the separate Names.cfg file
 	public String nameLookup(String query){
 		boolean found = false;
 		String curLine = "ReadShips.nameLookup() failed";
@@ -220,7 +211,7 @@ SurvivalPercentage=20 --Not used
 		Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
 		return testShip;
 	}
-	//Prints all useful SCAF files.
+	//Prints all useful SCAF files. Mostly For Debugging
 	public void printSCAFFiles(){
 		ArrayList<File> shipFiles = new ArrayList<File>();
 		System.out.println("\nPrint all ships:\n************************************************************\n");
@@ -232,6 +223,7 @@ SurvivalPercentage=20 --Not used
 	
 	//Returns an arrayList of Ship objects, for passing to WriteShipXML
 	public ArrayList<Ship> makeShips(){
+		System.out.println("ReadSCAF.makeShips() started.");
 		ArrayList<File> shipFiles = new ArrayList<File>();
 		ArrayList<Ship> shipData = new ArrayList<Ship>();
 		Ship writeShip = new Ship();

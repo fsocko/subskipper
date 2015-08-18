@@ -1,9 +1,19 @@
 package coreLogic;
+import xmlParser.PrepShipData;
 
 public class MethodTest {
 
 	public static void main(String[] args) 
 	{
+		PrepShipData getShips = new PrepShipData();
+		getShips.printShips(getShips.FullDataCycle());
+	}
+	
+	
+	
+	
+	public static void OKaneTest(){
+		
 		OKane test1 = new OKane();
 		//constructs a torpedo. INPUTS: name, slow/TODO:med/fast speed (kn), rangeS, TODO: rangeMedium, rangeF (m)
 		Torpedo mk10 = new Torpedo("Mk. 10", 36, -1, 3200, -1);
@@ -41,5 +51,7 @@ public class MethodTest {
 			System.out.println("Scope Bearing: " + toDeg.degreeOut(test1.OKSolution(AOB, targS, torpFireS)));
 			
 		}			
-	}	
+		
+	}
+	
 }
