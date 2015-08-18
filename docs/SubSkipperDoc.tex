@@ -361,7 +361,7 @@ $$AOB = arcSin \frac{AR\_{observed}}{AR\_{reference}}$$
 \begin{itemize}
 \item{Note: This method is less accurate as AOB approaches 0.}
 \item{Note: This method does not compute whether the AOB is on the port or starboard side.}
-\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180."\cite[p~15]{angrHandB, tvreAcqData}}
+\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180."\cite[p~15]{angrHandB, tvreAcqData} In Other words, the arcSin function has a domain of +90\degree to -90\degree. When the AOB is between 90\degree and 270\degree, subtract the result from 180\degree. \cite{arcSin} }
 \end{itemize}
 
 \begin{thebibliography}{9}

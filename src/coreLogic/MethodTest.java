@@ -5,8 +5,8 @@ public class MethodTest {
 
 	public static void main(String[] args) 
 	{
-		PrepShipData getShips = new PrepShipData();
-		getShips.printShips(getShips.FullDataCycle());
+		AspectAOB testAOB = new AspectAOB();
+		System.out.println(testAOB.calculateAOB(testAOB.getShip(30), 5.09));
 	}
 	
 	

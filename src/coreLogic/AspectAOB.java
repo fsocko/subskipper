@@ -18,10 +18,23 @@ public class AspectAOB {
 	
 	//Wrapper for calculateAOB, calculates AOB bearing with AOB estimate checking against
 	//a visual estimate of AOB due to the limits of this method.
-	public double aspectAOBSol(int AOBEstimate, Ship target, double mastObs, double lenObs){
+	public double aspectAOBSol(int estAOB, Ship target, double mastObs, double lenObs){
 		//TODO: //estAOB quadrants: 0-90, 90-180, 180-270, 270-360
 		double obsAR = lenObs / mastObs;
+		double AOB = 0;
+		double aspAOB = calculateAOB(target, obsAR);
+		if(estAOB > 0 && estAOB < 90){
+			AOB = aspAOB;
+		}
+		else if(estAOB > 90 && estAOB < 180){
+			
+		}
+			
+		
+		
 		return 0;
+		
+		
 		
 	}
 	
