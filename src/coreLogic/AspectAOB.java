@@ -16,6 +16,19 @@ public class AspectAOB {
 		return selShip.get(shipID);
 	}
 	
+
+	//calculates the AOB, does not account for front/back or port/stbd
+	public double calculateAOB(Ship target, double obsAR){
+		
+		//Reference Aspect Ratio, from Ship data
+		double refAR = target.getRefAspect();
+		double AOB = Math.toDegrees(Math.asin(obsAR/refAR));
+		return AOB;
+	}
+	
+	
+	
+	
 	//Wrapper for calculateAOB, calculates AOB bearing with AOB estimate checking against
 	//a visual estimate of AOB due to the limits of this method.
 	public double aspectAOBSol(int estAOB, Ship target, double mastObs, double lenObs){
@@ -29,22 +42,10 @@ public class AspectAOB {
 		else if(estAOB > 90 && estAOB < 180){
 			
 		}
-			
-		
-		
+
 		return 0;
-		
-		
-		
+
 	}
 	
-	//calculates the AOB, does not account for front/back or port/stbd
-	public double calculateAOB(Ship target, double obsAR){
-		
-		//Reference Aspect Ratio, from Ship data
-		double refAR = target.getRefAspect(); 
-		double AOB = Math.toDegrees(Math.asin(obsAR/refAR));
-		return AOB;
-	}
 	
 }
