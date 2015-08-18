@@ -361,7 +361,16 @@ $$AOB = arcSin \frac{AR\_{observed}}{AR\_{reference}}$$
 \begin{itemize}
 \item{Note: This method is less accurate as AOB approaches 0.}
 \item{Note: This method does not compute whether the AOB is on the port or starboard side.}
-\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180."\cite[p~15]{angrHandB, tvreAcqData} In Other words, the arcSin function has a domain of +90\degree to -90\degree. When the AOB is between 90\degree and 270\degree, subtract the result from 180\degree. \cite{arcSin} }
+\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180."\cite[p~15]{angrHandB, tvreAcqData} In Other words, the arcSin function has a domain of +90\degree to -90\degree. When the AOB is between 90\degree and 270\degree, subtract the result from 180\degree. \cite{arcSin}}
+
+\item{AOB (Relative to Target) for each Quadrant:}
+\begin{itemize}
+	\item{0\degree - 90\degree : Use AOB result as is.}
+	\item{90\degree - 180\degree : Subtract AOB result 				 from 180.}
+	\item{180\degree - 270\degree : Subtract AOB result from 180, subtract result from 360.}
+	\item{270\degree - 360\degree : Subtract AOB result from 360.}
+	\end{itemize}
+
 \end{itemize}
 
 \begin{thebibliography}{9}
@@ -384,6 +393,13 @@ circ. 2008(?).
 
 \bibitem{subsim}
 http://www.subsim.com
+
+\bibitem{arcSin}
+MathOnWeb,
+%http://mathonweb.com/help_ebook/html/functions_2.htm,
+The arcsin function,
+Accessed 17.08.2015,
+
 
 \end{thebibliography}
 
