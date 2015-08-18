@@ -199,7 +199,7 @@ The Mk. 27 will run straight for 200m before homing.
 
 
 \section{O'Kane Torpedo Solution}
-The Dick O'Kane method was devised by members of the Subsim.com forums. It is a constant bearing method which relies on calculating a lead angle -- an angle on which torpedoes, if launched will intercept the course of the target-- to which the periscope is pointed. As parts of the target ship cross the bearing, torpedoes are fired along it. The O'Kane method relies on being ahead of the target, and the final AOB -- at which the torpedo strikes the target-- to be 90\degree .
+The Dick O'Kane method was devised by members of the Subsim.com\cite{subsim} forums. It is a constant bearing method which relies on calculating a lead angle -- an angle on which torpedoes, if launched will intercept the course of the target-- to which the periscope is pointed. As parts of the target ship cross the bearing, torpedoes are fired along it. The O'Kane method relies on being ahead of the target, and the final AOB -- at which the torpedo strikes the target-- to be 90\degree .
 
 Calculates \emph{lead angle} based on target and torpedo speed.\\
 The solution requires submarine to be ahead of target.\\
@@ -210,7 +210,7 @@ The Equation for lead angle is as follows:
 $$ LeadAngle = 90 - \arctan\left( \frac{Torpedo Speed}{TargetSpeed} \right) $$
 
 \subsection{Computational Solution}
-The method \emph{oKSolution()} in the class \emph{OKane.class} in the package \emph{coreLogic} is used to calculate the O'Kane Lead Bearing when using the O'Kane method. The periscope is pointed to the lead bearing calculated by \emph{oKane()}.
+The method \emph{oKSolution()} in the class \emph{OKane.class} in the package \emph{coreLogic} is used to calculate the O'Kane Lead Bearing when using the O'Kane method. The periscope is pointed to the lead bearing calculated by \emph{oKane()}. The method is a modification of a document by Corey Hardwell \cite{okane90Angles}.
 
 The method takes the following arguments:
 
@@ -361,8 +361,31 @@ $$AOB = arcSin \frac{AR\_{observed}}{AR\_{reference}}$$
 \begin{itemize}
 \item{Note: This method is less accurate as AOB approaches 0.}
 \item{Note: This method does not compute whether the AOB is on the port or starboard side.}
-\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180." -UJagd Tools}
+\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180."\cite[p~15]{angrHandB, tvreAcqData}}
 \end{itemize}
+
+\begin{thebibliography}{9}
+
+\bibitem{angrHandB}
+  Karl Hahl,
+  Kriegsmarine Angriffscheibe Handbuch,
+  p. 15,
+  2008.
+  
+\bibitem{tvreAcqData}
+http://www.tvre.org/en/acquiring-torpedo-firing-data,
+Acquiring torpedo firing data,
+2015.
+
+\bibitem{okane90Angles}
+Corey "Gutted" Hardwell,
+Silent Hunter IV 90\degree - AOB Firing Angles,
+circ. 2008(?).
+
+\bibitem{subsim}
+http://www.subsim.com
+
+\end{thebibliography}
 
 \end{document}
 
@@ -389,13 +412,7 @@ $$Distance to Track = Range \left( sin(AOB) \right)$$
 \section{Determine an optimum speed for attack position}
 
 
-\pagebreak
-\section{References}
 
-Kriegsmarine Angriffscheibe Handbuch, H{\"a}hl, 2008 (packaged with u-jagd tools)
-
-Torpedo Vorhaltrechner Project, 2015
-\url{http://www.tvre.org/en/acquiring-torpedo-firing-data}
 
 \end{document}
 
