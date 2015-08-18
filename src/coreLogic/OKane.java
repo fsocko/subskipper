@@ -4,10 +4,7 @@
 package coreLogic;
 
 import java.lang.Math;
-/**
- * @author fps
- *
- */
+
 //Lead Angle for O'Kane firing solution. - note that method does
 //not know whether to add or subtract ie if T is facing port or
 //stbd

@@ -14,7 +14,7 @@ public class PrepShipData {
 		runShips.setShips(scaf.makeShips()); //we have a loaded Ships object
 		WriteShipXML writeShips = new WriteShipXML();
 		writeShips.writeXML(runShips); //written to XML
-		System.out.println("shipList.xml file ready");
+		System.out.println("shipList.xml file parsed.");
 	}
 	
 	//Returns a Ships obj from a ready XML file
