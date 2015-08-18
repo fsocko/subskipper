@@ -97,49 +97,49 @@ Slow and Fast speeds and ranges removed as appropriate.
 
 \subsubsection{Mark 10}
 \begin{tabular}{l|l}
-Available since:& Always\\
+Available from:& Always\\
 Range(m):& 3200\\
 Speed(kt):&36\\
 Warhead:& 80-160 radius 3-6m\\
-Depth keeping:& 70\% chance of deviating 0.8m-1.2m\\
+Depth keeping:& 70\% chance of deviating $\pm 0.8m - \pm 1.2m$\\
 Dud Chance (at AOB):& 1\% (0\degree -70\degree ) 25\% (70\degree-90\degree)\\
 Renown cost:& 0\\
 \end{tabular} \\
-Notes: Default torpedo for the S-Class. Slower and with a shorter range than the mk14, but extremely reliable.\\
+Notes: Default torpedo for the S-Class. Slower and with a shorter range than the Mk. 14, but extremely reliable.\\
 
 \subsubsection{Mark 14}
 \begin{tabular}{l|l}
-Available since:& Always\\
+Available from:& Always\\
 Range(Slow)(m):& 8200\\
 Range(Fast)(m):& 4100\\
 Speed(Slow):&31\\
 Speed(Fast)(kt):& 46\\
 Warhead:& 100-170 radius 3-7m\\
-Depth keeping:& 70\% chance of deviating 1.5m-3.3m\\
+Depth keeping:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
 Dud Chance (at AOB):& 1\% (0\degree-35\degree); 34\% (35\degree-70\degree); 99\% (70\degree-90\degree)\\
 Renown cost:& 0\\
 \end{tabular} \\
-Notes: Default torpedo for all modern fleet boats. Faster and with a longer range than the mk10, it packs a roughly 20% stronger punch but is much less reliable.
+Notes: Default torpedo for all modern fleet boats. Faster and with a longer range than the Mk. 10, it packs a roughly 20\% stronger punch but is much less reliable.
 
 \subsubsection{Mark 16}
 \begin{tabular}{l|l}
-Available since:& 1945-01-01\\
+Available from:& 1945-01-01\\
 Range(m):& 12500\\
 Speed(kt):&46\\
 Warhead:& 180-250 radius 3.5-8m\\
-Depth keeping:&  70\% chance of deviating 1.5m-3.3m\\
+Depth keeping:&  70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
 Dud Chance (at AOB):& 4\% (0\degree-35\degree); 45\% (35\degree-70\degree); 100\% (70\degree-90\degree)\\
 Renown cost:& 400\\
 \end{tabular} \\
-Notes: Fast torpedo with an exceptionally long range, but also terribly unreliable
+Notes: Fast torpedo with an exceptionally long range, but also terribly unreliable.
 
 \subsubsection{Mark 18}
 \begin{tabular}{l|l}
-Available since:& 1943-07-12\\
+Available from:& 1943-07-12\\
 Range(m):& 3650\\
 Speed(kt):&29\\
 Warhead:& 120-180 radius 3-7\\
-Depth keeping fault chance:& 55\% chance of deviating 1.2m-2.8m\\
+Depth keeping fault chance:& 55\% chance of deviating $\pm 1.2m - \pm 2.8m$\\
 Dud Chance (at AOB):& 1\% (0\degree-35\degree); 34\% (35\degree-70\degree); 99\% (70\degree-90\degree)\\
 Renown cost:&  500 (200 from 1944-01-16; 0 from 1944-09-01)\\
 \end{tabular} \\
@@ -147,15 +147,15 @@ Notes: Slower, 10\% more powerful, with a shorter range and much more reliable t
 
 \subsubsection{Mark 23}
 \begin{tabular}{l|l}
-Available since:& 1943-01-01\\
+Available from:& 1943-01-01\\
 Range(m):& 4100\\
 Speed(kt):&46\\
 Warhead:& 120-180 radius 3-7m\\
-Depth keeping fault chance:& 70\% chance of deviating 1.5m-3.3m\\
+Depth keeping fault chance:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
 Dud Chance (at AOB):& 1\% (0\degree - 35\degree); 34\% (35\degree- 70\degree); 99\% (70\degree- 90\degree)\\
 Renown cost:&  100 (0 from 16-01-1944)\\
 \end{tabular} \\
-Notes: Same range, speed and reliability than the Mk. 14 but roughly 10\% more powerful. Definitely replaces the mk10 as the "standard" torpedo from 16-01-1944.
+Notes: Same range, speed and reliability than the Mk. 14 but roughly 10\% more powerful. Definitely replaces the Mk. 10 as the "standard" torpedo from 16-01-1944.
 
 \subsubsection{Mark 27 "Cutie"}
 \begin{tabular}{l|l}
@@ -167,8 +167,28 @@ Depth keeping fault chance:& NA\\
 Dud Chance (at AOB):& 1\% (0\degree-25\degree)\\
 Renown cost:& 500\\
 \end{tabular} \\
-Notes: Slow acoustic homing torpedo with a small warhead primarily used for defense against destroyers.
+Notes: Slow acoustic homing torpedo with a small warhead primarily used for defence against destroyers.
 
+\subsubsection{Torpedo minimum arming distance}
+\emph{arming\_distance} is set across all torps to 220 meters except the Mk. 27, which has 150 meters.
+
+\subsubsection{Torpedo max dive angle}
+\emph{max\_dive\_angle} is set to 20 degrees for all torpedo types.
+
+\subsubsection{Torpedo maximum turn angle}
+\emph{max\_turn\_angle} is 135\degree for all torps except the Mk. 27, which has 180?
+
+\subsubsection{Magnetic detonation range}
+\emph{mag\_detonation\_range} is 2m for all torps except for the Mk. 27, which has 1m
+
+\subsubsection{Circular runner torpedos}
+\emph{circle\_runner\_chance} is 0.5\% for all torps except for the Mk. 27, which has 0\%
+
+\subsubsection{Gyro problems}
+The chance of having gyro problems is 0.3\% at the introduction time of all torpedoes and drops to 0.2\% in later periods for all torpedoes except for the Mk. 16. The max\_deviation when having gyro problems is always 50\degree. This does not apply to the Mk. 27. 
+
+\subsubsection{Homing torpedos}
+The Mk. 27 will run straight for 200m before homing.
 
 
 
@@ -321,14 +341,14 @@ AOB can be determined given the following data:
 \end{itemize}
 
 \subsubsection{Determine an observed \emph{aspect ratio}.}
-$$AR_{observed} = \frac{Observed Length}{Observed Mast Height}$$
+$$AR\_{observed} = \frac{Observed Length}{Observed Mast Height}$$
 As the required figure is a ratio, it does not matter in what units the figures are given. For example, this could be the number of degrees Length and Mast Heigh subtend, the number of periscope graduations subtended or angular length in metres. It only matters that both units are the same.
 
 \subsubsection{Determine the Reference Apsect Ratio}
 Identify the target and find the Length and Mast Height as given in the recognition manual (if possible) or calculate these figures using the SubSkipper ship parser. Proceed as for the observed aspect ratio to get the Reference Aspect Ratio (\emph{ARreference}).
 
 \subsubsection{AOB calculation}
-$$AOB = arcSin \frac{AR_{observed}}{AR_{reference}}$$
+$$AOB = arcSin \frac{AR\_{observed}}{AR\_{reference}}$$
 
 \begin{itemize}
 \item{Note: This method is less accurate as AOB approaches 0.}
