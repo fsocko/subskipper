@@ -41,6 +41,8 @@
 \begin{document}
 
 \maketitle
+\pagebreak
+\tableofcontents
 
 \section{Introduction}
 The GitHub SubSkipper repository contains the core logic of the app, such that it can be verified or used for other projects. The documentation contains the principles and equations on which the logic is based, and some method documentation.
@@ -64,7 +66,8 @@ The Requirements for SubSkipper are the following:
 \item{Feature a Modular timer/stopwatch}
 \end{itemize}
 
-\pagebreak
+
+
 \section{Unit Conversions}
 
 
@@ -112,7 +115,7 @@ Notes: Default torpedo for the S-Class. Slower and with a shorter range than the
 Available from:& Always\\
 Range(Slow)(m):& 8200\\
 Range(Fast)(m):& 4100\\
-Speed(Slow):&31\\
+Speed(Slow)(kt):&31\\
 Speed(Fast)(kt):& 46\\
 Warhead:& 100-170 radius 3-7m\\
 Depth keeping:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
@@ -170,22 +173,22 @@ Renown cost:& 500\\
 Notes: Slow acoustic homing torpedo with a small warhead primarily used for defence against destroyers.
 
 \subsubsection{Torpedo minimum arming distance}
-\emph{arming\_distance} is set across all torps to 220 meters except the Mk. 27, which has 150 meters.
+\emph{arming\_distance} is set across all torpedoes to 220m except the Mk. 27, which is 150 meters.
 
 \subsubsection{Torpedo max dive angle}
 \emph{max\_dive\_angle} is set to 20 degrees for all torpedo types.
 
 \subsubsection{Torpedo maximum turn angle}
-\emph{max\_turn\_angle} is 135\degree for all torps except the Mk. 27, which has 180?
+\emph{max\_turn\_angle} is 135\degree for all torpedoes except the Mk. 27, which is 180\degree.
 
 \subsubsection{Magnetic detonation range}
-\emph{mag\_detonation\_range} is 2m for all torps except for the Mk. 27, which has 1m
+\emph{mag\_detonation\_range} is 2m for all torpedoes except for the Mk. 27, which is 1m.
 
 \subsubsection{Circular runner torpedos}
-\emph{circle\_runner\_chance} is 0.5\% for all torps except for the Mk. 27, which has 0\%
+\emph{circle\_runner\_chance} is 0.5\% for all torpedoes except for the Mk. 27, which is 0\%.
 
 \subsubsection{Gyro problems}
-The chance of having gyro problems is 0.3\% at the introduction time of all torpedoes and drops to 0.2\% in later periods for all torpedoes except for the Mk. 16. The max\_deviation when having gyro problems is always 50\degree. This does not apply to the Mk. 27. 
+The chance of having gyro problems is 0.3\% at the introduction time of all torpedoes and drops to 0.2\% in later periods for all torpedoes except for the Mk. 16. The \emph{max\_deviation} when having gyro problems is always 50\degree. This does not apply to the Mk. 27. 
 
 \subsubsection{Homing torpedos}
 The Mk. 27 will run straight for 200m before homing.
