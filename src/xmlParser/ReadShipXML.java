@@ -22,6 +22,7 @@ public class ReadShipXML {
 	        }
 		catch( JAXBException e ){
 	            e.printStackTrace();
+	            return null;
 	        }
 		return shipsXML;
 	}

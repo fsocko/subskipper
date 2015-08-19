@@ -9,25 +9,6 @@ import java.lang.Math;
 //inaccurate figures, because that's how trigonometry works.
 public class AspectAOB {
 	
-	//method for getting shipData for a specific Ship from XML
-	public Ship getShip(int shipID){
-		
-		PrepShipData shipData = new PrepShipData();
-		Ships shipList = new Ships();
-		//Select whether we want to readSCAF or just read an existing file
-		if(new File("path/to/file.txt").isFile()){
-			shipList = shipData.getShipData();
-		}
-		else{shipList = shipData.FullDataCycle();}
-		//Parse Ships to arrayList and find a ship by ID.
-		ArrayList<Ship> selShip = shipList.getShips();
-		Ship shipObj = new Ship();
-		try{shipObj = selShip.get(shipID);}
-		catch(java.lang.IndexOutOfBoundsException e)
-		{System.out.println("Cannot find ship specified.");}
-		return shipObj;
-	}
-	
 
 	//Wrapper for calculateAOB, calculates AOB bearing with AOB estimate checking against
 	//a visual estimate of AOB due to the limits of this method.
@@ -68,7 +49,10 @@ public class AspectAOB {
 		if(!Double.isNaN(AOB)){
 			return AOB;
 		}
-		else{return -3;}
+		else{
+			System.out.println("Error: Observed Ratio greater than Reference Ratio.");
+			return -3;
+			}
 		
 	}
 	

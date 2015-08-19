@@ -10,8 +10,10 @@ public class MethodTest {
 		int estAOB = 0;
 		double mastObs = 0.0;
 		double lenObs = 0.0;
+		PrepShipData target = new PrepShipData();
 		
-		System.out.println((testAOB.aspectAOBSol(estAOB, testAOB.getShip(12), mastObs, lenObs)));
+		System.out.println(target.getShipByID(17).toString());
+		System.out.println((testAOB.aspectAOBSol(estAOB, target.getShipByID(17), mastObs, lenObs)));
 		
 	}
 	
