@@ -1,6 +1,7 @@
 package coreLogic;
 import xmlParser.*;
 import java.util.ArrayList;
+import java.io.File;
 import java.lang.Math;
 
 //Method for determining the AOB based on an observed and reference aspect ratio.
@@ -10,42 +11,70 @@ public class AspectAOB {
 	
 	//method for getting shipData for a specific Ship from XML
 	public Ship getShip(int shipID){
+		
 		PrepShipData shipData = new PrepShipData();
-		Ships shipList = shipData.FullDataCycle();
+		Ships shipList = new Ships();
+		//Select whether we want to readSCAF or just read an existing file
+		if(new File("path/to/file.txt").isFile()){
+			shipList = shipData.getShipData();
+		}
+		else{shipList = shipData.FullDataCycle();}
+		//Parse Ships to arrayList and find a ship by ID.
 		ArrayList<Ship> selShip = shipList.getShips();
-		return selShip.get(shipID);
+		Ship shipObj = new Ship();
+		try{shipObj = selShip.get(shipID);}
+		catch(java.lang.IndexOutOfBoundsException e)
+		{System.out.println("Cannot find ship specified.");}
+		return shipObj;
+	}
+	
+
+	//Wrapper for calculateAOB, calculates AOB bearing with AOB estimate checking against
+	//a visual estimate of AOB due to the limits of this method.
+	public double aspectAOBSol(int estAOB, Ship target, double mastObs, double lenObs){
+		double obsAR = 0;
+		//Check if it's a number. It's possible that NaN will be input by user.
+		if(!Double.isNaN((lenObs / mastObs))){
+			obsAR = lenObs / mastObs;
+		}
+		else{
+			System.out.println("Caught a NaN.");
+			return -3;}
+		
+		double AOB = 0;
+		double aspAOB = calculateAOB(target, obsAR);
+
+		if (estAOB >=0 && estAOB <= 90){
+			AOB = aspAOB;
+		}
+		else if(estAOB >90 && estAOB <= 180){
+			AOB = 180-(aspAOB);
+		}
+		else if(estAOB >180 && estAOB <= 270){
+			AOB = 360-(180-(aspAOB));
+		}
+		else if(estAOB >270 && estAOB < 360){
+			AOB = 360-(aspAOB);
+		}
+		return AOB;
 	}
 	
 
 	//calculates the AOB, does not account for front/back or port/stbd
 	public double calculateAOB(Ship target, double obsAR){
-		
 		//Reference Aspect Ratio, from Ship data
 		double refAR = target.getRefAspect();
 		double AOB = Math.toDegrees(Math.asin(obsAR/refAR));
-		return AOB;
+		if(!Double.isNaN(AOB)){
+			return AOB;
+		}
+		else{return -3;}
+		
 	}
 	
 	
 	
 	
-	//Wrapper for calculateAOB, calculates AOB bearing with AOB estimate checking against
-	//a visual estimate of AOB due to the limits of this method.
-	public double aspectAOBSol(int estAOB, Ship target, double mastObs, double lenObs){
-		//TODO: //estAOB quadrants: 0-90, 90-180, 180-270, 270-360
-		double obsAR = lenObs / mastObs;
-		double AOB = 0;
-		double aspAOB = calculateAOB(target, obsAR);
-		if(estAOB > 0 && estAOB < 90){
-			AOB = aspAOB;
-		}
-		else if(estAOB > 90 && estAOB < 180){
-			
-		}
-
-		return 0;
-
-	}
 	
 	
 }

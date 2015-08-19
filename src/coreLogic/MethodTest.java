@@ -5,10 +5,14 @@ public class MethodTest {
 
 	public static void main(String[] args) 
 	{
+		OutFormat toDeg = new OutFormat();
 		AspectAOB testAOB = new AspectAOB();
-		double obsAR = 5.25;
-		System.out.println(testAOB.calculateAOB(testAOB.getShip(30), obsAR));
-		System.out.println(360-(180-(testAOB.calculateAOB(testAOB.getShip(30), obsAR))));
+		int estAOB = 0;
+		double mastObs = 0.0;
+		double lenObs = 0.0;
+		
+		System.out.println((testAOB.aspectAOBSol(estAOB, testAOB.getShip(12), mastObs, lenObs)));
+		
 	}
 	
 	
