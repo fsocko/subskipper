@@ -1,23 +1,28 @@
 package coreLogic;
 
 public class Nomo {
-	
-	//Nomograph Logic:
-	//Inputs: speed (knots), distance(m), time(s)
-	
-	public double nomoVal(double s, double d, double t){
 		
-		double wantedVal = -1;
+	//Nomograph Logic:
+	//Inputs: speed (m/s), distance(m), time(s)
+	//Returns a string which contains the missing value.
+	public String nomo(double s, double d, double t){
+		
+		OutFormat nomOut = new OutFormat();
+		
+		double speed = s;
+		double dist = d;
+		double time = t;
+		
 		if(s == 0){
-			wantedVal = d/t;
+			speed = d/t;
 		}
 		else if(d == 0){
-			wantedVal = s*t;
+			dist = s*t;
 		}
 		else if(t == 0){
-			wantedVal = d/s;
+			time = d/s;
 		}
-		return wantedVal;
+		return ("Speed: "+nomOut.msToKnot(speed)+"\nDistance: "+nomOut.metreOut(dist)+ "\nTime: " + nomOut.hourOut(time)+"\n\n");
 	}
 	
 }

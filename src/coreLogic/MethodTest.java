@@ -5,8 +5,12 @@ public class MethodTest {
 
 	public static void main(String[] args) 
 	{
-		OutFormat toDeg = new OutFormat();
-		System.out.println(toDeg.knotOut(12.86555444444));
+		Nomo testNom = new Nomo();
+		
+								 //S(kn)D(m)T(s)
+		System.out.println(testNom.nomo(0, 8000, 1500));
+		System.out.println(testNom.nomo(5.144, 0, 1500));
+		System.out.println(testNom.nomo(5.144, 8000, 0));
 	}
 	
 	
