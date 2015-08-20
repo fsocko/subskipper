@@ -10,6 +10,14 @@ public class OutFormat {
 	    	String out = formatter.format(degIn) + "\u00b0";
 	    	return out;
 	    }
+	    
+	    public String knotOut(double knotIn){
+	    	 
+	    	DecimalFormat formatter = new DecimalFormat("0.00");
+	    	String out = formatter.format(knotIn) + "kn";
+	    	return out;
+	    }
 
+	    
 	
 }

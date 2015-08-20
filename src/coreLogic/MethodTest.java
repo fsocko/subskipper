@@ -5,7 +5,8 @@ public class MethodTest {
 
 	public static void main(String[] args) 
 	{
-	
+		OutFormat toDeg = new OutFormat();
+		System.out.println(toDeg.knotOut(12.86555444444));
 	}
 	
 	
