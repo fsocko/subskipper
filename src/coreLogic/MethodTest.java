@@ -5,22 +5,27 @@ public class MethodTest {
 
 	public static void main(String[] args) 
 	{
-		OutFormat toDeg = new OutFormat();
-		AspectAOB testAOB = new AspectAOB();
-		int estAOB = 0;
-		double mastObs = 0.0;
-		double lenObs = 0.0;
-		PrepShipData target = new PrepShipData();
-		
-		System.out.println(target.getShipByID(17).toString());
-		System.out.println((testAOB.aspectAOBSol(estAOB, target.getShipByID(17), mastObs, lenObs)));
-		
+	
 	}
 	
 	
+	public static void aspectAOBTest(){
+		OutFormat toDeg = new OutFormat();
+		AspectAOB testAOB = new AspectAOB();
+		PrepShipData target = new PrepShipData();
+		Ship shipAOB = target.getShipByID(30);
+		
+		int estAOB = 35;
+		double mastObs = 8.5;
+		double lenObs = 35;
+		
+		System.out.println(shipAOB.toString());
+		System.out.println(toDeg.degreeOut(testAOB.aspectAOBSol(95, shipAOB, 2.7, 9.8)));
+		System.out.println(toDeg.degreeOut(testAOB.aspectAOBSol(310, shipAOB, 7.1, 4*8.1)));
+	}
 	
 	
-	public static void OKaneTest(){
+	public static void oKaneTest(){
 		
 		OKane test1 = new OKane();
 		//constructs a torpedo. INPUTS: name, slow/TODO:med/fast speed (kn), rangeS, TODO: rangeMedium, rangeF (m)

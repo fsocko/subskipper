@@ -12,6 +12,10 @@ public class AspectAOB {
 
 	//Wrapper for calculateAOB, calculates AOB bearing with AOB estimate checking against
 	//a visual estimate of AOB due to the limits of this method.
+	
+	//Errors: -1: NaN found in observed AR
+	// 		  -2: Observed aspect > Ref Aspect
+	
 	public double aspectAOBSol(int estAOB, Ship target, double mastObs, double lenObs){
 		double obsAR = 0;
 		//Check if it's a number. It's possible that NaN will be input by user.
@@ -19,8 +23,7 @@ public class AspectAOB {
 			obsAR = lenObs / mastObs;
 		}
 		else{
-			System.out.println("Caught a NaN.");
-			return -3;}
+			return -1;}
 		
 		double AOB = 0;
 		double aspAOB = calculateAOB(target, obsAR);
@@ -50,8 +53,7 @@ public class AspectAOB {
 			return AOB;
 		}
 		else{
-			System.out.println("Error: Observed Ratio greater than Reference Ratio.");
-			return -3;
+			return -2;
 			}
 		
 	}
