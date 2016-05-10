@@ -7,6 +7,19 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{geometry}
+
+%%--Define Margins
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
 
 
 %%--Define style for Java code
@@ -36,7 +49,7 @@
 \newcommand{\degree}{$^{\circ}$}
 
 \author{Filip Socko}
-\title{SubSkipper Documentation}
+\title{Fleet Boat Reference, Torpedo Solution Methods}
 
 \begin{document}
 
@@ -51,26 +64,10 @@ The GitHub SubSkipper repository contains the core logic of the app, such that i
 The main purpose of the repository and documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
 \\ \\
 The Android App will be developed from this repository as a separate, polished product.
-
-\section{Requirements}
-The Requirements for SubSkipper are the following:
-
-\begin{itemize}
-\item{Calculate Constant Bearing Solutions using the following methods:}
-	\begin{itemize}
-	\item{Dick O'Kane method}
-	\end{itemize}
-\item{Show a representation of the \emph{Is/Was} or \emph{AngriffScheibe} calculator for easy input, along with its data}
-\item{Calculate target location with a course and speed}
-\item{Calculate \emph{AOB} from aspect ratio}
-\item{Calculate Speed via \emph{Fixed Wire} method}
-\item{Feature a Modular timer/stopwatch}
-\end{itemize}
-
-
+\\
+This document is a reference for Torpedo types and common conversion factors, as well as types of US Fleet Boats and Types of US Torpedoes. A brief recognition manual will be provided in a separate document. This document also aims to provide a brief overview of common torpedo solution methods.
 
 \section{Unit Conversions}
-
 
 \subsection{Speed}
 \begin{center}
@@ -177,26 +174,25 @@ Notes: Slow acoustic homing torpedo with a small warhead primarily used for defe
 
 \subsubsection{Torpedo minimum arming distance}
 \emph{arming\_distance} is set across all torpedoes to 220m except the Mk. 27, which is 150 meters.
-
 \subsubsection{Torpedo max dive angle}
 \emph{max\_dive\_angle} is set to 20 degrees for all torpedo types.
-
 \subsubsection{Torpedo maximum turn angle}
 \emph{max\_turn\_angle} is 135\degree for all torpedoes except the Mk. 27, which is 180\degree.
-
 \subsubsection{Magnetic detonation range}
 \emph{mag\_detonation\_range} is 2m for all torpedoes except for the Mk. 27, which is 1m.
-
 \subsubsection{Circular runner torpedos}
 \emph{circle\_runner\_chance} is 0.5\% for all torpedoes except for the Mk. 27, which is 0\%.
-
 \subsubsection{Gyro problems}
 The chance of having gyro problems is 0.3\% at the introduction time of all torpedoes and drops to 0.2\% in later periods for all torpedoes except for the Mk. 16. The \emph{max\_deviation} when having gyro problems is always 50\degree. This does not apply to the Mk. 27. 
-
 \subsubsection{Homing torpedos}
 The Mk. 27 will run straight for 200m before homing.
 
-
+\section{Trigger Maru Overhaul - Fleet Boat Types}
+This section consists of pages 25-28 of the Trigger Maru Overhaul Manual which detail fleet boat types:
+\includegraphics[page={25}, width=\textwidth, height=\textheight]{TMO_Manual}
+\includegraphics[page={26}, width=\textwidth, height=\textheight]{TMO_Manual}
+\includegraphics[page={27}, width=\textwidth, height=\textheight]{TMO_Manual}
+\includegraphics[page={28}, width=\textwidth, height=\textheight]{TMO_Manual}
 
 \section{O'Kane Torpedo Solution}
 The Dick O'Kane method was devised by members of the Subsim.com\cite{subsim} forums. It is a constant bearing method which relies on calculating a lead angle -- an angle on which torpedoes, if launched will intercept the course of the target-- to which the periscope is pointed. As parts of the target ship cross the bearing, torpedoes are fired along it. The O'Kane method relies on being ahead of the target, and the final AOB -- at which the torpedo strikes the target-- to be 90\degree .
@@ -208,129 +204,6 @@ Captain inserts target speed into TDC, puts the scope on the lead bearing, fires
 The Equation for lead angle is as follows:
 
 $$ LeadAngle = 90 - \arctan\left( \frac{Torpedo Speed}{TargetSpeed} \right) $$
-
-\subsection{Computational Solution}
-The method \emph{oKSolution()} in the class \emph{OKane.class} in the package \emph{coreLogic} is used to calculate the O'Kane Lead Bearing when using the O'Kane method. The periscope is pointed to the lead bearing calculated by \emph{oKane()}. The method is a modification of a document by Corey Hardwell \cite{okane90Angles}.
-
-The method takes the following arguments:
-
-\begin{itemize}
-\item{int AOB - For determining whether AOB is Port or Starboard}
-\item{double targS - Target Speed}
-\item{Torpedo fireS - Torpedo Speed}
-\end{itemize}
-
-\subsection{Errors}
-
-Attempting to compute O'Kane Lead angle given the following situations will return the flag \emph{$-1$}.
-
-\subsubsection{Submarine is not ahead of target:}
-The following code checks if AOB is ahead of the target, either port or starboard.
-Furthermore, if the submarine is at an AOB of 0, or 180, the O'Kane lead angle cannot be calculated.
-\begin{lstlisting}
-if(AOB <= 90 && AOB<360){
-            stbd = true;
-        }
-        else if(AOB>=270 && AOB<360 ){
-            stbd = false;
-        }
-        else if(AOB == 0){
-            invalidSol = true;
-\end{lstlisting}
-
-\subsubsection{Torpedo Speed or Target Speed are less than one:}
-torpS and targS are verified to be > 1 in the following code:
-\begin{lstlisting}
- if(torpS < 1 || targS <1){
-            return -1;}
-\end{lstlisting}
-
-\subsubsection{Lead is greater than 90}
-If lead is more than 90\degree , it means we would be aiming the torpedo backwards. This means the solution is invalid, as either the target is too fast, or the torpedo too slow. This error is handled in the following code:
-
-\begin{lstlisting}
-if(lead > 90){
-lead = -3;} //Okane relies on being ahead of the target,
-						//we would be aiming backwards.
-\end{lstlisting}
-
-\subsubsection{Target Speed is 0}
-If targS is 0, no lead is required and the method returns 0.
-This error is handled in the following code:
-
-\begin{lstlisting}
-//If speed is 0, no lead required
-            if(targS == 0){
-            	return 0;
-            }
-\end{lstlisting}
-
-\subsection{OKSolution Code}
-
-\begin{lstlisting}
-
-        public double OKSolution(int AOB, double targS, double torpFireS)
-        {
-            double solBearing = -1;
-
-            boolean stbd = true;
-            //check if the position is correct. Sub needs to be in front of target, on either
-            //Stbd or port side. this means AOB is either 0-90 for stbd or  270-360 for port
-            //if anything else happens, solution is invalid, and we return a flag.
-            boolean invalidSol = false;
-            
-    		if(AOB == 0){
-                invalidSol = true; //for now let's assume the user is an idiot if AOB = 0
-    		}
-    		else if(AOB <= 90 && AOB<360){
-                stbd = true;
-            }
-            else if(AOB>=270 && AOB<360 ){
-                stbd = false;
-            }
-            
-            else{invalidSol = true;}
-
-            if(invalidSol){
-                return solBearing;
-            }
-            
-            //Check if OKaneLead returns an error
-            double lead = okaneLead(torpFireS, targS);
-            if(lead == -3){
-            	return -1;
-            }
-           
-            //if stbd, subtract from 360.
-            else if(stbd){
-                solBearing = 360-okaneLead(torpFireS, targS);
-            }
-            //If port, add to 0 for lead bearing.
-            else{
-                solBearing = 0 + okaneLead(torpFireS, targS);
-            }
-            return solBearing; //tSpeed into TDC, set your scope to this bearing, fire
-        }
-
-        //Input: torpedo speed (kn), target speed (kn)
-        private double okaneLead(double torpS, double targS){
-            if((torpS < 0) || (targS <0)){
-                return -3;}
-            //If speed is 0, no lead required
-            if(targS == 0){
-            	return 0;
-            }
-            double lead = 0;
-            //90 - inverseTan(torpS/targS)
-            lead =  90-Math.toDegrees(Math.atan(torpS/targS));
-            if(lead > 90){
-                lead = -3;} //Okane relies on being ahead of the target,
-            //we would be aiming backwards.
-
-            return lead;
-        }
- 
-\end{lstlisting}
 
 \section{Calculating Distance To Target}
 
@@ -373,6 +246,56 @@ $$AOB = arcSin \frac{AR\_{observed}}{AR\_{reference}}$$
 
 \end{itemize}
 
+
+\section{Find the speed of a target with constant relative bearing}
+
+This technique takes advantage of the fact that if you are on a convergent course (moving towards each other), and the target’s bearing is not changing over time, then you are actually on a collision course. Since you know your Uboat’s speed and two angles of the triangle (AOB and target bearing), you can calculate the target’s speed.
+
+$$Target speed = Own speed \left( \frac{sin(TB)}{sin (AOB)} \right)$$
+
+You are maintaining 2 knots on an intercept course with a potential target. At the original observation, it was on a bearing of 280\degree with an observed angle on the bow of 20 \degree starboard. After several minutes, the bearing was still 280\degree.
+
+Note: Although you may not be able to achieve an attack position, this technique will also work to calculate the target’s speed if you are on divergent courses. !If an angle is greater than 90\degree, then simply subtract it from 180\degree (since the sine function is symmetrical around 90\degree).
+
+$$Target speed = Own speed \left( \frac{sin(180-TB)}{sin (180-AOB)} \right)$$
+
+\section{Determine the distance to the track of a target}
+
+As you manoeuver into a firing position, it is useful to know your distance to the track of your target. Knowing the range and AOB of the target:
+
+Track: intersection point between Submarine course and the current target course.
+
+$$Distance to Track = Range \left( sin(AOB) \right)$$
+%
+%\section{Determine an optimum speed for attack position}
+%
+%To determine own speed needed to reach the target track in time to set up a torpedo solution. (Requires: Target Speed, Target AOB, Bearing to Target, Target Range, Distance to target track)
+%
+%\begin{enumerate}
+%\item{Find distance T must travel to reach a bearing of 000\degree. If the track is known (see previous step) and bearing and range to target is known, time required is:
+%$$ s = d/t  $$
+%}
+
+
+
+\section{Determine the lead angle for a perpendicular attack with 0\degree gyro angle}
+
+Once you are turned onto a perpendicular intercept course, this method calculates when to fire. The lead angle is simply the target bearing at the moment you fire. The range is irrelevant to the calculation although it is best to plan the attack within 500-1000m.
+
+This is O'Kane, except more simple.
+
+$$ lead angle = tan-1 ( [target speed / torpedo speed] ) $$
+
+
+\section{Determine the torpedo gyro angle}
+This example will show how to calculate the required gyro angle for a firing solution. This method is somewhat simplified and is best for smaller gyro angles (\textless 30\degree) and shorter ranges (\textless 1000 metres).
+
+$$sin (lead angle) / sin (AOB) = (target speed) / (torpedo speed)$$
+$$ gyroAngle = targetBearing -– leadAngle $$
+
+
+%%%END END END
+\pagebreak
 \begin{thebibliography}{9}
 
 \bibitem{angrHandB}
@@ -402,30 +325,6 @@ Accessed 17.08.2015,
 
 
 \end{thebibliography}
-
-\end{document}
-
-\section{Find the speed of a target with constant relative bearing}
-
-This technique takes advantage of the fact that if you are on a convergent course (moving towards each other), and the target’s bearing is not changing over time, then you are actually on a collision course. Since you know your Uboat’s speed and two angles of the triangle (AOB and target bearing), you can calculate the target’s speed.
-
-$$Target speed = Own speed \left( \frac{sin(TB)}{sin (AOB)} \right)$$
-
-You are maintaining 2 knots on an intercept course with a potential target. At the original observation, it was on a bearing of 280\degree with an observed angle on the bow of 20 \degree starboard. After several minutes, the bearing was still 280\degree.
-
-Note: Although you may not be able to achieve an attack position, this technique will also work to calculate the target’s speed if you are on divergent courses. !If an angle is greater than 90\degree, then simply subtract it from 180\degree (since the sine function is symmetrical around 90\degree).
-
-$$Target speed = Own speed \left( \frac{sin(180-TB)}{sin (180-AOB)} \right)$$
-
-\section{Determine the distance to the track of a target}
-
-As you manoeuver into a firing position, it is useful to know your distance to the track of your target. Knowing the range and AOB of the target:
-
-Track: intersection point between Submarine course and the current target course.
-
-$$Distance to Track = Range \left( sin(AOB) \right)$$
-
-\section{Determine an optimum speed for attack position}
 
 
 
