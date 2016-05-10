@@ -25,6 +25,14 @@ public class OutFormat {
 	    	return out;
 	    }
 	    
+	    //Two figures after decimal
+	    public String twoDP(double twoDP){
+	    	 
+	    	DecimalFormat formatter = new DecimalFormat("0.00");
+	    	String out = formatter.format(twoDP);
+	    	return out;
+	    }
+	    
 	    public String hourOut(double secondIn){
 	    	 
 	    		    	

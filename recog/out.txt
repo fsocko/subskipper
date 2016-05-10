@@ -1,10 +1,402 @@
-\section{Mogami Heavy Cruiser}
-\begin{centering}
-\includegraphics[width=0.8\textwidth, height=0.25\textheight]{NCA_Mogami_sil.dds"}
-\end{centering}
-\begin{tabular}{|l|c|c|c|c|c|}
+%%--Custom Recognition Manual
+%%--Modified 10.05.16
+\documentclass{article}
+%%--packages
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{geometry}
+%%--Define Margins
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ right=10mm,
+ top=10mm,
+ bottom=10mm,
+ }
+\author{Filip Socko}
+\begin{document}
+\section{Recognition Manual (Short)}
+\centering
+\begin{tabular}{|l|c|c|c|c|c|c|}
+Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
 \hline
-maxSpeed & length & width & mast & draft & refAspect \ \
+Small Old Split Freighter& $17.0$ & $80.5$ & $13.0$ & $17.9$ & $3.7$ & $4.4972$ \\
+
+\hline
+ Auxilary Subchaser& $17.0$ & $63.0$ & $12.0$ & $11.4$ & $4.2$ & $5.5263$ \\
+
+\hline
+Type C Escort& $19.0$ & $89.5$ & $11.1$ & $27.7$ & $3.4$ & $3.2310$ \\
+
+\hline
+Type D Escort& $19.0$ & $89.5$ & $11.1$ & $27.7$ & $3.4$ & $3.2310$ \\
+
+\hline
+Fishing boat& $10.0$ & $38.0$ & $8.6$ & $18.7$ & $1.8$ & $2.0321$ \\
+
+\hline
+Fishing boat& $10.0$ & $38.0$ & $8.5$ & $18.7$ & $1.8$ & $2.0321$ \\
+
+\hline
+Atami Gunboat& $20.0$ & $45.0$ & $6.4$ & $7.8$ & $1.1$ & $5.7692$ \\
+
+\hline
+Hira Gunboat& $20.0$ & $55.0$ & $7.9$ & $10.1$ & $1.1$ & $5.4455$ \\
+
+\hline
+Armed Merchant Cruiser& $17.5$ & $155.0$ & $18.7$ & $26.8$ & $8.7$ & $5.7836$ \\
+
+\hline
+Tug Boat& $15.0$ & $63.0$ & $12.0$ & $11.5$ & $4.2$ & $5.4783$ \\
+
+\hline
+Colorado Battleship& $21.0$ & $190.2$ & $30.2$ & $43.9$ & $9.1$ & $4.3326$ \\
+
+\hline
+Fuso Battleship& $24.7$ & $212.0$ & $32.0$ & $48.3$ & $9.5$ & $4.3892$ \\
+
+\hline
+Iowa Battleship& $33.0$ & $270.4$ & $33.4$ & $44.3$ & $11.0$ & $6.1038$ \\
+
+\hline
+Ise Battleship& $25.6$ & $220.0$ & $31.6$ & $44.5$ & $9.5$ & $4.9438$ \\
+
+\hline
+Ise Battleship (Late War)& $25.6$ & $220.0$ & $31.6$ & $49.2$ & $9.5$ & $4.4715$ \\
+
+\hline
+King George V Battleship& $27.0$ & $244.0$ & $37.0$ & $53.9$ & $9.1$ & $4.5269$ \\
+
+\hline
+Kongo Battleship& $30.5$ & $220.0$ & $30.0$ & $42.5$ & $8.5$ & $5.1765$ \\
+
+\hline
+Nevada Battleship& $20.5$ & $190.2$ & $30.2$ & $43.9$ & $9.1$ & $4.3326$ \\
+
+\hline
+New Mexico Battleship& $22.0$ & $190.0$ & $30.0$ & $42.0$ & $10.0$ & $4.5238$ \\
+
+\hline
+North Carolina Battleship& $27.0$ & $220.0$ & $33.0$ & $33.4$ & $9.0$ & $6.5868$ \\
+
+\hline
+\end{tabular}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
+\hline
+Pennsylvania Battleship& $21.0$ & $190.2$ & $30.2$ & $43.9$ & $9.1$ & $4.3326$ \\
+
+\hline
+Tennessee Battleship& $20.5$ & $190.0$ & $30.0$ & $42.0$ & $10.0$ & $4.5238$ \\
+
+\hline
+Tennessee Battleship& $20.5$ & $190.2$ & $30.2$ & $43.9$ & $9.1$ & $4.3326$ \\
+
+\hline
+West Virginia Battleship& $21.0$ & $190.0$ & $30.0$ & $42.0$ & $10.0$ & $4.5238$ \\
+
+\hline
+Yamato Battleship& $27.4$ & $263.0$ & $42.5$ & $39.2$ & $10.8$ & $6.7092$ \\
+
+\hline
+Baltimore Heavy Cruiser& $33.0$ & $205.0$ & $21.0$ & $30.6$ & $6.5$ & $6.6993$ \\
+
+\hline
+Pocket Battleship& $28.5$ & $183.0$ & $21.0$ & $37.9$ & $7.0$ & $4.8285$ \\
+
+\hline
+Furutaka Heavy Cruiser& $33.0$ & $188.0$ & $21.0$ & $25.9$ & $5.2$ & $7.2587$ \\
+
+\hline
+Kent Heavy Cruiser& $31.5$ & $183.0$ & $22.0$ & $21.8$ & $5.0$ & $8.3945$ \\
+
+\hline
+Maya Heavy Cruiser& $34.0$ & $204.0$ & $22.0$ & $33.5$ & $5.9$ & $6.0896$ \\
+
+\hline
+Mogami Heavy Cruiser& $35.0$ & $200.0$ & $21.3$ & $35.0$ & $6.7$ & $5.7143$ \\
+
+\hline
+Northampton Heavy Cruiser& $32.7$ & $183.0$ & $21.0$ & $49.0$ & $7.0$ & $3.7347$ \\
+
+\hline
+Takao Heavy Cruiser& $36.5$ & $204.0$ & $23.0$ & $35.3$ & $6.0$ & $5.7790$ \\
+
+\hline
+Agano Light Cruiser& $35.0$ & $175.0$ & $14.0$ & $23.6$ & $5.7$ & $7.4153$ \\
+
+\hline
+Brooklyn Light Cruiser& $32.5$ & $185.0$ & $22.0$ & $32.3$ & $7.0$ & $5.7276$ \\
+
+\hline
+Cleveland Light Cruiser& $32.5$ & $185.0$ & $19.5$ & $36.2$ & $6.6$ & $5.1105$ \\
+
+\hline
+Dido Light Cruiser& $32.0$ & $156.0$ & $15.7$ & $36.5$ & $6.3$ & $4.2740$ \\
+
+\hline
+Fiji Light Cruiser& $32.0$ & $169.0$ & $18.9$ & $43.9$ & $5.0$ & $3.8497$ \\
+
+\hline
+Kuma Light Cruiser& $36.0$ & $163.0$ & $15.0$ & $35.6$ & $6.1$ & $4.5787$ \\
+
+\hline
+Naka Light Cruiser& $35.25$ & $162.0$ & $14.0$ & $31.3$ & $5.1$ & $5.1757$ \\
+
+\hline
+\end{tabular}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
+\hline
+Omaha Light Cruiser& $35.0$ & $168.0$ & $16.0$ & $19.5$ & $4.5$ & $8.6154$ \\
+
+\hline
+Flower Corvette& $16.0$ & $60.6$ & $9.7$ & $19.7$ & $3.5$ & $3.0761$ \\
+
+\hline
+Akitsu Escort Carrier& $20.0$ & $143.75$ & $19.5$ & $35.7$ & $7.84$ & $4.0266$ \\
+
+\hline
+Attacker Escort Carrier& $18.0$ & $152.0$ & $30.0$ & $33.8$ & $8.2$ & $4.4970$ \\
+
+\hline
+Bogue Escort Carrier& $18.0$ & $152.0$ & $30.0$ & $11.3$ & $8.2$ & $13.4513$ \\
+
+\hline
+Casablanca Escort Carrier& $19.0$ & $156.0$ & $33.0$ & $13.9$ & $6.3$ & $11.2230$ \\
+
+\hline
+Taiyo Escort Carrier& $21.0$ & $180.1$ & $22.5$ & $15.1$ & $7.5$ & $11.9272$ \\
+
+\hline
+Chitose Seaplane Tender& $28.9$ & $192.5$ & $20.8$ & $32.6$ & $7.5$ & $5.9049$ \\
+
+\hline
+Hiryu Fleet Carrier& $34.3$ & $223.3$ & $21.3$ & $37.2$ & $7.5$ & $6.0027$ \\
+
+\hline
+Shokaku Fleet Carrier& $34.5$ & $250.0$ & $26.0$ & $32.4$ & $8.7$ & $7.7160$ \\
+
+\hline
+Taiho Fleet Carrier& $33.3$ & $253.7$ & $27.8$ & $46.2$ & $9.5$ & $5.4913$ \\
+
+\hline
+Fleet Carrier& $32.5$ & $250.0$ & $33.5$ & $54.4$ & $6.8$ & $4.5956$ \\
+
+\hline
+Akizuki Destroyer& $33.0$ & $135.0$ & $11.6$ & $22.8$ & $3.8$ & $5.9211$ \\
+
+\hline
+Asashio Destroyer& $35.0$ & $118.0$ & $10.3$ & $27.0$ & $3.4$ & $4.3704$ \\
+
+\hline
+Clemson Destroyer& $35.0$ & $95.0$ & $9.4$ & $28.8$ & $3.1$ & $3.2986$ \\
+
+\hline
+Fletcher Destroyer& $35.0$ & $115.0$ & $14.0$ & $28.0$ & $4.9$ & $4.1071$ \\
+
+\hline
+Fubuki Destroyer& $38.0$ & $118.5$ & $10.3$ & $22.6$ & $3.5$ & $5.2434$ \\
+
+\hline
+J Class Destroyer& $36.0$ & $108.5$ & $12.0$ & $28.0$ & $4.6$ & $3.8750$ \\
+
+\hline
+Minekaze Destroyer& $39.0$ & $102.6$ & $9.1$ & $21.8$ & $2.9$ & $4.7064$ \\
+
+\hline
+Mutsuki Destroyer& $37.0$ & $102.0$ & $9.1$ & $11.2$ & $3.0$ & $9.1071$ \\
+
+\hline
+\end{tabular}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
+\hline
+Shiratsuyu Destroyer& $34.0$ & $108.0$ & $9.2$ & $22.0$ & $3.0$ & $4.9091$ \\
+
+\hline
+Somers Destroyer& $37.0$ & $116.0$ & $11.2$ & $31.5$ & $4.2$ & $3.6825$ \\
+
+\hline
+Tribal Destroyer& $36.5$ & $115.0$ & $11.1$ & $15.4$ & $4.0$ & $7.4675$ \\
+
+\hline
+V.W Destroyer& $34.0$ & $95.0$ & $9.0$ & $21.0$ & $3.2$ & $4.5238$ \\
+
+\hline
+Yugumo Destroyer& $35.0$ & $118.0$ & $10.3$ & $11.5$ & $3.4$ & $10.2609$ \\
+
+\hline
+Z Class Destroyer& $38.0$ & $118.5$ & $10.3$ & $22.6$ & $3.5$ & $5.2434$ \\
+
+\hline
+Akikaze Destroyer& $34.0$ & $102.5$ & $8.9$ & $21.8$ & $2.9$ & $4.7018$ \\
+
+\hline
+Buckley Destroyer Escort& $24.0$ & $93.2$ & $11.2$ & $21.1$ & $3.4$ & $4.4171$ \\
+
+\hline
+Evarts Destroyer Escort& $19.0$ & $89.5$ & $11.1$ & $27.7$ & $3.4$ & $3.2310$ \\
+
+\hline
+JC Butler Destroyer Escort& $24.0$ & $93.3$ & $11.1$ & $28.1$ & $2.8$ & $3.3203$ \\
+
+\hline
+Kisaragi Destroyer& $37.0$ & $102.0$ & $9.1$ & $11.2$ & $3.0$ & $9.1071$ \\
+
+\hline
+Momi Destroyer& $18.0$ & $102.6$ & $9.08$ & $11.1$ & $2.93$ & $9.2432$ \\
+
+\hline
+Patrol Boat 102& $35.0$ & $95.0$ & $9.4$ & $28.7$ & $3.1$ & $3.3101$ \\
+
+\hline
+River class Frigate& $20.0$ & $91.5$ & $11.3$ & $25.9$ & $4.0$ & $3.5328$ \\
+
+\hline
+Fishing Trawler& $12.0$ & $62.0$ & $11.0$ & $13.5$ & $4.2$ & $4.5926$ \\
+
+\hline
+Fishing Boat& $8.0$ & $34.0$ & $8.6$ & $7.9$ & $2.4$ & $4.3038$ \\
+
+\hline
+Nagara Maru& $19.0$ & $137.0$ & $18.0$ & $20.5$ & $7.5$ & $6.6829$ \\
+
+\hline
+Hakusika Maru& $12.0$ & $135.0$ & $17.0$ & $20.3$ & $8.7$ & $6.6502$ \\
+
+\hline
+Akita Maru& $13.5$ & $105.0$ & $17.8$ & $16.0$ & $7.3$ & $6.5625$ \\
+
+\hline
+Heito Maru& $17.0$ & $103.6$ & $13.5$ & $16.6$ & $6.5$ & $6.2410$ \\
+
+\hline
+\end{tabular}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
+\hline
+Zinbu Maru& $10.0$ & $120.0$ & $15.0$ & $18.6$ & $4.7$ & $6.4516$ \\
+
+\hline
+Biyo Maru& $12.0$ & $120.0$ & $15.0$ & $20.1$ & $7.5$ & $5.9701$ \\
+
+\hline
+Momoyama Maru& $11.0$ & $120.0$ & $15.0$ & $16.0$ & $4.7$ & $7.5000$ \\
+
+\hline
+Momoyama Maru& $11.0$ & $120.0$ & $15.0$ & $16.0$ & $4.7$ & $7.5000$ \\
+
+\hline
+Kinposan Maru& $14.5$ & $108.0$ & $14.3$ & $18.5$ & $6.6$ & $5.8378$ \\
+
+\hline
+Old Raked Bow Split Merchant& $11.0$ & $120.0$ & $15.0$ & $17.3$ & $4.7$ & $6.9364$ \\
+
+\hline
+Medium Modern Passenger/Freighter& $16.0$ & $105.0$ & $17.8$ & $27.4$ & $7.3$ & $3.8321$ \\
+
+\hline
+Taihosan Maru& $13.0$ & $80.5$ & $13.0$ & $17.9$ & $3.7$ & $4.4972$ \\
+
+\hline
+Coastal Composite Freighter& $13.0$ & $80.77$ & $11.58$ & $17.9$ & $5.48$ & $4.5123$ \\
+
+\hline
+Kasagisan Maru& $12.5$ & $86.8$ & $12.8$ & $18.1$ & $6.1$ & $4.7956$ \\
+
+\hline
+Small Split Freighter& $12.5$ & $86.87$ & $12.8$ & $18.1$ & $6.1$ & $4.7994$ \\
+
+\hline
+Liberty Cargo& $13.0$ & $147.0$ & $18.1$ & $21.0$ & $5.8$ & $7.0000$ \\
+
+\hline
+Landing Ship Tank& $10.8$ & $98.7$ & $15.0$ & $25.2$ & $3.3$ & $3.9167$ \\
+
+\hline
+Okinoshima Minelayer& $20.0$ & $123.4$ & $15.6$ & $28.5$ & $4.8$ & $4.3298$ \\
+
+\hline
+Shimushu Escort& $20.0$ & $70.0$ & $9.08$ & $24.5$ & $2.93$ & $2.8571$ \\
+
+\hline
+Nippon Maru& $20.0$ & $150.0$ & $19.2$ & $16.7$ & $8.6$ & $8.9820$ \\
+
+\hline
+Large German Tanker& $18.0$ & $190.0$ & $30.3$ & $24.2$ & $10.7$ & $7.8512$ \\
+
+\hline
+Buzyun Maru& $11.0$ & $103.0$ & $14.0$ & $9.8$ & $6.4$ & $10.5102$ \\
+
+\hline
+British Medium Old Tanker& $10.0$ & $91.5$ & $15.0$ & $11.0$ & $4.5$ & $8.3182$ \\
+
+\hline
+Haruna Maru& $11.0$ & $76.0$ & $11.0$ & $19.7$ & $4.6$ & $3.8579$ \\
+
+\hline
+\end{tabular}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
+\hline
+T3 Tanker& $18.0$ & $190.0$ & $30.3$ & $25.5$ & $10.7$ & $7.4510$ \\
+
+\hline
+Wakatake Patrol Boat& $18.0$ & $102.6$ & $9.08$ & $21.7$ & $2.93$ & $4.7281$ \\
+
+\hline
+Black Swan Sloop& $19.5$ & $91.3$ & $11.5$ & $27.2$ & $3.5$ & $3.3566$ \\
+
+\hline
+Elite Black Swan Sloop& $19.5$ & $91.3$ & $11.5$ & $27.2$ & $3.5$ & $3.3566$ \\
+
+\hline
+Conte Verde Liner& $21.0$ & $173.74$ & $22.56$ & $28.6$ & $7.5$ & $6.0748$ \\
+
+\hline
+Horai Maru& $17.0$ & $137.46$ & $19.0$ & $25.6$ & $8.53$ & $5.3695$ \\
+
+\hline
+Kiturin Maru& $18.5$ & $130.0$ & $19.0$ & $25.7$ & $8.6$ & $5.0584$ \\
+
+\hline
+Tyohei Maru& $13.0$ & $79.0$ & $10.1$ & $14.3$ & $4.6$ & $5.5245$ \\
+
+\hline
+Elco Torpedo Boat& $44.0$ & $24.7$ & $6.6$ & $5.3$ & $1.2$ & $4.6604$ \\
+
+\hline
+Schnellboat& $44.0$ & $24.7$ & $6.6$ & $5.3$ & $1.2$ & $4.6604$ \\
+
+\hline
+Sampan& $10.0$ & $19.5$ & $6.6$ & $16.5$ & $1.2$ & $1.1818$ \\
+
+\hline
+Junk& $10.0$ & $19.6$ & $6.6$ & $17.7$ & $1.2$ & $1.1073$ \\
+
+\hline
+Large Sampan& $10.0$ & $35.0$ & $8.1$ & $26.9$ & $2.2$ & $1.3011$ \\
+
+\hline
+Etorofu Escort& $19.7$ & $66.0$ & $9.08$ & $17.9$ & $2.93$ & $3.6872$ \\
+
+\hline
+Troop Transport& $16.0$ & $152.0$ & $20.0$ & $23.2$ & $8.5$ & $6.5517$ \\
+
+\hline
+Armed Trawler& $12.0$ & $62.0$ & $11.0$ & $13.5$ & $4.2$ & $4.5926$ \\
+
+\hline
+Victory Cargo& $17.0$ & $139.6$ & $18.5$ & $21.8$ & $7.3$ & $6.4037$ \\
+
+\hline
+Submarine Tender& $18.0$ & $201.0$ & $31.0$ & $22.4$ & $9.4$ & $8.9732$ \\
+
 \hline
 \end{tabular}
 \end{document}

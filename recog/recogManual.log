@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.9)  10 MAY 2016 19:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.9)  10 MAY 2016 21:04
 entering extended mode
 **recogManual.tex
 (C:\Users\fps\git\SubSkipper\recog\recogManual.tex
@@ -228,22 +228,22 @@ Package geometry Warning: Over-specification in `v'-direction.
     `height' (731.23582pt) is ignored.
 
 (C:\Users\fps\git\SubSkipper\recog\recogManual.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 21.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -253,9 +253,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count109
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (C:\Users\fps\git\SubSkipper\recog\recogManual.out)
 (C:\Users\fps\git\SubSkipper\recog\recogManual.out)
@@ -310,43 +310,37 @@ LaTeX Info: Redefining \nameref on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figures/AuxGunboat_sil.png, id=7, 513.92pt x 256.96pt>
-File: figures/AuxGunboat_sil.png Graphic file (type png)
-
-<use figures/AuxGunboat_sil.png>
-Package pdftex.def Info: figures/AuxGunboat_sil.png used on input line 42.
-(pdftex.def)             Requested size: 432.4897pt x 197.03642pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <7> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 45.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
- [1
+(Font)              <5> on input line 24.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
+[1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/fps/git/SubSkipp
-er/recog/figures/AuxGunboat_sil.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
 
 (C:\Users\fps\git\SubSkipper\recog\recogManual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
 Package rerunfilecheck Info: File `recogManual.out' has not changed.
-(rerunfilecheck)             Checksum: BE9FE1E95FBD89CD3BB8427E0F38DAC2;51.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
+(rerunfilecheck)             Checksum: 4958465B0C4925A48CA9B3AD7EF0DEED;64.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
  ) 
 Here is how much of TeX's memory you used:
- 6576 strings out of 493921
- 97776 string characters out of 3144883
- 182910 words of memory out of 3000000
- 9853 multiletter control sequences out of 15000+200000
+ 6569 strings out of 493921
+ 97615 string characters out of 3144883
+ 247910 words of memory out of 3000000
+ 9848 multiletter control sequences out of 15000+200000
  4245 words of font info for 16 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,32p,213b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,7n,32p,213b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on recogManual.pdf (1 page, 65018 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on recogManual.pdf (3 pages, 57272 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 14 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
