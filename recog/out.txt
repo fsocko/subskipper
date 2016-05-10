@@ -1,0 +1,10 @@
+\section{Mogami Heavy Cruiser}
+\begin{centering}
+\includegraphics[width=0.8\textwidth, height=0.25\textheight]{NCA_Mogami_sil.dds"}
+\end{centering}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+maxSpeed & length & width & mast & draft & refAspect \ \
+\hline
+\end{tabular}
+\end{document}
