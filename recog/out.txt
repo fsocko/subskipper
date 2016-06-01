@@ -84,10 +84,6 @@ New Mexico Battleship& $22.0$ & $190.0$ & $30.0$ & $42.0$ & $10.0$ & $4.5238$ \\
 North Carolina Battleship& $27.0$ & $220.0$ & $33.0$ & $33.4$ & $9.0$ & $6.5868$ \\
 
 \hline
-\end{tabular}
-\begin{tabular}{|l|c|c|c|c|c|c|}
-Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
-\hline
 Pennsylvania Battleship& $21.0$ & $190.2$ & $30.2$ & $43.9$ & $9.1$ & $4.3326$ \\
 
 \hline
@@ -148,10 +144,6 @@ Kuma Light Cruiser& $36.0$ & $163.0$ & $15.0$ & $35.6$ & $6.1$ & $4.5787$ \\
 Naka Light Cruiser& $35.25$ & $162.0$ & $14.0$ & $31.3$ & $5.1$ & $5.1757$ \\
 
 \hline
-\end{tabular}
-\begin{tabular}{|l|c|c|c|c|c|c|}
-Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
-\hline
 Omaha Light Cruiser& $35.0$ & $168.0$ & $16.0$ & $19.5$ & $4.5$ & $8.6154$ \\
 
 \hline
@@ -182,6 +174,10 @@ Hiryu Fleet Carrier& $34.3$ & $223.3$ & $21.3$ & $37.2$ & $7.5$ & $6.0027$ \\
 Shokaku Fleet Carrier& $34.5$ & $250.0$ & $26.0$ & $32.4$ & $8.7$ & $7.7160$ \\
 
 \hline
+\end{tabular}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
+\hline
 Taiho Fleet Carrier& $33.3$ & $253.7$ & $27.8$ & $46.2$ & $9.5$ & $5.4913$ \\
 
 \hline
@@ -211,10 +207,6 @@ Minekaze Destroyer& $39.0$ & $102.6$ & $9.1$ & $21.8$ & $2.9$ & $4.7064$ \\
 \hline
 Mutsuki Destroyer& $37.0$ & $102.0$ & $9.1$ & $11.2$ & $3.0$ & $9.1071$ \\
 
-\hline
-\end{tabular}
-\begin{tabular}{|l|c|c|c|c|c|c|}
-Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
 \hline
 Shiratsuyu Destroyer& $34.0$ & $108.0$ & $9.2$ & $22.0$ & $3.0$ & $4.9091$ \\
 
@@ -275,10 +267,6 @@ Akita Maru& $13.5$ & $105.0$ & $17.8$ & $16.0$ & $7.3$ & $6.5625$ \\
 \hline
 Heito Maru& $17.0$ & $103.6$ & $13.5$ & $16.6$ & $6.5$ & $6.2410$ \\
 
-\hline
-\end{tabular}
-\begin{tabular}{|l|c|c|c|c|c|c|}
-Name & Max Speed & Length & Width & Mast Height & Draft & Aspect\\
 \hline
 Zinbu Maru& $10.0$ & $120.0$ & $15.0$ & $18.6$ & $4.7$ & $6.4516$ \\
 

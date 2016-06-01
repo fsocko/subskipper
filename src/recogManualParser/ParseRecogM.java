@@ -21,7 +21,7 @@ public class ParseRecogM {
 		int i = 0;
 		while(i < 118){
 			if(i==0){startDoc(); System.out.println("startTable");}
-			if(i % 20 == 0){midTable(i);}
+			if(i % 50 == 0){midTable(i);}
 			writeShipLatex(target.getShipByID(i), false);
 			i ++;
 		}
