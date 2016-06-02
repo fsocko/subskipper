@@ -17,9 +17,7 @@ import xmlParser.Ships;
 public class ParseRecogM {
 
 	public static void main(String[] args) throws IOException {
-
-		//Get the ship objects	
-		//target.printShips(target.getShips());
+	
 		writeAllHTML();
 	}
 		
@@ -31,7 +29,7 @@ public class ParseRecogM {
 			
 			//Main Ship HTML
 			PrepShipData target = new PrepShipData();
-			Ships shipList = target.getShips();
+			Ships shipList = target.sortShipsType(target.getShips());
 			for(int i = 0; i < shipList.getShips().size(); i++)
 			{
 				

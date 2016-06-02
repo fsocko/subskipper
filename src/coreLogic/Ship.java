@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "ship")
 @XmlAccessorType (XmlAccessType.FIELD)
 
-public class Ship {
+public class Ship implements Comparable<Ship> {
 	
 	private int ID;
 	private String nation;
@@ -155,12 +155,28 @@ public class Ship {
 	public void setRefAspect(double refAspect) {
 		this.refAspect = refAspect;
 	}
-
+	
+	
 	@Override
 	public String toString() {
 		return "Ship [ID=" + ID + ", name=" + name + ", type=" + type + ", typeName=" + typeName + ", imagePath="
 				+ imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width + ", mast=" + mast
 				+ ", draft=" + draft + ", disp=" + disp + ", refAspect=" + refAspect + "]";
 	}
+
+	public int compareTo(Ship a) {
+		int compareType = (a.getType());
+		return compareType - this.getType();
+	}
+
+/*    public int compareTo(Student comparestu) {
+        int compareage=((Student)comparestu).getStudentage();
+         For Ascending order
+        return this.studentage-compareage;
+
+         For Descending order do like this 
+        //return compareage-this.studentage;
+    }*/
+	
 	
 }

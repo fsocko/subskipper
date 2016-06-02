@@ -83,9 +83,15 @@ public class PrepShipData {
 		}
 	}
 	
-	//switch for sorting ships by different properties. The values are:
-	public void sortShips(Ships shipRecords, int property){
+	//Sort Ships based on Type int; ascending 
+	public Ships sortShipsType(Ships shipRecords){
 		
+		ArrayList<Ship> allShips = shipRecords.getShips(); 
+		Ships sortedList = new Ships();
+		Collections.sort(allShips);
+		sortedList.setShips(allShips);
+		return sortedList;
+		  
 	}
 
 }//EOF

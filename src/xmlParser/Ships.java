@@ -32,5 +32,10 @@ public class Ships
 		return single;
 	}
 
+	@Override
+	public String toString() {
+		return "Ships [ships=" + ships + "]";
+	}
+
 }
 
