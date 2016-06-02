@@ -33,6 +33,7 @@ public class ParseRecogM {
 			Ships shipList = target.getShips();
 			for(int i = 0; i < shipList.getShips().size(); i++)
 			{
+				
 				htmlDoc += HTMLShip(shipList.getShip(i));
 			}
 			//Close remaining tags
@@ -83,7 +84,7 @@ public class ParseRecogM {
 		private static void writeHTML(String input){
 			
 			FileIO htmlW = new FileIO();
-			htmlW.writeLine("recog/recogHTML/recogL.html", input);
+			htmlW.writeLine("recog/recogHTML/recogL2.html", input);
 			
 		}
 		
