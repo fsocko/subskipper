@@ -1,16 +1,14 @@
 package recogManualParser;
 
-import com.x5.template.Theme;
-
-import coreLogic.Ship;
-import xmlParser.PrepShipData;
-
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.DecimalFormat;
 
 import com.x5.template.Chunk;
+import com.x5.template.Theme;
+
+import coreLogic.FileIO;
+import coreLogic.Ship;
+import xmlParser.PrepShipData;
+import xmlParser.Ships;
 
 //Parse data from XML parser which parses mod data, into a LATEX format in order to
 //create a paper or digital and accurate recognition manual.
@@ -26,77 +24,69 @@ public class ParseRecogM {
 		
 		public static void writeAllHTML(){
 			
+						
+			//<head>
+			String htmlDoc = HTMLStart();
+			
+			//Main Ship HTML
 			PrepShipData target = new PrepShipData();
-		
-			
-			writeHTML(target.getShipByID(1));
-			writeHTML(target.getShipByID(2));
-			writeHTML(target.getShipByID(3));
-			writeHTML(target.getShipByID(4));
-			
-		}
-	
-		public static void writeHTML(Ship record){
-		 
-		Theme theme = new Theme();
-		//Chunk h = theme.makeChunk("recogL2#start"); //Chunk used to write to HTML: mostly <head>.
-		//h.set("title", "Recognition Manual (SH4, TMO, SCAF)." ); //Altering the title tag.
-		//System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
-		
-		Chunk h = theme.makeChunk("recogL2#ship");
-		h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
-		h.set("name", record.getName());
-		h.set("class", record.getTypeName());
-		h.set("speed", record.getMaxSpeed());
-		h.set("length", record.getLength());
-		h.set("height", record.getMast());
-		h.set("draft", record.getDraft());
-		h.set("disp", record.getDisp());
-		h.set("aspect", record.getRefAspect());
-		
-		//Convert image path to filename
-		String pngPath = record.getImagePath();
-		pngPath = pngPath.substring((pngPath.lastIndexOf("\\") + 1), pngPath.lastIndexOf("."));
-		String figPath = "..//figures//" + pngPath + ".png";	
-		h.set("image", figPath);
-		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
-		
-		//h = theme.makeChunk("recogL2#terminate");
-		
-		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
-		
-		}
-		
-		
-		public void writeShipLatex(Ship record, boolean image){
-			
-			/* //Convert image path to filename
-			String recordImgPath = record.getImagePath();
-			recordImgPath = recordImgPath.substring(recordImgPath.lastIndexOf("\\") + 1);
-			*/
-			String name = record.getName();
-			name = name.replaceAll("&", ".");
-			try{
-			PrintWriter pw = new PrintWriter(new FileOutputStream("recog/out.txt", true));
-			pw.println(name +"& $" + record.getMaxSpeed() +"$ & $"+ record.getLength() +"$ & $"+ record.getWidth()
-			+"$ & $"+ record.getMast() +"$ & $"+ record.getDraft() +"$ & $"+ twoDP(record.getRefAspect()) + "$ \\" + "\\");
+			Ships shipList = target.getShips();
+			for(int i = 0; i < shipList.getShips().size(); i++)
+			{
+				htmlDoc += HTMLShip(shipList.getShip(i));
 			}
+			//Close remaining tags
+			htmlDoc += HTMLEnd();
+			writeHTML(htmlDoc);
 			
-			 
-			 catch (IOException e){
-	             e.printStackTrace();
-	             System.out.println("could not read file.");
-	         } 
+			System.out.println("HTML Written.");
 		}
 		
-		 public String twoDP(double twoDP){
-		   	 
-		    	DecimalFormat formatter = new DecimalFormat("0.0000");
-		    	String out = formatter.format(twoDP);
-		    	return out;
-		    }
+		private static String HTMLStart(){
+			
+			Theme theme = new Theme();
+			Chunk h = theme.makeChunk("recogL2#start"); //Chunk used to write to HTML: mostly <head>.
+			h.set("title", "Recognition Manual (SH4, TMO, SCAF)." ); //Altering the title tag.
+			//System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
+			return h.toString();
+		}
 		
+		private static String HTMLShip(Ship record){
+		 
+			Theme theme = new Theme();	
+			Chunk h = theme.makeChunk("recogL2#ship");
+			h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
+			h.set("name", record.getName());
+			h.set("class", record.getTypeName());
+			h.set("speed", record.getMaxSpeed());
+			h.set("length", record.getLength());
+			h.set("height", record.getMast());
+			h.set("draft", record.getDraft());
+			h.set("disp", record.getDisp());
+			h.set("aspect", record.getRefAspect());
+			
+			//Convert image path to filename
+			String pngPath = record.getImagePath();
+			pngPath = pngPath.substring((pngPath.lastIndexOf("\\") + 1), pngPath.lastIndexOf("."));
+			String figPath = "../figures/" + pngPath + ".png";	
+			h.set("image", figPath);
+			return h.toString(); //Temporarily outputs to console. Will make it send to file.	
 
+		}
+		
+		private static String HTMLEnd(){
+			Theme theme = new Theme();	
+			Chunk h = theme.makeChunk("recogL2#terminate");
+			return h.toString();
+		}
+
+		private static void writeHTML(String input){
+			
+			FileIO htmlW = new FileIO();
+			htmlW.writeLine("recog/recogHTML/recogL.html", input);
+			
+		}
+		
 	}
 	
 	

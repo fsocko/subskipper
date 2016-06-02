@@ -5,6 +5,7 @@ border: 1px solid red;
 background-color: grey;
 border: 2px dashed black;
 overflow: hidden;
+margin-bottom: 25px;
 }
 
 .flag{

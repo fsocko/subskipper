@@ -22,10 +22,10 @@ public class PrepShipData {
 		
 		ReadShipXML readShips = new ReadShipXML();
 		Ships parsedShips = new Ships();
-		//if xml file is not null Set var parsedShips
-		System.out.println("XML read successfully.");
+		
 		if(!readShips.readXML().equals(null)){
 			parsedShips = readShips.readXML();
+			System.out.println("XML read successfully.");
 		}
 		else{parsedShips = FullDataCycle();}
 		
@@ -36,7 +36,7 @@ public class PrepShipData {
 	//This method is run if there is no readily available XML file. 
 	//It runs both SCAF to XML as well as subsequently reading the
 	//resulting file
-	public Ships FullDataCycle(){
+	private Ships FullDataCycle(){
 		WriteShipData();
 		ReadShipXML readShips = new ReadShipXML();
 		Ships fcShips = new Ships();
@@ -45,7 +45,7 @@ public class PrepShipData {
 	}
 	
 	//Writes SCAF to xml
-	public void WriteShipData(){
+	private void WriteShipData(){
 			
 		//Look up and parse data from SCAF to XML file
 		ReadSCAF scaf = new ReadSCAF();
@@ -74,12 +74,12 @@ public class PrepShipData {
 		}
 		return idShip;
 	}
-	
+		
 	//Prints contents of a Ships
 	public void printShips(Ships printShips){
 		
 		for(int i = 0; i < printShips.getShips().size(); i++){
-			System.out.println(printShips.getShips().get(i).toString());
+			System.out.println(printShips.getShip(i).toString());
 		}
 	}
 	
