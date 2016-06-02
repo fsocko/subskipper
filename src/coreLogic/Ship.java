@@ -188,6 +188,14 @@ public class Ship implements Comparable<Ship> {
 			return s1Name.compareTo(s2Name);
 		}
 	};
+	
+	//Converts relevant measurements to "wrong" units - feet
+	public void makeImperial(){
 		
+		this.setLength(this.length * 3.28084);
+		this.setWidth(this.width * 3.28084);
+		this.setMast(this.mast * 3.28084);
+		this.setDraft(this.draft * 3.28084);
+	}
 	
 }

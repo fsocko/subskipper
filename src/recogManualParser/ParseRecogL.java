@@ -11,39 +11,38 @@ import coreLogic.Ship;
 import xmlParser.PrepShipData;
 import xmlParser.Ships;
 
-//Parse data from XML parser which parses mod data, into a LATEX format in order to
-//create a paper or digital and accurate recognition manual.
+//Parse data from XML parser which parses SCAF data, into long form HTML recognition manual.
 
-public class ParseRecogM {
+public class ParseRecogL {
 
 	public static void main(String[] args) throws IOException {
 		
 		PrepShipData target = new PrepShipData();
-		writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSN.html");
-		writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLST.html");
+		writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSN.html", false);
+		writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLST.html", false);
 	}
 		
 		//takes Ship list Ships, takes filename of doc. - Long recog manual
 		//with images and data in long format, styled with CSS.
-		public static void writeRecogLHTML(Ships input, String filename){
+		//boolean imperial turns relevant units to "wrong units"
+		public static void writeRecogLHTML(Ships shipList, String filename, boolean imperial){
 						
 			//<head>
-			String htmlDoc = HTMLStart();
+			String htmlDoc = HTMLStartL();
 			
 			//Main Ship HTML
-			Ships shipList = input;
 			for(int i = 0; i < shipList.getShips().size(); i++)
 			{
-				htmlDoc += HTMLShip(shipList.getShip(i));
+				htmlDoc += HTMLShipL(shipList.getShip(i), imperial);
 			}
 			//Close remaining tags
-			htmlDoc += HTMLEnd();
+			htmlDoc += HTMLEndL();
 			writeHTML(htmlDoc, filename);
 			
 			System.out.println("HTML Written.");
 		}
 		
-		private static String HTMLStart(){
+		private static String HTMLStartL(){
 			
 			Theme theme = new Theme();
 			Chunk h = theme.makeChunk("recogL2#start"); //Chunk used to write to HTML: mostly <head>.
@@ -52,8 +51,15 @@ public class ParseRecogM {
 			return h.toString();
 		}
 		
-		private static String HTMLShip(Ship record){
-		 
+		private static String HTMLShipL(Ship record, boolean imperial){
+			
+			String unit = "m";
+			if(imperial){
+				unit = "ft";
+				record.makeImperial();
+				
+			}
+			
 			OutFormat f = new OutFormat();
 			Theme theme = new Theme();	
 			Chunk h = theme.makeChunk("recogL2#ship");
@@ -61,9 +67,9 @@ public class ParseRecogM {
 			h.set("name", record.getName());
 			h.set("class", record.getTypeName());
 			h.set("speed", f.addUnit(record.getMaxSpeed(), "kn"));
-			h.set("length", f.addUnit(record.getLength(), "m"));
-			h.set("height", f.addUnit(record.getMast(), "m"));
-			h.set("draft", f.addUnit(record.getDraft(), "m"));
+			h.set("length", f.addUnit(record.getLength(), unit));
+			h.set("height", f.addUnit(record.getMast(), unit));
+			h.set("draft", f.addUnit(record.getDraft(), unit));
 			h.set("disp", record.getDisp() + " GRT");
 			h.set("aspect", f.fourDP(record.getRefAspect()));
 			
@@ -76,7 +82,7 @@ public class ParseRecogM {
 
 		}
 		
-		private static String HTMLEnd(){
+		private static String HTMLEndL(){
 			Theme theme = new Theme();	
 			Chunk h = theme.makeChunk("recogL2#terminate");
 			return h.toString();

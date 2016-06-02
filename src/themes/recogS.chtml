@@ -1,25 +1,32 @@
 {#start}
-
-{#start}
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>SH4 SCAF&TMO: Recognition Manual (S)</title> 
+  <title>SH4 SCAF&TMO: Recognition Manual(Short)</title> 
 </head>
 <body>
+<h1>SH4 SCAF&TMO: Recognition Manual(Short)</h1>
+<table border="1" width=100%>
+<th>Name</th><th>Tonnage (GRT)</th><th>Speed (kn)</th><th>Length (m)</th><th>Height (m)</th><th>Draft (m)</th><th>Aspect</th>
 {#}
 
-{#table}
+{#ship}
+<tr>
 
-<table border="1" width="{$box_width:300}">
- <tr><td>{$box_title}</td></tr>
- <tr><td>{$box_content}</td></tr>
+<td align=right>{$name}</td>
+<td align=center>{$disp}</td>
+<td align=center>{$speed}</td>
+<td align=center>{$length}</td>
+<td align=center>{$height}</td>
+<td align=center>{$draft}</td>
+<td align=center>{$aspect}</td>
+
+</tr>
+{#}
+
+{#terminate}
 </table>
-
-{#}
-
-{terminate}
 </body>
 </html>
 {#}

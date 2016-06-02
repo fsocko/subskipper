@@ -5,18 +5,25 @@ import java.text.*;
 public class OutFormat {
 
 	    public String degreeOut(double degIn){
- 
 	    	DecimalFormat formatter = new DecimalFormat("000");
 	    	String out = formatter.format(degIn) + "\u00b0";
 	    	return out;
 	    }
 	    
 	    //convert from metre per second to knot
-	    public String msToKnot(double msIn){
-	    	DecimalFormat formatter = new DecimalFormat("0.00");
-	    	String out = formatter.format(msIn*1.94384449) + " kn";
+	    public String msToKnot(double ms){
+	    	double kt = ms * 1.94384449;
+	    	String out = addUnit(ms, "kt");
 	    	return out;
 	    }
+	    
+	    //convert from m to ft
+	    public String mToFt(double m){
+	    	double kt = m * 3.28084;
+	    	String out = addUnit(m, "ft");
+	    	return out;
+	    }
+	    
 	    
 	    //Add Units to a double-2DP
 	    public String addUnit(double i, String u){
