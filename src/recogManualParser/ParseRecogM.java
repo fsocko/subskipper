@@ -17,27 +17,28 @@ import xmlParser.Ships;
 public class ParseRecogM {
 
 	public static void main(String[] args) throws IOException {
-	
-		writeAllHTML();
+		
+		PrepShipData target = new PrepShipData();
+		writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSN.html");
+		writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLST.html");
 	}
 		
-		public static void writeAllHTML(){
-			
+		//takes Ship list Ships, takes filename of doc. - Long recog manual
+		//with images and data in long format, styled with CSS.
+		public static void writeRecogLHTML(Ships input, String filename){
 						
 			//<head>
 			String htmlDoc = HTMLStart();
 			
 			//Main Ship HTML
-			PrepShipData target = new PrepShipData();
-			Ships shipList = target.sortShipsType(target.getShips());
+			Ships shipList = input;
 			for(int i = 0; i < shipList.getShips().size(); i++)
 			{
-				
 				htmlDoc += HTMLShip(shipList.getShip(i));
 			}
 			//Close remaining tags
 			htmlDoc += HTMLEnd();
-			writeHTML(htmlDoc);
+			writeHTML(htmlDoc, filename);
 			
 			System.out.println("HTML Written.");
 		}
@@ -58,7 +59,7 @@ public class ParseRecogM {
 			Chunk h = theme.makeChunk("recogL2#ship");
 			h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
 			h.set("name", record.getName());
-			h.set("class", record.getTypeName() +" T: " + record.getType());
+			h.set("class", record.getTypeName());
 			h.set("speed", f.addUnit(record.getMaxSpeed(), "kn"));
 			h.set("length", f.addUnit(record.getLength(), "m"));
 			h.set("height", f.addUnit(record.getMast(), "m"));
@@ -81,10 +82,10 @@ public class ParseRecogM {
 			return h.toString();
 		}
 
-		private static void writeHTML(String input){
+		private static void writeHTML(String input, String path){
 			
 			FileIO htmlW = new FileIO();
-			htmlW.writeLine("recog/recogHTML/recogL2.html", input);
+			htmlW.writeLine(path, input);
 		}
 	}
 	

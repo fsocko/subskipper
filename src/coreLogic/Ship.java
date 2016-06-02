@@ -2,6 +2,8 @@
 //by SubSkipper Android.
 package coreLogic;
 
+import java.util.Comparator;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -164,19 +166,28 @@ public class Ship implements Comparable<Ship> {
 				+ ", draft=" + draft + ", disp=" + disp + ", refAspect=" + refAspect + "]";
 	}
 
+	//Comparators for sorting with collections.sort()
 	public int compareTo(Ship a) {
 		int compareType = (a.getType());
 		return compareType - this.getType();
 	}
-
-/*    public int compareTo(Student comparestu) {
-        int compareage=((Student)comparestu).getStudentage();
-         For Ascending order
-        return this.studentage-compareage;
-
-         For Descending order do like this 
-        //return compareage-this.studentage;
-    }*/
+	//Type, Descending
+	public static Comparator<Ship> sTypeCompD = new Comparator<Ship>() {
+		public int compare(Ship s1, Ship s2){
+			int s1T = s1.getType();
+			int s2T = s2.getType();
+			return s2T - s1T;
+		}
+	};
 	
+	//Name, Descending
+	public static Comparator<Ship> sNameCompD = new Comparator<Ship>() {
+		public int compare(Ship s1, Ship s2){
+			String s1Name = s1.getName().toUpperCase();
+			String s2Name = s2.getName().toUpperCase();
+			return s1Name.compareTo(s2Name);
+		}
+	};
+		
 	
 }

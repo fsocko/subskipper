@@ -22,7 +22,7 @@ public class Nomo {
 		else if(t == 0){
 			time = d/s;
 		}
-		return ("Speed: "+nomOut.msToKnot(speed)+"\nDistance: "+nomOut.metreOut(dist)+ "\nTime: " + nomOut.hourOut(time)+"\n\n");
+		return ("Speed: "+nomOut.msToKnot(speed)+"\nDistance: "+nomOut.addUnit(dist, "m")+ "\nTime: " + nomOut.hourOut(time)+"\n\n");
 	}
 	
 }

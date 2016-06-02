@@ -85,13 +85,21 @@ public class PrepShipData {
 	
 	//Sort Ships based on Type int; ascending 
 	public Ships sortShipsType(Ships shipRecords){
-		
 		ArrayList<Ship> allShips = shipRecords.getShips(); 
 		Ships sortedList = new Ships();
-		Collections.sort(allShips);
+		Collections.sort(allShips, Ship.sTypeCompD);
 		sortedList.setShips(allShips);
-		return sortedList;
-		  
+		return sortedList; 
 	}
 
+	//Sort Ships based on Type int; ascending 
+	public Ships sortShipsName(Ships shipRecords){
+		ArrayList<Ship> allShips = shipRecords.getShips(); 
+		Ships sortedList = new Ships();
+		Collections.sort(allShips, Ship.sNameCompD);
+		sortedList.setShips(allShips);
+		return sortedList; 
+	}
+
+	
 }//EOF
