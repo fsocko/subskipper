@@ -1,33 +1,36 @@
+{#start}
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>SH4 SCAF&TMO: Recognition Manual</title>
+  <title>{$title}</title>
   <link rel="stylesheet" type="text/css" href="recogL.css" />
   
 </head>
-
 <body>
+<div class=wrapper>
+{#}
+
+{#ship}
 
 <div class=wrapper>
-
 <div class=flag>
 </div>
 
 <div class=data>
-Name:
-Class:
+Name: &nbsp {$name}
+Class: &nbsp {$class}
 <br />
-Tonnage:
-Speed:
-Draft:
-Height:
-Length:
-Aspect:
+Tonnage: &nbsp {$disp}
+Speed: &nbsp {$speed}
+Draft: &nbsp {$draft}
+Height: &nbsp {$height}
+Length: &nbsp {$length}
+Aspect: &nbsp {$aspect}
 </div>
 
 <div class = ship>
-<img src="../figures/AuxSubchaser_sil.png" alt="Ship Image">
+<img src={$image} alt="Ship Image">
 </div>
 
 <div class = data style = "width: 100%" >
@@ -35,5 +38,9 @@ Aspect:
 </div>
 
 </div>
+
+{#}
+
+{#terminate}
 </body>
 </html>

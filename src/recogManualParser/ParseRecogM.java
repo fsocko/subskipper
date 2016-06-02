@@ -1,13 +1,14 @@
 package recogManualParser;
 
-//import xmlParser.PrepShipData;
 import com.x5.template.Theme;
 
-import java.io.FileNotFoundException;
+import coreLogic.Ship;
+import xmlParser.PrepShipData;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Writer;
+import java.text.DecimalFormat;
 
 import com.x5.template.Chunk;
 
@@ -19,30 +20,73 @@ public class ParseRecogM {
 	public static void main(String[] args) throws IOException {
 
 		//Get the ship objects	
-		//PrepShipData target = new PrepShipData();
-		/*
-		int i = 0;
-		while(i < 118){
-			//if(i==0){startDoc(); System.out.println("startTable");}
-			//if(i % 50 == 0){midTable(i);}
-			i ++;
-		}*/
+		PrepShipData target = new PrepShipData();
+		writeHTML(target.getShipByID(12));
+	}
 
-
-
+		public static void writeHTML(Ship record){
+		 
 		Theme theme = new Theme();
-		 
-		// Fetch template from this file: themes/examples/loop.chtml
-		// Inside that file there is a template "snippet" named #example_1
-		Chunk html = theme.makeChunk("loop#example_1");
-		 
-		html.set("list", new String[]{"apples","bananas","carrots","durian"} );
-		 
-		System.out.println(html.toString());
+		Chunk h = theme.makeChunk("recogL#start"); //Chunk used to write to HTML: mostly <head>.
+		h.set("title", "Recognition Manual (SH4, TMO, SCAF)." ); //Altering the title tag.
+		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
 		
+		h = theme.makeChunk("recogL#ship");
+		h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
+		h.set("name", record.getName());
+		h.set("class", record.getTypeName());
+		h.set("speed", record.getMaxSpeed());
+		h.set("length", record.getLength());
+		h.set("height", record.getMast());
+		h.set("draft", record.getDraft());
+		h.set("disp", record.getDisp());
+		h.set("aspect", record.getRefAspect());
+		
+		//Convert image path to filename
+		String pngPath = record.getImagePath();
+		pngPath = pngPath.substring((pngPath.lastIndexOf("\\") + 1), pngPath.lastIndexOf("."));
+		String figPath = "..//figures//" + pngPath + ".png";	
+		h.set("image", figPath);
+		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
+		
+		
+		h = theme.makeChunk("recogL#terminate");
+		
+		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
+		
+		}
+		
+		
+		public void writeShipLatex(Ship record, boolean image){
+			
+			/* //Convert image path to filename
+			String recordImgPath = record.getImagePath();
+			recordImgPath = recordImgPath.substring(recordImgPath.lastIndexOf("\\") + 1);
+			*/
+			String name = record.getName();
+			name = name.replaceAll("&", ".");
+			try{
+			PrintWriter pw = new PrintWriter(new FileOutputStream("recog/out.txt", true));
+			pw.println(name +"& $" + record.getMaxSpeed() +"$ & $"+ record.getLength() +"$ & $"+ record.getWidth()
+			+"$ & $"+ record.getMast() +"$ & $"+ record.getDraft() +"$ & $"+ twoDP(record.getRefAspect()) + "$ \\" + "\\");
+			}
+			
+			 
+			 catch (IOException e){
+	             e.printStackTrace();
+	             System.out.println("could not read file.");
+	         } 
+		}
+		
+		 public String twoDP(double twoDP){
+		   	 
+		    	DecimalFormat formatter = new DecimalFormat("0.0000");
+		    	String out = formatter.format(twoDP);
+		    	return out;
+		    }
 		
 
 	}
-}	
+	
 	
 	

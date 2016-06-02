@@ -1,9 +1,0 @@
-{#example_1}
-<ul>
- 
-{% loop in $list as $item %}
- <li>{$item}</li>
-{% endloop %}
- 
-</ul>
-{#}
