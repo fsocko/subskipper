@@ -20,18 +20,30 @@ public class ParseRecogM {
 	public static void main(String[] args) throws IOException {
 
 		//Get the ship objects	
-		PrepShipData target = new PrepShipData();
-		writeHTML(target.getShipByID(12));
+		//target.printShips(target.getShips());
+		writeAllHTML();
 	}
-
+		
+		public static void writeAllHTML(){
+			
+			PrepShipData target = new PrepShipData();
+		
+			
+			writeHTML(target.getShipByID(1));
+			writeHTML(target.getShipByID(2));
+			writeHTML(target.getShipByID(3));
+			writeHTML(target.getShipByID(4));
+			
+		}
+	
 		public static void writeHTML(Ship record){
 		 
 		Theme theme = new Theme();
-		Chunk h = theme.makeChunk("recogL#start"); //Chunk used to write to HTML: mostly <head>.
-		h.set("title", "Recognition Manual (SH4, TMO, SCAF)." ); //Altering the title tag.
-		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
+		//Chunk h = theme.makeChunk("recogL2#start"); //Chunk used to write to HTML: mostly <head>.
+		//h.set("title", "Recognition Manual (SH4, TMO, SCAF)." ); //Altering the title tag.
+		//System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
 		
-		h = theme.makeChunk("recogL#ship");
+		Chunk h = theme.makeChunk("recogL2#ship");
 		h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
 		h.set("name", record.getName());
 		h.set("class", record.getTypeName());
@@ -49,8 +61,7 @@ public class ParseRecogM {
 		h.set("image", figPath);
 		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
 		
-		
-		h = theme.makeChunk("recogL#terminate");
+		//h = theme.makeChunk("recogL2#terminate");
 		
 		System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
 		

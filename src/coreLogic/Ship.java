@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Ship {
 	
 	private int ID;
+	private String nation;
 	private String name;
 	private int type;
 	private String typeName;
@@ -29,6 +30,7 @@ public class Ship {
 			double mast, double draft, double disp) {
 		super();
 		this.ID = 0;
+		this.nation = "none";
 		this.name = name;
 		this.type = type;
 		this.typeName = typeName;
@@ -44,6 +46,7 @@ public class Ship {
 
 	public Ship() {
 		this.ID = 0;
+		this.nation = "";
 		this.name = "";
 		this.type = 0;
 		this.typeName = "";

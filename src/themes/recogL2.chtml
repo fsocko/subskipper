@@ -1,14 +1,15 @@
+{#start}
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <title>SH4 SCAF&TMO: Recognition Manual</title>
-  <link rel="stylesheet" type="text/css" href="recogL.css" />
-  
+  <link rel="stylesheet" type="text/css" href="recogL.css" /> 
 </head>
-
 <body>
+{#}
 
+{#ship}
 <div class=wrapper>
 
 <div class=flag>
@@ -17,41 +18,44 @@
 <div class=data>
 
 <div class = dataContainer id=n>
-Name:
+Name:{$name}
 </div>
 <div class = dataContainer id=c>
-Class:
+Class:{$class}
 </div>
 
 </div>
 
 <div class = ship>
-<img src="../figures/AuxSubchaser_sil.png" alt="Ship Image">
+<img src={$image} alt="Ship Image">
 </div>
 
 <div class = data style = "width: 100%" >
 
 <div class = dataContainer id=t>
-Tonnage:
+Tonnage:{$disp}
 </div>
 <div class = dataContainer id=s>
-&nbspSpeed:
+&nbspSpeed:{$speed}
 </div>
 <div class = dataContainer id=d>
-&nbspDraft:
+&nbspDraft:{$draft}
 </div>
 <div class = dataContainer id=h>
-&nbspHeight:
+&nbspHeight:{$height}
 </div>
 <div class = dataContainer id=l>
-Length:
+Length:{$length}
 </div>
 <div class = dataContainer id=a>
-Aspect:
+Aspect:{$aspect}
 </div>
 
 </div>
 
 </div>
+{#}
+
+{#terminate}
 </body>
 </html>

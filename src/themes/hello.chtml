@@ -1,5 +1,0 @@
-{#example_1}
-<div>
- Earth to {$name}.  Come in, {$name}.
-</div>
-{#}

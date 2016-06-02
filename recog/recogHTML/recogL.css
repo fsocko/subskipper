@@ -1,14 +1,16 @@
 .wrapper{ 
-width: 600px;
-height: 400px;
+width: 512px;
 border: 1px solid red;
-background-image: url(brownbg.jpg);
+/* background-image: url(brownbg.jpg); */
+background-color: grey;
+border: 2px dashed black;
+overflow: hidden;
 }
 
 .flag{
 width: 50px; 
 height: 50px;
-border: 1px solid green;
+border: 1px solid red;
 float: left;
 }
 
@@ -21,21 +23,84 @@ font-size: 10pt;
 color: white;
 width: calc(100% - 55px);
 height: 50px;
-line-height: 20px;
-
+position: relative;
 
 }
+
+.dataContainer{
+	
+	border: 1px solid blue;
+	float: left;
+	position: relative;
+	height: 15px;
+}
+
+/* 
+Divs containing data:
+n: name
+c: class
+t: tonnage
+s: speed
+d: draft
+h: height
+l: length
+a: aspect
+ */
+
+#n{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#c{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+}	
+
+/* Bottom data container */
+
+#t{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#s{	position: absolute;
+	top: 10px;
+	left: 150px;}
+
+#d{	position: absolute;
+	top: 10px;
+	left: 300px;}
+
+	/* Bottom row */
+	
+#h{	position: absolute;
+	bottom: 5px;
+	left: 10px;}
+
+#l{	position: absolute;
+	bottom: 5px;
+	left: 150px;}
+
+#a{	position: absolute;
+	bottom: 5px;
+	left: 300px;}
 
 
 .ship{
 	width: 512px;
 	height: 256px;
 	border: 1px solid grey;
-	/* background-color: green; */
 	position: relative;
 	top: 0px;
-	left: 50px;
 	overflow: hidden;
+	background-image: repeating-linear-gradient(0deg,transparent,transparent 13px, black 13px,black 14px),
+	repeating-linear-gradient(-90deg,transparent,transparent 32px,black 33px,black 32px);
+	background-size: 71px 71px;
+	
 }
 
 /* Not used at the moment because it's irrelevant with the length data */

@@ -2,6 +2,8 @@ package xmlParser;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import coreLogic.Ship;
 
@@ -80,6 +82,9 @@ public class PrepShipData {
 			System.out.println(printShips.getShips().get(i).toString());
 		}
 	}
+	
+	public void sortedList(Ships shipRecords, String property){
 		
+	}
 
 }//EOF
