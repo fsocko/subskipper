@@ -6,6 +6,7 @@ import com.x5.template.Chunk;
 import com.x5.template.Theme;
 
 import coreLogic.FileIO;
+import coreLogic.OutFormat;
 import coreLogic.Ship;
 import xmlParser.PrepShipData;
 import xmlParser.Ships;
@@ -54,17 +55,18 @@ public class ParseRecogM {
 		
 		private static String HTMLShip(Ship record){
 		 
+			OutFormat f = new OutFormat();
 			Theme theme = new Theme();	
 			Chunk h = theme.makeChunk("recogL2#ship");
 			h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
 			h.set("name", record.getName());
 			h.set("class", record.getTypeName());
-			h.set("speed", record.getMaxSpeed());
-			h.set("length", record.getLength());
-			h.set("height", record.getMast());
-			h.set("draft", record.getDraft());
-			h.set("disp", record.getDisp());
-			h.set("aspect", record.getRefAspect());
+			h.set("speed", f.addUnit(record.getMaxSpeed(), "kn"));
+			h.set("length", f.addUnit(record.getLength(), "m"));
+			h.set("height", f.addUnit(record.getMast(), "m"));
+			h.set("draft", f.addUnit(record.getDraft(), "m"));
+			h.set("disp", record.getDisp() + " GRT");
+			h.set("aspect", f.fourDP(record.getRefAspect()));
 			
 			//Convert image path to filename
 			String pngPath = record.getImagePath();
@@ -85,10 +87,6 @@ public class ParseRecogM {
 			
 			FileIO htmlW = new FileIO();
 			htmlW.writeLine("recog/recogHTML/recogL2.html", input);
-			
 		}
-		
 	}
-	
-	
 	

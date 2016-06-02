@@ -18,12 +18,17 @@ public class OutFormat {
 	    	return out;
 	    }
 	    
-	    public String metreOut(double metreIn){
-	    	 
-	    	DecimalFormat formatter = new DecimalFormat("0.00");
-	    	String out = formatter.format(metreIn) + " m";
+	    //Add Units to a double-2DP
+	    public String addUnit(double i, String u){
+	    	DecimalFormat f = new DecimalFormat("0.00");
+	    	String out = f.format(i) + " " + u;
 	    	return out;
 	    }
+	    
+	    
+	  
+
+	    
 	    
 	    //Two figures after decimal
 	    public String twoDP(double twoDP){
@@ -33,8 +38,15 @@ public class OutFormat {
 	    	return out;
 	    }
 	    
-	    public String hourOut(double secondIn){
+	    //Four figures after decimal
+	    public String fourDP(double fourDP){
 	    	 
+	    	DecimalFormat formatter = new DecimalFormat("0.0000");
+	    	String out = formatter.format(fourDP);
+	    	return out;
+	    }
+	    
+	    public String hourOut(double secondIn){
 	    		    	
 	    	double hoursOut = secondIn / 3600;
 	    	if(hoursOut < 1){
