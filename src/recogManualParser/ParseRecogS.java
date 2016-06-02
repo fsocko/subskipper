@@ -13,15 +13,9 @@ import xmlParser.Ships;
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
 
 public class ParseRecogS {
-
-	public static void main(String[] args) throws IOException {
-		
-		PrepShipData target = new PrepShipData();
-		writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogS.html", false);
-	}
-		
+	
 		//takes Ship list Ships, takes filename of doc. - Short style
-		public static void writeRecogSHTML(Ships shipList, String filename, boolean imperial){
+		public void writeRecogSHTML(Ships shipList, String filename, boolean imperial){
 			
 			String htmlDoc = "";
 			
@@ -45,7 +39,7 @@ public class ParseRecogS {
 			writeHTML(htmlDoc, filename);
 		}
 		
-		private static String shipRowHTML(Ship record, boolean imperial){
+		private String shipRowHTML(Ship record, boolean imperial){
 			
 			if(imperial){
 				record.makeImperial();
@@ -64,7 +58,7 @@ public class ParseRecogS {
 			return h.toString();
 		}
 		
-		private static void writeHTML(String input, String path){
+		private void writeHTML(String input, String path){
 			
 			FileIO htmlW = new FileIO();
 			htmlW.writeLine(path, input);

@@ -15,17 +15,12 @@ import xmlParser.Ships;
 
 public class ParseRecogL {
 
-	public static void main(String[] args) throws IOException {
-		
-		PrepShipData target = new PrepShipData();
-		writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSN.html", false);
-		writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLST.html", false);
-	}
+	
 		
 		//takes Ship list Ships, takes filename of doc. - Long recog manual
 		//with images and data in long format, styled with CSS.
 		//boolean imperial turns relevant units to "wrong units"
-		public static void writeRecogLHTML(Ships shipList, String filename, boolean imperial){
+		public void writeRecogLHTML(Ships shipList, String filename, boolean imperial){
 						
 			//<head>
 			String htmlDoc = HTMLStartL();
@@ -42,7 +37,7 @@ public class ParseRecogL {
 			System.out.println("HTML Written.");
 		}
 		
-		private static String HTMLStartL(){
+		private String HTMLStartL(){
 			
 			Theme theme = new Theme();
 			Chunk h = theme.makeChunk("recogL2#start"); //Chunk used to write to HTML: mostly <head>.
@@ -51,7 +46,7 @@ public class ParseRecogL {
 			return h.toString();
 		}
 		
-		private static String HTMLShipL(Ship record, boolean imperial){
+		private  String HTMLShipL(Ship record, boolean imperial){
 			
 			String unit = "m";
 			if(imperial){
@@ -82,13 +77,13 @@ public class ParseRecogL {
 
 		}
 		
-		private static String HTMLEndL(){
+		private String HTMLEndL(){
 			Theme theme = new Theme();	
 			Chunk h = theme.makeChunk("recogL2#terminate");
 			return h.toString();
 		}
 
-		private static void writeHTML(String input, String path){
+		private void writeHTML(String input, String path){
 			
 			FileIO htmlW = new FileIO();
 			htmlW.writeLine(path, input);
