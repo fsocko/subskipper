@@ -27,10 +27,10 @@
 <div class=data>
 
 <div class = dataContainer id=n>
-Name:{$name}
+&nbspName:&nbsp{$name}
 </div>
 <div class = dataContainer id=c>
-Class:{$class}
+Class:&nbsp{$class}
 </div>
 
 </div>

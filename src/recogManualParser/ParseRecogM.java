@@ -60,7 +60,7 @@ public class ParseRecogM {
 			Chunk h = theme.makeChunk("recogL2#ship");
 			h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
 			h.set("name", record.getName());
-			h.set("class", record.getTypeName());
+			h.set("class", record.getTypeName() +" T: " + record.getType());
 			h.set("speed", f.addUnit(record.getMaxSpeed(), "kn"));
 			h.set("length", f.addUnit(record.getLength(), "m"));
 			h.set("height", f.addUnit(record.getMast(), "m"));

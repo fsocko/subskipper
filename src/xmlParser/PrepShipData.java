@@ -83,7 +83,8 @@ public class PrepShipData {
 		}
 	}
 	
-	public void sortedList(Ships shipRecords, String property){
+	//switch for sorting ships by different properties. The values are:
+	public void sortShips(Ships shipRecords, int property){
 		
 	}
 
