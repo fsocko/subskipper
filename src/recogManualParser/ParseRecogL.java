@@ -23,7 +23,7 @@ public class ParseRecogL {
 		public void writeRecogLHTML(Ships shipList, String filename, boolean imperial){
 						
 			//<head>
-			String htmlDoc = HTMLStartL();
+			String htmlDoc = HTMLStartL(imperial);
 			
 			//Main Ship HTML
 			for(int i = 0; i < shipList.getShips().size(); i++)
@@ -37,11 +37,18 @@ public class ParseRecogL {
 			System.out.println("HTML Written.");
 		}
 		
-		private String HTMLStartL(){
+		private String HTMLStartL(boolean imperial){
+			
+			String title = "Long Recognition Manual for SH4,TMO,SCAF.";
+			if(imperial){
+				title = title + " (Imperial Version)";
+			}
+				else{title = title + " (Metric Version)";}
 			
 			Theme theme = new Theme();
 			Chunk h = theme.makeChunk("recogL2#start"); //Chunk used to write to HTML: mostly <head>.
-			h.set("title", "Recognition Manual (SH4, TMO, SCAF)." ); //Altering the title tag.
+			h.set("title", title ); //Altering the title tag.
+			h.set("heading", title ); //Altering the title tag.
 			//System.out.println(h.toString()); //Temporarily outputs to console. Will make it send to file.
 			return h.toString();
 		}

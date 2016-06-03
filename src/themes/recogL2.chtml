@@ -3,7 +3,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>SH4 SCAF&TMO: Recognition Manual (L)</title>
+  <title>{$title}</title>
   <link rel="stylesheet" type="text/css" href="recogL.css" />
   
   <script language="JavaScript">
@@ -16,6 +16,9 @@
   
 </head>
 <body>
+<div class = wrapper id = header>
+<h1>{$heading}</h1>
+</div>
 {#}
 
 {#ship}

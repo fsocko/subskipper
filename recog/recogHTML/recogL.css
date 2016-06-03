@@ -1,3 +1,11 @@
+h1{
+font-family: courier;
+font-size: 20pt;
+color: white;
+text-shadow: 2px 2px 0 #000000;
+text-align: center	
+}
+
 .wrapper{ 
 width: 512px;
 border: 1px solid red;
