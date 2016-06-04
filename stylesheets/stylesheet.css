@@ -44,7 +44,7 @@ body {
     border-radius: 25px;
     border: 2px solid white;
     min-height: 400px;
-	min-width: calc(50% - 10px); 
+	min-width: calc(600px); 
 	/*10px indicates space between content divs*/
 	margin-top: 5%;
 	margin-bottom: 5%;
