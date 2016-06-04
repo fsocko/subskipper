@@ -1,0 +1,91 @@
+%%--SubSkipper Documentation
+%%--Modified 25/07/15
+
+\documentclass{article}
+
+%%--packages
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{geometry}
+
+%%--Define Margins
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+
+%%--Define style for Java code
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+%%--commands
+\newcommand{\degree}{$^{\circ}$}
+
+\author{Filip Socko}
+\title{SubSkipper - Program Documentation}
+
+\begin{document}
+
+\maketitle
+%%\tableofcontents
+
+
+\section{The Program Documentation for SubSkipper}
+
+\section{CoreLogic}
+
+\subsection{aspectAOB(int estAOB, Ship target, double mastObs, double lenObs))}
+Method for determining the AOB based on an observed and reference aspect ratio.
+Note, this method requires an approximate visual AOB or it will return wildly
+inaccurate figures, because that's how trigonometry works.
+public class AspectAOB {
+	
+//Wrapper for calculateAOB, calculates AOB bearing with AOB estimate checking against
+//a visual estimate of AOB due to the limits of this method.
+	
+//Errors: -1: NaN found in observed AR
+// 		  -2: Observed aspect > Ref Aspect
+
+public double aspectAOB(int estAOB, Ship target, double mastObs, double lenObs)
+
+
+\begin{itemize}
+\item{}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\end{document}
+

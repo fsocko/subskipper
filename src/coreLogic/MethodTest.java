@@ -25,8 +25,8 @@ public class MethodTest {
 		double lenObs = 35;
 		
 		System.out.println(shipAOB.toString());
-		System.out.println(toDeg.degreeOut(testAOB.aspectAOBSol(95, shipAOB, 2.7, 9.8)));
-		System.out.println(toDeg.degreeOut(testAOB.aspectAOBSol(310, shipAOB, 7.1, 4*8.1)));
+		System.out.println(toDeg.degreeOut(testAOB.aspectAOB(95, shipAOB, 2.7, 9.8)));
+		System.out.println(toDeg.degreeOut(testAOB.aspectAOB(310, shipAOB, 7.1, 4*8.1)));
 	}
 	
 	

@@ -32,11 +32,6 @@ public class OutFormat {
 	    	return out;
 	    }
 	    
-	    
-	  
-
-	    
-	    
 	    //Two figures after decimal
 	    public String twoDP(double twoDP){
 	    	 
@@ -64,7 +59,4 @@ public class OutFormat {
 	        DecimalFormat roundTime = new DecimalFormat("00");
 	    	return (roundTime.format(hoursOut) +":"+ roundTime.format(minutesOut)+":"+roundTime.format(secondOut));
 	    }
-
-	    
-	
 }
