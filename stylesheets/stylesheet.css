@@ -22,6 +22,7 @@ body {
 	display: table;
 	margin-left: 5%;
 	margin-right: 5%;
+	margin-top: 5px;
 		
 	}
   
@@ -30,7 +31,7 @@ body {
 	top: 10px;
     border-radius: 25px;
     border: 2px solid white; 
-    height: 200px; 
+    min-height: 200px; 
 	margin: 20px 20px 20px 20px;
 	
 }
@@ -40,8 +41,8 @@ body {
 	bottom: 0px;
     border-radius: 25px;
     border: 2px solid white;
-    height: 800px;
-	width: 47%;
+    min-height: 400px;
+	width: calc(50% - 30px);
 	margin-top: 20px;
 	margin-bottom: 20px;
 	
@@ -58,7 +59,7 @@ margin-left: 20px;
 {
 	float: right;
 	margin-left: 0;
-	margin-right: 20px;;
+	margin-right: 20px;
 }
   
 .btn {
@@ -85,9 +86,9 @@ margin-left: 20px;
 	bottom:0;
 	border-radius: 25px;
     border: 2px solid white;
-	min-width: 97%;
+	min-width: calc(100% - 40px);
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	margin-right: 20px;
 	margin-left: 20px;
 	padding: 5px;
