@@ -75,8 +75,7 @@ a{
 }
 
 .btn {
-  width: 90%;
-  max-width: 30rem;	
+  width: 90%;	
   display: inline-block;
   margin-bottom: 10px;
   color: black;
@@ -88,7 +87,6 @@ a{
   padding: 5px;
   border-radius: 10px;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-  .btn + .btn {}
 
 .btn:hover {
   color: black;
