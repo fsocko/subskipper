@@ -15,10 +15,8 @@ public class ParseRecogS {
 		public void writeRecogSHTML(Ships shipList, String filename, boolean imperial){
 			
 			String htmlDoc = "";
-			
 			Theme theme = new Theme();
 			Chunk h = theme.makeChunk("recogS#start"); //Chunk used to write to HTML: mostly <head>.
-			
 			String title = "Short Recognition Manual for SH4,TMO,SCAF.";
 			if(imperial){
 				title = title + " (Imperial Version)";

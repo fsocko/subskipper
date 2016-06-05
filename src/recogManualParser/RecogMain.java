@@ -8,27 +8,26 @@ public class RecogMain {
 
 	public static void main(String[] args) {
 		
-		ParseRecogL recogL = new ParseRecogL();
-		ParseRecogS recogS = new ParseRecogS();
-		
+		//ParseRecogL recogL = new ParseRecogL();
+		//ParseRecogS recogS = new ParseRecogS();
+		ParseRecogLatex recogLat = new ParseRecogLatex();
 		PrepShipData target = new PrepShipData();
+		recogLat.writeRecogLat(target.sortShipsName(target.getShips()), "docs/recogSMLat.tex", false);
 		
 		//long Euro / Name Sort
-		recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNm.html", false);
+		//recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNm.html", false);
 		//long Imperial / Name Sort
-		recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNi.html", true);
+		//recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNi.html", true);
 		//long Euro / Type Sort
-		recogL.writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLSTm.html", false);
+		//recogL.writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLSTm.html", false);
 		//long Imperial / Type Sort
-		recogL.writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLSTi.html", true);
+		//recogL.writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLSTi.html", true);
 		
-		
-		
-		
+
 		//short Euro
-		recogS.writeRecogSHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogSm.html", false);
+		//recogS.writeRecogSHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogSm.html", false);
 		//Short Imperial
-		recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true);
+		//recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true);
 		
 	}
 

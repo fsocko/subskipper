@@ -1,0 +1,21 @@
+{#preamble}
+Custom Recognition Manual
+Modified 10.05.16
+\section{{$title}}
+{#}
+
+{#startT}
+\begin{tabular}{|l|c|c|c|c|c|}
+Name & Max Speed & Length & Mast Height & Draft & Aspect\\
+{#}
+
+{#ship}
+\hline
+{$name} & ${$speed}$ & ${$length}$ & ${$mast}$ & ${$draft}$ & ${$aspect}$ \\
+{#}
+
+{#end}
+\hline
+\end{tabular}
+\end{document}
+{#}
