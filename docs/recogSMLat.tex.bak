@@ -1,7 +1,8 @@
 %%Custom Recognition Manual - Latex - Short - SCAF,TMO
+\documentclass{article}
 \usepackage{geometry}
 \usepackage{tabularx}
-\documentclass{article}
+
 %%--Define Margins
  \geometry{
  a4paper,
@@ -11,13 +12,15 @@
  top=20mm,
  bottom=20mm,
  }
+\pagenumbering{gobble} 
+ 
 \begin{document}
 
-\section{Short Recognition Manual for SH4,TMO,SCAF. (Metric)}
+\section*{Short Recognition Manual for SH4,TMO,SCAF. (Metric)}
 \centering
 \begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
 \hline
-Name & Max Speed (kn) & Length (m) & Mast (m) & Draft (m) & Aspect\\
+\textbf{Name} & \textbf{Speed (kn)} & \textbf{Length (m)} & \textbf{Mast (m)} & \textbf{Draft (m)} & \textbf{Aspect}\\
 \hline
  Auxilary Subchaser & $17.00$ & $206.69$ & $37.40$ & $13.78$ & $5.5263$ \\
 \hline
@@ -59,12 +62,6 @@ Buzyun Maru & $11.00$ & $337.93$ & $32.15$ & $21.00$ & $10.5102$ \\
 \hline
 Casablanca Escort Carrier & $19.00$ & $511.81$ & $45.60$ & $20.67$ & $11.2230$ \\
 \hline
-\end{tabular}
-\pagebreak
-\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
-\hline
-Name & Max Speed (kn) & Length (ft) & Mast (ft) & Draft (ft) & Aspect\\
-\hline
 Chitose Seaplane Tender & $28.90$ & $631.56$ & $106.96$ & $24.61$ & $5.9049$ \\
 \hline
 Clemson Destroyer & $35.00$ & $311.68$ & $94.49$ & $10.17$ & $3.2986$ \\
@@ -105,12 +102,6 @@ Flower Corvette & $16.00$ & $198.82$ & $64.63$ & $11.48$ & $3.0761$ \\
 \hline
 Fubuki Destroyer & $38.00$ & $388.78$ & $74.15$ & $11.48$ & $5.2434$ \\
 \hline
-\end{tabular}
-\pagebreak
-\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
-\hline
-Name & Max Speed (kn) & Length (ft) & Mast (ft) & Draft (ft) & Aspect\\
-\hline
 Furutaka Heavy Cruiser & $33.00$ & $616.80$ & $84.97$ & $17.06$ & $7.2587$ \\
 \hline
 Fuso Battleship & $24.70$ & $695.54$ & $158.46$ & $31.17$ & $4.3892$ \\
@@ -141,6 +132,14 @@ Junk & $10.00$ & $64.30$ & $58.07$ & $3.94$ & $1.1073$ \\
 \hline
 Kasagisan Maru & $12.50$ & $284.78$ & $59.38$ & $20.01$ & $4.7956$ \\
 \hline
+\end{tabularx}
+\pagebreak
+
+\pagebreak
+\begin{tabularx}{\textwidth}{|r|l|l|l|l|X|}
+\hline
+\textbf{Name} & \textbf{Speed (kn)} & \textbf{Length (ft)} & \textbf{Mast (ft)} & \textbf{Draft (ft)} & \textbf{Aspect}\\
+\hline
 Kent Heavy Cruiser & $31.50$ & $600.39$ & $71.52$ & $16.40$ & $8.3945$ \\
 \hline
 King George V Battleship & $27.00$ & $800.52$ & $176.84$ & $29.86$ & $4.5269$ \\
@@ -150,12 +149,6 @@ Kinposan Maru & $14.50$ & $354.33$ & $60.70$ & $21.65$ & $5.8378$ \\
 Kisaragi Destroyer & $37.00$ & $334.65$ & $36.75$ & $9.84$ & $9.1071$ \\
 \hline
 Kiturin Maru & $18.50$ & $426.51$ & $84.32$ & $28.22$ & $5.0584$ \\
-\hline
-\end{tabular}
-\pagebreak
-\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
-\hline
-Name & Max Speed (kn) & Length (ft) & Mast (ft) & Draft (ft) & Aspect\\
 \hline
 Kongo Battleship & $30.50$ & $721.78$ & $139.44$ & $27.89$ & $5.1765$ \\
 \hline
@@ -197,12 +190,6 @@ Nippon Maru & $20.00$ & $492.13$ & $54.79$ & $28.22$ & $8.9820$ \\
 \hline
 North Carolina Battleship & $27.00$ & $721.78$ & $109.58$ & $29.53$ & $6.5868$ \\
 \hline
-\end{tabular}
-\pagebreak
-\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
-\hline
-Name & Max Speed (kn) & Length (ft) & Mast (ft) & Draft (ft) & Aspect\\
-\hline
 Northampton Heavy Cruiser & $32.70$ & $600.39$ & $160.76$ & $22.97$ & $3.7347$ \\
 \hline
 Okinoshima Minelayer & $20.00$ & $404.86$ & $93.50$ & $15.75$ & $4.3298$ \\
@@ -243,12 +230,6 @@ Taiho Fleet Carrier & $33.30$ & $832.35$ & $151.57$ & $31.17$ & $5.4913$ \\
 \hline
 Taihosan Maru & $13.00$ & $264.11$ & $58.73$ & $12.14$ & $4.4972$ \\
 \hline
-\end{tabular}
-\pagebreak
-\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
-\hline
-Name & Max Speed (kn) & Length (ft) & Mast (ft) & Draft (ft) & Aspect\\
-\hline
 Taiyo Escort Carrier & $21.00$ & $590.88$ & $49.54$ & $24.61$ & $11.9272$ \\
 \hline
 Takao Heavy Cruiser & $36.50$ & $669.29$ & $115.81$ & $19.69$ & $5.7790$ \\
@@ -269,6 +250,14 @@ Type C Escort & $19.00$ & $293.64$ & $90.88$ & $11.15$ & $3.2310$ \\
 \hline
 Type D Escort & $19.00$ & $293.64$ & $90.88$ & $11.15$ & $3.2310$ \\
 \hline
+\end{tabularx}
+\pagebreak
+
+\pagebreak
+\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
+\hline
+\textbf{Name} & \textbf{Speed (kn)} & \textbf{Length (ft)} & \textbf{Mast (ft)} & \textbf{Draft (ft)} & \textbf{Aspect}\\
+\hline
 V.W Destroyer & $34.00$ & $311.68$ & $68.90$ & $10.50$ & $4.5238$ \\
 \hline
 Victory Cargo & $17.00$ & $458.01$ & $71.52$ & $23.95$ & $6.4037$ \\
@@ -285,5 +274,8 @@ Z Class Destroyer & $38.00$ & $388.78$ & $74.15$ & $11.48$ & $5.2434$ \\
 \hline
 Zinbu Maru & $10.00$ & $393.70$ & $61.02$ & $15.42$ & $6.4516$ \\
 \hline
-\end{tabular}
+\end{tabularx}
+\pagebreak
+
 \end{document}
+

@@ -59,7 +59,7 @@ public class ParseRecogLatex {
 			String doc = "";
 			for(int i = 0; i < shipList.getShips().size(); i++)
 			{
-				if(i % 20 == 0 && i > 0){doc += endTable() + "\\pagebreak\n" + startTable(imperial);}
+				if(i % 55 == 0 && i > 0){doc += endTable() + "\\pagebreak\n" + startTable(imperial);}
 				doc += shipRow(shipList.getShip(i), imperial);
 			}
 			

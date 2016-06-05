@@ -13,16 +13,18 @@
  top=20mm,
  bottom=20mm,
  }
+\pagenumbering{gobble} 
+ 
 \begin{document}
 
-\section{{$title}}
+\section*{{$title}}
 \centering
 {#}
 
 {#startT}
-\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
+\begin{tabularx}{\textwidth}{|r|l|l|l|l|X|}
 \hline
-Name & Max Speed (kn) & Length {$unit} & Mast {$unit} & Draft {$unit} & Aspect\\
+\textbf{Name} & \textbf{Speed (kn)} & \textbf{Length {$unit}} & \textbf{Mast {$unit}} & \textbf{Draft {$unit}} & \textbf{Aspect}\\
 {#}
 
 {#ship}
