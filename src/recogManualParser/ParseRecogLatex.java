@@ -14,7 +14,7 @@ public class ParseRecogLatex {
 		public void writeRecogLat(Ships shipList, String filename, boolean imperial){
 			
 			writeLatex((preamble(imperial) + startTable(imperial) + 
-			allShips(shipList, true) + endTable() + terminate()), filename, true);
+			allShips(shipList, true) + endTable() + terminate()), filename, false);
 		}
 		
 		private String preamble(boolean imperial){
