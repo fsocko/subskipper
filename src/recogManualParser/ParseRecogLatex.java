@@ -59,6 +59,7 @@ public class ParseRecogLatex {
 			String doc = "";
 			for(int i = 0; i < shipList.getShips().size(); i++)
 			{
+				if(i % 20 == 0 && i > 0){doc += endTable() + "\\pagebreak\n" + startTable(imperial);}
 				doc += shipRow(shipList.getShip(i), imperial);
 			}
 			
@@ -76,7 +77,6 @@ public class ParseRecogLatex {
 			}
 			
 			String name = record.getName().replaceAll("&", "."); //can't have & in latex.
-			
 			h.set("name", name);
 			h.set("disp", f.twoDP(record.getDisp()));
 			h.set("speed", f.twoDP(record.getMaxSpeed()));

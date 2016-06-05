@@ -2,6 +2,7 @@
 %%Custom Recognition Manual - Latex - Short - SCAF,TMO
 \documentclass{article}
 \usepackage{geometry}
+\usepackage{tabularx}
 
 %%--Define Margins
  \geometry{
@@ -15,10 +16,11 @@
 \begin{document}
 
 \section{{$title}}
+\centering
 {#}
 
 {#startT}
-\begin{tabular}{|l|c|c|c|c|c|}
+\begin{tabularx}{\textwidth}{|r|l|l|X|X|X|}
 \hline
 Name & Max Speed (kn) & Length {$unit} & Mast {$unit} & Draft {$unit} & Aspect\\
 {#}
@@ -30,7 +32,9 @@ Name & Max Speed (kn) & Length {$unit} & Mast {$unit} & Draft {$unit} & Aspect\\
 
 {#endT}
 \hline
-\end{tabular}
+\end{tabularx}
+\pagebreak
+
 {#}
 
 {#terminate}
