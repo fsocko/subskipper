@@ -12,7 +12,7 @@ public class RecogMain {
 		//ParseRecogS recogS = new ParseRecogS();
 		ParseRecogLatex recogLat = new ParseRecogLatex();
 		PrepShipData target = new PrepShipData();
-		recogLat.writeRecogLat(target.sortShipsName(target.getShips()), "docs/recogSMLat.tex", false);
+		recogLat.writeRecogLat(target.sortShipsName(target.getShips()), "docs/recogSMLat.tex", true);
 		
 		//long Euro / Name Sort
 		//recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNm.html", false);

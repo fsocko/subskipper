@@ -6,16 +6,19 @@ Modified 10.05.16
 
 {#startT}
 \begin{tabular}{|l|c|c|c|c|c|}
-Name & Max Speed & Length & Mast Height & Draft & Aspect\\
+Name & Max Speed (kn) & Length {$unit} & Mast {$unit} & Draft {$unit} & Aspect\\
 {#}
 
 {#ship}
 \hline
-{$name} & ${$speed}$ & ${$length}$ & ${$mast}$ & ${$draft}$ & ${$aspect}$ \\
+{$name} & ${$speed}$ & ${$length}$ & ${$height}$ & ${$draft}$ & ${$aspect}$ \\
 {#}
 
-{#end}
+{#endT}
 \hline
 \end{tabular}
+{#}
+
+{#terminate}
 \end{document}
 {#}
