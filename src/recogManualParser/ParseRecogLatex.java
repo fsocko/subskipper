@@ -1,12 +1,8 @@
 package recogManualParser;
 
-import java.io.*;
-import java.nio.file.Files;
 import java.text.DecimalFormat;
 
-import com.x5.template.Chunk;
-import com.x5.template.Theme;
-
+import coreLogic.FileIO;
 import coreLogic.OutFormat;
 import coreLogic.Ship;
 import xmlParser.PrepShipData;
@@ -18,95 +14,44 @@ import xmlParser.Ships;
 public class ParseRecogLatex {
 
 	public void writeRecogLatex(Ships shipList){
-
+		
+		startTableL("asd");
 		
 		int i = 0;
 		while(i < 118){
 			if(i==0){startDoc(); System.out.println("startTable");}
-			writeShipLatex(shipList.getShips().size());
+			writeShipTableL(shipList.getShips());
 			i ++;
 		}
 		tableEnd();
 	}
-	
-	public void writeShipLatex(Ships shipList){
 		
+	
+	private void startTableL(String file){
 	}
-	
-	
-	private void startDoc(){
-		try{
-			PrintWriter pw = new PrintWriter(new FileOutputStream("recog/out.txt", false));
-			//preamble
-			pw.println("%%--Custom Recognition Manual");
-			pw.println("%%--Modified 10.05.16");
-			pw.println("\\documentclass{article}");
-			pw.println("%%--packages");
-			pw.println("\\usepackage{hyperref}");
-			pw.println("\\usepackage{listings}");
-			pw.println("\\usepackage{color}");
-			pw.println("\\usepackage{graphicx}");
-			pw.println("\\graphicspath{{figures/}}");
-			pw.println("\\usepackage{geometry}");
-			pw.println("%%--Define Margins");
-			pw.println(" \\geometry{");
-			pw.println(" a4paper,");
-			pw.println(" total={170mm,257mm},");
-			pw.println(" left=10mm,");
-			pw.println(" right=10mm,");
-			pw.println(" top=10mm,");
-			pw.println(" bottom=10mm,");
-			pw.println(" }");
-			pw.println("\\author{Filip Socko}");
-			pw.println("\\begin{document}");
-			//end preamble
-			
-			pw.println("\\section{Recognition Manual (Short)}");
-			pw.println("\\centering");
-			pw.close();
-		}
-		 catch (IOException e){
-             e.printStackTrace();
-             System.out.println("could not read file.");
-         }
-	}	
-	
-    
-	private void writeShipLatex(Ship record, boolean image){
+		
+	private void writeShipTableL(Ship record){
 		
 		OutFormat DP = new OutFormat();
+		FileIO pw = new FileIO();
+		
 		
 		String name = record.getName();
 		name = name.replaceAll("&", ".");
-		try{
-		PrintWriter pw = new PrintWriter(new FileOutputStream("recog/out.txt", true));
-		pw.println("\\hline");
-		pw.println(name +"& $" + record.getMaxSpeed() +"$ & $"+ record.getLength() +"$ & $"+ record.getWidth()
-		+"$ & $"+ record.getMast() +"$ & $"+ record.getDraft() +"$ & $"+ DP.fourDP(record.getRefAspect()) + "$ \\" + "\\");
-		pw.println();		
-		pw.close();
-		}
-		 catch (IOException e){
-             e.printStackTrace();
-             System.out.println("could not read file.");
-         } 
+		//pw.println("\\hline");
+		String latexRec = name +"& $" + record.getMaxSpeed() +"$ & $"+ record.getLength() +"$ & $"+ record.getWidth()
+		+"$ & $"+ record.getMast() +"$ & $"+ record.getDraft() +"$ & $"+ DP.fourDP(record.getRefAspect()) + "$ \\" + "\\";
+	
+		pw.writeLine("recog/out.txt", latexRec);
 	}
 	
-	//should be docEnd
-	private static void tableEnd(){
+	private void tableEnd(){
 		
-		try{
-		PrintWriter pw = new PrintWriter(new FileOutputStream("recog/out.txt", true));
-		pw.println("\\hline");
-		pw.println("\\end{tabular}");	
-		pw.println("\\end{document}");
-		pw.close();
-		}
-		 
-		 catch (IOException e){
-             e.printStackTrace();
-             System.out.println("could not read file.");
-         } 
+		//PrintWriter pw = new PrintWriter(new FileOutputStream("recog/out.txt", true));
+		//pw.println("\\hline");
+		//pw.println("\\end{tabular}");	
+		//pw.println("\\end{document}");
+
 	}
 	
 }//EOF
