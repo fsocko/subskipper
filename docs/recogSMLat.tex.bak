@@ -1,22 +1,9 @@
 %%Custom Recognition Manual - Latex - Short - SCAF,TMO
 \documentclass{article}
-\usepackage{geometry}
-
-%%--Define Margins
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- right=20mm,
- top=20mm,
- bottom=20mm,
- }
 \begin{document}
-
-\section{Short Recognition Manual for SH4,TMO,SCAF. (Metric)}
+\section{Short Recognition Manual for SH4,TMO,SCAF. (Imperial)}
 \begin{tabular}{|l|c|c|c|c|c|}
-\hline
-Name & Max Speed (kn) & Length (m) & Mast (m) & Draft (m) & Aspect\\
+Name & Max Speed (kn) & Length (ft) & Mast (ft) & Draft (ft) & Aspect\\
 \hline
  Auxilary Subchaser & $17.00$ & $206.69$ & $37.40$ & $13.78$ & $5.5263$ \\
 \hline
@@ -256,3 +243,4 @@ Zinbu Maru & $10.00$ & $393.70$ & $61.02$ & $15.42$ & $6.4516$ \\
 \hline
 \end{tabular}
 \end{document}
+

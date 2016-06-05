@@ -20,7 +20,7 @@ public class ParseRecogLatex {
 		private String preamble(boolean imperial){
 			String doc = "";
 			Theme theme = new Theme();
-			Chunk h = theme.makeChunk("recogLatex#preamble"); //Chunk used to write to HTML: mostly <head>.
+			Chunk h = theme.makeChunk("recogLatex2#preamble"); //Chunk used to write to HTML: mostly <head>.
 			String title = "Short Recognition Manual for SH4,TMO,SCAF.";
 			if(imperial){
 				title = title + " (Imperial)";
@@ -75,7 +75,9 @@ public class ParseRecogLatex {
 				record.makeImperial();
 			}
 			
-			h.set("name", record.getName());
+			String name = record.getName().replaceAll("&", "."); //can't have & in latex.
+			
+			h.set("name", name);
 			h.set("disp", f.twoDP(record.getDisp()));
 			h.set("speed", f.twoDP(record.getMaxSpeed()));
 			h.set("draft", f.twoDP(record.getDraft()));

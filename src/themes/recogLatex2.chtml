@@ -1,11 +1,25 @@
 {#preamble}
-Custom Recognition Manual
-Modified 10.05.16
+%%Custom Recognition Manual - Latex - Short - SCAF,TMO
+\documentclass{article}
+\usepackage{geometry}
+
+%%--Define Margins
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\begin{document}
+
 \section{{$title}}
 {#}
 
 {#startT}
 \begin{tabular}{|l|c|c|c|c|c|}
+\hline
 Name & Max Speed (kn) & Length {$unit} & Mast {$unit} & Draft {$unit} & Aspect\\
 {#}
 
