@@ -5,6 +5,7 @@ public class Nomo {
 	//Nomograph Logic:
 	//Inputs: speed (m/s), distance(m), time(s)
 	//Returns a string which contains the missing value.
+	//Missing value must be a double 0.
 	public String nomo(double s, double d, double t){
 		
 		OutFormat nomOut = new OutFormat();

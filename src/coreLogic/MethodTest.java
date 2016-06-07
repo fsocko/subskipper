@@ -5,14 +5,16 @@ public class MethodTest {
 
 	public static void main(String[] args) 
 	{
+		oKaneTest();
+	}
+	
+	public static void nomoTest(){
 		Nomo testNom = new Nomo();
-		
-								 //S(kn)D(m)T(s)
+		 //S(kn)D(m)T(s)
 		System.out.println(testNom.nomo(0, 8000, 1500));
 		System.out.println(testNom.nomo(5.144, 0, 1500));
 		System.out.println(testNom.nomo(5.144, 8000, 0));
 	}
-	
 	
 	public static void aspectAOBTest(){
 		OutFormat toDeg = new OutFormat();
@@ -54,7 +56,7 @@ public class MethodTest {
 			System.out.println("Scope Bearing: " + toDeg.degreeOut(test1.OKSolution(AOB, targS, torpFireS)));
 		}
 		System.out.println("*********************targS sweep: \n");	
-		for(targS = -1; targS < 70; targS++)
+		for(targS = -1; targS < 31; targS++)
 		{
 			torpFireS = 46;
 			AOB = 275;

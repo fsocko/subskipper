@@ -32,7 +32,7 @@ public class Ship implements Comparable<Ship> {
 			double mast, double draft, double disp) {
 		super();
 		this.ID = 0;
-		this.nation = "none";
+		this.nation = "none"; //TODO Once I figure out how nations are assigned in recog.Manual
 		this.name = name;
 		this.type = type;
 		this.typeName = typeName;

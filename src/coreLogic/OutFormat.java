@@ -1,6 +1,8 @@
 package coreLogic;
 import java.text.*;
 
+
+//Method for formatting output using a formatter to a String.
 //String aString =  String.format("%03d", "0.00123332");
 public class OutFormat {
 
@@ -11,21 +13,24 @@ public class OutFormat {
 	    }
 	    
 	    //convert from metre per second to knot
+	    @Deprecated
 	    public String msToKnot(double ms){
 	    	double kt = ms * 1.94384449;
 	    	String out = addUnit(ms, "kt");
 	    	return out;
 	    }
 	    
-	    //convert from m to ft
+	    //convert from m to ft -- Deprecated. Use UnitConversions.java, then addUnit() as needed.
+	    @Deprecated
 	    public String mToFt(double m){
-	    	double kt = m * 3.28084;
-	    	String out = addUnit(m, "ft");
+	    	double ft = m * 3.28084;
+	    	String out = addUnit(ft, "ft");
 	    	return out;
 	    }
 	    
 	    
-	    //Add Units to a double-2DP
+	    //Add Units to a double-2DP  -- Deprecated. Use UnitConversions.java, then addUnit() as needed.
+	    //TODO: make this method not apply a formatter.
 	    public String addUnit(double i, String u){
 	    	DecimalFormat f = new DecimalFormat("0.00");
 	    	String out = f.format(i) + " " + u;
