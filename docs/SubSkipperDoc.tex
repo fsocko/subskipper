@@ -59,12 +59,10 @@
 \pagebreak
 
 \section{Introduction}
-The GitHub SubSkipper repository contains the core logic of the app, such that it can be verified or used for other projects. The documentation contains the principles and equations on which the logic is based, and some method documentation.
+The GitHub SubSkipper repository contains the core logic of the app, such that it can be verified or used for other projects. This reference document contains the principles and equations on which the logic is based and some historical data.
 
 The main purpose of the repository and documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
 \\ \\
-The Android App will be developed from this repository as a separate, polished product.
-\\
 This document is a reference for Torpedo types and common conversion factors, as well as types of US Fleet Boats and Types of US Torpedoes. A brief recognition manual will be provided in a separate document. This document also aims to provide a brief overview of common torpedo solution methods.
 
 \section{Unit Conversions}
@@ -194,24 +192,9 @@ This section consists of pages 25-28 of the Trigger Maru Overhaul Manual which d
 \includegraphics[page={27}, width=\textwidth, height=\textheight]{TMO_Manual}
 \includegraphics[page={28}, width=\textwidth, height=\textheight]{TMO_Manual}
 
-\section{O'Kane Torpedo Solution}
-The Dick O'Kane method was devised by members of the Subsim.com\cite{subsim} forums. It is a constant bearing method which relies on calculating a lead angle -- an angle on which torpedoes, if launched will intercept the course of the target-- to which the periscope is pointed. As parts of the target ship cross the bearing, torpedoes are fired along it. The O'Kane method relies on being ahead of the target, and the final AOB -- at which the torpedo strikes the target-- to be 90\degree .
-
-Calculates \emph{lead angle} based on target and torpedo speed.\\
-The solution requires submarine to be ahead of target.\\
-Captain inserts target speed into TDC, puts the scope on the lead bearing, fires as the target crosses the bearing.
-
-The Equation for lead angle is as follows:
-
-$$ LeadAngle = 90 - \arctan\left( \frac{Torpedo Speed}{TargetSpeed} \right) $$
-
-\section{Calculating Distance To Target}
-
-No methods for calculating Distance To Target will be provided as solutions such as a periscope stadimeter and \emph{sonar} are readily available.
-
 \section{Calculating AOB Based on Aspect Ratio}
 
-Method adapted from Angriffscheibe Handbuch by Karl Hahn, 2008.
+Methods adapted from Angriffscheibe Handbuch by Karl Hahn, 2008.
 
 AOB can be determined given the following data:
 \begin{itemize}
@@ -247,21 +230,9 @@ $$AOB = arcSin \frac{AR\_{observed}}{AR\_{reference}}$$
 \end{itemize}
 
 
-\section{Find the speed of a target with constant relative bearing}
-
-This technique takes advantage of the fact that if you are on a convergent course (moving towards each other), and the target’s bearing is not changing over time, then you are actually on a collision course. Since you know your Uboat’s speed and two angles of the triangle (AOB and target bearing), you can calculate the target’s speed.
-
-$$Target speed = Own speed \left( \frac{sin(TB)}{sin (AOB)} \right)$$
-
-You are maintaining 2 knots on an intercept course with a potential target. At the original observation, it was on a bearing of 280\degree with an observed angle on the bow of 20 \degree starboard. After several minutes, the bearing was still 280\degree.
-
-Note: Although you may not be able to achieve an attack position, this technique will also work to calculate the target’s speed if you are on divergent courses. !If an angle is greater than 90\degree, then simply subtract it from 180\degree (since the sine function is symmetrical around 90\degree).
-
-$$Target speed = Own speed \left( \frac{sin(180-TB)}{sin (180-AOB)} \right)$$
-
 \section{Determine the distance to the track of a target}
 
-As you manoeuver into a firing position, it is useful to know your distance to the track of your target. Knowing the range and AOB of the target:
+As you manoeuvre into a firing position, it is useful to know your distance to the track of your target. Knowing the range and AOB of the target:
 
 Track: intersection point between Submarine course and the current target course.
 
@@ -275,6 +246,18 @@ $$Distance to Track = Range \left( sin(AOB) \right)$$
 %\item{Find distance T must travel to reach a bearing of 000\degree. If the track is known (see previous step) and bearing and range to target is known, time required is:
 %$$ s = d/t  $$
 %}
+
+\section{O'Kane Torpedo Solution}
+The Dick O'Kane method was devised by members of the Subsim.com\cite{subsim} forums. It is a constant bearing method which relies on calculating a lead angle -- an angle on which torpedoes, if launched will intercept the course of the target-- to which the periscope is pointed. As parts of the target ship cross the bearing, torpedoes are fired along it. The O'Kane method relies on being ahead of the target, and the final AOB -- at which the torpedo strikes the target-- to be 90\degree .
+
+Calculates \emph{lead angle} based on target and torpedo speed.\\
+The solution requires submarine to be ahead of target.\\
+Captain inserts target speed into TDC, puts the scope on the lead bearing, fires as the target crosses the bearing.
+
+The Equation for lead angle is as follows:
+
+$$ LeadAngle = 90 - \arctan\left( \frac{Torpedo Speed}{TargetSpeed} \right) $$
+
 
 
 
