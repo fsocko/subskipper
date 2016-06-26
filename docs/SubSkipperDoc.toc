@@ -2,12 +2,12 @@
 \contentsline {section}{\numberline {2}Unit Conversions}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Length}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Speed}{3}{subsection.2.2}
-\contentsline {section}{\numberline {3}Torpedo Data}{3}{section.3}
+\contentsline {section}{\numberline {3}Torpedo Data}{4}{section.3}
 \contentsline {subsubsection}{\numberline {3.0.1}Mark 10}{4}{subsubsection.3.0.1}
 \contentsline {subsubsection}{\numberline {3.0.2}Mark 14}{4}{subsubsection.3.0.2}
 \contentsline {subsubsection}{\numberline {3.0.3}Mark 16}{4}{subsubsection.3.0.3}
 \contentsline {subsubsection}{\numberline {3.0.4}Mark 18}{4}{subsubsection.3.0.4}
-\contentsline {subsubsection}{\numberline {3.0.5}Mark 23}{4}{subsubsection.3.0.5}
+\contentsline {subsubsection}{\numberline {3.0.5}Mark 23}{5}{subsubsection.3.0.5}
 \contentsline {subsubsection}{\numberline {3.0.6}Mark 27 "Cutie"}{5}{subsubsection.3.0.6}
 \contentsline {subsubsection}{\numberline {3.0.7}Torpedo minimum arming distance}{5}{subsubsection.3.0.7}
 \contentsline {subsubsection}{\numberline {3.0.8}Torpedo max dive angle}{5}{subsubsection.3.0.8}
@@ -18,11 +18,13 @@
 \contentsline {subsubsection}{\numberline {3.0.13}Homing torpedos}{5}{subsubsection.3.0.13}
 \contentsline {section}{\numberline {4}Trigger Maru Overhaul - Fleet Boat Types}{6}{section.4}
 \contentsline {section}{\numberline {5}Calculating AOB Based on Aspect Ratio}{10}{section.5}
-\contentsline {subsubsection}{\numberline {5.0.14}Determine an observed \emph {aspect ratio}.}{10}{subsubsection.5.0.14}
-\contentsline {subsubsection}{\numberline {5.0.15}Determine the Reference Apsect Ratio}{10}{subsubsection.5.0.15}
-\contentsline {subsubsection}{\numberline {5.0.16}AOB calculation}{10}{subsubsection.5.0.16}
+\contentsline {subsection}{\numberline {5.1}Determine an observed \emph {aspect ratio}.}{10}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Determine the Reference Aspect Ratio}{10}{subsubsection.5.1.1}
+\contentsline {subsection}{\numberline {5.2}AOB calculation}{10}{subsection.5.2}
 \contentsline {section}{\numberline {6}Determine the distance to the track of a target}{10}{section.6}
-\contentsline {section}{\numberline {7}Determine the lead angle for a perpendicular attack with 0$^{\circ }$gyro angle (AKA O'Kane Solution)}{10}{section.7}
+\contentsline {section}{\numberline {7}Determine the lead angle for a perpendicular attack with 0$^{\circ }$gyro angle (AKA O\'Kane Solution)}{10}{section.7}
 \contentsline {section}{\numberline {8}Determine the torpedo gyro angle}{11}{section.8}
-\contentsline {section}{\numberline {9}Knot to Km Travelled Conversion Chart}{12}{section.9}
-\contentsline {section}{\numberline {10}Recognition Manual}{12}{section.10}
+\contentsline {section}{\numberline {9}O'Kane Table of Values}{11}{section.9}
+\contentsline {section}{\numberline {10}Torpedo spread at range (m) per angle of spread ($^{\circ }$)}{12}{section.10}
+\contentsline {section}{\numberline {11}Knot to Km Travelled Conversion Chart}{12}{section.11}
+\contentsline {section}{\numberline {12}Recognition Manual (Short, Metric)}{14}{section.12}
