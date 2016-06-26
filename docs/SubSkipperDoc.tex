@@ -5,11 +5,11 @@
 
 %%--packages
 \usepackage{hyperref}
-\usepackage{listings}
 \usepackage{color}
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{geometry}
+\usepackage[table]{xcolor} 
 
 %%--Define Margins
  \geometry{
@@ -22,34 +22,11 @@
  }
 
 
-%%--Define style for Java code
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
-
-\lstset{frame=tb,
-  language=Java,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true,
-  tabsize=3
-}
-
-
 %%--commands
 \newcommand{\degree}{$^{\circ}$}
 
 \author{Filip Socko}
-\title{Fleet Boat Reference, Torpedo Solution Methods}
+\title{Campaign Reference and Solution Aids}
 
 \begin{document}
 
@@ -59,22 +36,11 @@
 \pagebreak
 
 \section{Introduction}
-The GitHub SubSkipper repository contains the core logic of the app, such that it can be verified or used for other projects. This reference document contains the principles and equations on which the logic is based and some historical data.
-
-The main purpose of the repository and documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
+The main purpose of this documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
 \\ \\
-This document is a reference for Torpedo types and common conversion factors, as well as types of US Fleet Boats and Types of US Torpedoes. A brief recognition manual will be provided in a separate document. This document also aims to provide a brief overview of common torpedo solution methods.
+This document is a reference for Torpedo types and common conversion factors, as well as types of US Fleet Boats and Types of US Torpedoes. A brief recognition manual will be provided in an appendix. This document also aims to provide a brief overview of common torpedo solution methods.
 
 \section{Unit Conversions}
-
-\subsection{Speed}
-\begin{center}
-\begin{tabular}{r | r}
-$1.0$ knots & $1.0$ NM per hour\\
-$1.0$ m/s & $1.94384449$ knots\\
-$1.0$ m/s & $3.6$ km/h\\
-\end{tabular}
-\end{center}
 
 \subsection{Length}
 \begin{center}
@@ -87,6 +53,9 @@ $1.0$ m & $3.2808399$ feet\\
 $1.0$ m & $1.0936133$ yards\\
 \end{tabular}
 \end{center}
+
+\subsection{Speed}
+\includegraphics[width=\textwidth]{speedConversion}
 
 \section{Torpedo Data}
 
@@ -140,7 +109,7 @@ Available from:& 1943-07-12\\
 Range(m):& 3650\\
 Speed(kt):&29\\
 Warhead:& 120-180 radius 3-7\\
-Depth keeping fault chance:& 55\% chance of deviating $\pm 1.2m - \pm 2.8m$\\
+Depth Keeping:& 55\% chance of deviating $\pm 1.2m - \pm 2.8m$\\
 Dud Chance (at AOB):& 1\% (0\degree-35\degree); 34\% (35\degree-70\degree); 99\% (70\degree-90\degree)\\
 Renown cost:&  500 (200 from 1944-01-16; 0 from 1944-09-01)\\
 \end{tabular} \\
@@ -152,7 +121,7 @@ Available from:& 1943-01-01\\
 Range(m):& 4100\\
 Speed(kt):&46\\
 Warhead:& 120-180 radius 3-7m\\
-Depth keeping fault chance:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
+Depth Keeping:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
 Dud Chance (at AOB):& 1\% (0\degree - 35\degree); 34\% (35\degree- 70\degree); 99\% (70\degree- 90\degree)\\
 Renown cost:&  100 (0 from 16-01-1944)\\
 \end{tabular} \\
@@ -164,7 +133,7 @@ Available From:& 1944-01-01\\
 Range(m):& 4570\\
 Speed(kt):&12\\
 Warhead:& 50-100 radius 1.5-5\\
-Depth keeping fault chance:& NA\\
+Depth Keeping:& NA\\
 Dud Chance (at AOB):& 1\% (0\degree-25\degree)\\
 Renown cost:& 500\\
 \end{tabular} \\
@@ -187,7 +156,7 @@ The Mk. 27 will run straight for 200m before homing.
 
 \section{Trigger Maru Overhaul - Fleet Boat Types}
 This section consists of pages 25-28 of the Trigger Maru Overhaul Manual which detail fleet boat types:
-\includegraphics[page={25}, width=\textwidth, height=\textheight]{TMO_Manual}
+\includegraphics[page={25}, width=\textwidth, height=.95\textheight]{TMO_Manual}
 \includegraphics[page={26}, width=\textwidth, height=\textheight]{TMO_Manual}
 \includegraphics[page={27}, width=\textwidth, height=\textheight]{TMO_Manual}
 \includegraphics[page={28}, width=\textwidth, height=\textheight]{TMO_Manual}
@@ -215,18 +184,20 @@ Identify the target and find the Length and Mast Height as given in the recognit
 $$AOB = arcSin \frac{AR\_{observed}}{AR\_{reference}}$$
 
 \begin{itemize}
-\item{Note: This method is less accurate as AOB approaches 0. Indeed, using this method with a sample size of 16 at various AOBs, the average error was 9.1\degree and the median error 6.88\degree. The optimum range for collecting data seems to be around 2000m.}
+\item{Note: This method is less accurate as AOB approaches 0. Using this method with a sample size of 16 at various AOBs, the average error was 9.1\degree and the median error 6.88\degree. The optimum range for collecting data seems to be around 2000m.}
 \item{Note: This method does not compute whether the AOB is on the port or starboard side.}
-\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually. If the target is moving away from you, you have to subtract the given angle from 180."\cite[p~15]{angrHandB, tvreAcqData} In Other words, the arcSin function has a domain of +90\degree to -90\degree. When the AOB is between 90\degree and 270\degree, subtract the result from 180\degree. \cite{arcSin}}
+\item{Note: "The AOB can only go up to 90, and gives no indication of starboard or port side showing. You have to determine that visually.}
 
-\item{AOB (Relative to Target) for each Quadrant:}
-\begin{itemize}
+\item{
+AOB (Relative to Target) for each Quadrant:
+	\begin{itemize}
 	\item{0\degree - 90\degree : Use AOB result as is.}
-	\item{90\degree - 180\degree : Subtract AOB result 				 from 180.}
-	\item{180\degree - 270\degree : Subtract AOB result from 180, subtract result from 360.}
+	\item{90\degree - 180\degree : Subtract AOB result from 180.}
+	\item{180\degree - 270\degree : Subtract AOB result from 180.}
 	\item{270\degree - 360\degree : Subtract AOB result from 360.}
 	\end{itemize}
 
+}
 \end{itemize}
 
 
@@ -247,28 +218,12 @@ $$Distance to Track = Range \left( sin(AOB) \right)$$
 %$$ s = d/t  $$
 %}
 
-\section{O'Kane Torpedo Solution}
-The Dick O'Kane method was devised by members of the Subsim.com\cite{subsim} forums. It is a constant bearing method which relies on calculating a lead angle -- an angle on which torpedoes, if launched will intercept the course of the target-- to which the periscope is pointed. As parts of the target ship cross the bearing, torpedoes are fired along it. The O'Kane method relies on being ahead of the target, and the final AOB -- at which the torpedo strikes the target-- to be 90\degree .
 
-Calculates \emph{lead angle} based on target and torpedo speed.\\
-The solution requires submarine to be ahead of target.\\
-Captain inserts target speed into TDC, puts the scope on the lead bearing, fires as the target crosses the bearing.
-
-The Equation for lead angle is as follows:
-
-$$ LeadAngle = 90 - \arctan\left( \frac{Torpedo Speed}{TargetSpeed} \right) $$
-
-
-
-
-\section{Determine the lead angle for a perpendicular attack with 0\degree gyro angle}
+\section{Determine the lead angle for a perpendicular attack with 0\degree gyro angle (AKA O'Kane Solution)}
 
 Once you are turned onto a perpendicular intercept course, this method calculates when to fire. The lead angle is simply the target bearing at the moment you fire. The range is irrelevant to the calculation although it is best to plan the attack within 500-1000m.
 
-This is O'Kane, except more simple.
-
-$$ lead angle = tan-1 ( [target speed / torpedo speed] ) $$
-
+$$ lead angle = tan^{-1} ( [target speed / torpedo speed] ) $$
 
 \section{Determine the torpedo gyro angle}
 This example will show how to calculate the required gyro angle for a firing solution. This method is somewhat simplified and is best for smaller gyro angles (\textless 30\degree) and shorter ranges (\textless 1000 metres).
@@ -276,14 +231,16 @@ This example will show how to calculate the required gyro angle for a firing sol
 $$sin (lead angle) / sin (AOB) = (target speed) / (torpedo speed)$$
 $$ gyroAngle = targetBearing -– leadAngle $$
 
-%%TODO: shade alt rows
+
 
 \pagebreak
 \section{Knot to Km Travelled Conversion Chart}
 \begin{table}[h]
 \centering
-\label{my-label}
+\label{knotToKm}
+\rowcolors{2}{gray!25}{white}
 \begin{tabular}{c|cccccccccc}
+\rowcolor{gray!50}
 \textbf{Kt / Hr} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\
 \hline
 \textbf{1}       & 1.85       & 3.70       & 5.56       & 7.41       & 9.26       & 11.11      & 12.96      & 14.82      & 16.67      & 18.52       \\
@@ -320,7 +277,7 @@ $$ gyroAngle = targetBearing -– leadAngle $$
 \end{table}
 
 \section{Recognition Manual}
-
+\include{} %%TODO
 
 %%%END END END
 \pagebreak
