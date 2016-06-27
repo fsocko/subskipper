@@ -25,6 +25,8 @@
 
 %%--commands
 \newcommand{\degree}{$^{\circ}$}
+%%tabularX centered and expanding column
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 \author{fSocko}
 \title{Pacific Campaign and Torpedo Solution Reference (v1.1)}
@@ -44,15 +46,30 @@ This document is a reference for Torpedo types and common conversion factors, as
 \section{Unit Conversions}
 
 \subsection{Length}
+%\begin{center}
+%\begin{tabular}{r | r}
+%$1.0$ NM & $1852.0$ m\\
+%$1.0$ NM & $2025.37$ yards\\
+%$1.0$ NM & $6076.12$ feet\\
+%$1.0$ km & $0.539956803$ NM\\
+%$1.0$ m & $3.2808399$ feet\\
+%$1.0$ m & $1.0936133$ yards\\
+%\end{tabular}
+%\end{center}
+
 \begin{center}
-\begin{tabular}{r | r}
-$1.0$ NM & $1852.0$ m\\
-$1.0$ NM & $2025.37$ yards\\
-$1.0$ NM & $6076.12$ feet\\
-$1.0$ km & $0.539956803$ NM\\
-$1.0$ m & $3.2808399$ feet\\
-$1.0$ m & $1.0936133$ yards\\
-\end{tabular}
+\setlength{\extrarowheight}{24pt}
+\begin{huge}
+\begin{tabularx}{\textwidth}{Y | Y}
+ Length & Speed \\
+\hline
+$ NM  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} m$ & \\
+$ NM  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} yd$ & \\
+$ NM  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} ft$ & \\
+$ m  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} ft$ & \\
+$ m  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} yd$ & \\
+\end{tabularx}
+\end{huge}
 \end{center}
 
 \subsection{Speed}
@@ -261,7 +278,7 @@ $$ gyroAngle = targetBearing -– leadAngle $$
 \pagebreak
 
 \section{Torpedo spread at range (m) per angle of spread (\degree)}
-\centering{\includegraphics[width=\textwidth]{SpreadAtRange}}
+\centering{\includegraphics[width=\textwidth]{SpreadAtRangeBW}}
 
 
 
