@@ -40,6 +40,17 @@
 \newcommand{\aDR}{\rotatebox[origin=c]{180}{$\Lsh$}} %a Down Right
 \newcommand{\aRU}{\rotatebox[origin=c]{270}{$\Lsh$}} %a right up
 
+%%Array format for showing conversion factors.
+%%\conversion{unit left}{top factor}{bottom factor}{unit right}
+%\conversion{m}{12}{15}{NM}
+\newcommand{\conversion}[4]{
+$\begin{array}{rcl}
+\aUR & {#2} & \aRD \\
+\textrm{{#1}} &  & \textrm{{#4}} \\
+\aLU & {#3} &  \aDL \\
+\end{array}$
+}
+
 
 \author{fSocko}
 \title{Pacific Campaign and Torpedo Solution Reference (v1.1)}
@@ -52,6 +63,9 @@
 \pagebreak
 
 \section{Introduction}
+
+
+
 The main purpose of this documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
 \\ \\
 This document is a reference for Torpedo types and common conversion factors, as well as types of US Fleet Boats and Types of US Torpedoes. A brief recognition manual will be provided in an appendix. This document also aims to provide a brief overview of common torpedo solution methods.
@@ -77,28 +91,7 @@ This document is a reference for Torpedo types and common conversion factors, as
 \hline
 \\
 
-$\begin{array}{rcl}
-\aUR & 1856 & \aRD \\
-NM &  & M \\
-\aLU & 1856 &  \aDL \\
-\end{array}$
-
-& \\
-
-$\begin{array}{rcl}
-\aUR & 1856 & \aRD \\
-NM &  & M \\
-\aLU & 1856 &  \aDL \\
-\end{array}$
-
-& \\
-
-$\begin{array}{rcl}
-\aUR & 1856 & \aRD \\
-NM &  & M \\
-\aLU & 1856 &  \aDL \\
-\end{array}$
-
+\conversion{m}{12}{15}{NM}
 
 \end{tabularx}
 \end{large}
