@@ -45,10 +45,11 @@
 %\conversion{m}{12}{15}{NM}
 \newcommand{\conversion}[4]{
 $\begin{array}{rcl}
-\aUR & {#2} & \aRD \\
+\aUR & \times {#2} & \aRD \\
 \textrm{{#1}} &  & \textrm{{#4}} \\
-\aLU & {#3} &  \aDL \\
+\aLU & \times {#3} &  \aDL \\
 \end{array}$
+\vspace{12pt}
 }
 
 
@@ -64,14 +65,12 @@ $\begin{array}{rcl}
 
 \section{Introduction}
 
-
-
 The main purpose of this documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
 \\ \\
 This document is a reference for Torpedo types and common conversion factors, as well as types of US Fleet Boats and Types of US Torpedoes. A brief recognition manual will be provided in an appendix. This document also aims to provide a brief overview of common torpedo solution methods.
 
-\section{Unit Conversions}
-
+\section{Unit Conversion Factors}
+\vspace{12pt}
 %\begin{center}
 %\begin{tabular}{r | r}
 %$1.0$ NM & $1852.0$ m\\
@@ -84,14 +83,35 @@ This document is a reference for Torpedo types and common conversion factors, as
 %\end{center}
 
 \begin{center}
-\setlength{\extrarowheight}{0pt}
+\setlength{\extrarowheight}{-2pt}
 \begin{large}
-\begin{tabularx}{\textwidth}{Y | Y}
- Length & Speed \\
-\hline
-\\
+\begin{tabularx}{0.95\textwidth}{Y  Y}
+\textbf{Length} & \textbf{Speed} \\
 
-\conversion{m}{12}{15}{NM}
+\\
+\conversion{NM}{1852.00}{0.00054}{m} 
+& \conversion{NM/h}{1}{1}{kt}   \\
+
+\conversion{NM}{2025.37}{0.00049}{yd}
+& \conversion{m/s}{1.94384}{0.514444}{kt} \\
+ 
+\conversion{NM}{6076.12}{0.00016}{ft}
+& \conversion{yd/s}{1.77745}{0.562603}{kt} \\ 
+
+\conversion{Mi}{1609.34}{0.00062}{m}
+& \conversion{ft/s}{0.592484}{1.68781}{kt} \\
+
+\conversion{Mi}{1760}{0.00057}{yd} & \\
+\conversion{ m}{1.09361}{0.914}{yd} & \\
+\conversion{ m}{3.28084}{0.3048}{ft} & \\
+
+
+
+%%Speed
+
+
+
+
 
 \end{tabularx}
 \end{large}
