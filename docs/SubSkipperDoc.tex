@@ -11,6 +11,8 @@
 \usepackage{geometry}
 \usepackage[table]{xcolor}
 \usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{graphicx}
 
 %%--Define Margins
  \geometry{
@@ -27,6 +29,17 @@
 \newcommand{\degree}{$^{\circ}$}
 %%tabularX centered and expanding column
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+%%--Define some new arrows - description from base to arrowhead
+\newcommand{\aUR}{\Rsh} %Arrow Up Right
+\newcommand{\aLU}{\rotatebox[origin=c]{90}{$\Rsh$}} %Arrow left Up
+\newcommand{\aDL}{\rotatebox[origin=c]{180}{$\Rsh$}} %arrown down left
+\newcommand{\aRD}{\rotatebox[origin=c]{270}{$\Rsh$}} %%a right down
+\newcommand{\aUL}{\Lsh} %%a up left
+\newcommand{\aLD}{\rotatebox[origin=c]{90}{$\Lsh$}} %%a left down
+\newcommand{\aDR}{\rotatebox[origin=c]{180}{$\Lsh$}} %a Down Right
+\newcommand{\aRU}{\rotatebox[origin=c]{270}{$\Lsh$}} %a right up
+
 
 \author{fSocko}
 \title{Pacific Campaign and Torpedo Solution Reference (v1.1)}
@@ -45,7 +58,6 @@ This document is a reference for Torpedo types and common conversion factors, as
 
 \section{Unit Conversions}
 
-\subsection{Length}
 %\begin{center}
 %\begin{tabular}{r | r}
 %$1.0$ NM & $1852.0$ m\\
@@ -58,19 +70,41 @@ This document is a reference for Torpedo types and common conversion factors, as
 %\end{center}
 
 \begin{center}
-\setlength{\extrarowheight}{24pt}
-\begin{huge}
+\setlength{\extrarowheight}{0pt}
+\begin{large}
 \begin{tabularx}{\textwidth}{Y | Y}
  Length & Speed \\
 \hline
-$ NM  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} m$ & \\
-$ NM  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} yd$ & \\
-$ NM  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} ft$ & \\
-$ m  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} ft$ & \\
-$ m  \frac{\rightarrow x1852 \rightarrow}{ \leftarrow over 1852 \leftarrow} yd$ & \\
+\\
+
+$\begin{array}{rcl}
+\aUR & 1856 & \aRD \\
+NM &  & M \\
+\aLU & 1856 &  \aDL \\
+\end{array}$
+
+& \\
+
+$\begin{array}{rcl}
+\aUR & 1856 & \aRD \\
+NM &  & M \\
+\aLU & 1856 &  \aDL \\
+\end{array}$
+
+& \\
+
+$\begin{array}{rcl}
+\aUR & 1856 & \aRD \\
+NM &  & M \\
+\aLU & 1856 &  \aDL \\
+\end{array}$
+
+
 \end{tabularx}
-\end{huge}
+\end{large}
 \end{center}
+
+
 
 \subsection{Speed}
 
