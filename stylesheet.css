@@ -31,7 +31,9 @@ span{margin: 10px 10px 10px 10px;}
 		
 	position: relative;
 	top: 0px;
-	width: 98%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
 	min-height:100%;
 	border-radius: 20px;
     border: 2px solid white;
