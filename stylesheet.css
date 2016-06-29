@@ -13,7 +13,7 @@
     
 	src: url("../SubSkipper/fonts/F16/F16_Panel Font.ttf") format('truetype');
 	
-	/* src: url("fonts/F16/F16_Panel Font.ttf") format('truetype'); */
+	src: url("fonts/F16/F16_Panel Font.ttf") format('truetype'); */
 	
     font-weight: bold;
     font-style: normal;
