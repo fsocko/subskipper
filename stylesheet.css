@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box; }
+
+@font-face {
+    font-family: label;
+    src: url(fonts/label/Impact_Label_Reversed-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: F16;
+    src: url("fonts/F16/F16_Panel Font.ttf");
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+  
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 62.5%;
+	color: white;
+	background-color: black;
+
+	font-family: F16, sans-serif;
+	}
+
+span{margin: 10px 10px 10px 10px;}  
+  
+	.wrapper{
+		
+	position: relative;
+	top: 0px;
+	width: 98%;
+	min-height:100%;
+	border-radius: 20px;
+    border: 2px solid white;
+	text-align: center;
+	display: table;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 1%;
+	padding: 1rem;
+	font-family: F16, sans-serif;
+
+	background: 
+   /* url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat; */
+   
+   url(gfx/steel0.jpg) repeat;
+	
+	
+	}
+  
+    #headerDiv {
+	position: relative;
+	top: 10px;
+    border-radius: 20px;
+    border: 2px solid white; 
+    min-height: 200px;
+	width: calc(100%);
+	padding: 10px;
+	margin-bottom: 10px;
+	font-family: F16, sans-serif;
+	
+}
+
+  .contentDiv {	
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	position: relative;
+	bottom: 0px;
+    border-radius: 20px;
+    border: 2px solid white;
+    min-height: 400px;
+/* 	min-width: calc(600px); */
+	width: calc(50% - 5px);
+	/*10px indicates space between content divs*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-family: F16, sans-serif;
+}
+
+
+#leftColumn
+{
+float: left;
+margin-right: 10px;
+}
+
+#rightColumn
+{
+	float: right;
+	margin-left: 0;
+}
+
+a{
+	color: red;
+	font-size: 1rem;
+}
+
+.btn {
+  width: 90%;	
+  display: inline-block;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: grey;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  font-family: F16, sans-serif;
+}
+
+  
+.btn:hover {
+  color: black;
+  background-color: yellow;
+  border-color: white;
+}
+
+#footer {
+	
+	float: left;
+	bottom:0;
+	border-radius: 10px;
+    border: 2px solid white;
+	min-width: calc(100%);
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	margin-left: auto;
+	padding: 5px;
+}
