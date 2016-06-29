@@ -140,4 +140,12 @@ a{
 	margin-right: 0px;
 	margin-left: auto;
 	padding: 5px;
+	
+	background: 
+    url(gfx/screw2.png) no-repeat, 
+    url(gfx/screw2.png) no-repeat,
+	url(gfx/steel4.jpg) repeat
+	black;
+	background-position: center left +10px, center right +10px, center; 
+	
 }
