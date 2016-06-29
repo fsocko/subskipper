@@ -1,16 +1,7 @@
 * {
   box-sizing: border-box; }
 
-  @media only screen and (max-device-width: 480px) {
-		div.wrapper {
-			top: 0px;
-			left: 0%;
-			right: 0%;
-			width: 1000%;
-			
-		}
-  }
-  
+
 @font-face {
     font-family: label;
     src: url("fonts/label/Impact_Label_Reversed-webfont.ttf");
