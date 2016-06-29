@@ -1,14 +1,31 @@
 * {
   box-sizing: border-box; }
 
+@font-face {
+    font-family: label;
+    src: url(fonts/label/Impact_Label_Reversed-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: F16;
+    src: url("fonts/F16/F16_Panel Font.ttf");
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+  
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* "Open Sans", Arial, sans-serif; */
 	font-size: 62.5%;
 	color: white;
 	background-color: black;
-  }
+	font-family: F16, label, sans-serif;
+	}
 
 span{margin: 10px 10px 10px 10px;}  
   
@@ -26,7 +43,7 @@ span{margin: 10px 10px 10px 10px;}
 	margin-right: 1%;
 	margin-top: 1%;
 	padding: 1rem;
-		
+	font-family: F16, label, sans-serif;	
 	}
   
     #headerDiv {
@@ -38,6 +55,7 @@ span{margin: 10px 10px 10px 10px;}
 	width: calc(100%);
 	padding: 10px;
 	margin-bottom: 10px;
+	font-family: F16, label, sans-serif;
 	
 }
 
@@ -54,6 +72,7 @@ span{margin: 10px 10px 10px 10px;}
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 10px;
+	font-family: F16, label, sans-serif;
 }
 
 
@@ -86,8 +105,11 @@ a{
   border-width: 2px;
   padding: 5px;
   border-radius: 10px;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  font-family: F16, label, sans-serif;
+}
 
+  
 .btn:hover {
   color: black;
   background-color: yellow;
