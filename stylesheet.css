@@ -43,12 +43,20 @@ span{margin: 10px 10px 10px 10px;}
 	padding: 1rem;
 	font-family: F16, sans-serif;
 
-	background:   
-   url(gfx/steel0.jpg) repeat;
-	
-	
 	}
-  
+
+.screwpanel{
+	
+	background: 
+    url(gfx/screws.png) left -50px top -50px no-repeat, 
+    url(gfx/screws.png) right -50px top -50px no-repeat, 
+    url(gfx/screws.png) left -50px bottom -50px no-repeat, 
+    url(gfx/screws.png) right -50px bottom -50px no-repeat, 
+    url(gfx/steel4.jpg) repeat
+	black;
+	
+}
+	
     #headerDiv {
 	position: relative;
 	top: 10px;
@@ -59,7 +67,7 @@ span{margin: 10px 10px 10px 10px;}
 	padding: 10px;
 	margin-bottom: 10px;
 	font-family: F16, sans-serif;
-	
+		
 }
 
   .contentDiv {	
@@ -76,6 +84,7 @@ span{margin: 10px 10px 10px 10px;}
 	margin-bottom: 10px;
 	padding: 10px;
 	font-family: F16, sans-serif;
+
 }
 
 
