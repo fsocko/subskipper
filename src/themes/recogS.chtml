@@ -18,7 +18,7 @@
 {#ship}
 <tr id="{$rowID}" class="{$rowClass}">
 
-<td class="name">{$name}</td>
+<td class="name" colspan="2">{$name}</td>
 <td class="disp">{$disp}</td>
 <td class="speed">{$speed}</td>
 <td class="length">{$length}</td>
@@ -30,17 +30,15 @@
 
 {#AOBRow}
 <tr class = "{$AOBRowClass}" id="{$AOBRowID}">
-<td>AOB Ratios:</td> 
-<td>10&deg;:{$10deg}</td>
-<td>20&deg;:{$20deg}</td>
-<td>30&deg;:{$30deg}</td>
-<td>40&deg;:{$40deg}</td>
-<td>50&deg;:{$50deg}</td>
-<td>60&deg;:{$60deg}</td>
-<td>70&deg;:{$70deg}</td>
-<td>80&deg;:{$80deg}</td>
-<td>90&deg;:{$90deg}</td>
-</tr>
+
+	<td>10&deg;:{$10deg}</td>
+	<td>20&deg;:{$20deg}</td>
+	<td>30&deg;:{$30deg}</td>
+	<td>40&deg;:{$40deg}</td>
+	<td>50&deg;:{$50deg}</td>
+	<td>60&deg;:{$60deg}</td>
+	<td>70&deg;:{$70deg}</td>
+	</td>
 {#}
 
 

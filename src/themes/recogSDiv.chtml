@@ -1,0 +1,60 @@
+{#head}
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>{$title}</title> 
+  <link rel="stylesheet" type="text/css" href="recogS.css" />
+</head>
+<body>
+<h1>{$heading}</h1>
+{#}
+
+{#startTable}
+<div class = "startTable row">
+	<div class = "header cell name">Name</div>
+	<div class = "header cell tonnage">Tonnage (GRT)</div>
+	<div class = "header cell speed">Speed (kn)</div>
+	<div class = "header cell length">Length {$unit}</div>
+	<div class = "header cell height">Height {$unit}</div>
+	<div class = "header cell draft">Draft {$unit}</div>
+	<div class = "header cell aspect">Aspect</div>
+</div>
+{#}
+
+{#ship}
+<div id="{$rowID}" class="shipRow row">
+	<div class="name cell">{$name}</div>
+	<div class="disp cell">{$disp}</div>
+	<div class="speed cell">{$speed}</div>
+	<div class="length cell">{$length}</div>
+	<div class="height cell">{$height}</div>
+	<div class="draft cell">{$draft}</div>
+	<div class="aspect cell">{$aspect}</div>
+</div>
+{#}
+
+{#AOBRow}
+<div id="{$AOBRowID}" class="AOBRow row">
+
+	<div class="deg cell">10&deg;:{$10deg}</div>
+	<div class="deg cell">20&deg;:{$20deg}</div>
+	<div class="deg cell">30&deg;:{$30deg}</div>
+	<div class="deg cell">40&deg;:{$40deg}</div>
+	<div class="deg cell">50&deg;:{$50deg}</div>
+	<div class="deg cell">60&deg;:{$60deg}</div>
+	<div class="deg cell">70&deg;:{$70deg}</div>
+	<div class="deg cell">80&deg;:{$80deg}</div>
+	<div class="deg cell">90&deg;:{$90deg}</div>
+</div>
+{#}
+
+
+{#splitTable}
+{% include #startTable %}
+{#}
+
+{#terminate}
+</body>
+</html>
+{#}

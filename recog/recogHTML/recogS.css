@@ -1,0 +1,35 @@
+
+.header{
+	background-color: black;
+	color: white;
+}
+
+div{
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+}
+
+h1{margin-left: 5%;}
+
+.shipRow{
+	
+	border-width: 1px;
+	border-color: green;
+	
+}
+
+.row {
+	/* display: table-row; */
+	width: 90%;
+	margin-left: 5%;
+}
+.cell {display: table-cell; width:200px;}
+
+.deg{
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;
+	width: calc(100/9);
+}

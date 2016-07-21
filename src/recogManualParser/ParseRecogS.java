@@ -39,7 +39,7 @@ public class ParseRecogS {
 		private String writeHead(boolean imperial){
 			
 			Theme theme = new Theme();
-			Chunk h = theme.makeChunk("recogS#head"); //Chunk used to write to HTML: <head> only.
+			Chunk h = theme.makeChunk("recogSDiv#head"); //Chunk used to write to HTML: <head> only.
 			
 			String title = "Short Recognition Manual for SH4,TMO,SCAF.";
 			if(imperial){
@@ -58,7 +58,7 @@ public class ParseRecogS {
 		private String startTable(boolean imperial){
 			
 			Theme theme = new Theme();
-			Chunk tableStart = theme.makeChunk("recogS#startTable");
+			Chunk tableStart = theme.makeChunk("recogSDiv#startTable");
 			if(imperial){
 				tableStart.set("unit", "(ft)");
 			}
@@ -73,7 +73,7 @@ public class ParseRecogS {
 			
 			OutFormat f = new OutFormat();
 			Theme theme = new Theme();	
-			Chunk h = theme.makeChunk("recogS#ship");
+			Chunk h = theme.makeChunk("recogSDiv#ship");
 			
 			if(imperial){
 				record.makeImperial();
@@ -87,7 +87,6 @@ public class ParseRecogS {
 			 * order it appears in the HTML.
 			 */
 			
-			h.set("rowClass", "shipRow"); //This could be used for alternating colour rows.
 			h.set("name", record.getName());
 			h.set("disp", f.twoDP(record.getDisp()));
 			h.set("speed", f.twoDP(record.getMaxSpeed()));
@@ -102,24 +101,25 @@ public class ParseRecogS {
 			
 			OutFormat f = new OutFormat();
 			Theme theme = new Theme();	
-			Chunk h = theme.makeChunk("recogS#AOBRow");
+			Chunk h = theme.makeChunk("recogSDiv#AOBRow");
 			
 			h.set("AOBRowID", i); //This could be used for alternating colour rows.
-			h.set("AOBRowClass", "AOBRow"); //This could be used for alternating colour rows.
-			 //Sin(AOB) * AR Ref = Aspect ratio at AOB
-			h.set("10deg", f.fourDP(Math.sin(10) * record.getRefAspect()));
-			h.set("20deg", f.fourDP(Math.sin(20) * record.getRefAspect()));
-			h.set("30deg", f.fourDP(Math.sin(30) * record.getRefAspect()));
-			h.set("40deg", f.fourDP(Math.sin(40) * record.getRefAspect()));
-			h.set("50deg", f.fourDP(Math.sin(50) * record.getRefAspect()));
-			h.set("60deg", f.fourDP(Math.sin(60) * record.getRefAspect()));
-			h.set("70deg", f.fourDP(Math.sin(70) * record.getRefAspect()));
-			h.set("80deg", f.fourDP(Math.sin(80) * record.getRefAspect()));
-			h.set("90deg", f.fourDP(Math.sin(90) * record.getRefAspect()));
+			//Sin(AOB) * AR Ref = Aspect ratio at AOB
+			h.set("10deg", f.fourDP(aspectAtAOB(10)));
+			h.set("20deg", f.fourDP(aspectAtAOB(20)));
+			h.set("30deg", f.fourDP(aspectAtAOB(30)));
+			h.set("40deg", f.fourDP(aspectAtAOB(40)));
+			h.set("50deg", f.fourDP(aspectAtAOB(50)));
+			h.set("60deg", f.fourDP(aspectAtAOB(60)));
+			h.set("70deg", f.fourDP(aspectAtAOB(70)));
+			h.set("80deg", f.fourDP(aspectAtAOB(80)));
+			h.set("90deg", f.fourDP(aspectAtAOB(90)));
 			
 			return h.toString();
-			
 		}
+		
+		//function with an AOB as a parameter, for filling out AOB table.
+		private double aspectAtAOB(int AOB){return AOB*0.95;}
 		
 		
 		//split the table for page breaks
