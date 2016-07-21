@@ -12,18 +12,18 @@
 
 {#startTable}
 <div class = "startTable row">
-	<div class = "header cell name">Name</div>
-	<div class = "header cell tonnage">Tonnage (GRT)</div>
-	<div class = "header cell speed">Speed (kn)</div>
-	<div class = "header cell length">Length {$unit}</div>
-	<div class = "header cell height">Height {$unit}</div>
-	<div class = "header cell draft">Draft {$unit}</div>
-	<div class = "header cell aspect">Aspect</div>
+	<div class="name header cell">Name</div>
+	<div class="disp header cell">Tonnage (GRT)</div>
+	<div class="speed header cell">Speed (kn)</div>
+	<div class="length header cell">Length {$unit}</div>
+	<div class="height header cell">Height {$unit}</div>
+	<div class="draft header cell">Draft {$unit}</div>
+	<div class="aspect header cell">Aspect</div>
 </div>
 {#}
 
 {#ship}
-<div id="{$rowID}" class="shipRow row">
+<div id="shipRow{$rowID}" class="shipRow row">
 	<div class="name cell">{$name}</div>
 	<div class="disp cell">{$disp}</div>
 	<div class="speed cell">{$speed}</div>
@@ -35,8 +35,9 @@
 {#}
 
 {#AOBRow}
-<div id="{$AOBRowID}" class="AOBRow row">
+<div id="AOB{$AOBRowID}" class="AOBRow row">
 
+	<div class="AOBDesc cell">Aspect at AOB:</div>
 	<div class="deg cell">10&deg;:{$10deg}</div>
 	<div class="deg cell">20&deg;:{$20deg}</div>
 	<div class="deg cell">30&deg;:{$30deg}</div>

@@ -1,8 +1,9 @@
-
 .header{
 	background-color: black;
 	color: white;
 }
+
+body{background-color:grey;}
 
 div{
 	border-style: solid;
@@ -14,10 +15,13 @@ div{
 h1{margin-left: 5%;}
 
 .shipRow{
-	
 	border-width: 1px;
 	border-color: green;
-	
+}
+
+.AOBRow{
+	border-width: 1px;
+	border-color: pink;
 }
 
 .row {
@@ -25,11 +29,20 @@ h1{margin-left: 5%;}
 	width: 90%;
 	margin-left: 5%;
 }
-.cell {display: table-cell; width:200px;}
 
 .deg{
 	border-style: solid;
 	border-width: 1px;
 	border-color: red;
-	width: calc(100/9);
+	width: auto;
 }
+
+.name{width: 1000px;}
+.disp{width: 10%;}
+.speed{width: 10%;}
+.length{width: 10%;}
+.height{width: 10%;}
+.draft{width: 10%;}
+.aspect{width: 10%;}
+
+.cell{display: table-cell;}
