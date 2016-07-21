@@ -12,40 +12,64 @@ import xmlParser.Ships;
 public class ParseRecogS {
 	
 		//takes Ship list Ships, takes filename of doc. - Short style
-		public void writeRecogSHTML(Ships shipList, String filename, boolean imperial){
+		//shipList is a Ships object, filename is the name of output file, imperial=true converts 
+		//units to imperial where relevant. AOB table generates a row of common AOB ratios.
+		public void writeRecogSHTML(Ships shipList, String filename, boolean imperial, boolean AOBTable){
 			
 			String htmlDoc = "";
-			Theme theme = new Theme();
-			Chunk h = theme.makeChunk("recogS#start"); //Chunk used to write to HTML: mostly <head>.
-			String title = "Short Recognition Manual for SH4,TMO,SCAF.";
-			if(imperial){
-				title = title + " (Imperial Version)";
-				h.set("unit", "(ft)");
-			}
-				else{
-					title = title + " (Metric Version)";
-					h.set("unit", "(m)");
-				}
-			
-			h.set("title", title);
-			h.set("heading", title);
-			
-			htmlDoc += h.toString();
-			
-			Chunk r = theme.makeChunk("recogS#table"); //Chunk used to write to HTML: mostly <head>.
-			
+			htmlDoc += writeHead(imperial);
+			htmlDoc += startTable(imperial);
+						
 			//Main Ship table row
 			for(int i = 0; i < shipList.getShips().size(); i++)
 			{
-				htmlDoc += shipRowHTML(shipList.getShip(i), imperial);
+				htmlDoc += shipRow(shipList.getShip(i), i, imperial);
+				if(AOBTable){htmlDoc += AOBRow(shipList.getShip(i), i);}
+				
+				if(i % 50 == 0 && i > 0){
+					htmlDoc += splitTable(imperial); //split the table if this is a page break
+				}
 			}
 			
-			Chunk t = theme.makeChunk("recogS#terminate"); //end the table and page
-			htmlDoc += t.toString();
+			
 			writeHTML(htmlDoc, filename);
 		}
 		
-		private String shipRowHTML(Ship record, boolean imperial){
+		//Write HTML Head - done once at start.
+		private String writeHead(boolean imperial){
+			
+			Theme theme = new Theme();
+			Chunk h = theme.makeChunk("recogS#head"); //Chunk used to write to HTML: <head> only.
+			
+			String title = "Short Recognition Manual for SH4,TMO,SCAF.";
+			if(imperial){
+				title = title + " (Imperial Version)";
+			}
+				else{
+					title = title + " (Metric Version)";		
+			}
+			h.set("title", title);
+			h.set("heading", title);
+			return h.toString();
+		}
+		
+		
+		//start the table - return heading with correct units
+		private String startTable(boolean imperial){
+			
+			Theme theme = new Theme();
+			Chunk tableStart = theme.makeChunk("recogS#startTable");
+			if(imperial){
+				tableStart.set("unit", "(ft)");
+			}
+			else {tableStart.set("unit", "(m)");}
+			
+			return tableStart.toString();
+		}
+		
+		
+		
+		private String shipRow(Ship record, int i, boolean imperial){
 			
 			OutFormat f = new OutFormat();
 			Theme theme = new Theme();	
@@ -55,6 +79,15 @@ public class ParseRecogS {
 				record.makeImperial();
 			}
 			
+			h.set("rowID", i); //was: h.set("rowID", record.getID());  
+			/*Originally the rowID was the ID of the ship record.
+			 * If the records are sorted by Name, which is how I sorted
+			 * mine for my own use, the IDs would be all over the place.
+			 * Now this is set so as to ID each ship incrementally in the
+			 * order it appears in the HTML.
+			 */
+			
+			h.set("rowClass", "shipRow"); //This could be used for alternating colour rows.
 			h.set("name", record.getName());
 			h.set("disp", f.twoDP(record.getDisp()));
 			h.set("speed", f.twoDP(record.getMaxSpeed()));
@@ -64,6 +97,38 @@ public class ParseRecogS {
 			h.set("aspect", f.fourDP(record.getRefAspect()));
 			return h.toString();
 		}
+		
+		private String AOBRow(Ship record, int i){
+			
+			OutFormat f = new OutFormat();
+			Theme theme = new Theme();	
+			Chunk h = theme.makeChunk("recogS#AOBRow");
+			
+			h.set("AOBRowID", i); //This could be used for alternating colour rows.
+			h.set("AOBRowClass", "AOBRow"); //This could be used for alternating colour rows.
+			 //Sin(AOB) * AR Ref = Aspect ratio at AOB
+			h.set("10deg", f.fourDP(Math.sin(10) * record.getRefAspect()));
+			h.set("20deg", f.fourDP(Math.sin(20) * record.getRefAspect()));
+			h.set("30deg", f.fourDP(Math.sin(30) * record.getRefAspect()));
+			h.set("40deg", f.fourDP(Math.sin(40) * record.getRefAspect()));
+			h.set("50deg", f.fourDP(Math.sin(50) * record.getRefAspect()));
+			h.set("60deg", f.fourDP(Math.sin(60) * record.getRefAspect()));
+			h.set("70deg", f.fourDP(Math.sin(70) * record.getRefAspect()));
+			h.set("80deg", f.fourDP(Math.sin(80) * record.getRefAspect()));
+			h.set("90deg", f.fourDP(Math.sin(90) * record.getRefAspect()));
+			
+			return h.toString();
+			
+		}
+		
+		
+		//split the table for page breaks
+		private String splitTable(boolean imperial){
+			String split = "</table>\n";
+			split += startTable(imperial);
+			return split.toString();
+		}
+		
 		
 		private void writeHTML(String input, String path){
 			

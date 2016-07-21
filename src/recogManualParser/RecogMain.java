@@ -8,12 +8,10 @@ public class RecogMain {
 
 	public static void main(String[] args) {
 		
-		//ParseRecogL recogL = new ParseRecogL();
-		//ParseRecogS recogS = new ParseRecogS();
-		ParseRecogLatex recogLat = new ParseRecogLatex();
+		ParseRecogL recogL = new ParseRecogL();
+		ParseRecogS recogS = new ParseRecogS();
 		PrepShipData target = new PrepShipData();
-		recogLat.writeRecogLat(target.sortShipsName(target.getShips()), "recog/recogLatex/recogSLatm.tex", false);
-		recogLat.writeRecogLat(target.sortShipsName(target.getShips()), "recog/recogLatex/recogSLati.tex", true);
+	
 		
 		//long Euro / Name Sort
 		//recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNm.html", false);
@@ -26,9 +24,9 @@ public class RecogMain {
 		
 
 		//short Euro
-		//recogS.writeRecogSHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogSm.html", false);
+		recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, true);
 		//Short Imperial
-		//recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true);
+		recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true, false);
 		
 	}
 

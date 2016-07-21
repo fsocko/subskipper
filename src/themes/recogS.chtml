@@ -1,28 +1,52 @@
-{#start}
+{#head}
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <title>{$title}</title> 
+  <link rel="stylesheet" type="text/css" href="recogS.css" />
 </head>
 <body>
 <h1>{$heading}</h1>
-<table border="1" width=100%>
+{#}
+
+{#startTable}
+<table>
 <th>Name</th><th>Tonnage (GRT)</th><th>Speed (kn)</th><th>Length {$unit}</th><th>Height {$unit}</th><th>Draft {$unit}</th><th>Aspect</th>
 {#}
 
 {#ship}
-<tr>
+<tr id="{$rowID}" class="{$rowClass}">
 
-<td align=right>{$name}</td>
-<td align=center>{$disp}</td>
-<td align=center>{$speed}</td>
-<td align=center>{$length}</td>
-<td align=center>{$height}</td>
-<td align=center>{$draft}</td>
-<td align=center>{$aspect}</td>
-
+<td class="name">{$name}</td>
+<td class="disp">{$disp}</td>
+<td class="speed">{$speed}</td>
+<td class="length">{$length}</td>
+<td class="height">{$height}</td>
+<td class="draft">{$draft}</td>
+<td class="aspect">{$aspect}</td>
 </tr>
+{#}
+
+{#AOBRow}
+<tr class = "{$AOBRowClass}" id="{$AOBRowID}">
+<td>AOB Ratios:</td> 
+<td>10&deg;:{$10deg}</td>
+<td>20&deg;:{$20deg}</td>
+<td>30&deg;:{$30deg}</td>
+<td>40&deg;:{$40deg}</td>
+<td>50&deg;:{$50deg}</td>
+<td>60&deg;:{$60deg}</td>
+<td>70&deg;:{$70deg}</td>
+<td>80&deg;:{$80deg}</td>
+<td>90&deg;:{$90deg}</td>
+</tr>
+{#}
+
+
+{#splitTable}
+</table>
+{% include #startTable %}
 {#}
 
 {#terminate}
