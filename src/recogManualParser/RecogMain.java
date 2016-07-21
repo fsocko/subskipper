@@ -24,9 +24,9 @@ public class RecogMain {
 		
 
 		//short Euro
-		recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, true);
+		recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, false);
 		//Short Imperial
-		recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true, true);
+		recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true, false);
 		
 	}
 

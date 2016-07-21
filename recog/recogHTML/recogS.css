@@ -1,33 +1,36 @@
+.wrapper{
+	background-color: red;
+	width: 90%;
+	margin-left: 5%;
+}
+
 .header{
 	background-color: black;
 	color: white;
-}
-
-body{background-color:grey;}
-
-div{
-	border-style: solid;
 	border-width: 1px;
-	padding: 5px;
+	border-color: red;
 	text-align: center;
 }
 
-h1{margin-left: 5%;}
+.name{width: 300px;}
+.disp{width: 100px;}
+.speed{width: 100px;}
+.length{width: 100px;}
+.height{width: 100px;}
+.draft{width: 100px;}
+.aspect{width: 100px;}
+
 
 .shipRow{
 	border-width: 1px;
 	border-color: green;
+	background-color: grey;
 }
 
 .AOBRow{
 	border-width: 1px;
 	border-color: pink;
-}
-
-.row {
-	/* display: table-row; */
-	width: 90%;
-	margin-left: 5%;
+	background-color: orange;
 }
 
 .deg{
@@ -37,12 +40,6 @@ h1{margin-left: 5%;}
 	width: auto;
 }
 
-.name{width: 1000px;}
-.disp{width: 10%;}
-.speed{width: 10%;}
-.length{width: 10%;}
-.height{width: 10%;}
-.draft{width: 10%;}
-.aspect{width: 10%;}
-
 .cell{display: table-cell;}
+
+

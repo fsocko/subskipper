@@ -105,21 +105,27 @@ public class ParseRecogS {
 			
 			h.set("AOBRowID", i); //This could be used for alternating colour rows.
 			//Sin(AOB) * AR Ref = Aspect ratio at AOB
-			h.set("10deg", f.fourDP(aspectAtAOB(10)));
-			h.set("20deg", f.fourDP(aspectAtAOB(20)));
-			h.set("30deg", f.fourDP(aspectAtAOB(30)));
-			h.set("40deg", f.fourDP(aspectAtAOB(40)));
-			h.set("50deg", f.fourDP(aspectAtAOB(50)));
-			h.set("60deg", f.fourDP(aspectAtAOB(60)));
-			h.set("70deg", f.fourDP(aspectAtAOB(70)));
-			h.set("80deg", f.fourDP(aspectAtAOB(80)));
-			h.set("90deg", f.fourDP(aspectAtAOB(90)));
+			h.set("10deg", f.fourDP(aspectAtAOB(record, 10)));
+			h.set("20deg", f.fourDP(aspectAtAOB(record, 20)));
+			h.set("30deg", f.fourDP(aspectAtAOB(record, 30)));
+			h.set("40deg", f.fourDP(aspectAtAOB(record, 40)));
+			h.set("50deg", f.fourDP(aspectAtAOB(record, 50)));
+			h.set("60deg", f.fourDP(aspectAtAOB(record, 60)));
+			h.set("70deg", f.fourDP(aspectAtAOB(record, 70)));
+			h.set("80deg", f.fourDP(aspectAtAOB(record, 80)));
+			h.set("90deg", f.fourDP(aspectAtAOB(record, 90)));
 			
 			return h.toString();
 		}
 		
 		//function with an AOB as a parameter, for filling out AOB table.
-		private double aspectAtAOB(int AOB){return AOB*0.95;}
+		private double aspectAtAOB(Ship record, int AOB){
+			
+			double refAspect = record.getRefAspect();
+			double radAOB = Math.toRadians((double)AOB);
+			double ratio = Math.sin(radAOB) * refAspect;
+			return ratio;
+		}
 		
 		
 		//split the table for page breaks

@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="recogS.css" />
 </head>
 <body>
+<div class="wrapper">
 <h1>{$heading}</h1>
 {#}
 
@@ -38,15 +39,15 @@
 <div id="AOB{$AOBRowID}" class="AOBRow row">
 
 	<div class="AOBDesc cell">Aspect at AOB:</div>
-	<div class="deg cell">10&deg;:{$10deg}</div>
-	<div class="deg cell">20&deg;:{$20deg}</div>
-	<div class="deg cell">30&deg;:{$30deg}</div>
-	<div class="deg cell">40&deg;:{$40deg}</div>
-	<div class="deg cell">50&deg;:{$50deg}</div>
-	<div class="deg cell">60&deg;:{$60deg}</div>
-	<div class="deg cell">70&deg;:{$70deg}</div>
-	<div class="deg cell">80&deg;:{$80deg}</div>
-	<div class="deg cell">90&deg;:{$90deg}</div>
+	<div class="deg cell">10&deg;: {$10deg}</div>
+	<div class="deg cell">20&deg;: {$20deg}</div>
+	<div class="deg cell">30&deg;: {$30deg}</div>
+	<div class="deg cell">40&deg;: {$40deg}</div>
+	<div class="deg cell">50&deg;: {$50deg}</div>
+	<div class="deg cell">60&deg;: {$60deg}</div>
+	<div class="deg cell">70&deg;: {$70deg}</div>
+	<div class="deg cell">80&deg;: {$80deg}</div>
+	<div class="deg cell">90&deg;: {$90deg}</div>
 </div>
 {#}
 
@@ -56,6 +57,7 @@
 {#}
 
 {#terminate}
+</div>
 </body>
 </html>
 {#}
