@@ -71,17 +71,6 @@ This document is a reference for Torpedo types and common conversion factors, as
 
 \section{Unit Conversion Factors}
 \vspace{12pt}
-%\begin{center}
-%\begin{tabular}{r | r}
-%$1.0$ NM & $1852.0$ m\\
-%$1.0$ NM & $2025.37$ yards\\
-%$1.0$ NM & $6076.12$ feet\\
-%$1.0$ km & $0.539956803$ NM\\
-%$1.0$ m & $3.2808399$ feet\\
-%$1.0$ m & $1.0936133$ yards\\
-%\end{tabular}
-%\end{center}
-
 \begin{center}
 \setlength{\extrarowheight}{-2pt}
 \begin{large}
@@ -104,134 +93,100 @@ This document is a reference for Torpedo types and common conversion factors, as
 \conversion{Mi}{1760}{0.00057}{yd} & \\
 \conversion{ m}{1.09361}{0.914}{yd} & \\
 \conversion{ m}{3.28084}{0.3048}{ft} & \\
-
-
-
 %%Speed
-
-
-
-
 
 \end{tabularx}
 \end{large}
 \end{center}
-
-
 
 \subsection{Speed}
 \includegraphics[width=\textwidth]{fixedWire}
 
 \subsection{Nomogram (Metric)}
 \vspace{24pt}
-\begin{figure}
 \includegraphics[height=\textwidth, angle=90]{nomo-metric}
 \label{nomo-metric}
-\end{figure}
 \pagebreak
 
 \section{Torpedo Data}
 %%TODO: German Torpedoes
-The following is torpedo for American torpedo types as used predominantly in the Pacific theatre.
-
-Torpedo data adapted from \emph{SH4 V1.2 Ultimate Torpedo Guide} by Mechan, found at the ubisoft forums (http://forums.ubi.com/showthread.php/475595-SH4-V1-2-Ultimate-Torpedo-Guide-Forums). Dated: 06-22-2007, Accessed: 18.08.2015
-
+The following is torpedo data for German torpedo types as used in the European Theatre of Operations.
 Slow and Fast speeds and ranges removed as appropriate.
+%Adapted from:
+%https://en.wikipedia.org/wiki/G7e_torpedo
+%LSH3 - Torpedo pullout
+%http://silenthunterubf.forumfree.it/?t=51767849
 
-\subsubsection{Mark 10}
+\subsubsection{T1 (G7a)}
 \begin{tabular}{l|l}
 Available from:& Always\\
-Range(m):& 3200\\
-Speed(kt):&36\\
-Warhead:& 80-160 radius 3-6m\\
-Depth keeping:& 70\% chance of deviating $\pm 0.8m - \pm 1.2m$\\
-Dud Chance (at AOB):& 1\% (0\degree -70\degree ) 25\% (70\degree-90\degree)\\
-Renown cost:& 0\\
+Range(Slow):& 12.5km\\
+Range(Medium):& 7.5km\\
+Range(Fast):& 6km\\
+Speed(Slow):&30kt\\
+Speed(Medium):&40kt\\
+Speed(Fast):&44kt\\
 \end{tabular} \\
-Notes: Default torpedo for the S-Class. Slower and with a shorter range than the Mk. 14, but extremely reliable.\\
+Notes:\\
 
-\subsubsection{Mark 14}
+\subsubsection{T2 (G7e)}
 \begin{tabular}{l|l}
 Available from:& Always\\
-Range(Slow)(m):& 8200\\
-Range(Fast)(m):& 4100\\
-Speed(Slow)(kt):&31\\
-Speed(Fast)(kt):& 46\\
-Warhead:& 100-170 radius 3-7m\\
-Depth keeping:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
-Dud Chance (at AOB):& 1\% (0\degree-35\degree); 34\% (35\degree-70\degree); 99\% (70\degree-90\degree)\\
-Renown cost:& 0\\
+Powerplant:&Electric\\
+Range(Slow):& 5km\\
+Speed(Slow):& 30kt\\
 \end{tabular} \\
-Notes: Default torpedo for all modern fleet boats. Faster and with a longer range than the Mk. 10, it packs a roughly 20\% stronger punch but is much less reliable.
+Notes:\\
 
-\subsubsection{Mark 16}
+\subsubsection{T3a (G7e)}
 \begin{tabular}{l|l}
-Available from:& 1945-01-01\\
-Range(m):& 12500\\
-Speed(kt):&46\\
-Warhead:& 180-250 radius 3.5-8m\\
-Depth keeping:&  70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
-Dud Chance (at AOB):& 4\% (0\degree-35\degree); 45\% (35\degree-70\degree); 100\% (70\degree-90\degree)\\
-Renown cost:& 400\\
+Available from:& June 1942\\
+Powerplant:&Electric\\
+Range(Slow):& 7.5km\\
+Speed(Slow):& 30kt\\
 \end{tabular} \\
-Notes: Fast torpedo with an exceptionally long range, but also terribly unreliable.
+Notes:\\
 
-\subsubsection{Mark 18}
+\subsubsection{T4 (G7es) Falke}
 \begin{tabular}{l|l}
-Available from:& 1943-07-12\\
-Range(m):& 3650\\
-Speed(kt):&29\\
-Warhead:& 120-180 radius 3-7\\
-Depth Keeping:& 55\% chance of deviating $\pm 1.2m - \pm 2.8m$\\
-Dud Chance (at AOB):& 1\% (0\degree-35\degree); 34\% (35\degree-70\degree); 99\% (70\degree-90\degree)\\
-Renown cost:&  500 (200 from 1944-01-16; 0 from 1944-09-01)\\
+Available from:& July 1943\\
+Powerplant:&Electric\\
+Range(Slow):& 7.5km\\
+Speed(Slow):& 20kt\\
 \end{tabular} \\
-Notes: Slower, 10\% more powerful, with a shorter range and much more reliable than the Mk. 14.
+Notes:\\
+Acoustic homing torpedo. 
+Tracking speed: SH3-5-40kt, Historical: 7-13kt
 
-\subsubsection{Mark 23}
+\subsubsection{T5 (G7es) Zaunk\"onig I}
 \begin{tabular}{l|l}
-Available from:& 1943-01-01\\
-Range(m):& 4100\\
-Speed(kt):&46\\
-Warhead:& 120-180 radius 3-7m\\
-Depth Keeping:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
-Dud Chance (at AOB):& 1\% (0\degree - 35\degree); 34\% (35\degree- 70\degree); 99\% (70\degree- 90\degree)\\
-Renown cost:&  100 (0 from 16-01-1944)\\
+Available from:& October 1943\\
+Powerplant:&Electric\\
+Range(Slow):& 5.7km\\
+Speed(Slow):& 24kt\\
 \end{tabular} \\
-Notes: Same range, speed and reliability than the Mk. 14 but roughly 10\% more powerful. Definitely replaces the Mk. 10 as the "standard" torpedo from 16-01-1944.
+Notes:\\
+Acoustic homing torpedo. 
+Acoustic homing starts at 400m.
+Tracking speed: SH3-5-40kt, Historical: 10-18kt
 
-\subsubsection{Mark 27 "Cutie"}
+\subsubsection{T11 (G7es) Zaunk\"onig II}
 \begin{tabular}{l|l}
-Available From:& 1944-01-01\\
-Range(m):& 4570\\
-Speed(kt):&12\\
-Warhead:& 50-100 radius 1.5-5\\
-Depth Keeping:& NA\\
-Dud Chance (at AOB):& 1\% (0\degree-25\degree)\\
-Renown cost:& 500\\
+Available from:& July 1944\\
+Powerplant:&Electric\\
+Range(Slow):& 5.7km\\
+Speed(Slow):& 24kt\\
 \end{tabular} \\
-Notes: Slow acoustic homing torpedo with a small warhead primarily used for defence against destroyers.
-
-\subsubsection{Torpedo minimum arming distance}
-\emph{arming\_distance} is set across all torpedoes to 220m except the Mk. 27, which is 150 meters.
-\subsubsection{Torpedo max dive angle}
-\emph{max\_dive\_angle} is set to 20 degrees for all torpedo types.
-\subsubsection{Torpedo maximum turn angle}
-\emph{max\_turn\_angle} is 135\degree for all torpedoes except the Mk. 27, which is 180\degree.
-\subsubsection{Magnetic detonation range}
-\emph{mag\_detonation\_range} is 2m for all torpedoes except for the Mk. 27, which is 1m.
-\subsubsection{Circular runner torpedos}
-\emph{circle\_runner\_chance} is 0.5\% for all torpedoes except for the Mk. 27, which is 0\%.
-\subsubsection{Gyro problems}
-The chance of having gyro problems is 0.3\% at the introduction time of all torpedoes and drops to 0.2\% in later periods for all torpedoes except for the Mk. 16. The \emph{max\_deviation} when having gyro problems is always 50\degree. This does not apply to the Mk. 27. 
-\subsubsection{Homing torpedos}
-The Mk. 27 will run straight for 200m before homing.
-
-\section{ETO - UBoot Types}
+Notes:\\
+Acoustic homing torpedo. 
+Acoustic homing starts at 400m.
+Tracking speed: SH3-5-40kt, Historical: 8-19kt
 
 
+%%TODO:\section{ETO - UBoot Types}
 
-%%Maths and shit
+
+%%Maths and shit - Make this an input, it stays the same.
 
 %% Contents of original AngriffScheibe Handbuch which are relevant w/out the disk:
 %Example 4: Determine the speed of a target by plotting position over time
@@ -338,6 +293,7 @@ $$ gyroAngle = targetBearing -– leadAngle $$
 
 \includegraphics[angle=90, width=\textwidth]{cmapETO}
 \label{GWX Campaign Map}
+\includegraphics[angle=90, width=\textwidth]{ETOFlags}
 
 %\begin{figure}
 %\includegraphics[angle=90, width=\textwidth]{cmapPAC}
@@ -345,10 +301,10 @@ $$ gyroAngle = targetBearing -– leadAngle $$
 %\end{figure}
 
 %\section{Recognition Manual (Short, Metric)}
-%%TODO: Include section heading in the rec manual and make sure that the textHeight
-fits a page.
+%%TODO: Include section heading in the rec manual and make sure that the textHeight fits a page.
 
-\input{recogSLatm_docsMod}
+%TODO: ETO recog man
+%%\input{recogSLatm_docsMod}
 
 %%%END END END
 \pagebreak
