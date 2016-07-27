@@ -1,0 +1,29 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Unit Conversion Factors}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Speed}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Nomogram \(Metric\)}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Torpedo Data}{}% 5
+\BOOKMARK [2][-]{subsubsection.3.0.1}{Mark 10}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.0.2}{Mark 14}{subsubsection.3.0.1}% 7
+\BOOKMARK [3][-]{subsubsection.3.0.3}{Mark 16}{subsubsection.3.0.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.0.4}{Mark 18}{subsubsection.3.0.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.0.5}{Mark 23}{subsubsection.3.0.1}% 10
+\BOOKMARK [3][-]{subsubsection.3.0.6}{Mark 27 "Cutie"}{subsubsection.3.0.1}% 11
+\BOOKMARK [3][-]{subsubsection.3.0.7}{Torpedo minimum arming distance}{subsubsection.3.0.1}% 12
+\BOOKMARK [3][-]{subsubsection.3.0.8}{Torpedo max dive angle}{subsubsection.3.0.1}% 13
+\BOOKMARK [3][-]{subsubsection.3.0.9}{Torpedo maximum turn angle}{subsubsection.3.0.1}% 14
+\BOOKMARK [3][-]{subsubsection.3.0.10}{Magnetic detonation range}{subsubsection.3.0.1}% 15
+\BOOKMARK [3][-]{subsubsection.3.0.11}{Circular runner torpedos}{subsubsection.3.0.1}% 16
+\BOOKMARK [3][-]{subsubsection.3.0.12}{Gyro problems}{subsubsection.3.0.1}% 17
+\BOOKMARK [3][-]{subsubsection.3.0.13}{Homing torpedos}{subsubsection.3.0.1}% 18
+\BOOKMARK [1][-]{section.4}{ETO - UBoot Types}{}% 19
+\BOOKMARK [1][-]{section.5}{Calculating AOB Based on Aspect Ratio}{}% 20
+\BOOKMARK [2][-]{subsection.5.1}{Determine an observed aspect ratio.}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Determine the Reference Aspect Ratio}{subsection.5.1}% 22
+\BOOKMARK [2][-]{subsection.5.2}{AOB calculation}{section.5}% 23
+\BOOKMARK [1][-]{section.6}{Determine the distance to the track of a target}{}% 24
+\BOOKMARK [1][-]{section.7}{Determine the lead angle for a perpendicular attack with 0gyro angle \(AKA OKane Solution\)}{}% 25
+\BOOKMARK [1][-]{section.8}{Determine the torpedo gyro angle}{}% 26
+\BOOKMARK [1][-]{section.9}{O'Kane Table of Values}{}% 27
+\BOOKMARK [1][-]{section.10}{Torpedo spread at range \(m\) per angle of spread \(\)}{}% 28
+\BOOKMARK [1][-]{section.11}{Knot to Km Travelled Conversion Chart}{}% 29
