@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \usepackage{color}
 \usepackage{graphicx}
-\graphicspath{{../figures/}}
+\graphicspath{{figures/}}
 \usepackage{geometry}
 \usepackage[table]{xcolor}
 \usepackage{tabularx}
@@ -71,6 +71,17 @@ This document is a reference for Torpedo types and common conversion factors, as
 
 \section{Unit Conversion Factors}
 \vspace{12pt}
+%\begin{center}
+%\begin{tabular}{r | r}
+%$1.0$ NM & $1852.0$ m\\
+%$1.0$ NM & $2025.37$ yards\\
+%$1.0$ NM & $6076.12$ feet\\
+%$1.0$ km & $0.539956803$ NM\\
+%$1.0$ m & $3.2808399$ feet\\
+%$1.0$ m & $1.0936133$ yards\\
+%\end{tabular}
+%\end{center}
+
 \begin{center}
 \setlength{\extrarowheight}{-2pt}
 \begin{large}
@@ -93,111 +104,133 @@ This document is a reference for Torpedo types and common conversion factors, as
 \conversion{Mi}{1760}{0.00057}{yd} & \\
 \conversion{ m}{1.09361}{0.914}{yd} & \\
 \conversion{ m}{3.28084}{0.3048}{ft} & \\
+
+
+
 %%Speed
+
+
+
+
 
 \end{tabularx}
 \end{large}
 \end{center}
 
+
+
 \subsection{Speed}
-\includegraphics[width=\textwidth]{fixedWire}
+\includegraphics[width=\textwidth]{speedConversion}
 
 \subsection{Nomogram (Metric)}
 \vspace{24pt}
+
 \includegraphics[height=\textwidth, angle=90]{nomo-metric}
-\label{nomo-metric}
 \pagebreak
 
 \section{Torpedo Data}
-%%TODO: German Torpedoes
-The following is torpedo data for German torpedo types as used in the European Theatre of Operations.
+
+The following is torpedo for American torpedo types as used predominantly in the Pacific theatre.
+
+Torpedo data adapted from \emph{SH4 V1.2 Ultimate Torpedo Guide} by Mechan, found at the ubisoft forums (http://forums.ubi.com/showthread.php/475595-SH4-V1-2-Ultimate-Torpedo-Guide-Forums). Dated: 06-22-2007, Accessed: 18.08.2015
+
 Slow and Fast speeds and ranges removed as appropriate.
-%Adapted from:
-%https://en.wikipedia.org/wiki/G7e_torpedo
-%LSH3 - Torpedo pullout
-%http://silenthunterubf.forumfree.it/?t=51767849
-%http://uboat.net/technical/torpedoes.htm
 
-\subsubsection{TI (G7a)}
+\subsubsection{Mark 10}
 \begin{tabular}{l|l}
 Available from:& Always\\
-Range(Slow):& 12.5km\\
-Range(Medium):& 7.5km\\
-Range(Fast):& 6km\\
-Speed(Slow):&30kt\\
-Speed(Medium):&40kt\\
-Speed(Fast):&44kt\\
-Powerplant:&Steam\\
+Range(m):& 3200\\
+Speed(kt):&36\\
+Warhead:& 80-160 radius 3-6m\\
+Depth keeping:& 70\% chance of deviating $\pm 0.8m - \pm 1.2m$\\
+Dud Chance (at AOB):& 1\% (0\degree -70\degree ) 25\% (70\degree-90\degree)\\
+Renown cost:& 0\\
 \end{tabular} \\
-Notes:\\
-The T1 was very reliable and possessed good range. These torpedoes left a trail of bubbles behind them as they ran. Thus should be used only for night or long range attacks.
+Notes: Default torpedo for the S-Class. Slower and with a shorter range than the Mk. 14, but extremely reliable.\\
 
-\subsubsection{TII (G7e)}
+\subsubsection{Mark 14}
 \begin{tabular}{l|l}
 Available from:& Always\\
-Range(Slow):& 5km\\
-Speed(Slow):& 30kt\\
-Powerplant:&Electric\\
+Range(Slow)(m):& 8200\\
+Range(Fast)(m):& 4100\\
+Speed(Slow)(kt):&31\\
+Speed(Fast)(kt):& 46\\
+Warhead:& 100-170 radius 3-7m\\
+Depth keeping:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
+Dud Chance (at AOB):& 1\% (0\degree-35\degree); 34\% (35\degree-70\degree); 99\% (70\degree-90\degree)\\
+Renown cost:& 0\\
 \end{tabular} \\
-Notes:\\
-Both of its detonators were flawed. The magnetic influence mechanism, often would detonate prematurely, or not at all. Estimates of the failure rate of T2 torpedoes for one reason or another range between 20\% and 40\%. Problems fixed with the TIII after Norwegian campaign (June 1940).
+Notes: Default torpedo for all modern fleet boats. Faster and with a longer range than the Mk. 10, it packs a roughly 20\% stronger punch but is much less reliable.
 
-\subsubsection{TIIIa (G7e)}
+\subsubsection{Mark 16}
 \begin{tabular}{l|l}
-Available from:& June 1942\\
-Range(Slow):& 7.5km\\ %%Check if it's not 5000m
-Speed(Slow):& 30kt\\
-Powerplant:&Electric\\
+Available from:& 1945-01-01\\
+Range(m):& 12500\\
+Speed(kt):&46\\
+Warhead:& 180-250 radius 3.5-8m\\
+Depth keeping:&  70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
+Dud Chance (at AOB):& 4\% (0\degree-35\degree); 45\% (35\degree-70\degree); 100\% (70\degree-90\degree)\\
+Renown cost:& 400\\
 \end{tabular} \\
-Notes:\\
-The T3 represented a vast improvement over the early T2. The faulty exploders from the T2 were scrapped in favor of a new design.
+Notes: Fast torpedo with an exceptionally long range, but also terribly unreliable.
 
-\subsubsection{TIV (G7es) Falke}
+\subsubsection{Mark 18}
 \begin{tabular}{l|l}
-Available from:& July 1943\\
-Range(Slow):& 7.5km\\ %%Check if it's not 5.7km
-Speed(Slow):& 20kt\\
-Powerplant:&Electric\\
+Available from:& 1943-07-12\\
+Range(m):& 3650\\
+Speed(kt):&29\\
+Warhead:& 120-180 radius 3-7\\
+Depth Keeping:& 55\% chance of deviating $\pm 1.2m - \pm 2.8m$\\
+Dud Chance (at AOB):& 1\% (0\degree-35\degree); 34\% (35\degree-70\degree); 99\% (70\degree-90\degree)\\
+Renown cost:&  500 (200 from 1944-01-16; 0 from 1944-09-01)\\
 \end{tabular} \\
-Notes:\\
-Acoustic homing torpedo. 
-Slow speed and no magnetic pistol. The sensor was sensitive to targets moving at between 12 and 19 knots. The arming range was shortened to 250 meters. Occasionally the torpedo would turn around and try to sink the U-boat thus, when launched the U-boat should dive to 60m.
+Notes: Slower, 10\% more powerful, with a shorter range and much more reliable than the Mk. 14.
 
-
-\subsubsection{TV (G7es) Zaunk\"onig I}
+\subsubsection{Mark 23}
 \begin{tabular}{l|l}
-Available from:& October 1943\\
-Powerplant:&Electric\\
-Range(Slow):& 5.7km\\
-Speed(Slow):& 24kt\\
+Available from:& 1943-01-01\\
+Range(m):& 4100\\
+Speed(kt):&46\\
+Warhead:& 120-180 radius 3-7m\\
+Depth Keeping:& 70\% chance of deviating $\pm 1.5m - \pm 3.3m$\\
+Dud Chance (at AOB):& 1\% (0\degree - 35\degree); 34\% (35\degree- 70\degree); 99\% (70\degree- 90\degree)\\
+Renown cost:&  100 (0 from 16-01-1944)\\
 \end{tabular} \\
-Notes:\\
-Acoustic homing torpedo. Active after a straight run of 400m. Warhead of 274kg.
+Notes: Same range, speed and reliability than the Mk. 14 but roughly 10\% more powerful. Definitely replaces the Mk. 10 as the "standard" torpedo from 16-01-1944.
 
-
-\subsubsection{TXI (G7es) Zaunk\"onig II}
+\subsubsection{Mark 27 "Cutie"}
 \begin{tabular}{l|l}
-Available from:& July 1944\\
-Powerplant:&Electric\\
-Range(Slow):& 5.7km\\
-Speed(Slow):& 24kt\\
+Available From:& 1944-01-01\\
+Range(m):& 4570\\
+Speed(kt):&12\\
+Warhead:& 50-100 radius 1.5-5\\
+Depth Keeping:& NA\\
+Dud Chance (at AOB):& 1\% (0\degree-25\degree)\\
+Renown cost:& 500\\
 \end{tabular} \\
-Notes:\\
-Acoustic homing torpedo. Active after a straight run of 400 metres. A modified TV, less affected by Foxer.
+Notes: Slow acoustic homing torpedo with a small warhead primarily used for defence against destroyers.
 
-\subsection{Warheads}
-All the German U-boat torpedoes were 53.3cm (21 inch) in diameter and had a warhead of 280kg (The T5 had 274kg).
+\subsubsection{Torpedo minimum arming distance}
+\emph{arming\_distance} is set across all torpedoes to 220m except the Mk. 27, which is 150 meters.
+\subsubsection{Torpedo max dive angle}
+\emph{max\_dive\_angle} is set to 20 degrees for all torpedo types.
+\subsubsection{Torpedo maximum turn angle}
+\emph{max\_turn\_angle} is 135\degree for all torpedoes except the Mk. 27, which is 180\degree.
+\subsubsection{Magnetic detonation range}
+\emph{mag\_detonation\_range} is 2m for all torpedoes except for the Mk. 27, which is 1m.
+\subsubsection{Circular runner torpedos}
+\emph{circle\_runner\_chance} is 0.5\% for all torpedoes except for the Mk. 27, which is 0\%.
+\subsubsection{Gyro problems}
+The chance of having gyro problems is 0.3\% at the introduction time of all torpedoes and drops to 0.2\% in later periods for all torpedoes except for the Mk. 16. The \emph{max\_deviation} when having gyro problems is always 50\degree. This does not apply to the Mk. 27. 
+\subsubsection{Homing torpedos}
+The Mk. 27 will run straight for 200m before homing.
 
-\subsection{FAT}
-Available March 1943. The FAT (Federapparat Torpedo) ran a wandering course with regular 180-degree turns. Useful against convoys, and was fitted to both G7a and G7e T3s. It runs up and down on parallel legs of 800 or 1600 m length.
-
-\subsection{LUT}
-Available March 1944. LUT Lageunabh\"angiger Torpedo (bearing independent torpedo), changes the torpedo's course to a preset heading directly after launch, so the u-boot can fire such torpedoes at targets without changing its own course.
-
-
-%%TODO:\section{ETO - UBoot Types}
-
-%%Maths and shit - Make this an input, it stays the same.
+\section{Trigger Maru Overhaul - Fleet Boat Types}
+This section consists of pages 25-28 of the Trigger Maru Overhaul Manual which detail fleet boat types:
+\includegraphics[page={25}, width=\textwidth, height=.95\textheight]{TMO_Manual}
+\includegraphics[page={26}, width=\textwidth, height=\textheight]{TMO_Manual}
+\includegraphics[page={27}, width=\textwidth, height=\textheight]{TMO_Manual}
+\includegraphics[page={28}, width=\textwidth, height=\textheight]{TMO_Manual}
 
 %% Contents of original AngriffScheibe Handbuch which are relevant w/out the disk:
 %Example 4: Determine the speed of a target by plotting position over time
@@ -301,21 +334,12 @@ $$ gyroAngle = targetBearing -– leadAngle $$
 
 
 \input{knotToKM}
+\pagebreak
 
-\includegraphics[angle=90, width=\textwidth]{cmapETO}
-\label{GWX Campaign Map}
-\includegraphics[angle=90, width=\textwidth]{ETOFlags}
+\includegraphics[angle=270]{cmap}
 
-%\begin{figure}
-%\includegraphics[angle=90, width=\textwidth]{cmapPAC}
-%\label{Pacific Campaign Map}
-%\end{figure}
-
-%\section{Recognition Manual (Short, Metric)}
-%%TODO: Include section heading in the rec manual and make sure that the textHeight fits a page.
-
-%TODO: ETO recog man
-%%\input{recogSLatm_docsMod}
+\section{Recognition Manual (Short, Metric)}
+\input{recogSLatm_docsMod}
 
 %%%END END END
 \pagebreak

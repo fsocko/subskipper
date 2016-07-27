@@ -115,9 +115,10 @@ Slow and Fast speeds and ranges removed as appropriate.
 %Adapted from:
 %https://en.wikipedia.org/wiki/G7e_torpedo
 %LSH3 - Torpedo pullout
+%http://silenthunterubf.forumfree.it/?t=51767849
+%http://uboat.net/technical/torpedoes.htm
 
-
-\subsubsection{T1 (G7a)}
+\subsubsection{TI (G7a)}
 \begin{tabular}{l|l}
 Available from:& Always\\
 Range(Slow):& 12.5km\\
@@ -126,39 +127,44 @@ Range(Fast):& 6km\\
 Speed(Slow):&30kt\\
 Speed(Medium):&40kt\\
 Speed(Fast):&44kt\\
+Powerplant:&Steam\\
 \end{tabular} \\
 Notes:\\
+The T1 was very reliable and possessed good range. These torpedoes left a trail of bubbles behind them as they ran. Thus should be used only for night or long range attacks.
 
-\subsubsection{T2 (G7e)}
+\subsubsection{TII (G7e)}
 \begin{tabular}{l|l}
 Available from:& Always\\
-Powerplant:&Electric\\
 Range(Slow):& 5km\\
 Speed(Slow):& 30kt\\
+Powerplant:&Electric\\
 \end{tabular} \\
 Notes:\\
+Both of its detonators were flawed. The magnetic influence mechanism, often would detonate prematurely, or not at all. This led the BdU to order that all G7e/T2 torpedoes be fired only for contact detonation. However, the contact pistol of the T2 also malfunctioned. Estimates of the failure rate of T2 torpedoes for one reason or another range between 20\% and 40\%. Problems fixed with the replacement TIII after Norwegian campaign (June 1940).
 
-\subsubsection{T3a (G7e)}
+\subsubsection{TIIIa (G7e)}
 \begin{tabular}{l|l}
 Available from:& June 1942\\
-Powerplant:&Electric\\
-Range(Slow):& 7.5km\\
+Range(Slow):& 7.5km\\ %%Check if it's not 5000m
 Speed(Slow):& 30kt\\
+Powerplant:&Electric\\
 \end{tabular} \\
 Notes:\\
+The T3 represented a vast improvement over the early T2. The faulty exploders from the T2 were scrapped in favor of a new design.
 
-\subsubsection{T4 (G7es) Falke}
+\subsubsection{TIV (G7es) Falke}
 \begin{tabular}{l|l}
 Available from:& July 1943\\
-Powerplant:&Electric\\
-Range(Slow):& 7.5km\\
+Range(Slow):& 7.5km\\ %%Check if it's not 5.7km
 Speed(Slow):& 20kt\\
+Powerplant:&Electric\\
 \end{tabular} \\
 Notes:\\
 Acoustic homing torpedo. 
-Tracking speed: SH3-5-40kt, Historical: 7-13kt
+Relatively slow speed and lack of a magnetic pistol. The sensor was only sensitive to targets moving at between 12 and 19 knots. The arming range was shortened to 250 meters. Occasionally the torpedo would turn around and try to sink the U-boat that had launched it. As soon as it was fired, the U-boat should dive to 60m.
 
-\subsubsection{T5 (G7es) Zaunk\"onig I}
+
+\subsubsection{TV (G7es) Zaunk\"onig I}
 \begin{tabular}{l|l}
 Available from:& October 1943\\
 Powerplant:&Electric\\
@@ -166,11 +172,10 @@ Range(Slow):& 5.7km\\
 Speed(Slow):& 24kt\\
 \end{tabular} \\
 Notes:\\
-Acoustic homing torpedo. 
-Acoustic homing starts at 400m.
-Tracking speed: SH3-5-40kt, Historical: 10-18kt
+Acoustic homing torpedo. Active after a straight run of 400 metres. Warhead of 274kg.
 
-\subsubsection{T11 (G7es) Zaunk\"onig II}
+
+\subsubsection{TXI (G7es) Zaunk\"onig II}
 \begin{tabular}{l|l}
 Available from:& July 1944\\
 Powerplant:&Electric\\
@@ -178,13 +183,18 @@ Range(Slow):& 5.7km\\
 Speed(Slow):& 24kt\\
 \end{tabular} \\
 Notes:\\
-Acoustic homing torpedo. 
-Acoustic homing starts at 400m.
-Tracking speed: SH3-5-40kt, Historical: 8-19kt
+Acoustic homing torpedo. Active after a straight run of 400 metres. A modified T5, less affected by Foxer. Never used in battle conditions although late test results were promising.
+
+\subsection{}
+Variants
+All the German U-boat torpedoes were 53.3cm (21 inch) in diameter and had a warhead of 280kg (The T5 had 274kg). There were also two important pattern-running devices which could be applied to various torpedo types. These were FAT and LUT.
+
+The FAT (Federapparat Torpedo) ran a wandering course with regular 180-degree turns, was useful against convoys, and was fitted to both G7a and G7e T3s. From the end of 1942 onwards it was manufactured at the rate of roughly 100 per month.
+
+LUT was a more sophisticated version of the FAT, with more variable patterns, but was only used operationally towards the end of the war.
 
 
 %%TODO:\section{ETO - UBoot Types}
-
 
 %%Maths and shit - Make this an input, it stays the same.
 

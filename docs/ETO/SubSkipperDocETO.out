@@ -3,19 +3,22 @@
 \BOOKMARK [2][-]{subsection.2.1}{Speed}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Nomogram \(Metric\)}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Torpedo Data}{}% 5
-\BOOKMARK [2][-]{subsubsection.3.0.1}{T1 \(G7a\)}{section.3}% 6
-\BOOKMARK [3][-]{subsubsection.3.0.2}{T2 \(G7e\)}{subsubsection.3.0.1}% 7
-\BOOKMARK [3][-]{subsubsection.3.0.3}{T3a \(G7e\)}{subsubsection.3.0.1}% 8
-\BOOKMARK [3][-]{subsubsection.3.0.4}{T4 \(G7es\) Falke}{subsubsection.3.0.1}% 9
-\BOOKMARK [3][-]{subsubsection.3.0.5}{T5 \(G7es\) Zaunk\366nig I}{subsubsection.3.0.1}% 10
-\BOOKMARK [3][-]{subsubsection.3.0.6}{T11 \(G7es\) Zaunk\366nig II}{subsubsection.3.0.1}% 11
-\BOOKMARK [1][-]{section.4}{Calculating AOB Based on Aspect Ratio}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Determine an observed aspect ratio.}{section.4}% 13
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Determine the Reference Aspect Ratio}{subsection.4.1}% 14
-\BOOKMARK [2][-]{subsection.4.2}{AOB calculation}{section.4}% 15
-\BOOKMARK [1][-]{section.5}{Determine the distance to the track of a target}{}% 16
-\BOOKMARK [1][-]{section.6}{Determine the lead angle for a perpendicular attack with 0gyro angle \(AKA OKane Solution\)}{}% 17
-\BOOKMARK [1][-]{section.7}{Determine the torpedo gyro angle}{}% 18
-\BOOKMARK [1][-]{section.8}{O'Kane Table of Values}{}% 19
-\BOOKMARK [1][-]{section.9}{Torpedo spread at range \(m\) per angle of spread \(\)}{}% 20
-\BOOKMARK [1][-]{section.10}{Knot to Km Travelled Conversion Chart}{}% 21
+\BOOKMARK [2][-]{subsubsection.3.0.1}{TI \(G7a\)}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.0.2}{TII \(G7e\)}{subsubsection.3.0.1}% 7
+\BOOKMARK [3][-]{subsubsection.3.0.3}{TIIIa \(G7e\)}{subsubsection.3.0.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.0.4}{TIV \(G7es\) Falke}{subsubsection.3.0.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.0.5}{TV \(G7es\) Zaunk\366nig I}{subsubsection.3.0.1}% 10
+\BOOKMARK [3][-]{subsubsection.3.0.6}{TXI \(G7es\) Zaunk\366nig II}{subsubsection.3.0.1}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Warheads}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{FAT}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{LUT}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Calculating AOB Based on Aspect Ratio}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Determine an observed aspect ratio.}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Determine the Reference Aspect Ratio}{subsection.4.1}% 17
+\BOOKMARK [2][-]{subsection.4.2}{AOB calculation}{section.4}% 18
+\BOOKMARK [1][-]{section.5}{Determine the distance to the track of a target}{}% 19
+\BOOKMARK [1][-]{section.6}{Determine the lead angle for a perpendicular attack with 0gyro angle \(AKA OKane Solution\)}{}% 20
+\BOOKMARK [1][-]{section.7}{Determine the torpedo gyro angle}{}% 21
+\BOOKMARK [1][-]{section.8}{O'Kane Table of Values}{}% 22
+\BOOKMARK [1][-]{section.9}{Torpedo spread at range \(m\) per angle of spread \(\)}{}% 23
+\BOOKMARK [1][-]{section.10}{Knot to Km Travelled Conversion Chart}{}% 24
