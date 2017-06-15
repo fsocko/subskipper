@@ -43,9 +43,9 @@ public class MethodTest {
 		OKane test1 = new OKane();
 		// constructs a torpedo. INPUTS: name, slow/TODO:med/fast speed (kn),
 		// rangeS, TODO: rangeMedium, rangeF (m)
-		Torpedo mk10 = new Torpedo("Mk. 10", 36, -1, 3200, -1);
-		Torpedo mk14 = new Torpedo("Mk. 14", 31, 46, 8200, 4100);
-		Torpedo mk16 = new Torpedo("Mk. 16", 46, -1, 12500, -1);
+		Torpedo mk10 = new Torpedo("Mk. 10", 36, -1, -1, 3200, -1);
+		Torpedo mk14 = new Torpedo("Mk. 14", 31, -1, 46, 8200, 4100);
+		Torpedo mk16 = new Torpedo("Mk. 16", 46, -1, -1, 12500, -1);
 
 		// Format to degrees
 		OutFormat toDeg = new OutFormat();

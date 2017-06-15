@@ -2,6 +2,7 @@ package coreLogic;
 
 public class Torpedo {
 	
+		
 		private int ID;
 		private String name; //torp Name
 		private double speedS; // slow speed
@@ -12,10 +13,27 @@ public class Torpedo {
 		private double rangeF; //torp range, fast
 		private double impactT; //time to impact on this solution
 		
+		//TODO: location:
+		//bearing
+		//distance
+		//time away
+		
 		//TODO: get speed as L/M/H, determine speed value based on torpedo type and its properties.	
 				
-		//constructs a torpedo. INPUTS: name, slow/fast speed, range 
-		public Torpedo(String name, double speedS, double speedF, double rangeS, double rangeF){  
+		 
+		/**
+		 * constructs a torpedo. INPUTS: name, slow/fast speed, range
+		 * 
+		 * @param name  torp Name
+		 * @param speedS slow speed
+		 * @param speedF fast speed
+		 * @param rangeS range slow
+		 * @param speedM //torp range, med
+		 * @param rangeF
+		 */
+		
+		//FIXME: add location data
+		public Torpedo(String name, double speedS, double speedF, double speedM, double rangeS, double rangeF){  
 			 this.ID = 001;
 			 this.name = name;
 		     this.speedS = speedS;
