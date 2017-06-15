@@ -1,9 +1,7 @@
 package coreLogic;
 
 import xmlParser.PrepShipData;
-
 import java.lang.invoke.MethodHandles;
-
 import org.apache.logging.log4j.*;
 
 /**
