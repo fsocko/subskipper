@@ -4,6 +4,7 @@ import xmlParser.*;
 import java.util.ArrayList;
 import java.io.File;
 import java.lang.Math;
+import java.lang.invoke.MethodHandles;
 
 import org.apache.logging.log4j.*;
 
@@ -17,7 +18,7 @@ import org.apache.logging.log4j.*;
  */
 public class AspectAOB {
 
-	final Logger logger = LogManager.getLogger(this.getClass());
+	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
 	/**
 	 * Wrapper for calculateAOB, calculates AOB bearing with AOB estimate

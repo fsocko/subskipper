@@ -3,6 +3,8 @@ package coreLogic;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
+import java.lang.invoke.MethodHandles;
+
 import org.apache.logging.log4j.*;
 
 /**
@@ -12,7 +14,7 @@ import org.apache.logging.log4j.*;
  */
 public class FileIO {
 
-	final Logger logger = LogManager.getLogger(this.getClass());
+	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
 	public void writeLine(String file, String text) {
 

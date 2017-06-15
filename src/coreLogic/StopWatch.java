@@ -1,26 +1,35 @@
 package coreLogic;
 
+import java.lang.invoke.MethodHandles;
 import org.apache.logging.log4j.*;
 
+
 /**
+ * The Class StopWatch.
+ *
  * @author fps
  * Class for returning various timers.
  * All time handling done in System.nanoTime / Long type.
- * 
  */
 
 public class StopWatch {
+	
+	/** The start time. */
 	//main timer values
 	private Long startTime;
+	
+	/** The end time. */
 	private Long endTime;
-	final Logger log = LogManager.getLogger(this.getClass());
+	
+	/** The log. */
+	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 	
 	/**
 	 * set class startTime to the current time.
 	 */
 	public void startTimer(){
 		this.startTime = System.nanoTime();
-		log.info("StartTime:{}" + startTime);
+		logger.info("StartTime:{}" + startTime);
 	}
 	
 	/**
@@ -34,6 +43,11 @@ public class StopWatch {
 		
 	}
 	
+	/**
+	 * Gets the time.
+	 *
+	 * @return the time
+	 */
 	public Long getTime(){
 		
 		if(this.endTime != null){
@@ -44,9 +58,14 @@ public class StopWatch {
 		}
 	}
 	
+	/**
+	 * Show time as formatted string.
+	 *
+	 * @return the string
+	 */
 	public String showTime(){
 		
-		log.info("Time:{}", this.endTime);
+		logger.info("Time:{}", this.endTime);
 		return "TIME";
 		
 	}
@@ -54,17 +73,31 @@ public class StopWatch {
 	//Given known length of target and time to pass from 
 	//stern to bow, find speed in m/s.
 	
+	/**
+	 * Fixed wire.
+	 *
+	 * @param tgtLength the tgt length
+	 * @param time the time elapsed for ship to pass from stern to bow
+	 * @return the double
+	 */
 	public double fixedWire(Double tgtLength, long time){
 		
 		return 0;
 		
 	}
 	
-	//Given known range and Torpedo Speed, find time. 
+	/**
+	 * Time to impact.
+	 * Given known tgt range, and Torpedo Speed, find time to impact.
+	 */
 	//(TODO: calculate speed per gyro angle)
 	public void timeToImpact(){}
 	
-	//Given known speed, and time variable, calculate distance travelled, in m.
+	/**
+	 * Speed to distance.
+	 * Given known speed, and time variable, calculate distance travelled, in m.
+	 */
+	
 	public void SpeedToDistance(){}
 
 }

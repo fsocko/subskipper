@@ -1,14 +1,20 @@
 package xmlParser;
 
-import java.io.File;
+import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import coreLogic.Ship;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class PrepShipData.
+ */
 public class PrepShipData {
 
+	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 	
 	//This method reads from SCAF, generates a ship XML file and 
 	//returns an arrayList of Ship objects. It also implements
@@ -17,6 +23,11 @@ public class PrepShipData {
 	
 	
 	//return a prepared Ships object if possible from XML. Otherwise, parseSCAF
+	/**
+	 * Gets the ships.
+	 *
+	 * @return the ships
+	 */
 	//and write / read XML
 	public Ships getShips(){
 		
@@ -25,7 +36,7 @@ public class PrepShipData {
 		
 		if(!readShips.readXML().equals(null)){
 			parsedShips = readShips.readXML();
-			System.out.println("XML read successfully.");
+			logger.info("XML read successfully.");
 		}
 		else{parsedShips = FullDataCycle();}
 		
@@ -35,6 +46,11 @@ public class PrepShipData {
 	
 	//This method is run if there is no readily available XML file. 
 	//It runs both SCAF to XML as well as subsequently reading the
+	/**
+	 * Full data cycle.
+	 *
+	 * @return the ships
+	 */
 	//resulting file
 	private Ships FullDataCycle(){
 		WriteShipData();
@@ -44,6 +60,9 @@ public class PrepShipData {
 		return fcShips;
 	}
 	
+	/**
+	 * Write ship data.
+	 */
 	//Writes SCAF to xml
 	private void WriteShipData(){
 			
@@ -53,15 +72,28 @@ public class PrepShipData {
 		runShips.setShips(scaf.makeShips()); //we have a loaded Ships object
 		WriteShipXML writeShips = new WriteShipXML();
 		writeShips.writeXML(runShips); //written to XML
-		System.out.println("shipList.xml file parsed from SCAF.");
+		logger.info("shipList.xml file parsed from SCAF.");
 	}
 	
 
+	/**
+	 * Gets the ship by ID.
+	 *
+	 * @param shipID the ship ID
+	 * @return the ship by ID
+	 */
 	//Look up a ship by an ID
 	public Ship getShipByID(int shipID){
 		return getShipByID(shipID, getShips());
 	}
 	
+	/**
+	 * Gets the ship by ID.
+	 *
+	 * @param shipID the ship ID
+	 * @param shipsData the ships data
+	 * @return the ship by ID
+	 */
 	public Ship getShipByID(int shipID, Ships shipsData){
 		
 		ArrayList<Ship> shipList = shipsData.getShips();
@@ -75,14 +107,25 @@ public class PrepShipData {
 		return idShip;
 	}
 		
+	/**
+	 * Prints the ships.
+	 *
+	 * @param printShips the print ships
+	 */
 	//Prints contents of a Ships
 	public void printShips(Ships printShips){
 		
 		for(int i = 0; i < printShips.getShips().size(); i++){
-			System.out.println(printShips.getShip(i).toString());
+			logger.info(printShips.getShip(i).toString());
 		}
 	}
 	
+	/**
+	 * Sort ships type.
+	 *
+	 * @param shipRecords the ship records
+	 * @return the ships
+	 */
 	//Sort Ships based on Type int; ascending 
 	public Ships sortShipsType(Ships shipRecords){
 		ArrayList<Ship> allShips = shipRecords.getShips(); 
@@ -92,6 +135,12 @@ public class PrepShipData {
 		return sortedList; 
 	}
 
+	/**
+	 * Sort ships name.
+	 *
+	 * @param shipRecords the ship records
+	 * @return the ships
+	 */
 	//Sort Ships based on Type int; ascending 
 	public Ships sortShipsName(Ships shipRecords){
 		ArrayList<Ship> allShips = shipRecords.getShips(); 

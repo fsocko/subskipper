@@ -8,13 +8,19 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import coreLogic.Ship;
 
 
 public class ReadSCAF {
 
+final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
+	
 /*
 An Example SCAF ship record. starts with empty line, ends with 2 trailing empty lines
 
@@ -105,11 +111,11 @@ SurvivalPercentage=20 --Not used
 			
 		 }
 		 catch(FileNotFoundException F){
-			 System.out.println("IOexception while reading.");}
+			 logger.info("IOexception while reading.");}
 		 
 		 catch (IOException e){
              e.printStackTrace();
-             System.out.println("could not read file.");
+             logger.info("could not read file.");
          }   
 	
 		 return tempShips;
@@ -154,7 +160,7 @@ SurvivalPercentage=20 --Not used
 			 
 			 while(!found){
 				 if (! br.ready()){
-					 System.out.println("Reached Names.cfg EOF. Breaking.");
+					 logger.info("Reached Names.cfg EOF. Breaking.");
 					 break;}
 
 				 curLine = br.readLine().trim();
@@ -167,11 +173,11 @@ SurvivalPercentage=20 --Not used
 			 }
 		 }
 		 catch(FileNotFoundException F){
-			 System.out.println("IOexception while reading.");}
+			 logger.info("IOexception while reading.");}
 		 
 		 catch (IOException e){
              e.printStackTrace();
-             System.out.println("could not read file.");
+             logger.info("could not read file.");
          }   
 		 
 		 if(found){
@@ -214,16 +220,16 @@ SurvivalPercentage=20 --Not used
 	//Prints all useful SCAF files. Mostly For Debugging
 	public void printSCAFFiles(){
 		ArrayList<File> shipFiles = new ArrayList<File>();
-		System.out.println("\nPrint all ships:\n************************************************************\n");
+		logger.info("\nPrint all ships:\n************************************************************\n");
 		listFile("data", shipFiles);
 		for(int i = 0; i < shipFiles.size(); i++){
-			System.out.println(shipFiles.get(i).toString());
+			logger.info(shipFiles.get(i).toString());
 		}
 	}
 	
 	//Returns an arrayList of Ship objects, for passing to WriteShipXML
 	public ArrayList<Ship> makeShips(){
-		System.out.println("ReadSCAF.makeShips() started.");
+		logger.info("ReadSCAF.makeShips() started.");
 		ArrayList<File> shipFiles = new ArrayList<File>();
 		ArrayList<Ship> shipData = new ArrayList<Ship>();
 		Ship writeShip = new Ship();

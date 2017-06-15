@@ -1,0 +1,1957 @@
+2017-06-15 17:09:08,623 INFO c.OKane [main] Lead is:000deg
+2017-06-15 17:09:08,626 INFO c.OKane [main] Lead is:000deg
+2017-06-15 17:09:56,242 INFO c.OKane [main] Lead is:000deg
+2017-06-15 17:09:56,244 INFO c.OKane [main] Lead is:000deg
+[INFO   ] [15/06/2017 17:14:38,450] MethodTest:64 (main) - *********************AOBSweep: 
+
+[INFO   ] [15/06/2017 17:14:38,452] MethodTest:68 (main) - AOB: 0 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,453] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,454] MethodTest:68 (main) - AOB: 1 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,454] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,454] MethodTest:68 (main) - AOB: 2 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,455] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,455] MethodTest:68 (main) - AOB: 3 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,455] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,455] MethodTest:68 (main) - AOB: 4 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,456] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,456] MethodTest:68 (main) - AOB: 5 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,456] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,457] MethodTest:68 (main) - AOB: 6 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,457] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,457] MethodTest:68 (main) - AOB: 7 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,457] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,457] MethodTest:68 (main) - AOB: 8 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,458] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,458] MethodTest:68 (main) - AOB: 9 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,459] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,459] MethodTest:68 (main) - AOB: 10 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,459] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,460] MethodTest:68 (main) - AOB: 11 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,460] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,460] MethodTest:68 (main) - AOB: 12 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,461] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,461] MethodTest:68 (main) - AOB: 13 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,461] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,462] MethodTest:68 (main) - AOB: 14 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,462] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,462] MethodTest:68 (main) - AOB: 15 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,463] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,463] MethodTest:68 (main) - AOB: 16 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,463] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,463] MethodTest:68 (main) - AOB: 17 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,464] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,464] MethodTest:68 (main) - AOB: 18 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,464] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,464] MethodTest:68 (main) - AOB: 19 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,465] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,465] MethodTest:68 (main) - AOB: 20 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,465] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,466] MethodTest:68 (main) - AOB: 21 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,466] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,467] MethodTest:68 (main) - AOB: 22 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,467] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,467] MethodTest:68 (main) - AOB: 23 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,467] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,468] MethodTest:68 (main) - AOB: 24 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,468] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,468] MethodTest:68 (main) - AOB: 25 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,468] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,469] MethodTest:68 (main) - AOB: 26 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,469] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,469] MethodTest:68 (main) - AOB: 27 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,469] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,470] MethodTest:68 (main) - AOB: 28 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,470] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,470] MethodTest:68 (main) - AOB: 29 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,470] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,471] MethodTest:68 (main) - AOB: 30 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,471] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,471] MethodTest:68 (main) - AOB: 31 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,472] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,472] MethodTest:68 (main) - AOB: 32 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,472] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,472] MethodTest:68 (main) - AOB: 33 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,472] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,473] MethodTest:68 (main) - AOB: 34 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,473] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,473] MethodTest:68 (main) - AOB: 35 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,473] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,474] MethodTest:68 (main) - AOB: 36 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,474] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,474] MethodTest:68 (main) - AOB: 37 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,475] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,475] MethodTest:68 (main) - AOB: 38 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,475] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,475] MethodTest:68 (main) - AOB: 39 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,476] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,476] MethodTest:68 (main) - AOB: 40 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,476] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,476] MethodTest:68 (main) - AOB: 41 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,476] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,477] MethodTest:68 (main) - AOB: 42 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,477] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,477] MethodTest:68 (main) - AOB: 43 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,477] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,478] MethodTest:68 (main) - AOB: 44 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,478] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,478] MethodTest:68 (main) - AOB: 45 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,478] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,478] MethodTest:68 (main) - AOB: 46 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,479] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,479] MethodTest:68 (main) - AOB: 47 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,479] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,479] MethodTest:68 (main) - AOB: 48 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,480] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,480] MethodTest:68 (main) - AOB: 49 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,480] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,480] MethodTest:68 (main) - AOB: 50 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,481] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,481] MethodTest:68 (main) - AOB: 51 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,481] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,482] MethodTest:68 (main) - AOB: 52 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,482] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,482] MethodTest:68 (main) - AOB: 53 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,482] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,483] MethodTest:68 (main) - AOB: 54 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,483] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,483] MethodTest:68 (main) - AOB: 55 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,483] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,484] MethodTest:68 (main) - AOB: 56 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,484] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,484] MethodTest:68 (main) - AOB: 57 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,484] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,485] MethodTest:68 (main) - AOB: 58 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,485] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,485] MethodTest:68 (main) - AOB: 59 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,485] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,486] MethodTest:68 (main) - AOB: 60 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,486] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,486] MethodTest:68 (main) - AOB: 61 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,487] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,487] MethodTest:68 (main) - AOB: 62 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,487] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,488] MethodTest:68 (main) - AOB: 63 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,488] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,488] MethodTest:68 (main) - AOB: 64 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,489] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,489] MethodTest:68 (main) - AOB: 65 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,489] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,490] MethodTest:68 (main) - AOB: 66 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,490] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,490] MethodTest:68 (main) - AOB: 67 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,491] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,491] MethodTest:68 (main) - AOB: 68 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,491] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,491] MethodTest:68 (main) - AOB: 69 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,492] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,492] MethodTest:68 (main) - AOB: 70 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,492] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,492] MethodTest:68 (main) - AOB: 71 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,492] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,493] MethodTest:68 (main) - AOB: 72 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,493] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,493] MethodTest:68 (main) - AOB: 73 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,493] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,493] MethodTest:68 (main) - AOB: 74 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,494] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,494] MethodTest:68 (main) - AOB: 75 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,494] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,494] MethodTest:68 (main) - AOB: 76 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,494] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,494] MethodTest:68 (main) - AOB: 77 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,495] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,495] MethodTest:68 (main) - AOB: 78 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,495] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,495] MethodTest:68 (main) - AOB: 79 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,495] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,496] MethodTest:68 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,496] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,496] MethodTest:68 (main) - AOB: 81 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,496] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,497] MethodTest:68 (main) - AOB: 82 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,497] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,497] MethodTest:68 (main) - AOB: 83 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,497] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,498] MethodTest:68 (main) - AOB: 84 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,498] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,499] MethodTest:68 (main) - AOB: 85 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,499] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,499] MethodTest:68 (main) - AOB: 86 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,500] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,500] MethodTest:68 (main) - AOB: 87 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,500] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,500] MethodTest:68 (main) - AOB: 88 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,500] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,500] MethodTest:68 (main) - AOB: 89 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,501] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,501] MethodTest:68 (main) - AOB: 90 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,501] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,501] MethodTest:68 (main) - AOB: 91 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,501] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,502] MethodTest:68 (main) - AOB: 92 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,502] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,502] MethodTest:68 (main) - AOB: 93 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,502] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,502] MethodTest:68 (main) - AOB: 94 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,503] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,503] MethodTest:68 (main) - AOB: 95 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,503] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,503] MethodTest:68 (main) - AOB: 96 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,503] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,503] MethodTest:68 (main) - AOB: 97 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,504] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,504] MethodTest:68 (main) - AOB: 98 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,504] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,504] MethodTest:68 (main) - AOB: 99 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,505] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,505] MethodTest:68 (main) - AOB: 100 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,505] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,505] MethodTest:68 (main) - AOB: 101 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,505] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,506] MethodTest:68 (main) - AOB: 102 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,506] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,506] MethodTest:68 (main) - AOB: 103 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,506] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,506] MethodTest:68 (main) - AOB: 104 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,506] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,507] MethodTest:68 (main) - AOB: 105 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,507] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,507] MethodTest:68 (main) - AOB: 106 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,507] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,507] MethodTest:68 (main) - AOB: 107 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,507] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,507] MethodTest:68 (main) - AOB: 108 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,508] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,508] MethodTest:68 (main) - AOB: 109 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,508] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,508] MethodTest:68 (main) - AOB: 110 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,508] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,509] MethodTest:68 (main) - AOB: 111 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,509] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,509] MethodTest:68 (main) - AOB: 112 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,509] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,509] MethodTest:68 (main) - AOB: 113 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,509] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,509] MethodTest:68 (main) - AOB: 114 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,510] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,510] MethodTest:68 (main) - AOB: 115 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,510] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,510] MethodTest:68 (main) - AOB: 116 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,510] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,510] MethodTest:68 (main) - AOB: 117 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:68 (main) - AOB: 118 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:68 (main) - AOB: 119 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:68 (main) - AOB: 120 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,511] MethodTest:68 (main) - AOB: 121 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,512] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,512] MethodTest:68 (main) - AOB: 122 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,512] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,512] MethodTest:68 (main) - AOB: 123 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,512] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,512] MethodTest:68 (main) - AOB: 124 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,513] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,513] MethodTest:68 (main) - AOB: 125 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,513] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,513] MethodTest:68 (main) - AOB: 126 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,513] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,514] MethodTest:68 (main) - AOB: 127 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,514] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,514] MethodTest:68 (main) - AOB: 128 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,514] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,515] MethodTest:68 (main) - AOB: 129 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,515] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,515] MethodTest:68 (main) - AOB: 130 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,515] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,515] MethodTest:68 (main) - AOB: 131 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,516] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,516] MethodTest:68 (main) - AOB: 132 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,516] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,516] MethodTest:68 (main) - AOB: 133 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,516] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,516] MethodTest:68 (main) - AOB: 134 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,516] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,517] MethodTest:68 (main) - AOB: 135 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,517] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,517] MethodTest:68 (main) - AOB: 136 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,517] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,517] MethodTest:68 (main) - AOB: 137 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,517] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,517] MethodTest:68 (main) - AOB: 138 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,518] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,518] MethodTest:68 (main) - AOB: 139 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,518] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,518] MethodTest:68 (main) - AOB: 140 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,518] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,518] MethodTest:68 (main) - AOB: 141 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,519] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,519] MethodTest:68 (main) - AOB: 142 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,519] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,519] MethodTest:68 (main) - AOB: 143 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,519] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,519] MethodTest:68 (main) - AOB: 144 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,519] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,520] MethodTest:68 (main) - AOB: 145 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,520] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,520] MethodTest:68 (main) - AOB: 146 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,521] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,521] MethodTest:68 (main) - AOB: 147 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,521] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,521] MethodTest:68 (main) - AOB: 148 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,522] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,522] MethodTest:68 (main) - AOB: 149 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,522] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,522] MethodTest:68 (main) - AOB: 150 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,522] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,523] MethodTest:68 (main) - AOB: 151 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,523] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,523] MethodTest:68 (main) - AOB: 152 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,523] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,523] MethodTest:68 (main) - AOB: 153 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,524] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,524] MethodTest:68 (main) - AOB: 154 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,524] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,524] MethodTest:68 (main) - AOB: 155 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,524] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,524] MethodTest:68 (main) - AOB: 156 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,524] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,525] MethodTest:68 (main) - AOB: 157 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,525] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,525] MethodTest:68 (main) - AOB: 158 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,525] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,525] MethodTest:68 (main) - AOB: 159 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,526] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,526] MethodTest:68 (main) - AOB: 160 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,526] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,526] MethodTest:68 (main) - AOB: 161 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,527] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,527] MethodTest:68 (main) - AOB: 162 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,527] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,527] MethodTest:68 (main) - AOB: 163 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,527] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,528] MethodTest:68 (main) - AOB: 164 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,528] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,528] MethodTest:68 (main) - AOB: 165 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,528] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,529] MethodTest:68 (main) - AOB: 166 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,529] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,529] MethodTest:68 (main) - AOB: 167 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,529] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,529] MethodTest:68 (main) - AOB: 168 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,530] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,530] MethodTest:68 (main) - AOB: 169 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,530] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,530] MethodTest:68 (main) - AOB: 170 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,530] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,530] MethodTest:68 (main) - AOB: 171 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,530] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:68 (main) - AOB: 172 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:68 (main) - AOB: 173 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:68 (main) - AOB: 174 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:68 (main) - AOB: 175 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,531] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,532] MethodTest:68 (main) - AOB: 176 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,532] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,532] MethodTest:68 (main) - AOB: 177 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,532] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,532] MethodTest:68 (main) - AOB: 178 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,532] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,533] MethodTest:68 (main) - AOB: 179 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,533] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,533] MethodTest:68 (main) - AOB: 180 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,533] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,533] MethodTest:68 (main) - AOB: 181 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,533] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,533] MethodTest:68 (main) - AOB: 182 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:68 (main) - AOB: 183 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:68 (main) - AOB: 184 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:68 (main) - AOB: 185 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,534] MethodTest:68 (main) - AOB: 186 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,535] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,535] MethodTest:68 (main) - AOB: 187 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,535] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,535] MethodTest:68 (main) - AOB: 188 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,536] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,536] MethodTest:68 (main) - AOB: 189 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,536] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,536] MethodTest:68 (main) - AOB: 190 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,536] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,537] MethodTest:68 (main) - AOB: 191 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,537] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,537] MethodTest:68 (main) - AOB: 192 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,537] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,538] MethodTest:68 (main) - AOB: 193 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,538] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,538] MethodTest:68 (main) - AOB: 194 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,538] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,538] MethodTest:68 (main) - AOB: 195 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,539] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,539] MethodTest:68 (main) - AOB: 196 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,539] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,539] MethodTest:68 (main) - AOB: 197 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,539] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,540] MethodTest:68 (main) - AOB: 198 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,540] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,540] MethodTest:68 (main) - AOB: 199 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,540] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,541] MethodTest:68 (main) - AOB: 200 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,541] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,541] MethodTest:68 (main) - AOB: 201 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,541] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,541] MethodTest:68 (main) - AOB: 202 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,542] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,542] MethodTest:68 (main) - AOB: 203 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,542] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,542] MethodTest:68 (main) - AOB: 204 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,543] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,543] MethodTest:68 (main) - AOB: 205 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,543] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,543] MethodTest:68 (main) - AOB: 206 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,543] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,543] MethodTest:68 (main) - AOB: 207 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,544] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,544] MethodTest:68 (main) - AOB: 208 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,544] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,544] MethodTest:68 (main) - AOB: 209 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,544] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,544] MethodTest:68 (main) - AOB: 210 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,544] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:68 (main) - AOB: 211 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:68 (main) - AOB: 212 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:68 (main) - AOB: 213 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:68 (main) - AOB: 214 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,545] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,546] MethodTest:68 (main) - AOB: 215 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,546] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,546] MethodTest:68 (main) - AOB: 216 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,546] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,546] MethodTest:68 (main) - AOB: 217 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,546] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,547] MethodTest:68 (main) - AOB: 218 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,547] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,547] MethodTest:68 (main) - AOB: 219 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,547] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,547] MethodTest:68 (main) - AOB: 220 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,547] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,548] MethodTest:68 (main) - AOB: 221 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,548] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,548] MethodTest:68 (main) - AOB: 222 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,548] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,548] MethodTest:68 (main) - AOB: 223 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,549] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,549] MethodTest:68 (main) - AOB: 224 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,549] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,550] MethodTest:68 (main) - AOB: 225 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,550] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,550] MethodTest:68 (main) - AOB: 226 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,551] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,551] MethodTest:68 (main) - AOB: 227 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,551] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,551] MethodTest:68 (main) - AOB: 228 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,552] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,552] MethodTest:68 (main) - AOB: 229 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,552] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,552] MethodTest:68 (main) - AOB: 230 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,553] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,553] MethodTest:68 (main) - AOB: 231 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,554] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,554] MethodTest:68 (main) - AOB: 232 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,554] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,555] MethodTest:68 (main) - AOB: 233 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,555] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,556] MethodTest:68 (main) - AOB: 234 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,556] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,556] MethodTest:68 (main) - AOB: 235 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,556] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,557] MethodTest:68 (main) - AOB: 236 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,557] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,557] MethodTest:68 (main) - AOB: 237 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,557] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,557] MethodTest:68 (main) - AOB: 238 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,557] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,557] MethodTest:68 (main) - AOB: 239 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,558] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,558] MethodTest:68 (main) - AOB: 240 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,558] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,558] MethodTest:68 (main) - AOB: 241 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,559] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,559] MethodTest:68 (main) - AOB: 242 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,560] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,565] MethodTest:68 (main) - AOB: 243 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,565] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,566] MethodTest:68 (main) - AOB: 244 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,566] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,566] MethodTest:68 (main) - AOB: 245 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,566] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,566] MethodTest:68 (main) - AOB: 246 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,566] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,566] MethodTest:68 (main) - AOB: 247 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,567] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,567] MethodTest:68 (main) - AOB: 248 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,567] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,567] MethodTest:68 (main) - AOB: 249 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,567] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,567] MethodTest:68 (main) - AOB: 250 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,567] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,568] MethodTest:68 (main) - AOB: 251 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,568] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,568] MethodTest:68 (main) - AOB: 252 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,568] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,569] MethodTest:68 (main) - AOB: 253 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,569] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,569] MethodTest:68 (main) - AOB: 254 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,571] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,572] MethodTest:68 (main) - AOB: 255 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,572] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,572] MethodTest:68 (main) - AOB: 256 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,573] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,573] MethodTest:68 (main) - AOB: 257 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,573] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,573] MethodTest:68 (main) - AOB: 258 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,573] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,574] MethodTest:68 (main) - AOB: 259 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,574] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,574] MethodTest:68 (main) - AOB: 260 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,574] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,575] MethodTest:68 (main) - AOB: 261 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,575] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,575] MethodTest:68 (main) - AOB: 262 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,575] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,575] MethodTest:68 (main) - AOB: 263 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,575] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,576] MethodTest:68 (main) - AOB: 264 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,576] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,576] MethodTest:68 (main) - AOB: 265 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,576] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,576] MethodTest:68 (main) - AOB: 266 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,577] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,577] MethodTest:68 (main) - AOB: 267 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,577] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,577] MethodTest:68 (main) - AOB: 268 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,577] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,578] MethodTest:68 (main) - AOB: 269 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,578] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,578] MethodTest:68 (main) - AOB: 270 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,578] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,578] MethodTest:68 (main) - AOB: 271 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,579] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,579] MethodTest:68 (main) - AOB: 272 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,579] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,579] MethodTest:68 (main) - AOB: 273 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,579] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,580] MethodTest:68 (main) - AOB: 274 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,580] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,580] MethodTest:68 (main) - AOB: 275 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,580] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,580] MethodTest:68 (main) - AOB: 276 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,581] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,581] MethodTest:68 (main) - AOB: 277 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,581] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,581] MethodTest:68 (main) - AOB: 278 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,582] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,582] MethodTest:68 (main) - AOB: 279 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,582] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,583] MethodTest:68 (main) - AOB: 280 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,583] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,583] MethodTest:68 (main) - AOB: 281 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,583] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,584] MethodTest:68 (main) - AOB: 282 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,584] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,584] MethodTest:68 (main) - AOB: 283 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,584] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,585] MethodTest:68 (main) - AOB: 284 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,585] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,585] MethodTest:68 (main) - AOB: 285 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,585] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,585] MethodTest:68 (main) - AOB: 286 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,585] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,585] MethodTest:68 (main) - AOB: 287 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,586] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,586] MethodTest:68 (main) - AOB: 288 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,586] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,586] MethodTest:68 (main) - AOB: 289 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,587] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,587] MethodTest:68 (main) - AOB: 290 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,587] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,587] MethodTest:68 (main) - AOB: 291 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,588] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,588] MethodTest:68 (main) - AOB: 292 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,588] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,588] MethodTest:68 (main) - AOB: 293 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,588] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,589] MethodTest:68 (main) - AOB: 294 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,589] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,589] MethodTest:68 (main) - AOB: 295 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,589] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,589] MethodTest:68 (main) - AOB: 296 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:68 (main) - AOB: 297 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:68 (main) - AOB: 298 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:68 (main) - AOB: 299 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,590] MethodTest:68 (main) - AOB: 300 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:68 (main) - AOB: 301 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:68 (main) - AOB: 302 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:68 (main) - AOB: 303 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,591] MethodTest:68 (main) - AOB: 304 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:68 (main) - AOB: 305 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:68 (main) - AOB: 306 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:68 (main) - AOB: 307 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,592] MethodTest:68 (main) - AOB: 308 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,593] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,593] MethodTest:68 (main) - AOB: 309 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,593] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,593] MethodTest:68 (main) - AOB: 310 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,593] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,593] MethodTest:68 (main) - AOB: 311 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,594] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,594] MethodTest:68 (main) - AOB: 312 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,594] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,594] MethodTest:68 (main) - AOB: 313 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,595] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,595] MethodTest:68 (main) - AOB: 314 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,595] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,595] MethodTest:68 (main) - AOB: 315 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,595] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,596] MethodTest:68 (main) - AOB: 316 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,596] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,596] MethodTest:68 (main) - AOB: 317 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,596] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,596] MethodTest:68 (main) - AOB: 318 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,597] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,597] MethodTest:68 (main) - AOB: 319 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,597] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,598] MethodTest:68 (main) - AOB: 320 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,598] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,598] MethodTest:68 (main) - AOB: 321 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,598] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,598] MethodTest:68 (main) - AOB: 322 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,599] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,599] MethodTest:68 (main) - AOB: 323 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,599] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,599] MethodTest:68 (main) - AOB: 324 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,600] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,600] MethodTest:68 (main) - AOB: 325 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,600] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,600] MethodTest:68 (main) - AOB: 326 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,600] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,601] MethodTest:68 (main) - AOB: 327 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,601] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,601] MethodTest:68 (main) - AOB: 328 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,601] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,601] MethodTest:68 (main) - AOB: 329 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,601] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,601] MethodTest:68 (main) - AOB: 330 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,602] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,602] MethodTest:68 (main) - AOB: 331 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,602] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,602] MethodTest:68 (main) - AOB: 332 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,602] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,602] MethodTest:68 (main) - AOB: 333 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,603] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,603] MethodTest:68 (main) - AOB: 334 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,603] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,603] MethodTest:68 (main) - AOB: 335 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,603] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,603] MethodTest:68 (main) - AOB: 336 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,604] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,604] MethodTest:68 (main) - AOB: 337 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,604] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,604] MethodTest:68 (main) - AOB: 338 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,604] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,604] MethodTest:68 (main) - AOB: 339 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,607] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,607] MethodTest:68 (main) - AOB: 340 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,607] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,607] MethodTest:68 (main) - AOB: 341 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,608] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,609] MethodTest:68 (main) - AOB: 342 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,609] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,609] MethodTest:68 (main) - AOB: 343 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,609] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,609] MethodTest:68 (main) - AOB: 344 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,610] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,610] MethodTest:68 (main) - AOB: 345 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,610] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,610] MethodTest:68 (main) - AOB: 346 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,610] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,611] MethodTest:68 (main) - AOB: 347 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,611] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,611] MethodTest:68 (main) - AOB: 348 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,611] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,611] MethodTest:68 (main) - AOB: 349 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,612] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,612] MethodTest:68 (main) - AOB: 350 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,612] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,612] MethodTest:68 (main) - AOB: 351 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,612] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,612] MethodTest:68 (main) - AOB: 352 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,612] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,613] MethodTest:68 (main) - AOB: 353 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,613] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,613] MethodTest:68 (main) - AOB: 354 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,613] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,613] MethodTest:68 (main) - AOB: 355 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,613] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,613] MethodTest:68 (main) - AOB: 356 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,614] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,614] MethodTest:68 (main) - AOB: 357 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,614] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,614] MethodTest:68 (main) - AOB: 358 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,614] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,614] MethodTest:68 (main) - AOB: 359 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,614] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,615] MethodTest:71 (main) - *********************targS sweep: 
+
+[INFO   ] [15/06/2017 17:14:38,615] MethodTest:75 (main) - AOB: 275 targSpeed: -1.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,615] MethodTest:76 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,615] MethodTest:75 (main) - AOB: 275 targSpeed: 0.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,617] OKane:94 (main) - Lead is:000deg
+[INFO   ] [15/06/2017 17:14:38,618] OKane:94 (main) - Lead is:000deg
+[INFO   ] [15/06/2017 17:14:38,618] MethodTest:76 (main) - Scope Bearing: 000deg
+[INFO   ] [15/06/2017 17:14:38,618] MethodTest:75 (main) - AOB: 275 targSpeed: 1.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,618] MethodTest:76 (main) - Scope Bearing: 001deg
+[INFO   ] [15/06/2017 17:14:38,618] MethodTest:75 (main) - AOB: 275 targSpeed: 2.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,618] MethodTest:76 (main) - Scope Bearing: 002deg
+[INFO   ] [15/06/2017 17:14:38,619] MethodTest:75 (main) - AOB: 275 targSpeed: 3.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,619] MethodTest:76 (main) - Scope Bearing: 004deg
+[INFO   ] [15/06/2017 17:14:38,619] MethodTest:75 (main) - AOB: 275 targSpeed: 4.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,619] MethodTest:76 (main) - Scope Bearing: 005deg
+[INFO   ] [15/06/2017 17:14:38,619] MethodTest:75 (main) - AOB: 275 targSpeed: 5.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,619] MethodTest:76 (main) - Scope Bearing: 006deg
+[INFO   ] [15/06/2017 17:14:38,620] MethodTest:75 (main) - AOB: 275 targSpeed: 6.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,620] MethodTest:76 (main) - Scope Bearing: 007deg
+[INFO   ] [15/06/2017 17:14:38,620] MethodTest:75 (main) - AOB: 275 targSpeed: 7.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,620] MethodTest:76 (main) - Scope Bearing: 009deg
+[INFO   ] [15/06/2017 17:14:38,620] MethodTest:75 (main) - AOB: 275 targSpeed: 8.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,620] MethodTest:76 (main) - Scope Bearing: 010deg
+[INFO   ] [15/06/2017 17:14:38,620] MethodTest:75 (main) - AOB: 275 targSpeed: 9.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,621] MethodTest:76 (main) - Scope Bearing: 011deg
+[INFO   ] [15/06/2017 17:14:38,621] MethodTest:75 (main) - AOB: 275 targSpeed: 10.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,621] MethodTest:76 (main) - Scope Bearing: 012deg
+[INFO   ] [15/06/2017 17:14:38,621] MethodTest:75 (main) - AOB: 275 targSpeed: 11.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,621] MethodTest:76 (main) - Scope Bearing: 013deg
+[INFO   ] [15/06/2017 17:14:38,621] MethodTest:75 (main) - AOB: 275 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,622] MethodTest:76 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:14:38,622] MethodTest:75 (main) - AOB: 275 targSpeed: 13.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,622] MethodTest:76 (main) - Scope Bearing: 016deg
+[INFO   ] [15/06/2017 17:14:38,622] MethodTest:75 (main) - AOB: 275 targSpeed: 14.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,622] MethodTest:76 (main) - Scope Bearing: 017deg
+[INFO   ] [15/06/2017 17:14:38,622] MethodTest:75 (main) - AOB: 275 targSpeed: 15.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,623] MethodTest:76 (main) - Scope Bearing: 018deg
+[INFO   ] [15/06/2017 17:14:38,623] MethodTest:75 (main) - AOB: 275 targSpeed: 16.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,623] MethodTest:76 (main) - Scope Bearing: 019deg
+[INFO   ] [15/06/2017 17:14:38,623] MethodTest:75 (main) - AOB: 275 targSpeed: 17.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,623] MethodTest:76 (main) - Scope Bearing: 020deg
+[INFO   ] [15/06/2017 17:14:38,623] MethodTest:75 (main) - AOB: 275 targSpeed: 18.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,623] MethodTest:76 (main) - Scope Bearing: 021deg
+[INFO   ] [15/06/2017 17:14:38,624] MethodTest:75 (main) - AOB: 275 targSpeed: 19.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,624] MethodTest:76 (main) - Scope Bearing: 022deg
+[INFO   ] [15/06/2017 17:14:38,624] MethodTest:75 (main) - AOB: 275 targSpeed: 20.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,624] MethodTest:76 (main) - Scope Bearing: 023deg
+[INFO   ] [15/06/2017 17:14:38,624] MethodTest:75 (main) - AOB: 275 targSpeed: 21.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,625] MethodTest:76 (main) - Scope Bearing: 025deg
+[INFO   ] [15/06/2017 17:14:38,625] MethodTest:75 (main) - AOB: 275 targSpeed: 22.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,625] MethodTest:76 (main) - Scope Bearing: 026deg
+[INFO   ] [15/06/2017 17:14:38,625] MethodTest:75 (main) - AOB: 275 targSpeed: 23.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,625] MethodTest:76 (main) - Scope Bearing: 027deg
+[INFO   ] [15/06/2017 17:14:38,625] MethodTest:75 (main) - AOB: 275 targSpeed: 24.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,626] MethodTest:76 (main) - Scope Bearing: 028deg
+[INFO   ] [15/06/2017 17:14:38,626] MethodTest:75 (main) - AOB: 275 targSpeed: 25.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,626] MethodTest:76 (main) - Scope Bearing: 029deg
+[INFO   ] [15/06/2017 17:14:38,626] MethodTest:75 (main) - AOB: 275 targSpeed: 26.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,626] MethodTest:76 (main) - Scope Bearing: 029deg
+[INFO   ] [15/06/2017 17:14:38,626] MethodTest:75 (main) - AOB: 275 targSpeed: 27.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,626] MethodTest:76 (main) - Scope Bearing: 030deg
+[INFO   ] [15/06/2017 17:14:38,627] MethodTest:75 (main) - AOB: 275 targSpeed: 28.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,627] MethodTest:76 (main) - Scope Bearing: 031deg
+[INFO   ] [15/06/2017 17:14:38,627] MethodTest:75 (main) - AOB: 275 targSpeed: 29.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,627] MethodTest:76 (main) - Scope Bearing: 032deg
+[INFO   ] [15/06/2017 17:14:38,627] MethodTest:75 (main) - AOB: 275 targSpeed: 30.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,627] MethodTest:76 (main) - Scope Bearing: 033deg
+[INFO   ] [15/06/2017 17:14:38,627] MethodTest:78 (main) - *********************torpFireS sweep: 
+
+[INFO   ] [15/06/2017 17:14:38,628] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: -1.0
+[INFO   ] [15/06/2017 17:14:38,628] MethodTest:83 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:14:38,628] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 0.0
+[INFO   ] [15/06/2017 17:14:38,628] MethodTest:83 (main) - Scope Bearing: 270deg
+[INFO   ] [15/06/2017 17:14:38,628] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 1.0
+[INFO   ] [15/06/2017 17:14:38,628] MethodTest:83 (main) - Scope Bearing: 275deg
+[INFO   ] [15/06/2017 17:14:38,628] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 2.0
+[INFO   ] [15/06/2017 17:14:38,629] MethodTest:83 (main) - Scope Bearing: 279deg
+[INFO   ] [15/06/2017 17:14:38,629] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 3.0
+[INFO   ] [15/06/2017 17:14:38,629] MethodTest:83 (main) - Scope Bearing: 284deg
+[INFO   ] [15/06/2017 17:14:38,629] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 4.0
+[INFO   ] [15/06/2017 17:14:38,629] MethodTest:83 (main) - Scope Bearing: 288deg
+[INFO   ] [15/06/2017 17:14:38,629] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 5.0
+[INFO   ] [15/06/2017 17:14:38,629] MethodTest:83 (main) - Scope Bearing: 293deg
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 6.0
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:83 (main) - Scope Bearing: 297deg
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 7.0
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:83 (main) - Scope Bearing: 300deg
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 8.0
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:83 (main) - Scope Bearing: 304deg
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 9.0
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:83 (main) - Scope Bearing: 307deg
+[INFO   ] [15/06/2017 17:14:38,630] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 10.0
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:83 (main) - Scope Bearing: 310deg
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 11.0
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:83 (main) - Scope Bearing: 313deg
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 12.0
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:83 (main) - Scope Bearing: 315deg
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 13.0
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:83 (main) - Scope Bearing: 317deg
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 14.0
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:83 (main) - Scope Bearing: 319deg
+[INFO   ] [15/06/2017 17:14:38,631] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 15.0
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:83 (main) - Scope Bearing: 321deg
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 16.0
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:83 (main) - Scope Bearing: 323deg
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 17.0
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:83 (main) - Scope Bearing: 325deg
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 18.0
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:83 (main) - Scope Bearing: 326deg
+[INFO   ] [15/06/2017 17:14:38,632] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 19.0
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:83 (main) - Scope Bearing: 328deg
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 20.0
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:83 (main) - Scope Bearing: 329deg
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 21.0
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:83 (main) - Scope Bearing: 330deg
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 22.0
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:83 (main) - Scope Bearing: 331deg
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 23.0
+[INFO   ] [15/06/2017 17:14:38,633] MethodTest:83 (main) - Scope Bearing: 332deg
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 24.0
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:83 (main) - Scope Bearing: 333deg
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 25.0
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:83 (main) - Scope Bearing: 334deg
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 26.0
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:83 (main) - Scope Bearing: 335deg
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 27.0
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:83 (main) - Scope Bearing: 336deg
+[INFO   ] [15/06/2017 17:14:38,634] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 28.0
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:83 (main) - Scope Bearing: 337deg
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 29.0
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:83 (main) - Scope Bearing: 338deg
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 30.0
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:83 (main) - Scope Bearing: 338deg
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 31.0
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:83 (main) - Scope Bearing: 339deg
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 32.0
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:83 (main) - Scope Bearing: 339deg
+[INFO   ] [15/06/2017 17:14:38,635] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 33.0
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:83 (main) - Scope Bearing: 340deg
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 34.0
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:83 (main) - Scope Bearing: 341deg
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 35.0
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:83 (main) - Scope Bearing: 341deg
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 36.0
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:83 (main) - Scope Bearing: 342deg
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 37.0
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:83 (main) - Scope Bearing: 342deg
+[INFO   ] [15/06/2017 17:14:38,636] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 38.0
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:83 (main) - Scope Bearing: 342deg
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 39.0
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:83 (main) - Scope Bearing: 343deg
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 40.0
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:83 (main) - Scope Bearing: 343deg
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 41.0
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:83 (main) - Scope Bearing: 344deg
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 42.0
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:83 (main) - Scope Bearing: 344deg
+[INFO   ] [15/06/2017 17:14:38,637] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 43.0
+[INFO   ] [15/06/2017 17:14:38,638] MethodTest:83 (main) - Scope Bearing: 344deg
+[INFO   ] [15/06/2017 17:14:38,638] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 44.0
+[INFO   ] [15/06/2017 17:14:38,638] MethodTest:83 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,638] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 45.0
+[INFO   ] [15/06/2017 17:14:38,638] MethodTest:83 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,638] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:14:38,639] MethodTest:83 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:14:38,639] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 47.0
+[INFO   ] [15/06/2017 17:14:38,639] MethodTest:83 (main) - Scope Bearing: 346deg
+[INFO   ] [15/06/2017 17:14:38,639] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 48.0
+[INFO   ] [15/06/2017 17:14:38,639] MethodTest:83 (main) - Scope Bearing: 346deg
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 49.0
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:83 (main) - Scope Bearing: 346deg
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 50.0
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 51.0
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 52.0
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:14:38,640] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 53.0
+[INFO   ] [15/06/2017 17:14:38,641] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:14:38,641] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 54.0
+[INFO   ] [15/06/2017 17:14:38,641] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:14:38,641] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 55.0
+[INFO   ] [15/06/2017 17:14:38,641] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:14:38,641] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 56.0
+[INFO   ] [15/06/2017 17:14:38,641] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:14:38,642] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 57.0
+[INFO   ] [15/06/2017 17:14:38,642] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:14:38,642] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 58.0
+[INFO   ] [15/06/2017 17:14:38,642] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:14:38,642] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 59.0
+[INFO   ] [15/06/2017 17:14:38,642] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:14:38,642] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 60.0
+[INFO   ] [15/06/2017 17:14:38,643] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:14:38,643] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 61.0
+[INFO   ] [15/06/2017 17:14:38,643] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:14:38,643] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 62.0
+[INFO   ] [15/06/2017 17:14:38,643] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:14:38,643] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 63.0
+[INFO   ] [15/06/2017 17:14:38,643] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:14:38,644] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 64.0
+[INFO   ] [15/06/2017 17:14:38,644] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:14:38,644] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 65.0
+[INFO   ] [15/06/2017 17:14:38,644] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:14:38,644] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 66.0
+[INFO   ] [15/06/2017 17:14:38,644] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:14:38,644] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 67.0
+[INFO   ] [15/06/2017 17:14:38,645] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:14:38,645] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 68.0
+[INFO   ] [15/06/2017 17:14:38,645] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:14:38,645] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 69.0
+[INFO   ] [15/06/2017 17:14:38,645] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:14:38,645] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 70.0
+[INFO   ] [15/06/2017 17:14:38,645] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:14:38,646] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 71.0
+[INFO   ] [15/06/2017 17:14:38,646] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:14:38,646] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 72.0
+[INFO   ] [15/06/2017 17:14:38,646] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,646] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 73.0
+[INFO   ] [15/06/2017 17:14:38,646] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,646] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 74.0
+[INFO   ] [15/06/2017 17:14:38,647] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,647] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 75.0
+[INFO   ] [15/06/2017 17:14:38,647] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,647] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 76.0
+[INFO   ] [15/06/2017 17:14:38,647] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,647] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 77.0
+[INFO   ] [15/06/2017 17:14:38,647] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,648] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 78.0
+[INFO   ] [15/06/2017 17:14:38,648] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,648] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 79.0
+[INFO   ] [15/06/2017 17:14:38,648] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:14:38,664] Nomo:47 (main) - Speed:5.333333333333333kt
+Distance: 8000.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:14:38,664] MethodTest:26 (main) - 5.333333333333333kt
+Distance: 8000.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:14:38,664] Nomo:47 (main) - Speed:5.144kt
+Distance: 7716.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:14:38,665] MethodTest:27 (main) - 5.144kt
+Distance: 7716.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:14:38,665] Nomo:47 (main) - Speed:5.144kt
+Distance: 8000.0m
+Time: 00:26:55
+[INFO   ] [15/06/2017 17:14:38,665] MethodTest:28 (main) - 5.144kt
+Distance: 8000.0m
+Time: 00:26:55
+[INFO   ] [15/06/2017 17:14:38,848] MethodTest:41 (main) - Ship [ID=30, name=Mogami Heavy Cruiser, type=7, typeName=Heavy Cruiser, imagePath="data\SCAF for
+			TMO_2\Data\Sea\NCA_Mogami\NCA_Mogami_sil.dds", maxSpeed=35.0, length=200.0, width=21.3, mast=35.0, draft=6.7, disp=9500.0, refAspect=5.714285714285714]
+[INFO   ] [15/06/2017 17:14:38,849] MethodTest:42 (main) - 141deg
+[INFO   ] [15/06/2017 17:14:38,849] MethodTest:43 (main) - 307deg
+[INFO   ] [15/06/2017 17:17:51,215] MethodTest:64 (main) - *********************AOBSweep: 
+
+[INFO   ] [15/06/2017 17:17:51,217] MethodTest:68 (main) - AOB: 0 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,218] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,218] MethodTest:68 (main) - AOB: 1 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,219] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,219] MethodTest:68 (main) - AOB: 2 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,219] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,219] MethodTest:68 (main) - AOB: 3 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,220] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,220] MethodTest:68 (main) - AOB: 4 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,220] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,221] MethodTest:68 (main) - AOB: 5 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,221] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,221] MethodTest:68 (main) - AOB: 6 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,221] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,221] MethodTest:68 (main) - AOB: 7 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,222] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,222] MethodTest:68 (main) - AOB: 8 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,222] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,222] MethodTest:68 (main) - AOB: 9 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,223] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,223] MethodTest:68 (main) - AOB: 10 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,223] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,223] MethodTest:68 (main) - AOB: 11 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,224] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,224] MethodTest:68 (main) - AOB: 12 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,224] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,224] MethodTest:68 (main) - AOB: 13 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,225] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,225] MethodTest:68 (main) - AOB: 14 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,225] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,225] MethodTest:68 (main) - AOB: 15 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,226] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,226] MethodTest:68 (main) - AOB: 16 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,226] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,226] MethodTest:68 (main) - AOB: 17 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,227] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,227] MethodTest:68 (main) - AOB: 18 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,227] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,227] MethodTest:68 (main) - AOB: 19 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,228] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,228] MethodTest:68 (main) - AOB: 20 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,228] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,229] MethodTest:68 (main) - AOB: 21 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,229] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,230] MethodTest:68 (main) - AOB: 22 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,230] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,230] MethodTest:68 (main) - AOB: 23 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,231] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,231] MethodTest:68 (main) - AOB: 24 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,231] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,231] MethodTest:68 (main) - AOB: 25 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,232] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,232] MethodTest:68 (main) - AOB: 26 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,232] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,232] MethodTest:68 (main) - AOB: 27 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,232] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,233] MethodTest:68 (main) - AOB: 28 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,233] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,234] MethodTest:68 (main) - AOB: 29 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,234] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,234] MethodTest:68 (main) - AOB: 30 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,234] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,235] MethodTest:68 (main) - AOB: 31 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,235] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,235] MethodTest:68 (main) - AOB: 32 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,236] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,236] MethodTest:68 (main) - AOB: 33 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,236] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,236] MethodTest:68 (main) - AOB: 34 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,237] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,237] MethodTest:68 (main) - AOB: 35 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,237] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,237] MethodTest:68 (main) - AOB: 36 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,237] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,238] MethodTest:68 (main) - AOB: 37 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,238] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,238] MethodTest:68 (main) - AOB: 38 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,238] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,239] MethodTest:68 (main) - AOB: 39 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,239] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,239] MethodTest:68 (main) - AOB: 40 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,239] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,240] MethodTest:68 (main) - AOB: 41 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,240] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,240] MethodTest:68 (main) - AOB: 42 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,240] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,240] MethodTest:68 (main) - AOB: 43 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,241] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,241] MethodTest:68 (main) - AOB: 44 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,241] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,241] MethodTest:68 (main) - AOB: 45 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,242] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,242] MethodTest:68 (main) - AOB: 46 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,242] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,242] MethodTest:68 (main) - AOB: 47 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,242] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,243] MethodTest:68 (main) - AOB: 48 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,243] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,243] MethodTest:68 (main) - AOB: 49 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,243] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,243] MethodTest:68 (main) - AOB: 50 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,243] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,244] MethodTest:68 (main) - AOB: 51 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,244] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,244] MethodTest:68 (main) - AOB: 52 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,244] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,244] MethodTest:68 (main) - AOB: 53 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,245] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,245] MethodTest:68 (main) - AOB: 54 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,245] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,246] MethodTest:68 (main) - AOB: 55 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,246] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,246] MethodTest:68 (main) - AOB: 56 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,247] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,247] MethodTest:68 (main) - AOB: 57 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,247] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,247] MethodTest:68 (main) - AOB: 58 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,247] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,248] MethodTest:68 (main) - AOB: 59 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,248] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,249] MethodTest:68 (main) - AOB: 60 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,249] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,249] MethodTest:68 (main) - AOB: 61 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,249] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,250] MethodTest:68 (main) - AOB: 62 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,250] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,250] MethodTest:68 (main) - AOB: 63 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,251] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,251] MethodTest:68 (main) - AOB: 64 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,251] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,251] MethodTest:68 (main) - AOB: 65 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,252] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,252] MethodTest:68 (main) - AOB: 66 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,252] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,252] MethodTest:68 (main) - AOB: 67 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,252] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,253] MethodTest:68 (main) - AOB: 68 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,253] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,253] MethodTest:68 (main) - AOB: 69 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,253] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,253] MethodTest:68 (main) - AOB: 70 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,254] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,254] MethodTest:68 (main) - AOB: 71 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,254] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,254] MethodTest:68 (main) - AOB: 72 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,254] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,254] MethodTest:68 (main) - AOB: 73 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,255] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,255] MethodTest:68 (main) - AOB: 74 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,255] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,255] MethodTest:68 (main) - AOB: 75 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,255] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,256] MethodTest:68 (main) - AOB: 76 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,256] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,256] MethodTest:68 (main) - AOB: 77 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,256] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,257] MethodTest:68 (main) - AOB: 78 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,257] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,257] MethodTest:68 (main) - AOB: 79 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,257] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,257] MethodTest:68 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,258] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,258] MethodTest:68 (main) - AOB: 81 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,258] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,258] MethodTest:68 (main) - AOB: 82 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,258] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,258] MethodTest:68 (main) - AOB: 83 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,259] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,259] MethodTest:68 (main) - AOB: 84 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,259] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,260] MethodTest:68 (main) - AOB: 85 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,260] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,260] MethodTest:68 (main) - AOB: 86 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,261] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,261] MethodTest:68 (main) - AOB: 87 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,261] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,261] MethodTest:68 (main) - AOB: 88 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,261] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,261] MethodTest:68 (main) - AOB: 89 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,262] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,262] MethodTest:68 (main) - AOB: 90 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,262] MethodTest:69 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,262] MethodTest:68 (main) - AOB: 91 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,262] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,263] MethodTest:68 (main) - AOB: 92 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,263] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,263] MethodTest:68 (main) - AOB: 93 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,263] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,264] MethodTest:68 (main) - AOB: 94 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,264] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,264] MethodTest:68 (main) - AOB: 95 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,265] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,265] MethodTest:68 (main) - AOB: 96 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,265] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,265] MethodTest:68 (main) - AOB: 97 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,265] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,266] MethodTest:68 (main) - AOB: 98 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,266] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,266] MethodTest:68 (main) - AOB: 99 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,266] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,266] MethodTest:68 (main) - AOB: 100 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,267] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,267] MethodTest:68 (main) - AOB: 101 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,267] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,267] MethodTest:68 (main) - AOB: 102 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,267] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,268] MethodTest:68 (main) - AOB: 103 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,268] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,268] MethodTest:68 (main) - AOB: 104 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,268] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,268] MethodTest:68 (main) - AOB: 105 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,268] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,269] MethodTest:68 (main) - AOB: 106 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,269] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,269] MethodTest:68 (main) - AOB: 107 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,269] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,269] MethodTest:68 (main) - AOB: 108 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,269] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,269] MethodTest:68 (main) - AOB: 109 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,270] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,270] MethodTest:68 (main) - AOB: 110 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,270] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,270] MethodTest:68 (main) - AOB: 111 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,270] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,270] MethodTest:68 (main) - AOB: 112 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,271] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,271] MethodTest:68 (main) - AOB: 113 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,271] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,271] MethodTest:68 (main) - AOB: 114 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,272] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,272] MethodTest:68 (main) - AOB: 115 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,272] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,272] MethodTest:68 (main) - AOB: 116 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,272] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,273] MethodTest:68 (main) - AOB: 117 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,273] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,273] MethodTest:68 (main) - AOB: 118 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,273] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,273] MethodTest:68 (main) - AOB: 119 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,273] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,274] MethodTest:68 (main) - AOB: 120 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,274] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,274] MethodTest:68 (main) - AOB: 121 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,274] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,274] MethodTest:68 (main) - AOB: 122 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,274] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,275] MethodTest:68 (main) - AOB: 123 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,275] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,275] MethodTest:68 (main) - AOB: 124 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,275] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,275] MethodTest:68 (main) - AOB: 125 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,275] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,276] MethodTest:68 (main) - AOB: 126 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,276] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,276] MethodTest:68 (main) - AOB: 127 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,277] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,277] MethodTest:68 (main) - AOB: 128 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,278] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,278] MethodTest:68 (main) - AOB: 129 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,278] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,278] MethodTest:68 (main) - AOB: 130 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,279] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,279] MethodTest:68 (main) - AOB: 131 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,279] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,279] MethodTest:68 (main) - AOB: 132 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,279] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,280] MethodTest:68 (main) - AOB: 133 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,280] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,280] MethodTest:68 (main) - AOB: 134 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,280] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,281] MethodTest:68 (main) - AOB: 135 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,281] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,281] MethodTest:68 (main) - AOB: 136 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,281] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,282] MethodTest:68 (main) - AOB: 137 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,282] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,282] MethodTest:68 (main) - AOB: 138 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,282] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,283] MethodTest:68 (main) - AOB: 139 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,283] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,283] MethodTest:68 (main) - AOB: 140 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,284] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,284] MethodTest:68 (main) - AOB: 141 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,284] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,284] MethodTest:68 (main) - AOB: 142 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,285] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,285] MethodTest:68 (main) - AOB: 143 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,285] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,285] MethodTest:68 (main) - AOB: 144 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,286] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,286] MethodTest:68 (main) - AOB: 145 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,286] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,286] MethodTest:68 (main) - AOB: 146 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,287] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,287] MethodTest:68 (main) - AOB: 147 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,287] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,287] MethodTest:68 (main) - AOB: 148 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,288] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,288] MethodTest:68 (main) - AOB: 149 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,288] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,288] MethodTest:68 (main) - AOB: 150 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,289] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,290] MethodTest:68 (main) - AOB: 151 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,290] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,290] MethodTest:68 (main) - AOB: 152 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,290] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,291] MethodTest:68 (main) - AOB: 153 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,291] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,291] MethodTest:68 (main) - AOB: 154 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,291] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,291] MethodTest:68 (main) - AOB: 155 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,292] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,292] MethodTest:68 (main) - AOB: 156 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,292] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,292] MethodTest:68 (main) - AOB: 157 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,293] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,293] MethodTest:68 (main) - AOB: 158 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,293] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,294] MethodTest:68 (main) - AOB: 159 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,294] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,294] MethodTest:68 (main) - AOB: 160 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,295] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,295] MethodTest:68 (main) - AOB: 161 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,295] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,295] MethodTest:68 (main) - AOB: 162 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,296] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,297] MethodTest:68 (main) - AOB: 163 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,297] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,297] MethodTest:68 (main) - AOB: 164 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,297] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,298] MethodTest:68 (main) - AOB: 165 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,298] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,298] MethodTest:68 (main) - AOB: 166 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,299] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,299] MethodTest:68 (main) - AOB: 167 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,299] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,299] MethodTest:68 (main) - AOB: 168 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,300] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,300] MethodTest:68 (main) - AOB: 169 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,300] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,300] MethodTest:68 (main) - AOB: 170 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,300] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,300] MethodTest:68 (main) - AOB: 171 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,301] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,301] MethodTest:68 (main) - AOB: 172 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,301] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,301] MethodTest:68 (main) - AOB: 173 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,301] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,301] MethodTest:68 (main) - AOB: 174 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,301] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:68 (main) - AOB: 175 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:68 (main) - AOB: 176 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:68 (main) - AOB: 177 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:68 (main) - AOB: 178 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,302] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,303] MethodTest:68 (main) - AOB: 179 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,303] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,303] MethodTest:68 (main) - AOB: 180 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,303] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,303] MethodTest:68 (main) - AOB: 181 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,303] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,303] MethodTest:68 (main) - AOB: 182 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,304] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,304] MethodTest:68 (main) - AOB: 183 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,304] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,304] MethodTest:68 (main) - AOB: 184 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,304] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,304] MethodTest:68 (main) - AOB: 185 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,305] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,305] MethodTest:68 (main) - AOB: 186 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,305] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,305] MethodTest:68 (main) - AOB: 187 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,305] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,305] MethodTest:68 (main) - AOB: 188 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,306] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,306] MethodTest:68 (main) - AOB: 189 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,306] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,306] MethodTest:68 (main) - AOB: 190 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,307] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,307] MethodTest:68 (main) - AOB: 191 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,307] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,307] MethodTest:68 (main) - AOB: 192 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,308] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,308] MethodTest:68 (main) - AOB: 193 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,308] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,309] MethodTest:68 (main) - AOB: 194 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,309] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,309] MethodTest:68 (main) - AOB: 195 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,309] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,309] MethodTest:68 (main) - AOB: 196 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,310] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,310] MethodTest:68 (main) - AOB: 197 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,310] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,310] MethodTest:68 (main) - AOB: 198 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,311] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,311] MethodTest:68 (main) - AOB: 199 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,311] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,311] MethodTest:68 (main) - AOB: 200 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,311] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,312] MethodTest:68 (main) - AOB: 201 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,312] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,312] MethodTest:68 (main) - AOB: 202 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,312] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,312] MethodTest:68 (main) - AOB: 203 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,312] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,313] MethodTest:68 (main) - AOB: 204 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,313] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,313] MethodTest:68 (main) - AOB: 205 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,314] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,314] MethodTest:68 (main) - AOB: 206 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,314] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,314] MethodTest:68 (main) - AOB: 207 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,314] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,315] MethodTest:68 (main) - AOB: 208 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,315] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,315] MethodTest:68 (main) - AOB: 209 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,315] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,315] MethodTest:68 (main) - AOB: 210 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,316] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,316] MethodTest:68 (main) - AOB: 211 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,316] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,316] MethodTest:68 (main) - AOB: 212 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,316] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,317] MethodTest:68 (main) - AOB: 213 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,317] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,317] MethodTest:68 (main) - AOB: 214 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,317] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,317] MethodTest:68 (main) - AOB: 215 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,318] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,318] MethodTest:68 (main) - AOB: 216 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,318] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,318] MethodTest:68 (main) - AOB: 217 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,318] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:68 (main) - AOB: 218 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:68 (main) - AOB: 219 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:68 (main) - AOB: 220 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:68 (main) - AOB: 221 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,319] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,320] MethodTest:68 (main) - AOB: 222 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,320] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,320] MethodTest:68 (main) - AOB: 223 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,320] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,327] MethodTest:68 (main) - AOB: 224 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,328] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,328] MethodTest:68 (main) - AOB: 225 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,328] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,328] MethodTest:68 (main) - AOB: 226 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,329] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,329] MethodTest:68 (main) - AOB: 227 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,329] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,330] MethodTest:68 (main) - AOB: 228 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,330] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,330] MethodTest:68 (main) - AOB: 229 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,330] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,331] MethodTest:68 (main) - AOB: 230 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,331] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,331] MethodTest:68 (main) - AOB: 231 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,332] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,332] MethodTest:68 (main) - AOB: 232 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,332] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,332] MethodTest:68 (main) - AOB: 233 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,332] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,332] MethodTest:68 (main) - AOB: 234 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:68 (main) - AOB: 235 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:68 (main) - AOB: 236 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:68 (main) - AOB: 237 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,333] MethodTest:68 (main) - AOB: 238 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,334] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,334] MethodTest:68 (main) - AOB: 239 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,334] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,334] MethodTest:68 (main) - AOB: 240 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,334] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,334] MethodTest:68 (main) - AOB: 241 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,334] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,335] MethodTest:68 (main) - AOB: 242 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,335] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,335] MethodTest:68 (main) - AOB: 243 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,335] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,335] MethodTest:68 (main) - AOB: 244 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,336] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,336] MethodTest:68 (main) - AOB: 245 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,336] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,336] MethodTest:68 (main) - AOB: 246 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,336] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,337] MethodTest:68 (main) - AOB: 247 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,337] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,337] MethodTest:68 (main) - AOB: 248 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,337] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,337] MethodTest:68 (main) - AOB: 249 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,338] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,338] MethodTest:68 (main) - AOB: 250 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,338] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,338] MethodTest:68 (main) - AOB: 251 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,338] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,339] MethodTest:68 (main) - AOB: 252 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,339] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,339] MethodTest:68 (main) - AOB: 253 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,339] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,339] MethodTest:68 (main) - AOB: 254 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,340] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,340] MethodTest:68 (main) - AOB: 255 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,341] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,341] MethodTest:68 (main) - AOB: 256 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,341] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,341] MethodTest:68 (main) - AOB: 257 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,342] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,342] MethodTest:68 (main) - AOB: 258 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,342] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,342] MethodTest:68 (main) - AOB: 259 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,343] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,343] MethodTest:68 (main) - AOB: 260 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,343] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,343] MethodTest:68 (main) - AOB: 261 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,343] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,344] MethodTest:68 (main) - AOB: 262 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,344] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,344] MethodTest:68 (main) - AOB: 263 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,344] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,344] MethodTest:68 (main) - AOB: 264 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,344] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,345] MethodTest:68 (main) - AOB: 265 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,345] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,345] MethodTest:68 (main) - AOB: 266 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,345] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,346] MethodTest:68 (main) - AOB: 267 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,347] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,347] MethodTest:68 (main) - AOB: 268 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,347] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,347] MethodTest:68 (main) - AOB: 269 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,348] MethodTest:69 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,349] MethodTest:68 (main) - AOB: 270 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,349] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,349] MethodTest:68 (main) - AOB: 271 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,350] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,350] MethodTest:68 (main) - AOB: 272 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,350] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,350] MethodTest:68 (main) - AOB: 273 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,350] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,350] MethodTest:68 (main) - AOB: 274 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,351] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,351] MethodTest:68 (main) - AOB: 275 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,351] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,351] MethodTest:68 (main) - AOB: 276 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,352] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,352] MethodTest:68 (main) - AOB: 277 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,352] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,352] MethodTest:68 (main) - AOB: 278 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,352] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,352] MethodTest:68 (main) - AOB: 279 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,353] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,353] MethodTest:68 (main) - AOB: 280 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,353] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,353] MethodTest:68 (main) - AOB: 281 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,353] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,353] MethodTest:68 (main) - AOB: 282 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,354] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,354] MethodTest:68 (main) - AOB: 283 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,354] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,354] MethodTest:68 (main) - AOB: 284 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,354] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,354] MethodTest:68 (main) - AOB: 285 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,355] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,355] MethodTest:68 (main) - AOB: 286 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,355] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,355] MethodTest:68 (main) - AOB: 287 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,356] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,356] MethodTest:68 (main) - AOB: 288 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,356] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,356] MethodTest:68 (main) - AOB: 289 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,356] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,357] MethodTest:68 (main) - AOB: 290 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,358] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,358] MethodTest:68 (main) - AOB: 291 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,359] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,359] MethodTest:68 (main) - AOB: 292 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,359] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,359] MethodTest:68 (main) - AOB: 293 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,360] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,360] MethodTest:68 (main) - AOB: 294 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,360] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,360] MethodTest:68 (main) - AOB: 295 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,361] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,361] MethodTest:68 (main) - AOB: 296 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,361] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,361] MethodTest:68 (main) - AOB: 297 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,361] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,362] MethodTest:68 (main) - AOB: 298 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,362] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,362] MethodTest:68 (main) - AOB: 299 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,362] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,363] MethodTest:68 (main) - AOB: 300 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,363] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,363] MethodTest:68 (main) - AOB: 301 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,364] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,364] MethodTest:68 (main) - AOB: 302 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,364] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,364] MethodTest:68 (main) - AOB: 303 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,364] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,365] MethodTest:68 (main) - AOB: 304 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,365] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:68 (main) - AOB: 305 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:68 (main) - AOB: 306 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:68 (main) - AOB: 307 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:68 (main) - AOB: 308 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,366] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,367] MethodTest:68 (main) - AOB: 309 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,367] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,367] MethodTest:68 (main) - AOB: 310 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,367] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,367] MethodTest:68 (main) - AOB: 311 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,367] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,368] MethodTest:68 (main) - AOB: 312 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,368] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,368] MethodTest:68 (main) - AOB: 313 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,368] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,368] MethodTest:68 (main) - AOB: 314 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,368] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,369] MethodTest:68 (main) - AOB: 315 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,369] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,369] MethodTest:68 (main) - AOB: 316 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,369] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,369] MethodTest:68 (main) - AOB: 317 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,369] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,370] MethodTest:68 (main) - AOB: 318 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,370] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,370] MethodTest:68 (main) - AOB: 319 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,370] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,371] MethodTest:68 (main) - AOB: 320 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,371] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,371] MethodTest:68 (main) - AOB: 321 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,371] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,371] MethodTest:68 (main) - AOB: 322 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,372] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,372] MethodTest:68 (main) - AOB: 323 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,372] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,372] MethodTest:68 (main) - AOB: 324 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,373] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,373] MethodTest:68 (main) - AOB: 325 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,373] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,373] MethodTest:68 (main) - AOB: 326 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,374] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,374] MethodTest:68 (main) - AOB: 327 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,374] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,374] MethodTest:68 (main) - AOB: 328 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,374] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,375] MethodTest:68 (main) - AOB: 329 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,375] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,375] MethodTest:68 (main) - AOB: 330 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,375] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,375] MethodTest:68 (main) - AOB: 331 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,375] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,376] MethodTest:68 (main) - AOB: 332 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,376] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,376] MethodTest:68 (main) - AOB: 333 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,376] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,377] MethodTest:68 (main) - AOB: 334 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,377] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,377] MethodTest:68 (main) - AOB: 335 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,378] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,378] MethodTest:68 (main) - AOB: 336 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,378] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,378] MethodTest:68 (main) - AOB: 337 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,379] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,379] MethodTest:68 (main) - AOB: 338 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,380] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,380] MethodTest:68 (main) - AOB: 339 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,380] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,380] MethodTest:68 (main) - AOB: 340 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,380] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,381] MethodTest:68 (main) - AOB: 341 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,381] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,381] MethodTest:68 (main) - AOB: 342 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,381] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,381] MethodTest:68 (main) - AOB: 343 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,382] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,382] MethodTest:68 (main) - AOB: 344 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,382] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,382] MethodTest:68 (main) - AOB: 345 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,382] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,383] MethodTest:68 (main) - AOB: 346 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,383] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,383] MethodTest:68 (main) - AOB: 347 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,383] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,383] MethodTest:68 (main) - AOB: 348 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,384] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,384] MethodTest:68 (main) - AOB: 349 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,384] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,384] MethodTest:68 (main) - AOB: 350 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,384] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,385] MethodTest:68 (main) - AOB: 351 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,386] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,386] MethodTest:68 (main) - AOB: 352 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,386] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,386] MethodTest:68 (main) - AOB: 353 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,386] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,387] MethodTest:68 (main) - AOB: 354 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,387] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,387] MethodTest:68 (main) - AOB: 355 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,387] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,387] MethodTest:68 (main) - AOB: 356 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,387] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,388] MethodTest:68 (main) - AOB: 357 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,388] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,388] MethodTest:68 (main) - AOB: 358 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,388] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,388] MethodTest:68 (main) - AOB: 359 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,388] MethodTest:69 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,388] MethodTest:71 (main) - *********************targS sweep: 
+
+[INFO   ] [15/06/2017 17:17:51,389] MethodTest:75 (main) - AOB: 275 targSpeed: -1.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,389] MethodTest:76 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,389] MethodTest:75 (main) - AOB: 275 targSpeed: 0.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,391] OKane:94 (main) - Lead is:000deg
+[INFO   ] [15/06/2017 17:17:51,392] OKane:94 (main) - Lead is:000deg
+[INFO   ] [15/06/2017 17:17:51,392] MethodTest:76 (main) - Scope Bearing: 000deg
+[INFO   ] [15/06/2017 17:17:51,392] MethodTest:75 (main) - AOB: 275 targSpeed: 1.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,392] MethodTest:76 (main) - Scope Bearing: 001deg
+[INFO   ] [15/06/2017 17:17:51,392] MethodTest:75 (main) - AOB: 275 targSpeed: 2.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,393] MethodTest:76 (main) - Scope Bearing: 002deg
+[INFO   ] [15/06/2017 17:17:51,393] MethodTest:75 (main) - AOB: 275 targSpeed: 3.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,393] MethodTest:76 (main) - Scope Bearing: 004deg
+[INFO   ] [15/06/2017 17:17:51,393] MethodTest:75 (main) - AOB: 275 targSpeed: 4.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,393] MethodTest:76 (main) - Scope Bearing: 005deg
+[INFO   ] [15/06/2017 17:17:51,393] MethodTest:75 (main) - AOB: 275 targSpeed: 5.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,394] MethodTest:76 (main) - Scope Bearing: 006deg
+[INFO   ] [15/06/2017 17:17:51,394] MethodTest:75 (main) - AOB: 275 targSpeed: 6.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,394] MethodTest:76 (main) - Scope Bearing: 007deg
+[INFO   ] [15/06/2017 17:17:51,394] MethodTest:75 (main) - AOB: 275 targSpeed: 7.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,394] MethodTest:76 (main) - Scope Bearing: 009deg
+[INFO   ] [15/06/2017 17:17:51,394] MethodTest:75 (main) - AOB: 275 targSpeed: 8.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,394] MethodTest:76 (main) - Scope Bearing: 010deg
+[INFO   ] [15/06/2017 17:17:51,395] MethodTest:75 (main) - AOB: 275 targSpeed: 9.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,395] MethodTest:76 (main) - Scope Bearing: 011deg
+[INFO   ] [15/06/2017 17:17:51,395] MethodTest:75 (main) - AOB: 275 targSpeed: 10.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,395] MethodTest:76 (main) - Scope Bearing: 012deg
+[INFO   ] [15/06/2017 17:17:51,396] MethodTest:75 (main) - AOB: 275 targSpeed: 11.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,396] MethodTest:76 (main) - Scope Bearing: 013deg
+[INFO   ] [15/06/2017 17:17:51,396] MethodTest:75 (main) - AOB: 275 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,398] MethodTest:76 (main) - Scope Bearing: 015deg
+[INFO   ] [15/06/2017 17:17:51,398] MethodTest:75 (main) - AOB: 275 targSpeed: 13.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,398] MethodTest:76 (main) - Scope Bearing: 016deg
+[INFO   ] [15/06/2017 17:17:51,398] MethodTest:75 (main) - AOB: 275 targSpeed: 14.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,399] MethodTest:76 (main) - Scope Bearing: 017deg
+[INFO   ] [15/06/2017 17:17:51,399] MethodTest:75 (main) - AOB: 275 targSpeed: 15.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,399] MethodTest:76 (main) - Scope Bearing: 018deg
+[INFO   ] [15/06/2017 17:17:51,399] MethodTest:75 (main) - AOB: 275 targSpeed: 16.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,399] MethodTest:76 (main) - Scope Bearing: 019deg
+[INFO   ] [15/06/2017 17:17:51,399] MethodTest:75 (main) - AOB: 275 targSpeed: 17.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,399] MethodTest:76 (main) - Scope Bearing: 020deg
+[INFO   ] [15/06/2017 17:17:51,400] MethodTest:75 (main) - AOB: 275 targSpeed: 18.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,400] MethodTest:76 (main) - Scope Bearing: 021deg
+[INFO   ] [15/06/2017 17:17:51,400] MethodTest:75 (main) - AOB: 275 targSpeed: 19.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,400] MethodTest:76 (main) - Scope Bearing: 022deg
+[INFO   ] [15/06/2017 17:17:51,400] MethodTest:75 (main) - AOB: 275 targSpeed: 20.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,400] MethodTest:76 (main) - Scope Bearing: 023deg
+[INFO   ] [15/06/2017 17:17:51,401] MethodTest:75 (main) - AOB: 275 targSpeed: 21.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,401] MethodTest:76 (main) - Scope Bearing: 025deg
+[INFO   ] [15/06/2017 17:17:51,401] MethodTest:75 (main) - AOB: 275 targSpeed: 22.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,401] MethodTest:76 (main) - Scope Bearing: 026deg
+[INFO   ] [15/06/2017 17:17:51,401] MethodTest:75 (main) - AOB: 275 targSpeed: 23.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,401] MethodTest:76 (main) - Scope Bearing: 027deg
+[INFO   ] [15/06/2017 17:17:51,402] MethodTest:75 (main) - AOB: 275 targSpeed: 24.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,402] MethodTest:76 (main) - Scope Bearing: 028deg
+[INFO   ] [15/06/2017 17:17:51,402] MethodTest:75 (main) - AOB: 275 targSpeed: 25.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,402] MethodTest:76 (main) - Scope Bearing: 029deg
+[INFO   ] [15/06/2017 17:17:51,402] MethodTest:75 (main) - AOB: 275 targSpeed: 26.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,402] MethodTest:76 (main) - Scope Bearing: 029deg
+[INFO   ] [15/06/2017 17:17:51,402] MethodTest:75 (main) - AOB: 275 targSpeed: 27.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,403] MethodTest:76 (main) - Scope Bearing: 030deg
+[INFO   ] [15/06/2017 17:17:51,403] MethodTest:75 (main) - AOB: 275 targSpeed: 28.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,403] MethodTest:76 (main) - Scope Bearing: 031deg
+[INFO   ] [15/06/2017 17:17:51,403] MethodTest:75 (main) - AOB: 275 targSpeed: 29.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,403] MethodTest:76 (main) - Scope Bearing: 032deg
+[INFO   ] [15/06/2017 17:17:51,403] MethodTest:75 (main) - AOB: 275 targSpeed: 30.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,404] MethodTest:76 (main) - Scope Bearing: 033deg
+[INFO   ] [15/06/2017 17:17:51,404] MethodTest:78 (main) - *********************torpFireS sweep: 
+
+[INFO   ] [15/06/2017 17:17:51,404] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: -1.0
+[INFO   ] [15/06/2017 17:17:51,404] MethodTest:83 (main) - Scope Bearing: -001deg
+[INFO   ] [15/06/2017 17:17:51,404] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 0.0
+[INFO   ] [15/06/2017 17:17:51,404] MethodTest:83 (main) - Scope Bearing: 270deg
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 1.0
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:83 (main) - Scope Bearing: 275deg
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 2.0
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:83 (main) - Scope Bearing: 279deg
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 3.0
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:83 (main) - Scope Bearing: 284deg
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 4.0
+[INFO   ] [15/06/2017 17:17:51,405] MethodTest:83 (main) - Scope Bearing: 288deg
+[INFO   ] [15/06/2017 17:17:51,406] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 5.0
+[INFO   ] [15/06/2017 17:17:51,406] MethodTest:83 (main) - Scope Bearing: 293deg
+[INFO   ] [15/06/2017 17:17:51,406] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 6.0
+[INFO   ] [15/06/2017 17:17:51,406] MethodTest:83 (main) - Scope Bearing: 297deg
+[INFO   ] [15/06/2017 17:17:51,406] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 7.0
+[INFO   ] [15/06/2017 17:17:51,406] MethodTest:83 (main) - Scope Bearing: 300deg
+[INFO   ] [15/06/2017 17:17:51,407] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 8.0
+[INFO   ] [15/06/2017 17:17:51,407] MethodTest:83 (main) - Scope Bearing: 304deg
+[INFO   ] [15/06/2017 17:17:51,407] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 9.0
+[INFO   ] [15/06/2017 17:17:51,407] MethodTest:83 (main) - Scope Bearing: 307deg
+[INFO   ] [15/06/2017 17:17:51,407] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 10.0
+[INFO   ] [15/06/2017 17:17:51,408] MethodTest:83 (main) - Scope Bearing: 310deg
+[INFO   ] [15/06/2017 17:17:51,408] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 11.0
+[INFO   ] [15/06/2017 17:17:51,408] MethodTest:83 (main) - Scope Bearing: 313deg
+[INFO   ] [15/06/2017 17:17:51,408] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 12.0
+[INFO   ] [15/06/2017 17:17:51,408] MethodTest:83 (main) - Scope Bearing: 315deg
+[INFO   ] [15/06/2017 17:17:51,408] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 13.0
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:83 (main) - Scope Bearing: 317deg
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 14.0
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:83 (main) - Scope Bearing: 319deg
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 15.0
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:83 (main) - Scope Bearing: 321deg
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 16.0
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:83 (main) - Scope Bearing: 323deg
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 17.0
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:83 (main) - Scope Bearing: 325deg
+[INFO   ] [15/06/2017 17:17:51,409] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 18.0
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:83 (main) - Scope Bearing: 326deg
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 19.0
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:83 (main) - Scope Bearing: 328deg
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 20.0
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:83 (main) - Scope Bearing: 329deg
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 21.0
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:83 (main) - Scope Bearing: 330deg
+[INFO   ] [15/06/2017 17:17:51,410] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 22.0
+[INFO   ] [15/06/2017 17:17:51,411] MethodTest:83 (main) - Scope Bearing: 331deg
+[INFO   ] [15/06/2017 17:17:51,411] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 23.0
+[INFO   ] [15/06/2017 17:17:51,411] MethodTest:83 (main) - Scope Bearing: 332deg
+[INFO   ] [15/06/2017 17:17:51,411] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 24.0
+[INFO   ] [15/06/2017 17:17:51,411] MethodTest:83 (main) - Scope Bearing: 333deg
+[INFO   ] [15/06/2017 17:17:51,411] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 25.0
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:83 (main) - Scope Bearing: 334deg
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 26.0
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:83 (main) - Scope Bearing: 335deg
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 27.0
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:83 (main) - Scope Bearing: 336deg
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 28.0
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:83 (main) - Scope Bearing: 337deg
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 29.0
+[INFO   ] [15/06/2017 17:17:51,412] MethodTest:83 (main) - Scope Bearing: 338deg
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 30.0
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:83 (main) - Scope Bearing: 338deg
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 31.0
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:83 (main) - Scope Bearing: 339deg
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 32.0
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:83 (main) - Scope Bearing: 339deg
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 33.0
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:83 (main) - Scope Bearing: 340deg
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 34.0
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:83 (main) - Scope Bearing: 341deg
+[INFO   ] [15/06/2017 17:17:51,413] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 35.0
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:83 (main) - Scope Bearing: 341deg
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 36.0
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:83 (main) - Scope Bearing: 342deg
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 37.0
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:83 (main) - Scope Bearing: 342deg
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 38.0
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:83 (main) - Scope Bearing: 342deg
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 39.0
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:83 (main) - Scope Bearing: 343deg
+[INFO   ] [15/06/2017 17:17:51,414] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 40.0
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:83 (main) - Scope Bearing: 343deg
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 41.0
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:83 (main) - Scope Bearing: 344deg
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 42.0
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:83 (main) - Scope Bearing: 344deg
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 43.0
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:83 (main) - Scope Bearing: 344deg
+[INFO   ] [15/06/2017 17:17:51,415] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 44.0
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:83 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 45.0
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:83 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 46.0
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:83 (main) - Scope Bearing: 345deg
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 47.0
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:83 (main) - Scope Bearing: 346deg
+[INFO   ] [15/06/2017 17:17:51,416] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 48.0
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:83 (main) - Scope Bearing: 346deg
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 49.0
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:83 (main) - Scope Bearing: 346deg
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 50.0
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 51.0
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:17:51,417] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 52.0
+[INFO   ] [15/06/2017 17:17:51,418] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:17:51,418] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 53.0
+[INFO   ] [15/06/2017 17:17:51,419] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:17:51,419] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 54.0
+[INFO   ] [15/06/2017 17:17:51,419] MethodTest:83 (main) - Scope Bearing: 347deg
+[INFO   ] [15/06/2017 17:17:51,419] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 55.0
+[INFO   ] [15/06/2017 17:17:51,419] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:17:51,420] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 56.0
+[INFO   ] [15/06/2017 17:17:51,420] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:17:51,420] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 57.0
+[INFO   ] [15/06/2017 17:17:51,422] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:17:51,422] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 58.0
+[INFO   ] [15/06/2017 17:17:51,423] MethodTest:83 (main) - Scope Bearing: 348deg
+[INFO   ] [15/06/2017 17:17:51,423] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 59.0
+[INFO   ] [15/06/2017 17:17:51,423] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:17:51,423] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 60.0
+[INFO   ] [15/06/2017 17:17:51,423] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:17:51,423] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 61.0
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 62.0
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 63.0
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 64.0
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:83 (main) - Scope Bearing: 349deg
+[INFO   ] [15/06/2017 17:17:51,424] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 65.0
+[INFO   ] [15/06/2017 17:17:51,425] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:17:51,425] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 66.0
+[INFO   ] [15/06/2017 17:17:51,425] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:17:51,425] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 67.0
+[INFO   ] [15/06/2017 17:17:51,425] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:17:51,425] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 68.0
+[INFO   ] [15/06/2017 17:17:51,425] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 69.0
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 70.0
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 71.0
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:83 (main) - Scope Bearing: 350deg
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 72.0
+[INFO   ] [15/06/2017 17:17:51,426] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 73.0
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 74.0
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 75.0
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 76.0
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 77.0
+[INFO   ] [15/06/2017 17:17:51,427] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,428] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 78.0
+[INFO   ] [15/06/2017 17:17:51,428] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,428] MethodTest:82 (main) - AOB: 80 targSpeed: 12.0 TorpSpeed: 79.0
+[INFO   ] [15/06/2017 17:17:51,428] MethodTest:83 (main) - Scope Bearing: 351deg
+[INFO   ] [15/06/2017 17:17:51,430] Nomo:47 (main) - Speed:5.333333333333333kt
+Distance: 8000.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:17:51,430] MethodTest:26 (main) - 5.333333333333333kt
+Distance: 8000.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:17:51,430] Nomo:47 (main) - Speed:5.144kt
+Distance: 7716.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:17:51,430] MethodTest:27 (main) - 5.144kt
+Distance: 7716.0m
+Time: 00:25:00
+[INFO   ] [15/06/2017 17:17:51,430] Nomo:47 (main) - Speed:5.144kt
+Distance: 8000.0m
+Time: 00:26:55
+[INFO   ] [15/06/2017 17:17:51,430] MethodTest:28 (main) - 5.144kt
+Distance: 8000.0m
+Time: 00:26:55
+[INFO   ] [15/06/2017 17:17:51,619] PrepShipData:39 (main) - XML read successfully.
+[INFO   ] [15/06/2017 17:17:51,620] MethodTest:41 (main) - Ship [ID=30, name=Mogami Heavy Cruiser, type=7, typeName=Heavy Cruiser, imagePath="data\SCAF for
+			TMO_2\Data\Sea\NCA_Mogami\NCA_Mogami_sil.dds", maxSpeed=35.0, length=200.0, width=21.3, mast=35.0, draft=6.7, disp=9500.0, refAspect=5.714285714285714]
+[INFO   ] [15/06/2017 17:17:51,621] MethodTest:42 (main) - 141deg
+[INFO   ] [15/06/2017 17:17:51,621] MethodTest:43 (main) - 307deg

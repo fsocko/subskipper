@@ -1,9 +1,13 @@
 package xmlParser;
 
+import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import coreLogic.Ship;
  
@@ -12,6 +16,8 @@ import coreLogic.Ship;
 @XmlRootElement(name = "ships")
 public class Ships
 {
+	
+	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
     ArrayList<Ship> ships;
  
     @XmlElement( name = "ship" )

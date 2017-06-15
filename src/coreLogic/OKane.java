@@ -4,30 +4,34 @@
 package coreLogic;
 
 import java.lang.Math;
+import java.lang.invoke.MethodHandles;
+
 import org.apache.logging.log4j.*;
 
 /**
- * @author fps
+ * The Class OKane.
  *
+ * @author fps
+ * 
  *         Lead Angle for O'Kane firing solution. - note that method does not
  *         know whether to add or subtract ie if T is facing port or stbd.
- *
- *         Inputs: Torpedo Speed (kn), target Speed (kn)
  */
 public class OKane {
 
-	final Logger logger = LogManager.getLogger(this.getClass());
+	/** The logger. */
+	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
 	// TODO: check range to target is not too large for the solution
 	/**
-	 * @param AOB
-	 * @param targS
-	 * @param torpFireS
-	 * @return
-	 * 
-	 * 		Method for generating OKane firing solution, returns firing
-	 *         bearing. Inputs: AOB- determines port or strbd, Speed (F/S)
-	 *         default to slow; torpedo object
+	 * OK solution.
+	 * Method for generating OKane firing solution, returns firing
+	 * bearing. Inputs: AOB- determines port or strbd, Speed (F/S)
+	 * default to slow; torpedo object
+	 *
+	 * @param AOB the aob
+	 * @param targS the targ S
+	 * @param torpFireS the torp fire S
+	 * @return double lead angle: tSpeed into TDC, set your scope to this bearing.
 	 */
 	public double OKSolution(int AOB, double targS, double torpFireS) {
 		double solBearing = -1;
@@ -72,15 +76,14 @@ public class OKane {
 			solBearing = 0 + okaneLead(torpFireS, targS);
 		}
 		return solBearing; // tSpeed into TDC, set your scope to this bearing,
-							// fire
 	}
 
 	/**
-	 * @param torpS
-	 * @param targS
-	 * @return
-	 * 
-	 * 		Input: torpedo speed (kn), target speed (kn)
+	 * Okane lead.
+	 *
+	 * @param torpS the torp Speed kn
+	 * @param targS the targ Speed kn
+	 * @return 		
 	 */
 	private double okaneLead(double torpS, double targS) {
 		if ((torpS < 0) || (targS < 0)) {
@@ -88,15 +91,19 @@ public class OKane {
 		}
 		// If speed is 0, no lead required
 		if (targS == 0) {
+			logger.info("Lead is:{}", OutFormat.degreeOut(targS));
 			return 0;
 		}
 		double lead = 0;
 		// 90 - inverseTan(torpS/targS)
 		lead = 90 - Math.toDegrees(Math.atan(torpS / targS));
 		if (lead > 90) {
+			logger.error("Lead is:{}. Impossible solution.", OutFormat.degreeOut(lead));
 			lead = -3;
-		} // Okane relies on being ahead of the target,
-			// we would be aiming backwards.
+			
+		} 
+		
+		//Okane relies on being ahead of the target, we would have an impossible soluton.
 
 		return lead;
 	}

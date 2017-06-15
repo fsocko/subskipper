@@ -1,10 +1,10 @@
-.wrapper{
+.wrapper {
 	background-color: red;
 	width: 90%;
 	margin-left: 5%;
 }
 
-.header{
+.header {
 	background-color: black;
 	color: white;
 	border-width: 1px;
@@ -12,34 +12,53 @@
 	text-align: center;
 }
 
-.name{width: 300px;}
-.disp{width: 100px;}
-.speed{width: 100px;}
-.length{width: 100px;}
-.height{width: 100px;}
-.draft{width: 100px;}
-.aspect{width: 100px;}
+.name {
+	width: 300px;
+}
 
+.disp {
+	width: 100px;
+}
 
-.shipRow{
+.speed {
+	width: 100px;
+}
+
+.length {
+	width: 100px;
+}
+
+.height {
+	width: 100px;
+}
+
+.draft {
+	width: 100px;
+}
+
+.aspect {
+	width: 100px;
+}
+
+.shipRow {
 	border-width: 1px;
 	border-color: green;
 	background-color: grey;
 }
 
-.AOBRow{
+.AOBRow {
 	border-width: 1px;
 	border-color: pink;
 	background-color: orange;
 }
 
-.deg{
+.deg {
 	border-style: solid;
 	border-width: 1px;
 	border-color: red;
 	width: auto;
 }
 
-.cell{display: table-cell;}
-
-
+.cell {
+	display: table-cell;
+}
