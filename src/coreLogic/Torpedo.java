@@ -4,7 +4,6 @@ public class Torpedo {
 	
 		private int ID;
 		private String name; //torp Name
-		
 		private double speedS; // slow speed
 		private double speedM; //med speed
 		private double speedF; //fast speed
@@ -12,6 +11,8 @@ public class Torpedo {
 		private double rangeM; //torp range, medium
 		private double rangeF; //torp range, fast
 		private double impactT; //time to impact on this solution
+		
+		//TODO: get speed as L/M/H, determine speed value based on torpedo type and its properties.	
 				
 		//constructs a torpedo. INPUTS: name, slow/fast speed, range 
 		public Torpedo(String name, double speedS, double speedF, double rangeS, double rangeF){  

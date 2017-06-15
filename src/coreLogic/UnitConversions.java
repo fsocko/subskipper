@@ -1,7 +1,11 @@
 package coreLogic;
 
-public class UnitConversions {
+import org.apache.logging.log4j.*;
 
+public class UnitConversions {
+	
+	final Logger log = LogManager.getLogger(this.getClass());
+	
 	//Speed: Meter per second to knot
 	//1 metre per second =	1.94384449 knot
 	public double msKn(double ms){

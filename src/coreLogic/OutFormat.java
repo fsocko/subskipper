@@ -1,11 +1,13 @@
 package coreLogic;
 import java.text.*;
-
+import org.apache.logging.log4j.*;
 
 //Method for formatting output using a formatter to a String.
 //String aString =  String.format("%03d", "0.00123332");
 public class OutFormat {
 
+	final Logger log = LogManager.getLogger(this.getClass());
+	
 	    public String degreeOut(double degIn){
 	    	DecimalFormat formatter = new DecimalFormat("000");
 	    	String out = formatter.format(degIn) + "\u00b0";
