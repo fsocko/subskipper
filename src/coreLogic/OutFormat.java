@@ -4,6 +4,7 @@ import java.lang.invoke.MethodHandles;
 import java.text.*;
 import org.apache.logging.log4j.*;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class OutFormat.
  *
@@ -57,10 +58,8 @@ public class OutFormat {
 	/**
 	 * Adds the unit. UnitConversions.java, then addUnit() as needed.
 	 *
-	 * @param i
-	 *            the value
-	 * @param u
-	 *            the unit
+	 * @param value the value
+	 * @param unit the unit
 	 * @return the string
 	 */
 	public static String addUnit(double value, String unit) {
@@ -105,6 +104,12 @@ public class OutFormat {
 		return out;
 	}
 	
+	/**
+	 * Deg format.
+	 *
+	 * @param degIn the deg in
+	 * @return the string
+	 */
 	public static String degFormat(double degIn) {
 		DecimalFormat formatter = new DecimalFormat("000");
 		String out = formatter.format(degIn);
@@ -131,9 +136,18 @@ public class OutFormat {
 		return (roundTime.format(hoursOut) + ":" + roundTime.format(minutesOut) + ":" + roundTime.format(secondOut));
 	}
 
+	/**
+	 * The Class UnitConversions.
+	 */
 	private class UnitConversions {
 
 		// Speed: Meter per second to knot
+		/**
+		 * Ms kn.
+		 *
+		 * @param ms the ms
+		 * @return the double
+		 */
 		// 1 metre per second = 1.94384449 knot
 		public double msKn(double ms) {
 			double knot = ms * 1.94384449;
@@ -141,6 +155,12 @@ public class OutFormat {
 		}
 
 		// Knot to Kph
+		/**
+		 * Kn kmh.
+		 *
+		 * @param knot the knot
+		 * @return the double
+		 */
 		// 1knots= 1.8520000kph
 		public double knKmh(double knot) {
 			double kph = knot * 1.8520000;
@@ -148,6 +168,12 @@ public class OutFormat {
 		}
 
 		// m per Minute to knot
+		/**
+		 * M M kn.
+		 *
+		 * @param mM the m M
+		 * @return the double
+		 */
 		// 1 metre per minute = 0.0323974082 knot
 		public double mMKn(double mM) {
 			double kn = mM * 0.0323974082;
