@@ -19,11 +19,22 @@ public class MethodTest {
 	}
 
 	public static void nomoTest() {
-		Nomo testNom = new Nomo();
-		// S(kn)D(m)T(s)
-		logger.info(testNom.nomo(0, 8000, 1500));
-		logger.info(testNom.nomo(5.144, 0, 1500));
-		logger.info(testNom.nomo(5.144, 8000, 0));
+		logger.info("Test Nomo: - More or less valid fields: 2l, 15l, 1000l");
+		
+		Nomo validNom = new Nomo(-1l, 15l, 1000l);
+		logger.info("Valid nomo:{}", validNom.toString());
+		//validNom.setSpeed(-1l);
+		logger.info("Valid nomo:{}", validNom.toString());
+		//validNom.setDist(-1l);
+		logger.info("Valid nomo:{}", validNom.toString());
+		//validNom.setTime(-1l);
+		
+		Nomo invalidNom = new Nomo(-1l, -3l, -66l);
+		logger.info("Null nomo:{}", invalidNom.toString());
+		
+		Nomo doubleNom = new Nomo(12d, 44d, 66l);
+		logger.info("doubleNom:{}", doubleNom.toString());
+		
 	}
 
 	public static void aspectAOBTest() {

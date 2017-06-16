@@ -2,6 +2,8 @@ package coreLogic;
 
 import java.lang.invoke.MethodHandles;
 import java.text.*;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.*;
 
 // TODO: Auto-generated Javadoc
@@ -120,21 +122,20 @@ public class OutFormat {
 	/**
 	 * Hour out.
 	 *
-	 * @param secondIn
-	 *            the second in
+	 * @param msIn
+	 *            the milliseconds in
 	 * @return the string
 	 */
-	public static String hourOut(double secondIn) {
-
-		double hoursOut = secondIn / 3600;
-		if (hoursOut < 1) {
-			hoursOut = 0;
-		}
-		double minutesOut = (secondIn % 3600) / 60;
-		double secondOut = secondIn % 60;
-		DecimalFormat roundTime = new DecimalFormat("00");
-		return (roundTime.format(hoursOut) + ":" + roundTime.format(minutesOut) + ":" + roundTime.format(secondOut));
+	public static String hourOut(long millis) {
+		
+			return String.format("%02d:%02d:%02d", 
+				TimeUnit.MILLISECONDS.toHours(millis),
+				TimeUnit.MILLISECONDS.toMinutes(millis) -  
+				TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
+				TimeUnit.MILLISECONDS.toSeconds(millis) - 
+				TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));   
 	}
+	
 
 	/**
 	 * The Class UnitConversions.
