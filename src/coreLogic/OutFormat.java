@@ -38,8 +38,8 @@ public class OutFormat {
 	@Deprecated
 	public static String msToKnot(double ms) {
 		double kt = ms * 1.94384449;
-		String out = addUnit(ms, "kt");
-		return out;
+		return addUnit(kt, "kt");
+		
 	}
 
 	/**
@@ -102,8 +102,7 @@ public class OutFormat {
 	public static String fourDP(double fourDP) { // TODO: arbitrary DP would be
 		// nice.
 		DecimalFormat formatter = new DecimalFormat("0.0000");
-		String out = formatter.format(fourDP);
-		return out;
+		return formatter.format(fourDP);
 	}
 	
 	/**
@@ -114,8 +113,7 @@ public class OutFormat {
 	 */
 	public static String degFormat(double degIn) {
 		DecimalFormat formatter = new DecimalFormat("000");
-		String out = formatter.format(degIn);
-		return out;
+		return formatter.format(degIn);
 	}
 	
 
@@ -151,8 +149,7 @@ public class OutFormat {
 		 */
 		// 1 metre per second = 1.94384449 knot
 		public double msKn(double ms) {
-			double knot = ms * 1.94384449;
-			return knot;
+			return ms * 1.94384449;
 		}
 
 		// Knot to Kph
@@ -164,8 +161,8 @@ public class OutFormat {
 		 */
 		// 1knots= 1.8520000kph
 		public double knKmh(double knot) {
-			double kph = knot * 1.8520000;
-			return kph;
+			return knot * 1.8520000;
+
 		}
 
 		// m per Minute to knot
@@ -177,8 +174,7 @@ public class OutFormat {
 		 */
 		// 1 metre per minute = 0.0323974082 knot
 		public double mMKn(double mM) {
-			double kn = mM * 0.0323974082;
-			return kn;
+			return mM * 0.0323974082;
 		}
 	}
 
