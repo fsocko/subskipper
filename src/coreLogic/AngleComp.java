@@ -1,6 +1,6 @@
 package coreLogic;
 
-public class AngleSolver {
+public class AngleComp {
 
 	
 	

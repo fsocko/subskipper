@@ -78,12 +78,10 @@ public class StopWatch {
 	 *
 	 * @param tgtLength the tgt length
 	 * @param time the time elapsed for ship to pass from stern to bow
-	 * @return the double
+	 * @return the speed in kt
 	 */
 	public double fixedWire(Double tgtLength, long time){
-		
 		return 0;
-		
 	}
 	
 	/**
@@ -98,6 +96,9 @@ public class StopWatch {
 	 * Given known speed, and time variable, calculate distance travelled, in m.
 	 */
 	
-	public void SpeedToDistance(){}
 
+	public double timeToIntercept(){
+		return 0d;
+	}
+	
 }

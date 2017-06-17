@@ -134,23 +134,23 @@ public class TgtShip implements Comparable<TgtShip> {
 	 * Instantiates a new ship.
 	 */
 	public TgtShip() {
-		this.ID = 0;
+		this.ID = -3;
 		this.nation = "";
 		this.name = "";
-		this.type = 0;
+		this.type = -3;
 		this.typeName = "";
 		this.imagePath = "";
-		this.maxSpeed = 0;
-		this.length = 0;
-		this.width = 0;
-		this.mast = 0;
-		this.draft = 0;
-		this.disp = 0;
-		this.refAspect = 0;
-		this.course = course;
-		this.speed = speed;
-		this.tgtBearing = tgtBearing;
-		this.aob = aob;
+		this.maxSpeed = -3;
+		this.length = -3;
+		this.width = -3;
+		this.mast = -3;
+		this.draft = -3;
+		this.disp = -3;
+		this.refAspect = -3;
+		this.course = -3;
+		this.speed = -3;
+		this.tgtBearing = -3;
+		this.aob = -3;
 	}
 
 	/**
@@ -370,14 +370,12 @@ public class TgtShip implements Comparable<TgtShip> {
 	}
 	
 	
-	/* 
-	 * Ship data to string.
-	 */
 	@Override
 	public String toString() {
-		return "Ship [ID=" + ID + ", name=" + name + ", type=" + type + ", typeName=" + typeName + ", imagePath="
-				+ imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width=" + width + ", mast=" + mast
-				+ ", draft=" + draft + ", disp=" + disp + ", refAspect=" + refAspect + "]";
+		return "TgtShip [ID=" + ID + ", nation=" + nation + ", name=" + name + ", type=" + type + ", typeName="
+				+ typeName + ", imagePath=" + imagePath + ", maxSpeed=" + maxSpeed + ", length=" + length + ", width="
+				+ width + ", mast=" + mast + ", draft=" + draft + ", disp=" + disp + ", refAspect=" + refAspect
+				+ ", course=" + course + ", speed=" + speed + ", tgtBearing=" + tgtBearing + ", aob=" + aob + "]";
 	}
 
 	/* 

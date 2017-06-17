@@ -30,7 +30,7 @@ public class OKane {
 	 *
 	 * @param AOB the aob
 	 * @param targS the targ S
-	 * @param torpFireS the torp fire S
+	 * @param torpFireS the torp speed in kt
 	 * @return double lead angle: tSpeed into TDC, set your scope to this bearing.
 	 */
 	public double OKSolution(int AOB, double targS, double torpFireS) {

@@ -22,13 +22,12 @@ public class PrepShipData {
 	//If there is an error, a null is returned.
 	
 	
-	//return a prepared Ships object if possible from XML. Otherwise, parseSCAF
-	/**
-	 * Gets the ships.
+	
+	/*//return a prepared Ships object if possible from XML. Otherwise, parseSCAF
+	 * and get the Ships object. Ships is a list of ships.
 	 *
 	 * @return the ships
 	 */
-	//and write / read XML
 	public Ships getShips(){
 		
 		ReadShipXML readShips = new ReadShipXML();

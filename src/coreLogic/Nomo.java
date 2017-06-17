@@ -11,10 +11,6 @@ import org.apache.logging.log4j.*;
  * 
  * NOTE: as long as distance and speed corespond to speed: e.g. speed = m/s,
  * d=m, t=s then units do not matter. Really though, it should probably be m/s.
- * 
- * 
- * 
- *
  */
 
 public final class Nomo {
@@ -121,7 +117,7 @@ public final class Nomo {
 	}
 
 
-	public boolean isValid() {
+	public boolean getIsValid() {
 		return isValid;
 	}
 
