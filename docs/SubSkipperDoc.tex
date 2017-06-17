@@ -1,5 +1,5 @@
 %%--SubSkipper Documentation
-%%--Modified 25/07/15
+%%--Modified 17/06/17
 
 \documentclass{article}
 
@@ -24,11 +24,12 @@
  bottom=20mm,
  }
 
-
 %%--commands
 \newcommand{\degree}{$^{\circ}$}
 %%tabularX centered and expanding column
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
+%%TODO: Section/subsection words capitalised
+
 
 %%--Define some new arrows - description from base to arrowhead
 \newcommand{\aUR}{\Rsh} %Arrow Up Right
@@ -52,9 +53,8 @@ $\begin{array}{rcl}
 \vspace{12pt}
 }
 
-
 \author{fSocko}
-\title{Pacific Campaign and Torpedo Solution Reference (v1.1)}
+\title{Pacific Campaign and Torpedo Solution Reference (v0.5)}
 
 \begin{document}
 
@@ -106,17 +106,10 @@ This document is a reference for Torpedo types and common conversion factors, as
 \conversion{ m}{3.28084}{0.3048}{ft} & \\
 
 
-
 %%Speed
-
-
-
-
-
 \end{tabularx}
 \end{large}
 \end{center}
-
 
 
 \subsection{Speed}
@@ -130,11 +123,7 @@ This document is a reference for Torpedo types and common conversion factors, as
 
 \section{Torpedo Data}
 
-The following is torpedo for American torpedo types as used predominantly in the Pacific theatre.
-
-Torpedo data adapted from \emph{SH4 V1.2 Ultimate Torpedo Guide} by Mechan, found at the ubisoft forums (http://forums.ubi.com/showthread.php/475595-SH4-V1-2-Ultimate-Torpedo-Guide-Forums). Dated: 06-22-2007, Accessed: 18.08.2015
-
-Slow and Fast speeds and ranges removed as appropriate.
+The following is torpedo for American torpedo types as used predominantly in the Pacific theatre. Slow and Fast speeds and ranges removed as appropriate. Torpedo data adapted from \cite{ultTorp}.
 
 \subsubsection{Mark 10}
 \begin{tabular}{l|l}
@@ -225,6 +214,8 @@ The chance of having gyro problems is 0.3\% at the introduction time of all torp
 \subsubsection{Homing torpedos}
 The Mk. 27 will run straight for 200m before homing.
 
+
+
 \section{Trigger Maru Overhaul - Fleet Boat Types}
 This section consists of pages 25-28 of the Trigger Maru Overhaul Manual which detail fleet boat types:
 \includegraphics[page={25}, width=\textwidth, height=.95\textheight]{TMO_Manual}
@@ -250,6 +241,40 @@ This section consists of pages 25-28 of the Trigger Maru Overhaul Manual which d
 %EG. 7: Find the speed of a target with a changing relative bearing
 %Example 8: Find the speed of a target with two bearing and range observations
 %Example 9: Find the AOB of a target with the Aspect Ratio method
+
+\section{Interception Formulas}
+
+
+
+\subsection{Determine an optimum speed for interception}
+
+To determine own speed needed to reach the target track in time to set up a torpedo solution. (Requires: Target Speed, Target AOB, Bearing to Target, Target Range, Distance to target track)
+
+
+\subsection{Determine the distance to the track of a target}
+
+As you manoeuvre into a firing position, it is useful to know your distance to the track of your target. Knowing the range and AOB of the target:
+
+Track: intersection point between Submarine course and the current target course.
+
+$$Distance to Track = Range \left( sin(AOB) \right)$$
+
+%Example 11: Determine an optimum speed for attack position
+
+
+\subsection{Intercept lead angle}
+%%beta = arccos{sqrt[1-(vt*sin(alpha)/v)^2]}
+
+$$interceptAngle = arcCos(\sqrt{1-(vt*sin(alpha)/v)^2})$$
+
+
+where beta is the angle of interception (counting from 0 course),
+vt - target's speed,
+alpha - AoB of target,
+v - speed of own vessel,
+and they used it too (as TDC does) with graphic solutions on paper Maneuring boards.
+Yeah, I think they plotted much and were true guru in planar geometry, the masters of ruler and circle 
+
 
 
 \section{Calculating AOB Based on Aspect Ratio}
@@ -290,26 +315,6 @@ AOB (Relative to Target) for each Quadrant:
 }
 \end{itemize}
 
-\section{Determine the distance to the track of a target}
-
-As you manoeuvre into a firing position, it is useful to know your distance to the track of your target. Knowing the range and AOB of the target:
-
-Track: intersection point between Submarine course and the current target course.
-
-$$Distance to Track = Range \left( sin(AOB) \right)$$
-%
-%\section{Determine an optimum speed for attack position}
-%
-%To determine own speed needed to reach the target track in time to set up a torpedo solution. (Requires: Target Speed, Target AOB, Bearing to Target, Target Range, Distance to target track)
-%
-%\begin{enumerate}
-%\item{Find distance T must travel to reach a bearing of 000\degree. If the track is known (see previous step) and bearing and range to target is known, time required is:
-%$$ s = d/t  $$
-%}
-
-
-%Example 11: Determine an optimum speed for attack position
-
 
 \section{Determine the lead angle for a perpendicular attack with 0\degree gyro angle (AKA O\'Kane Solution)}
 
@@ -335,8 +340,7 @@ $$ gyroAngle = targetBearing -– leadAngle $$
 
 \input{knotToKM}
 \pagebreak
-
-\includegraphics[angle=270]{cmap}
+%%\includegraphics[angle=270]{cmap}
 
 \section{Recognition Manual (Short, Metric)}
 \input{recogSLatm_docsMod}
@@ -361,14 +365,24 @@ Corey "Gutted" Hardwell,
 Silent Hunter IV 90\degree - AOB Firing Angles,
 circ. 2008(?).
 
-\bibitem{subsim}
-http://www.subsim.com
-
 \bibitem{arcSin}
 MathOnWeb,
 %http://mathonweb.com/help_ebook/html/functions_2.htm,
 The arcsin function,
-Accessed 17.08.2015,
+Accessed 17.08.2015.
+
+\bibitem{trigForm}
+Subsim,
+%http://www.subsim.com/radioroom//showthread.php?t=141774%
+Trigonometry Formulas,
+Accessed 17.06.2017.
+
+\bibitem{ultTorp}
+Mechan,
+SH4 V1.2 Ultimate Torpedo Guide,
+%http://forums.ubi.com/showthread.php/475595-SH4-V1-2-Ultimate-Torpedo-Guide-Forums)%
+06-22-2007,
+Accessed: 18.08.2015.
 
 
 \end{thebibliography}
