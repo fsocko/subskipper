@@ -41,7 +41,7 @@ public class MethodTest {
 		OutFormat toDeg = new OutFormat();
 		AspectAOB testAOB = new AspectAOB();
 		PrepShipData target = new PrepShipData();
-		Ship shipAOB = target.getShipByID(30);
+		TgtShip shipAOB = target.getShipByID(30);
 
 		int estAOB = 35;
 		double mastObs = 8.5;

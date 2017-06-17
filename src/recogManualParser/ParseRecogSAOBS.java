@@ -5,7 +5,7 @@ import com.x5.template.Theme;
 
 import coreLogic.FileIO;
 import coreLogic.OutFormat;
-import coreLogic.Ship;
+import coreLogic.TgtShip;
 import xmlParser.Ships;
 
 public class ParseRecogSAOBS {
@@ -48,7 +48,7 @@ public class ParseRecogSAOBS {
 		writeHTML(htmlDoc, filename);
 	}
 	
-	private String shipRowHTML(Ship record, boolean imperial){
+	private String shipRowHTML(TgtShip record, boolean imperial){
 		
 		OutFormat f = new OutFormat();
 		Theme theme = new Theme();	

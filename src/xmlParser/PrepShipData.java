@@ -6,7 +6,7 @@ import java.util.Collections;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import coreLogic.Ship;
+import coreLogic.TgtShip;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -83,7 +83,7 @@ public class PrepShipData {
 	 * @return the ship by ID
 	 */
 	//Look up a ship by an ID
-	public Ship getShipByID(int shipID){
+	public TgtShip getShipByID(int shipID){
 		return getShipByID(shipID, getShips());
 	}
 	
@@ -94,10 +94,10 @@ public class PrepShipData {
 	 * @param shipsData the ships data
 	 * @return the ship by ID
 	 */
-	public Ship getShipByID(int shipID, Ships shipsData){
+	public TgtShip getShipByID(int shipID, Ships shipsData){
 		
-		ArrayList<Ship> shipList = shipsData.getShips();
-		Ship idShip = new Ship();
+		ArrayList<TgtShip> shipList = shipsData.getShips();
+		TgtShip idShip = new TgtShip();
 		
 		for(int i = 0; i<shipList.size(); i++){
 			if(shipList.get(i).getID() == shipID){
@@ -128,9 +128,9 @@ public class PrepShipData {
 	 */
 	//Sort Ships based on Type int; ascending 
 	public Ships sortShipsType(Ships shipRecords){
-		ArrayList<Ship> allShips = shipRecords.getShips(); 
+		ArrayList<TgtShip> allShips = shipRecords.getShips(); 
 		Ships sortedList = new Ships();
-		Collections.sort(allShips, Ship.sTypeCompD);
+		Collections.sort(allShips, TgtShip.sTypeCompD);
 		sortedList.setShips(allShips);
 		return sortedList; 
 	}
@@ -143,9 +143,9 @@ public class PrepShipData {
 	 */
 	//Sort Ships based on Type int; ascending 
 	public Ships sortShipsName(Ships shipRecords){
-		ArrayList<Ship> allShips = shipRecords.getShips(); 
+		ArrayList<TgtShip> allShips = shipRecords.getShips(); 
 		Ships sortedList = new Ships();
-		Collections.sort(allShips, Ship.sNameCompD);
+		Collections.sort(allShips, TgtShip.sNameCompD);
 		sortedList.setShips(allShips);
 		return sortedList; 
 	}

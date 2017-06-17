@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import coreLogic.Ship;
+import coreLogic.TgtShip;
  
 
 //Wrapper for martialing XML correctly. Stores Ship object as a list of Ships
@@ -18,23 +18,23 @@ public class Ships
 {
 	
 	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-    ArrayList<Ship> ships;
+    ArrayList<TgtShip> ships;
  
     @XmlElement( name = "ship" )
-    public void setShips( ArrayList<Ship> ships)
+    public void setShips( ArrayList<TgtShip> ships)
     {
     	this.ships = ships;
     }
     
     //return this for array list of ships
-	public ArrayList<Ship> getShips() {
+	public ArrayList<TgtShip> getShips() {
 		return ships;
 	}
     
 	//return a single ship at position i in ships ArrList
-	public Ship getShip(int i){
-		ArrayList<Ship> multi = this.getShips();
-		Ship single = multi.get(i);
+	public TgtShip getShip(int i){
+		ArrayList<TgtShip> multi = this.getShips();
+		TgtShip single = multi.get(i);
 		return single;
 	}
 

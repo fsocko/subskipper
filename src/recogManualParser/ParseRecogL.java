@@ -7,7 +7,7 @@ import com.x5.template.Theme;
 
 import coreLogic.FileIO;
 import coreLogic.OutFormat;
-import coreLogic.Ship;
+import coreLogic.TgtShip;
 import xmlParser.PrepShipData;
 import xmlParser.Ships;
 
@@ -53,7 +53,7 @@ public class ParseRecogL {
 			return h.toString();
 		}
 		
-		private  String HTMLShipL(Ship record, boolean imperial){
+		private  String HTMLShipL(TgtShip record, boolean imperial){
 			
 			String unit = "m";
 			if(imperial){

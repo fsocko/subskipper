@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import coreLogic.Ship;
+import coreLogic.TgtShip;
 
 
 public class ReadSCAF {
@@ -190,7 +190,7 @@ SurvivalPercentage=20 --Not used
 	}
 
 	//Format and construct a ship object using data in tempShips
-	public Ship makeShip(String path){
+	public TgtShip makeShip(String path){
 		//First run listF
 		ArrayList<File> shipFiles = new ArrayList<File>();
 		listFile("data", shipFiles);
@@ -214,7 +214,7 @@ SurvivalPercentage=20 --Not used
 		double draft = Double.parseDouble(tempShips[6]);
 		double disp = Double.parseDouble(tempShips[7]);
 		
-		Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
+		TgtShip testShip = new TgtShip(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
 		return testShip;
 	}
 	//Prints all useful SCAF files. Mostly For Debugging
@@ -228,11 +228,11 @@ SurvivalPercentage=20 --Not used
 	}
 	
 	//Returns an arrayList of Ship objects, for passing to WriteShipXML
-	public ArrayList<Ship> makeShips(){
+	public ArrayList<TgtShip> makeShips(){
 		logger.info("ReadSCAF.makeShips() started.");
 		ArrayList<File> shipFiles = new ArrayList<File>();
-		ArrayList<Ship> shipData = new ArrayList<Ship>();
-		Ship writeShip = new Ship();
+		ArrayList<TgtShip> shipData = new ArrayList<TgtShip>();
+		TgtShip writeShip = new TgtShip();
 		
 		listFile("data", shipFiles);
 		

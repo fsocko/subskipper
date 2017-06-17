@@ -33,7 +33,7 @@ public class AspectAOB {
 	 * @return
 	 * 
 	 */
-	public double aspectAOB(int estAOB, Ship target, double mastObs, double lenObs) {
+	public double aspectAOB(int estAOB, TgtShip target, double mastObs, double lenObs) {
 		double obsAR = 0;
 		// Check if it's a number. It's possible that NaN will be input by user.
 		if (!Double.isNaN((lenObs / mastObs))) {
@@ -64,7 +64,7 @@ public class AspectAOB {
 	 * @param obsAR
 	 * @return
 	 */
-	private double calculateAOB(Ship target, double obsAR) {
+	private double calculateAOB(TgtShip target, double obsAR) {
 		// Reference Aspect Ratio, from Ship data
 		double refAR = target.getRefAspect();
 		double AOB = Math.toDegrees(Math.asin(obsAR / refAR));

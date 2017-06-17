@@ -5,7 +5,7 @@ import com.x5.template.Theme;
 
 import coreLogic.FileIO;
 import coreLogic.OutFormat;
-import coreLogic.Ship;
+import coreLogic.TgtShip;
 import xmlParser.Ships;
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
 
@@ -69,7 +69,7 @@ public class ParseRecogS {
 		
 		
 		
-		private String shipRow(Ship record, int i, boolean imperial){
+		private String shipRow(TgtShip record, int i, boolean imperial){
 			
 			OutFormat f = new OutFormat();
 			Theme theme = new Theme();	
@@ -97,7 +97,7 @@ public class ParseRecogS {
 			return h.toString();
 		}
 		
-		private String AOBRow(Ship record, int i){
+		private String AOBRow(TgtShip record, int i){
 			
 			OutFormat f = new OutFormat();
 			Theme theme = new Theme();	
@@ -119,7 +119,7 @@ public class ParseRecogS {
 		}
 		
 		//function with an AOB as a parameter, for filling out AOB table.
-		private double aspectAtAOB(Ship record, int AOB){
+		private double aspectAtAOB(TgtShip record, int AOB){
 			
 			double refAspect = record.getRefAspect();
 			double radAOB = Math.toRadians((double)AOB);

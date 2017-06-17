@@ -20,7 +20,7 @@ import org.apache.logging.log4j.Logger;
 @XmlRootElement(name = "ship")
 @XmlAccessorType (XmlAccessType.FIELD)
 
-public class Ship implements Comparable<Ship> {
+public class TgtShip implements Comparable<TgtShip> {
 
 	final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 	
@@ -63,6 +63,17 @@ public class Ship implements Comparable<Ship> {
 	/** The ref aspect. */
 	private double refAspect;
 	
+	//Angle solver data goes here:
+	private double course;
+	private double speed;
+	private double tgtBearing;
+	private double aob;
+	
+	
+	//TODO: private double time spotted.
+	//private int speed
+	//private int / string nationality?
+	
 	/**
 	 * Instantiates a new ship.
 	 *
@@ -77,12 +88,35 @@ public class Ship implements Comparable<Ship> {
 	 * @param draft the draft
 	 * @param disp the disp
 	 */
-	public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
-			double mast, double draft, double disp) {
+	public TgtShip(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
+			double mast, double draft, double disp, double course, double speed, double tgtBearing, double aob) {
 		super();
 		this.ID = 0;
 		this.nation = "none"; //TODO Once I figure out how nations are assigned in recog.Manual --
 							  //TODO: Assign manually? we can't really know from the recog anyway.
+		this.name = name;
+		this.type = type;
+		this.typeName = typeName;
+		this.imagePath = imagePath;
+		this.maxSpeed = maxSpeed;
+		this.length = length;
+		this.width = width;
+		this.mast = mast;
+		this.draft = draft;
+		this.disp = disp;
+		this.refAspect = length / mast;
+		this.course = course;
+		this.speed = speed;
+		this.tgtBearing = tgtBearing;
+		this.aob = aob;
+	}
+	
+	//This constructor is for building ships with data, but no course data.
+	public TgtShip(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
+			double mast, double draft, double disp) {
+		super();
+		this.ID = 0;
+		this.nation = "none";
 		this.name = name;
 		this.type = type;
 		this.typeName = typeName;
@@ -99,7 +133,7 @@ public class Ship implements Comparable<Ship> {
 	/**
 	 * Instantiates a new ship.
 	 */
-	public Ship() {
+	public TgtShip() {
 		this.ID = 0;
 		this.nation = "";
 		this.name = "";
@@ -113,6 +147,10 @@ public class Ship implements Comparable<Ship> {
 		this.draft = 0;
 		this.disp = 0;
 		this.refAspect = 0;
+		this.course = course;
+		this.speed = speed;
+		this.tgtBearing = tgtBearing;
+		this.aob = aob;
 	}
 
 	/**
@@ -345,15 +383,15 @@ public class Ship implements Comparable<Ship> {
 	/* 
 	 * Comparators for sorting with collections.sort()
 	 */
-	public int compareTo(Ship a) {
+	public int compareTo(TgtShip a) {
 		int compareType = (a.getType());
 		return compareType - this.getType();
 	}
 	
 	/** The s type comparator, descending */
 	//Type, Descending
-	public static Comparator<Ship> sTypeCompD = new Comparator<Ship>() {
-		public int compare(Ship s1, Ship s2){
+	public static Comparator<TgtShip> sTypeCompD = new Comparator<TgtShip>() {
+		public int compare(TgtShip s1, TgtShip s2){
 			int s1T = s1.getType();
 			int s2T = s2.getType();
 			return s2T - s1T;
@@ -362,8 +400,8 @@ public class Ship implements Comparable<Ship> {
 	
 	/** The s name comp D. */
 	//Name, Descending
-	public static Comparator<Ship> sNameCompD = new Comparator<Ship>() {
-		public int compare(Ship s1, Ship s2){
+	public static Comparator<TgtShip> sNameCompD = new Comparator<TgtShip>() {
+		public int compare(TgtShip s1, TgtShip s2){
 			String s1Name = s1.getName().toUpperCase();
 			String s2Name = s2.getName().toUpperCase();
 			return s1Name.compareTo(s2Name);
@@ -383,5 +421,45 @@ public class Ship implements Comparable<Ship> {
 		this.setWidth(this.width * 3.28084);
 		this.setMast(this.mast * 3.28084);
 		this.setDraft(this.draft * 3.28084);
+	}
+
+	public String getNation() {
+		return nation;
+	}
+
+	public void setNation(String nation) {
+		this.nation = nation;
+	}
+
+	public double getCourse() {
+		return course;
+	}
+
+	public void setCourse(double course) {
+		this.course = course;
+	}
+
+	public double getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(double speed) {
+		this.speed = speed;
+	}
+
+	public double getTgtBearing() {
+		return tgtBearing;
+	}
+
+	public void setTgtBearing(double tgtBearing) {
+		this.tgtBearing = tgtBearing;
+	}
+
+	public double getAob() {
+		return aob;
+	}
+
+	public void setAob(double aob) {
+		this.aob = aob;
 	}
 }
