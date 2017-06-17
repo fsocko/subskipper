@@ -25,6 +25,12 @@ body {
 	background-color: black;
 	font-family: F16, sans-serif;
 	}
+	
+	p{
+		
+		font-size: 18pt;
+		text-align:justify;
+	}	
 
 span{margin: 10px 10px 10px 10px;}  
   
@@ -90,6 +96,15 @@ span{margin: 10px 10px 10px 10px;}
 
 }
 
+#center
+{
+	float: left;
+	min-width: calc(100%);
+	width:calc(100%);
+	margin-top: 20px;
+	margin-bottom: 10px;
+	
+}
 
 #leftColumn
 {
