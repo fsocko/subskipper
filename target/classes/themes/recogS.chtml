@@ -1,0 +1,54 @@
+{#head}
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>{$title}</title> 
+  <link rel="stylesheet" type="text/css" href="recogS.css" />
+</head>
+<body>
+<h1>{$heading}</h1>
+{#}
+
+{#startTable}
+<table>
+<th>Name</th><th>Tonnage (GRT)</th><th>Speed (kn)</th><th>Length {$unit}</th><th>Height {$unit}</th><th>Draft {$unit}</th><th>Aspect</th>
+{#}
+
+{#ship}
+<tr id="{$rowID}" class="{$rowClass}">
+
+<td class="name" colspan="2">{$name}</td>
+<td class="disp">{$disp}</td>
+<td class="speed">{$speed}</td>
+<td class="length">{$length}</td>
+<td class="height">{$height}</td>
+<td class="draft">{$draft}</td>
+<td class="aspect">{$aspect}</td>
+</tr>
+{#}
+
+{#AOBRow}
+<tr class = "{$AOBRowClass}" id="{$AOBRowID}">
+
+	<td>10&deg;:{$10deg}</td>
+	<td>20&deg;:{$20deg}</td>
+	<td>30&deg;:{$30deg}</td>
+	<td>40&deg;:{$40deg}</td>
+	<td>50&deg;:{$50deg}</td>
+	<td>60&deg;:{$60deg}</td>
+	<td>70&deg;:{$70deg}</td>
+	</td>
+{#}
+
+
+{#splitTable}
+</table>
+{% include #startTable %}
+{#}
+
+{#terminate}
+</table>
+</body>
+</html>
+{#}
