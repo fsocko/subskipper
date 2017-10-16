@@ -34,12 +34,6 @@ body {
 
 span{margin: 10px 10px 10px 10px;}  
   
-  img
-{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-  
 	.wrapper{
 		
 	position: relative;
@@ -171,4 +165,5 @@ a{
 	url(gfx/steel4.jpg) repeat
 	black;
 	background-position: center left +10px, center right +10px, center; 
+	
 }
