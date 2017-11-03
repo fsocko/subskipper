@@ -5,13 +5,10 @@
 /docs/SubSkipperDoc.synctex.gz
 /docs/SubSkipperDoc.tex
 /docs/SubSkipperDoc.tex.bak
-<<<<<<< HEAD
 /docs/SubSkipperDoc.toc
 /target/
 /logs/
-
-=======
 /docs/SubSkipperSrc/
 /target/
 *.nfo
->>>>>>> gh-pages
+*.class
