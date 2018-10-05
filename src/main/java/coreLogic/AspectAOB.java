@@ -29,7 +29,7 @@ public class AspectAOB {
      * @param lenObs
      * @return
      */
-    public double aspectAOB(int estAOB, TgtShip target, double mastObs, double lenObs) {
+    public double aspectAOB(int estAOB, coreLogic.TgtShip target, double mastObs, double lenObs) {
         double obsAR = 0;
         // Check if it's a number. It's possible that NaN will be input by user.
         if (!Double.isNaN((lenObs / mastObs))) {
