@@ -34,7 +34,7 @@ Optional Files:
 
 MaxOptics IV for TMO_2
 
-This additional mod will increase the magnification of the Periscopes, TBT, Binocular, and Deck gun views. There are additional zoom levels added to these stations which will be found by using the “Tab” key or the wheel of the mouse. Activate after the TMO 2.0 and SCAF for TMO_2 mods. This mod is a “stand alone” mod for TMO 2.0, meaning SCAF does not need to be activated to use the zoomed features. However, do not use this mod with any other stock or ROW type “Camera.dat” file changing mod. It is to be used only with TMO 2.0. 
+This additional mod will increase the magnification of the Periscopes, TBT, Binocular, and Deck gun views. There are additional zoom levels added to these stations which will be found by using the ï¿½Tabï¿½ key or the wheel of the mouse. Activate after the TMO 2.0 and SCAF for TMO_2 mods. This mod is a ï¿½stand aloneï¿½ mod for TMO 2.0, meaning SCAF does not need to be activated to use the zoomed features. However, do not use this mod with any other stock or ROW type ï¿½Camera.datï¿½ file changing mod. It is to be used only with TMO 2.0. 
 
 I highly recommend the use of MaxOptics IV which will provide an easier and more accurate range finding capability when manually targeting. The greater the magnification, the easier the sighting of the reference point for Stadimeter placement. This will give you an increased distance capability for accurate range finding.
 
@@ -42,14 +42,14 @@ I highly recommend the use of MaxOptics IV which will provide an easier and more
 
 How to install:
 
-First, download/install the Generic Mod Enabler (JSGME) to your computer if you do not already have it installed. The JSGME.exe file should be placed in the root directory of SH4. Follow it’s read me instructions. 
+First, download/install the Generic Mod Enabler (JSGME) to your computer if you do not already have it installed. The JSGME.exe file should be placed in the root directory of SH4. Follow itï¿½s read me instructions. 
 Example; the default file tree of SH4 in a Windows XP system should look like this:
  
  C:\Program Files
                 \Ubisoft
                    \Silent Hunter Wolves of the Pacific   <<<This is the root directory of SH4
                    \JSGME.exe
-                   \MODS    <<< From this folder JSGME "activates" the downloaded mods;            Extract all mods to this “MODS” folder  
+                   \MODS    <<< From this folder JSGME "activates" the downloaded mods;            Extract all mods to this ï¿½MODSï¿½ folder  
 
 After downloading the "SCAF for TMO_2.rar" compressed file to your computer, put the opened file into the "MODS" folder that was created when you first ran JSGME. The file structure of the mod is:
 
@@ -59,7 +59,7 @@ After downloading the "SCAF for TMO_2.rar" compressed file to your computer, put
                                         \ROSTER
                                         \SEA
 
-Run JSGME.exe to find the "SCAF for TMO_2" in the left hand panel of the enabler. Click the arrow to move it to the “Activated” right hand panel, after activating the TMO 2.0. Be aware, any newer patches may not be compatible with SCAF. To add the MaxOptics IV for TMO 2.0 optional mod, do so after activating TMO, its patches, and the SCAF mod. 
+Run JSGME.exe to find the "SCAF for TMO_2" in the left hand panel of the enabler. Click the arrow to move it to the ï¿½Activatedï¿½ right hand panel, after activating the TMO 2.0. Be aware, any newer patches may not be compatible with SCAF. To add the MaxOptics IV for TMO 2.0 optional mod, do so after activating TMO, its patches, and the SCAF mod. 
 
 Close the JSGME mod enabler, and run Silent Hunter. To remove, just reverse the above.
 

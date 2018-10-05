@@ -2691,7 +2691,7 @@ MaxStrings=8000
 5611=Navigation Map
 5612=GO TO NAVIGATION MAP|Takes you instantly to the navigation map.
 5613=GO TO ATTACK MAP|Takes you instantly to attack map view.
-5614=PLOT COURSE|Allows you to plot waypoints that your helmsman will automatically follow.  Left-click to add waypoints to the queue, “Delete” to remove the last waypoint. Right-click again and your helmsman will begin to execute the course until you manually give orders to deviate.
+5614=PLOT COURSE|Allows you to plot waypoints that your helmsman will automatically follow.  Left-click to add waypoints to the queue, ï¿½Deleteï¿½ to remove the last waypoint. Right-click again and your helmsman will begin to execute the course until you manually give orders to deviate.
 5615=RETURN TO COURSE|Instructs your helmsman to continue the course you have plotted.
 5616=SEARCH PATTERN|Automatically amends a set of waypoints in a search pattern to the end of your plotted course.
 5617=TIME TO END COURSE|Gives a text feedback telling you how much time until you reach your final plotted waypoint.
@@ -2723,9 +2723,9 @@ MaxStrings=8000
 5652=MAN THE DECK GUN|Orders designated crew members to man the deck gun.
 5653=FIRE AT WILL|The gun crews will freely engage any valid target as they see fit.
 5654=SHORT RANGE|The gun crew will fire at the closest target available that is under 2000 yards range.
-5655=AIM FOR HULL|The gun crew will aim for the designated ship’s hull.
-5656=AIM FOR COMMAND DECK|The gun crew will aim for the designated ship’s command deck.
-5657=AIM FOR WEAPONS|The gun crew will aim for the designated ship’s weapon systems.
+5655=AIM FOR HULL|The gun crew will aim for the designated shipï¿½s hull.
+5656=AIM FOR COMMAND DECK|The gun crew will aim for the designated shipï¿½s command deck.
+5657=AIM FOR WEAPONS|The gun crew will aim for the designated shipï¿½s weapon systems.
 5658=AIM FOR WATERLINE|The gun crew will aim for the waterline on the designated target.
 
 5660=AA Gun
@@ -2749,8 +2749,8 @@ MaxStrings=8000
 5681=GO TO PPI RADAR|Takes you immediately to the radar station room. The PPI radar is only effective when the submarine is surfaced.
 5682=GO TO A-SCOPE RADAR|Takes you immediately to the A-scope radar. The A-scope radar is only effective when the submarine is surfaced.
 5683=TURN RADAR ON/OFF|This toggles both radars on and off.
-5684=CONTINOUS SEARCH SWEEP|Toggles the radar operations between “sweep” and “focus” mode.
-5685=SEARCH ONE SWEEP|The radar operator makes one “sweep” with the radar and then shuts it off immediately.
+5684=CONTINOUS SEARCH SWEEP|Toggles the radar operations between ï¿½sweepï¿½ and ï¿½focusï¿½ mode.
+5685=SEARCH ONE SWEEP|The radar operator makes one ï¿½sweepï¿½ with the radar and then shuts it off immediately.
 5686=REPORT CONTACT
 
 5690=Sub Management
@@ -2785,14 +2785,14 @@ MaxStrings=8000
 ;____________________
 5750=Escorts
 5751=CENTER CAMERA ON SELECTED ESCORT|Clicking this brings the free camera to the view of the selected ship.
-5752=PLOT COURSE|This allows you to plot waypoints that the ship will automatically follow. Left-click to add waypoints to the queue, “Delete” to remove the last waypoint, and Right-click to stop plotting waypoints. Right-click again and the ship will begin to execute the course until you manually give orders to deviate.
+5752=PLOT COURSE|This allows you to plot waypoints that the ship will automatically follow. Left-click to add waypoints to the queue, ï¿½Deleteï¿½ to remove the last waypoint, and Right-click to stop plotting waypoints. Right-click again and the ship will begin to execute the course until you manually give orders to deviate.
 5753=DEFENSIVE MODE|This instructs the escort to stay in the selected patrol area. The escort will freely engage targets within his area but will not pursue an enemy outside his designated area.
 5754=SEARCH MODE|This instructs the escort or convoy to begin performing a search pattern in the area.
 5755=ENGAGE ENEMY WITH SIDE ASW|The designated escort will engage the enemy with his side-mounted ASW weaponry.
 5756=ENGAGE ENEMY WITH AFT ASW|The designated escort will engage the enemy with his aft-mounted ASW weaponry.
 
 5760=Convoy
-5761=EVASIVE COURSE|Orders the convoy to take an evasive course while moving from point to point. This is the typical “zig-zag” movement pattern.
+5761=EVASIVE COURSE|Orders the convoy to take an evasive course while moving from point to point. This is the typical ï¿½zig-zagï¿½ movement pattern.
 
 5770=Camera
 5771=GO TO NAVIGATION MAP|Takes you instantly to the navigation map.
@@ -2931,7 +2931,7 @@ MaxStrings=8000
 
 7620=At the best, you'll stand accused of gross incompetence, at worse, high treason. The worst of it though is that you'll never see the deck of a ship ever again, let alone command one. Unmercifully, your trial has been scheduled to begin after the cessation of hostilities. Nothing to do now but linger in the brig until Japan decides to give up.
 7621=An example to admire for all aspiring commanders, you would have made a great leader in postwar navy.
-7622=Your promising career was ended abruptly. Your comrades wish you were given the time to become another u-boat ace, but the truth is war doesn’t forgive mistakes.
+7622=Your promising career was ended abruptly. Your comrades wish you were given the time to become another u-boat ace, but the truth is war doesnï¿½t forgive mistakes.
 7623=You have added another shadow in the Ehrenhalle. Your family proudly remembers you but you are lost in the annals of maritime war history.
 7624=Probably one of the most successful submarine commander ever, you become a respected Admiral in NATO navy. In the 21st century, Ubisoft uses your expertise and advice to create Silent Hunter III.
 7625=With the war over, you become a leader in the new German Navy. Often consulted by historians in the problems of u-boat warfare, you are one of the most famous figures associated with it.
@@ -2942,7 +2942,7 @@ MaxStrings=8000
 7629=As tough as the u-boats are, you have carried yours to the end of her fighting days. The crew is lucky to have made it home, but this also signals the end of your less than glorious career.
 7630=Be more aggressive! said the Onkel, and you have obeyed him to the letter. With your battered, scrapyard bound u-boat as proof of your performance, you know that a new assignment is waiting for you. You could opt out and help run the Ubootwaffe, but the struggle in the deep is far from over. Do you continue as a front line commander?
 7631=MESSAGE N/A: Unit retired & Good player performance.
-7632=As your submarine pulls into port you spot an officer waiting in the crowd. After greeting you warmly he gets straight to the point: your spectacular performance recommends you for the command of a new type u-boat. It’s a whole new beast though, so you can refuse and continue on your present command. Do you accept the new assignment and Continue?
+7632=As your submarine pulls into port you spot an officer waiting in the crowd. After greeting you warmly he gets straight to the point: your spectacular performance recommends you for the command of a new type u-boat. Itï¿½s a whole new beast though, so you can refuse and continue on your present command. Do you accept the new assignment and Continue?
 7633=MESSAGE N/A: Unit retired & Bad player performance.
 7634=MESSAGE N/A: Player receive new conning tower.
 
