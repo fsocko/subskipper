@@ -1,7 +1,7 @@
-package fps.subskipper.scafParser;
+package fps.subskipper.scafparser;
 
 
-import core.TgtShip;
+import fps.subskipper.core.Ship;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,22 +16,22 @@ import java.util.ArrayList;
 public class Ships {
 
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-    ArrayList<TgtShip> ships;
+    ArrayList<Ship> ships;
 
     @XmlElement(name = "ship")
-    public void setShips(ArrayList<TgtShip> ships) {
+    public void setShips(ArrayList<Ship> ships) {
         this.ships = ships;
     }
 
     //return this for array list of ships
-    public ArrayList<TgtShip> getShips() {
+    public ArrayList<Ship> getShips() {
         return ships;
     }
 
     //return a single ship at position i in ships ArrList
-    public core.TgtShip getShip(int i) {
-        ArrayList<TgtShip> multi = this.getShips();
-        TgtShip single = multi.get(i);
+    public Ship getShip(int i) {
+        ArrayList<Ship> multi = this.getShips();
+        Ship single = multi.get(i);
         return single;
     }
 
@@ -39,6 +39,5 @@ public class Ships {
     public String toString() {
         return "Ships [ships=" + ships + "]";
     }
-
 }
 

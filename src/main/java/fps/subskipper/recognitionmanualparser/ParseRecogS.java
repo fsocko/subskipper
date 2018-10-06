@@ -1,11 +1,12 @@
-package recogManualParser;
+package fps.subskipper.recognitionmanualparser;
 
 import com.x5.template.Chunk;
 import com.x5.template.Theme;
-import coreLogic.FileIO;
-import coreLogic.OutFormat;
-import coreLogic.TgtShip;
-import xmlParser.Ships;
+import fps.subskipper.core.FileIO;
+import fps.subskipper.core.OutFormat;
+import fps.subskipper.core.Ship;
+import fps.subskipper.scafparser.Ships;
+
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
 
 public class ParseRecogS {
@@ -68,7 +69,7 @@ public class ParseRecogS {
     }
 
 
-    private String shipRow(TgtShip record, int i, boolean imperial) {
+    private String shipRow(Ship record, int i, boolean imperial) {
 
         OutFormat f = new OutFormat();
         Theme theme = new Theme();
@@ -78,7 +79,7 @@ public class ParseRecogS {
             record.makeImperial();
         }
 
-        h.set("rowID", i); //was: h.set("rowID", record.getID());
+        h.set("rowID", i); //was: h.set("rowID", record.getId());
         /*Originally the rowID was the ID of the ship record.
          * If the records are sorted by Name, which is how I sorted
          * mine for my own use, the IDs would be all over the place.
@@ -92,11 +93,11 @@ public class ParseRecogS {
         h.set("draft", f.twoDP(record.getDraft()));
         h.set("length", f.twoDP(record.getLength()));
         h.set("height", f.twoDP(record.getMast()));
-        h.set("aspect", f.fourDP(record.getRefAspect()));
+        h.set("aspect", f.fourDP(record.getReferenceAspectRatio()));
         return h.toString();
     }
 
-    private String AOBRow(TgtShip record, int i) {
+    private String AOBRow(Ship record, int i) {
 
         OutFormat f = new OutFormat();
         Theme theme = new Theme();
@@ -118,9 +119,9 @@ public class ParseRecogS {
     }
 
     //function with an AOB as a parameter, for filling out AOB table.
-    private double aspectAtAOB(TgtShip record, int AOB) {
+    private double aspectAtAOB(Ship record, int AOB) {
 
-        double refAspect = record.getRefAspect();
+        double refAspect = record.getReferenceAspectRatio();
         double radAOB = Math.toRadians((double) AOB);
         double ratio = Math.sin(radAOB) * refAspect;
         return ratio;

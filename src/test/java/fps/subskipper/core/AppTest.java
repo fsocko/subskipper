@@ -59,7 +59,7 @@ public class MethodTest {
 	
 	public static void oKaneTest(){
 		
-		OKane test1 = new OKane();
+		OKaneSolutionCalculator test1 = new OKaneSolutionCalculator();
 		//constructs a torpedo. INPUTS: name, slow/TODO:med/fast speed (kn), rangeS, TODO: rangeMedium, rangeF (m)
 		Torpedo mk10 = new Torpedo("Mk. 10", 36, -1, 3200, -1);
 		Torpedo mk14 = new Torpedo("Mk. 14", 31, 46, 8200, 4100);

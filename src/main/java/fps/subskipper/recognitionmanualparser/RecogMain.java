@@ -1,6 +1,9 @@
-package recogManualParser;
+package fps.subskipper.recognitionmanualparser;
 
-import xmlParser.PrepShipData;
+
+import fps.subskipper.scafparser.PrepShipData;
+
+import java.io.IOException;
 
 public class RecogMain {
 
@@ -20,12 +23,17 @@ public class RecogMain {
         //long Imperial / Type Sort
         //recogL.writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLSTi.html", true);
 
-
         //short Euro
-        recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, false);
+        try {
+            recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, false);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //Short Imperial
-        recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true, false);
-
+        try {
+            recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true, false);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-
 }

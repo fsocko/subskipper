@@ -1,10 +1,10 @@
-package fps.subskipper.scafParser;
+package fps.subskipper.scafparser;
 
-
-import core.TgtShip;
+import fps.subskipper.core.Ship;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,7 +29,7 @@ public class PrepShipData {
      *
      * @return the ships
      */
-    public Ships getShips() {
+    public Ships getShips() throws IOException {
 
         ReadShipXML readShips = new ReadShipXML();
         Ships parsedShips = new Ships();
@@ -53,8 +53,8 @@ public class PrepShipData {
      * @return the ships
      */
 
-    private Ships FullDataCycle() {
-        WriteShipData();
+    private Ships FullDataCycle() throws IOException {
+        WriteShipDataToXml();
         ReadShipXML readShips = new ReadShipXML();
         Ships fcShips = new Ships();
         fcShips = readShips.readXML();
@@ -64,14 +64,23 @@ public class PrepShipData {
     /**
      * Write ship data -     //Writes SCAF to xml
      */
-    private void WriteShipData() {
+    private void WriteShipDataToXml(){
 
         //Look up and parse data from SCAF to XML file
         ReadSCAF scaf = new ReadSCAF();
         Ships runShips = new Ships();
         runShips.setShips(scaf.makeShips()); //we have a loaded Ships object
         WriteShipXML writeShips = new WriteShipXML();
-        writeShips.writeXML(runShips); //written to XML
+
+        try {
+            writeShips.writeXML(runShips); //written to XML
+        }
+        catch(Exception e){
+            logger.error(e.getMessage());
+        }
+
+
+
         logger.info("shipList.xml file parsed from SCAF.");
     }
 
@@ -83,7 +92,7 @@ public class PrepShipData {
      * @return the ship by ID
      */
     //Look up a ship by an ID
-    public TgtShip getShipByID(int shipID) {
+    public Ship getShipByID(int shipID) throws IOException {
         return getShipByID(shipID, getShips());
     }
 
@@ -94,29 +103,22 @@ public class PrepShipData {
      * @param shipsData the ships data
      * @return the ship by ID
      */
-    public TgtShip getShipByID(int shipID, Ships shipsData) {
+    public Ship getShipByID(int shipID, Ships shipsData) {
 
-        ArrayList<TgtShip> shipList = shipsData.getShips();
-        TgtShip idShip = new TgtShip();
+        ArrayList<Ship> shipList = shipsData.getShips();
+        Ship idShip = new Ship();
 
         for (int i = 0; i < shipList.size(); i++) {
-            if (shipList.get(i).getID() == shipID) {
+            if (shipList.get(i).getId() == shipID) {
                 idShip = shipList.get(i);
             }
         }
         return idShip;
     }
 
-    /**
-     * Prints the ships.
-     *
-     * @param printShips the print ships
-     */
-    //Prints contents of a Ships
     public void printShips(Ships printShips) {
-
-        for (int i = 0; i < printShips.getShips().size(); i++) {
-            logger.info(printShips.getShip(i).toString());
+        for (Ship ship : printShips.getShips()) {
+            logger.info(ship.toString());
         }
     }
 
@@ -128,9 +130,9 @@ public class PrepShipData {
      */
     //Sort Ships based on Type int; ascending
     public Ships sortShipsType(Ships shipRecords) {
-        ArrayList<TgtShip> allShips = shipRecords.getShips();
+        ArrayList<Ship> allShips = shipRecords.getShips();
         Ships sortedList = new Ships();
-        Collections.sort(allShips, TgtShip.sTypeCompD);
+        Collections.sort(allShips, Ship.sTypeComparatorDescending);
         sortedList.setShips(allShips);
         return sortedList;
     }
@@ -143,9 +145,9 @@ public class PrepShipData {
      */
     //Sort Ships based on Type int; ascending
     public Ships sortShipsName(Ships shipRecords) {
-        ArrayList<TgtShip> allShips = shipRecords.getShips();
+        ArrayList<Ship> allShips = shipRecords.getShips();
         Ships sortedList = new Ships();
-        Collections.sort(allShips, TgtShip.sNameCompD);
+        Collections.sort(allShips, Ship.sNameComparatorDescending);
         sortedList.setShips(allShips);
         return sortedList;
     }

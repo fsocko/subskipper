@@ -1,14 +1,10 @@
-package fps.subskipper.scafParser;
+package fps.subskipper.scafparser;
 
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
-import java.lang.invoke.MethodHandles;
 
 
 public class ReadTorpXML {

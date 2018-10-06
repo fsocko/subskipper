@@ -1,11 +1,13 @@
-package recogManualParser;
+package fps.subskipper.recognitionmanualparser;
+
 
 import com.x5.template.Chunk;
 import com.x5.template.Theme;
-import coreLogic.FileIO;
-import coreLogic.OutFormat;
-import coreLogic.TgtShip;
-import xmlParser.Ships;
+import fps.subskipper.core.FileIO;
+import fps.subskipper.core.OutFormat;
+import fps.subskipper.core.Ship;
+import fps.subskipper.scafparser.Ships;
+
 
 public class ParseRecogSAOBS {
 
@@ -44,7 +46,7 @@ public class ParseRecogSAOBS {
         writeHTML(htmlDoc, filename);
     }
 
-    private String shipRowHTML(TgtShip record, boolean imperial) {
+    private String shipRowHTML(Ship record, boolean imperial) {
 
         OutFormat f = new OutFormat();
         Theme theme = new Theme();
@@ -60,7 +62,7 @@ public class ParseRecogSAOBS {
         h.set("draft", f.twoDP(record.getDraft()));
         h.set("length", f.twoDP(record.getLength()));
         h.set("height", f.twoDP(record.getMast()));
-        h.set("aspect", f.fourDP(record.getRefAspect()));
+        h.set("aspect", f.fourDP(record.getReferenceAspectRatio()));
         return h.toString();
     }
 

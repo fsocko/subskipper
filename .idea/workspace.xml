@@ -2,918 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a72cad-a6c7-45c8-9f5f-79d7bea9e6d8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fps/subskipper/core/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubSkipper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fps.subskipper.core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Menu/Loading/Intro_logo_bkg.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Menu/menu.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Roster/Canadian/Sea/NDDWalleye.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Roster/Names.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/AuxGunboat/AuxGunboat.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/AuxGunboat/AuxGunboat_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/AuxSubchaser/AuxSubchaser.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/AuxSubchaser/AuxSubchaser_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/COKaibokan/COKaibokan.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/COKaibokan/COKaibokan_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/COKaibokan2/COKaibokan2.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/COKaibokan2/COKaibokan2_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/CargoDef.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPFish01/JPFish01.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPFish01/JPFish01_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPFish02/JPFish02.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPFish02/JPFish02_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPGunBoat01/JPGunBoat01.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPGunBoat01/JPGunBoat01_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPGunBoat02/JPGunBoat02.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/JPGunBoat02/JPGunBoat02_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NAMC/NAMC.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NAMC/NAMC_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NATF/NATF.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NATF/NATF_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Colorado/NBB_Colorado.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Colorado/NBB_Colorado_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Fuso/NBB_FUSO_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Fuso/NBB_Fuso.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Iowa/NBB_Iowa.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Iowa/NBB_Iowa_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Ise/NBB_Ise.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Ise/NBB_Ise_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Ise2/NBB_Ise2.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Ise2/NBB_Ise2_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_KGeorgeV/NBB_KGeorgeV.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_KGeorgeV/NBB_KGeorgeV_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Kongo/NBB_Kongo.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Kongo/NBB_Kongo_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Nevada/NBB_Nevada.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_New_Mexico/NBB_NEW_MEXICO_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_New_Mexico/NBB_New_Mexico.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_North_Carolina/NBB_North_Carolina.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_North_Carolina/NBB_North_Carolina_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Pennsylvania/NBB_Pennsylvania.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Tennessee/NBB_Tennessee.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_TennesseeEarly/NBB_TennesseeEarly.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_West_Virginia/NBB_West_Virginia.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Yamato/NBB_Yamato.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NBB_Yamato/NBB_Yamato_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Baltimore/NCA_Baltimore.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Baltimore/NCA_Baltimore_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Deutschland/NCA_Deutschland.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Deutschland/NCA_Deutschland_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Furutaka/NCA_Furutaka.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Furutaka/NCA_Furutaka_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Kent/NCA_Kent.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Kent/NCA_Kent_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Maya/NCA_Maya.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Maya/NCA_Maya_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Mogami/NCA_Mogami.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Mogami/NCA_Mogami_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Northampton/NCA_Northampton.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Northampton/NCA_Northampton_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Takao/NCA_Takao.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCA_Takao/NCA_Takao_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Agano/NCL_Agano.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Agano/NCL_Agano_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Brooklyn/NCL_Brooklyn.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Brooklyn/NCL_Brooklyn_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Cleveland/NCL_Cleveland.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Cleveland/NCL_Cleveland_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Dido/NCL_Dido.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Dido/NCL_Dido_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Fiji/NCL_Fiji.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Fiji/NCL_Fiji_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Kuma/NCL_Kuma.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Kuma/NCL_Kuma_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Naka/NCL_Naka.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Naka/NCL_Naka_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Omaha/NCL_Omaha.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCL_Omaha/NCL_Omaha_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCO_Flower/NCO_Flower.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCO_Flower/NCO_Flower_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Akitsu/NCVE_Akitsu.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Akitsu/NCVE_Akitsu_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Attacker/NCVE_Attacker.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Attacker/NCVE_Attacker_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Bogue/NCVE_Bogue.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Bogue/NCVE_Bogue_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Casablanca/NCVE_Casablanca.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Casablanca/NCVE_Casablanca_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Taiyo/NCVE_Taiyo.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVE_Taiyo/NCVE_Taiyo_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVS_Chitose/NCVS_Chitose.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCVS_Chitose/NCVS_Chitose_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_Hiryu/NCV_Hiryu.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_Hiryu/NCV_Hiryu_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_Shokaku/NCV_Shokaku.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_Shokaku/NCV_Shokaku_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_Taiho/NCV_Taiho.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_Taiho/NCV_Taiho_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_USEarlyWar/NCV_USEarlyWar.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NCV_USEarlyWar/NCV_USEarlyWar_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Akizuki/NDD_Akizuki.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Akizuki/NDD_Akizuki_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Asashio/NDD_Asashio.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Asashio/NDD_Asashio_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Clemson/NDD_Clemson.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Clemson/NDD_Clemson_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Fletcher/NDD_Fletcher.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Fletcher/NDD_Fletcher_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Fubuki/NDD_Fubuki.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Fubuki/NDD_Fubuki_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_J/NDD_J.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_J/NDD_J_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Minekaze/NDD_Minekaze.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Minekaze/NDD_Minekaze_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Mutsuki/NDD_Mutsuki.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Mutsuki/NDD_Mutsuki_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Shiratsuyu/NDD_Shiratsuyu.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Shiratsuyu/NDD_Shiratsuyu_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Somers/NDD_Somers.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Somers/NDD_Somers_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Tribal/NDD_Tribal.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Tribal/NDD_Tribal_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_V&amp;W/NDD_V&amp;W.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_V&amp;W/NDD_V&amp;W_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye.eqp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye.sim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye.sns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye.zon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Walleye/NDD_Walleye_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Yugumo/NDD_Yugumo.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_Yugumo/NDD_Yugumo_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_ZClass/NDD_ZClass.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDD_ZClass/NDD_ZClass_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Akikaze/NDE_Akikaze.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Akikaze/NDE_Akikaze_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Buckley/NDE_Buckley.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Buckley/NDE_Buckley_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Evarts/NDE_Evarts.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Evarts/NDE_Evarts_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_JCB/NDE_JCB.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_JCB/NDE_JCB_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Kisaragi/NDE_Kisaragi.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Kisaragi/NDE_Kisaragi_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Momi/NDE_Momi.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Momi/NDE_Momi_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_PB102/NDE_PB102.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_PB102/NDE_PB102_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Parker/NDE_Parker.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_Parker/NDE_Parker_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_ParkerII/NDE_ParkerII.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_ParkerII/NDE_ParkerII_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_River/NDE_River.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NDE_River/NDE_River_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NF_boat/NF_Boat_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NF_boat/NF_boat.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NFishingTrawler/NFishingTrawler.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NFishingTrawler/NFishingTrawler_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKLCS_Nagara/NKLCS_Nagara.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKLCS_Nagara/NKLCS_Nagara_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKLSS_Hakusika/NKLSS_Hakusika.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKLSS_Hakusika/NKLSS_Hakusika_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMCS_Akita/NKMCS_Akita.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMCS_Akita/NKMCS_Akita_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMCS_Heito/NKMCS_Heito.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMCS_Heito/NKMCS_Heito_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMCS_Zinbu/NKMCS_Zinbu.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMCS_Zinbu/NKMCS_Zinbu_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_Biyo/NKMSS_Biyo.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_Biyo/NKMSS_Biyo_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_HogIsland/NKMSS_HogIsland.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_HogIsland/NKMSS_HogIsland_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_HogIslandJPN/NKMSS_HogIslandJPN.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_HogIslandJPN/NKMSS_HogIslandJPN_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_Kinposan/NKMSS_Kinposan.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_Kinposan/NKMSS_Kinposan_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_Ryuun/NKMSS_Ryuun.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_Ryuun/NKMSS_Ryuun_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_WarMelody/NKMSS_WarMelody.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKMSS_WarMelody/NKMSS_WarMelody_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKPMCS_Express/NKPMCS_Express.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKPMCS_Express/NKPMCS_Express_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSCS_Taihosan/NKSCS_Taihosan.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSCS_Taihosan/NKSCS_Taihosan_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSQ_/NKSQ_.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSQ_/NKSQ__sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSSS_Kasagisan/NKSSS_Kasagisan.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSSS_Kasagisan/NKSSS_Kasagisan_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSs_/NKSs_.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NKSs_/NKSs__sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NLL/NLL.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NLL/NLL_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NLST/NLST.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NLST/NLST_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NML_Okinoshima/NML_Okinoshima.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NML_Okinoshima/NML_Okinoshima_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NMS_No13/NMS_NO13.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NMS_No13/NMS_NO13_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOL_Nippon/NOL_Nippon.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOL_Nippon/NOL_Nippon_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOL_Schliemann/NOL_Schliemann.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOL_Schliemann/NOL_Schliemann_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOM_Buzyun/NOM_Buzyun.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOM_Buzyun/NOM_Buzyun_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOM_Paula/NOM_Paula.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOM_Paula/NOM_Paula_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOS_Haruna/NOS_Haruna.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOS_Haruna/NOS_Haruna_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOTMs_/NOTMs_.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NOTMs_/NOTMs__sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPB_Wakatake/NPB_Wakatake.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPB_Wakatake/NPB_Wakatake_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPC_Black_Swan/NPC_Black_Swan.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPC_Black_Swan/NPC_Black_Swan_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPC_Black_Swan_Elite/NPC_Black_Swan_Elite.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPC_Black_Swan_Elite/NPC_Black_Swan_Elite_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPL_Conte_Verde/NPL_Conte_Verde.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPL_Conte_Verde/NPL_Conte_Verde_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPL_Horai/NPL_Horai.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPL_Horai/NPL_Horai_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPL_Kiturin/NPL_Kiturin.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPL_Kiturin/NPL_Kiturin_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPS_Tyohei/NPS_Tyohei.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPS_Tyohei/NPS_Tyohei_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPT_Br/NPT_Br.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPT_Br/NPT_Br_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPT_Schnellboat/NPT_Schnellboat.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NPT_Schnellboat/NPT_Schnellboat_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSC_SubChaser/NSC_Subchaser.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSC_SubChaser/NSC_Subchaser_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSampan01/NSampan01.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSampan01/NSampan01_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSampan02/NSampan02.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSampan02/NSampan02_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSampan03/NSampan03.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NSampan03/NSampan03_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NTR/NTR.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NTR/NTR_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NTRW_/NTRW_.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NTRW_/NTRW__sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NVV/NVV.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/NVV/NVV_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/Sub_Depot_Ship/Sub_Depot_Ship.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/Data/Sea/Sub_Depot_Ship/Sub_Depot_Ship_sil.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/SCAF for TMO 2.0 README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SCAF for TMO_2/SCAF for TMO 2.0 Readme.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipList.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/F16_Panel Font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/SubSkipperDoc.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/20160629_173558.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/20160629_173605.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/20160629_173645.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/20160629_173755.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/20160629_173810.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/metal.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/screw.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Tex/screwsS.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/figures/cmap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/figures/knotTime.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/F16/F16_Panel Font.TTF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Impact-Label-fontfacekit.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/MS33558FONT.ZIP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/label/Impact_Label_Reversed-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/label/Impact_Label_Reversed-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/label/Impact_Label_Reversed-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/label/Impact_Label_Reversed-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/$_12.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/Flag_of_Edward_England.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/control-panel-in-ahmedabad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/int texture quality.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/panel-preview (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/panel-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/screw2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/screws.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gfx/steel7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/20171016_AttackDisk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/AngleSolver.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/AspectAOB.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/FileIO.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/MethodTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/Nomo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/OKane.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/OutFormat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/Ship.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/StopWatch.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/Torpedo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/UnitConversions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/AngleSolver.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/AspectAOB.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/FileIO.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/MethodTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/Nomo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/OKane.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/OutFormat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/Ship.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/StopWatch.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/Torpedo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/class-use/UnitConversions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/coreLogic/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-13.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-14.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-15.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-16.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-17.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-18.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index-files/index-9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/overview-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/overview-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/ParseRecogL.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/ParseRecogS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/ParseRecogSAOBS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/RecogMain.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/class-use/ParseRecogL.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/class-use/ParseRecogS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/class-use/ParseRecogSAOBS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/class-use/RecogMain.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/recogManualParser/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/PrepShipData.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/ReadSCAF.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/ReadShipXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/ReadTorpXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/Ships.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/Torpedoes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/WriteShipXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/WriteTorpXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/PrepShipData.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/ReadSCAF.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/ReadShipXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/ReadTorpXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/Ships.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/Torpedoes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/WriteShipXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/class-use/WriteTorpXML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javaDoc/xmlParser/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/AuxGunboat_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/AuxSubchaser_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/COKaibokan2_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/COKaibokan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/JPFish01_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/JPFish02_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/JPGunBoat01_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/JPGunBoat02_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NAMC_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NATF_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_Colorado_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_FUSO_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_Iowa_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_Ise2_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_Ise_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_KGeorgeV_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_Kongo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_NEW_MEXICO_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_North_Carolina_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NBB_Yamato_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Baltimore_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Deutschland_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Furutaka_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Kent_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Maya_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Mogami_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Northampton_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCA_Takao_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Agano_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Brooklyn_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Cleveland_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Dido_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Fiji_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Kuma_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Naka_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCL_Omaha_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCO_Flower_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCVE_Akitsu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCVE_Attacker_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCVE_Bogue_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCVE_Casablanca_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCVE_Taiyo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCVS_Chitose_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCV_Hiryu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCV_Shokaku_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCV_Taiho_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NCV_USEarlyWar_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Akizuki_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Asashio_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Clemson_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Fletcher_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Fubuki_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_J_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Minekaze_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Mutsuki_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Shiratsuyu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Somers_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Tribal_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_V&amp;W_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_Yugumo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDD_ZClass_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_Akikaze_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_Buckley_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_Evarts_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_JCB_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_Kisaragi_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_Momi_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_PB102_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_ParkerII_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_Parker_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NDE_River_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NF_Boat_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NFishingTrawler_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKLCS_Nagara_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKLSS_Hakusika_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMCS_Akita_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMCS_Heito_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMCS_Zinbu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMSS_Biyo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMSS_HogIslandJPN_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMSS_HogIsland_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMSS_Kinposan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMSS_Ryuun_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKMSS_WarMelody_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKPMCS_Express_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKSCS_Taihosan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKSQ__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKSSS_Kasagisan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NKSs__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NLL_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NLST_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NML_Okinoshima_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NMS_NO13_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NOL_Nippon_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NOL_Schliemann_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NOM_Buzyun_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NOM_Paula_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NOS_Haruna_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NOTMs__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPB_Wakatake_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPC_Black_Swan_Elite_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPC_Black_Swan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPL_Conte_Verde_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPL_Horai_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPL_Kiturin_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPS_Tyohei_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPT_Br_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NPT_Schnellboat_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NSC_Subchaser_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NSampan01_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NSampan02_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NSampan03_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NTRW__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NTR_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/NVV_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/RecManBkgr.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/Sub_Depot_Ship_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/figures/noImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/outOLD.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/brownbg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogL.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogLSNi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogLSNm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogLSTi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogLSTm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogS.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogSi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogHTML/recogSm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogLatex/recogSLati.aux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogLatex/recogSLati.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogLatex/recogSLati.synctex.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogLatex/recogSLati.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogLatex/recogSLatm.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recog/recogLatex/recogSLatm.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/recogManual.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/references.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/.aux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/Charts/Fixed wire.speed at ship lengths.ods" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/Charts/SpeedConversionChart.ods" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/ETO/KnotToKM.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/ETO/SubSkipperDocETO.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/ETO/SubSkipperDocETO.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/ETO/SubSkipperDocETO.tex.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/ETO/recogSLatm_docsMod.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/KnotToKM.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/KnotToKM.tex.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/OD453 Submarine Attack Course Finder Manual.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/PAC/KnotToKM.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/PAC/SubSkipperDoc.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/PAC/recogSLatm_docsMod.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipper.programDoc.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperDoc.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperDoc.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperDoc.tex.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Angriffscheibe_Handbuch.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/CaptnscruvysSh4HighRealismTutorial.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Contact Approach Attack.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/AltConvoy-CC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/AltConvoy-DD.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/AltConvoy.GIF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/Arctic.GIF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/Atoconvoymap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/CCCP_Coastal Convoys.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/CarbConvoy-K.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/IO_Intel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/blacksea.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/kmlant.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/mediterr.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/noratlant.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/northenteat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/siberian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/OM_Intel_files/waterengland.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/ETO-OpsMonsun Docs/operation_monsun.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/INSRM - 3025c.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/IndexCards/DickOKanetargeting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/IndexCards/JohnPCromwelltargeting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/IndexCards/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/IndexCards/VectorAnalysistargeting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/IndexCards/platexvi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/InternetSources.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maneuvering board metric.7z" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maneuvering board metric.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Manuals.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maritime IsWas/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maritime IsWas/attackfinder-bw.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maritime IsWas/attackfinder-color.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maritime IsWas/iswas-1.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maritime IsWas/iswas-2.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maritime IsWas/iswas-3.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Maritime IsWas/iswas-sample.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/OD453 Submarine Attack Course Finder Manual.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/OKane90_FiringAngles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/Real Fleet Boat 1.52 User Manual.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/SH4 - References.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/SH4 assets/PeriscopeDialsRight_imperial.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/SH4 assets/PeriscopeDialsRight_metric.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/SH4 assets/PeriscopeDials_imperial.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/SH4 assets/PeriscopeDials_metric.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/TMO_Manual.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-Jagd documentation/Angriffscheibe_Handbuch.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-Jagd documentation/No_TDC_Tutorial_for__S-Bos.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-Jagd documentation/Passive sonar approach using sliderules and ISWAS.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-Jagd documentation/U-jagd tools mod 1.3 manual.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-Jagd documentation/U-jagd tools mod 1.3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-Jagd documentation/installing U-jagd chrono 75m scale.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-Jagd.7z" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/Bkgr.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/Kursrad.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/Peilungrad.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/Reflex.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/U-jagd_chrono.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/U-jagd_chrono75m.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/Vorhalt.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/attackdiskindicator.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/circularsliderule.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/entfernrad1-3x4.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/entfernrad1-3x6.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/kmcentreknob.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/lagerad.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/optischelange.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/png/Kursrad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/png/Peilungrad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/png/Vorhalt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/png/attackdiskindicator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/png/circularsliderule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/png/kmcentreknob.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/png/lage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/sliderulepeilungwheel.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/sliderulezeitrad.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/yellowrangescale.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/zikuwibasisrad.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/U-jagd/zikuwirad.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/UBoot telemeter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/Clean/attackfinder-bw-1.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/Clean/attackfinder-bw-2.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/Clean/attackfinder-bw-3.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/Clean/attackfinder-bw-4.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/attackfinder-bw-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/attackfinder-bw-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/attackfinder-bw-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/attackfinder-bw/attackfinder-bw-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/Kursrad.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/Peilungrad.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/Vorhalt.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/attackdiskindicator.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/cleaned/base.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/cleaned/d2.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/cleaned/d3.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/cleaned/print/print0.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/bwAttackDisk/def.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/isWasScurvy/AOB Calculator Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/isWasScurvy/AOB Calculator Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/isWasScurvy/AOB Calculator Part 3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/isWasScurvy/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/mobo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/mobo.metric.wb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/mobo.metric.wb.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/sh4-reticle-data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/the_four_bearings_method_v2, Kuikueg.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/SubSkipperSrc/whizwheel_plan.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/[.aux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/CMapETO.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/ETOFlags.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/OKaneValues.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/SpreadAtRange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/SpreadAtRangeBW.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/TMO_Manual.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/cmapPac.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/fixedWire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/moBo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/nomo-imperial.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/nomo-metric.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/figures/speedConversion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/g.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/knotToKM.aux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/programDocDraft.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/recogSLatm_docsMod.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/recogSLatm_docsMod.tex.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/aceofdeep.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/bilgerat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/collapse_thead.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/dealy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/forum_header_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/goingdown.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/grey_wolf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/icon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/icon_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/icon_wink.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/img00295201110102202.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/index.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/intercept_20070801.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/ironclads2_bunner4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/lieutenant.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/logo2013f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/menu_open.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/mobo_100x75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/mode_hybrid.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/mode_linear.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/mode_threaded.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/navbits_finallink_ltr.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/navbits_start.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/nippon_sailor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/nub.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/od.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture01kx6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture02tc1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture03if3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture04nx3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture05ol6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture06qx9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture07gk9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/picture08dx3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/post_old.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/printer.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/quote.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/reply.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/sonar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/thumbsup.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/user_offline.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/viewpost.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527135704/xo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527140102/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527140102/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527140102/index.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/historical_docs/trigs/data/20170527140102/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/chunk-templates-3.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/SubSkipper.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/AuxGunboat_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/AuxSubchaser_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/COKaibokan2_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/COKaibokan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/JPFish01_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/JPFish02_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/JPGunBoat01_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/JPGunBoat02_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NAMC_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NATF_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_Colorado_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_FUSO_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_Iowa_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_Ise2_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_Ise_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_KGeorgeV_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_Kongo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_NEW_MEXICO_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_North_Carolina_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NBB_Yamato_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Baltimore_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Deutschland_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Furutaka_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Kent_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Maya_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Mogami_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Northampton_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCA_Takao_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Agano_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Brooklyn_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Cleveland_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Dido_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Fiji_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Kuma_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Naka_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCL_Omaha_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCO_Flower_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCVE_Akitsu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCVE_Attacker_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCVE_Bogue_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCVE_Casablanca_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCVE_Taiyo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCVS_Chitose_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCV_Hiryu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCV_Shokaku_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCV_Taiho_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NCV_USEarlyWar_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Akizuki_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Asashio_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Clemson_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Fletcher_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Fubuki_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_J_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Minekaze_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Mutsuki_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Shiratsuyu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Somers_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Tribal_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_V&amp;W_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_Yugumo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDD_ZClass_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_Akikaze_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_Buckley_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_Evarts_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_JCB_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_Kisaragi_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_Momi_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_PB102_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_ParkerII_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_Parker_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NDE_River_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NF_Boat_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NFishingTrawler_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKLCS_Nagara_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKLSS_Hakusika_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMCS_Akita_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMCS_Heito_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMCS_Zinbu_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMSS_Biyo_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMSS_HogIslandJPN_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMSS_HogIsland_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMSS_Kinposan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMSS_Ryuun_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKMSS_WarMelody_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKPMCS_Express_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKSCS_Taihosan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKSQ__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKSSS_Kasagisan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NKSs__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NLL_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NLST_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NML_Okinoshima_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NMS_NO13_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NOL_Nippon_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NOL_Schliemann_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NOM_Buzyun_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NOM_Paula_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NOS_Haruna_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NOTMs__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPB_Wakatake_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPC_Black_Swan_Elite_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPC_Black_Swan_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPL_Conte_Verde_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPL_Horai_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPL_Kiturin_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPS_Tyohei_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPT_Br_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NPT_Schnellboat_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NSC_Subchaser_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NSampan01_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NSampan02_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NSampan03_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NTRW__sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NTR_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/NVV_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/RecManBkgr.dds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/Sub_Depot_Ship_sil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/figures/noImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/outOLD.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/brownbg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogL.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogLSNi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogLSNm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogLSTi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogLSTm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogS.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogSi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogHTML/recogSm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogLatex/recogSLati.aux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogLatex/recogSLati.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogLatex/recogSLati.synctex.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogLatex/recogSLati.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogLatex/recogSLatm.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recog/recogLatex/recogSLatm.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/AngleComp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/AspectAOB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/FileIO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/Nomo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/OKane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/OutFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/OwnShip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/StopWatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/TgtShip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreLogic/Torpedo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recogManualParser/ParseRecogL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recogManualParser/ParseRecogS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recogManualParser/ParseRecogSAOBS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recogManualParser/RecogMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/PrepShipData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/ReadSCAF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/ReadShipXML.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/ReadTorpXML.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/Ships.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/Torpedoes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/WriteShipXML.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xmlParser/WriteTorpXML.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SubSkipper.pc-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/AspectAOB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/FileIO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/Nomo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/OKane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/OutFormat$UnitConversions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/OutFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/StopWatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreLogic/Torpedo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recogManualParser/ParseRecogL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recogManualParser/ParseRecogS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recogManualParser/ParseRecogSAOBS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recogManualParser/RecogMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/PrepShipData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/ReadSCAF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/ReadShipXML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/ReadTorpXML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/Ships.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/Torpedoes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/WriteShipXML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xmlParser/WriteTorpXML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/AngleComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/AngleComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/AspectAOB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/AspectAOB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/FileIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Nomo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Nomo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OKane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OKaneSolutionCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OwnShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OwnShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/TgtShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Torpedo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Torpedo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionManualParser/ParseRecogL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionManualParser/ParseRecogS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionManualParser/ParseRecogSAOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogSAOBS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionManualParser/RecogMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/IScafParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/IScafParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/PrepShipData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/PrepShipData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadSCAF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadSCAF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadShipXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadShipXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadTorpXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadTorpXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Ships.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Ships.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Torpedoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Torpedoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteShipXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/WriteShipXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteTorpXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/WriteTorpXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fps/subskipper/core/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fps/subskipper/core/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -923,13 +38,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ReadShipXML.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadShipXML.java">
+      <file leaf-file-name="ParseRecogSAOBS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogSAOBS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="163">
+              <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -937,29 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadTorpXML.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadTorpXML.java">
+      <file leaf-file-name="RecogMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IScafParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/IScafParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrepShipData.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/PrepShipData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="144" column="26" lean-forward="true" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
+            <state relative-caret-position="-225">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -967,46 +67,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OwnShip.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/OwnShip.java">
+      <file leaf-file-name="Torpedo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Torpedo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="758">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ships.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Ships.java">
+      <file leaf-file-name="StopWatch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/StopWatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-197">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="265">
+              <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ship.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="200" column="75" selection-start-line="200" selection-start-column="75" selection-end-line="200" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#6755#6756#0" expanded="true" />
+                <element signature="e#6784#6785#0" expanded="true" />
+                <element signature="e#6828#6829#0" expanded="true" />
+                <element signature="e#6864#6865#0" expanded="true" />
+                <element signature="e#6897#6898#0" expanded="true" />
+                <element signature="e#6926#6927#0" expanded="true" />
+                <element signature="e#6970#6971#0" expanded="true" />
+                <element signature="e#7006#7007#0" expanded="true" />
+                <element signature="e#7038#7039#0" expanded="true" />
+                <element signature="e#7066#7067#0" expanded="true" />
+                <element signature="e#7108#7109#0" expanded="true" />
+                <element signature="e#7142#7143#0" expanded="true" />
+                <element signature="e#7179#7180#0" expanded="true" />
+                <element signature="e#7212#7213#0" expanded="true" />
+                <element signature="e#7264#7265#0" expanded="true" />
+                <element signature="e#7308#7309#0" expanded="true" />
+                <element signature="e#7338#7339#0" expanded="true" />
+                <element signature="e#7364#7365#0" expanded="true" />
+                <element signature="e#7402#7403#0" expanded="true" />
+                <element signature="e#7432#7433#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WriteShipXML.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteShipXML.java">
+      <file leaf-file-name="PrepShipData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/PrepShipData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileIO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/FileIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileIO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/FileIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WriteTorpXML.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteTorpXML.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -1014,17 +162,11 @@
       <file leaf-file-name="OutFormat.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="170">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1034,6 +176,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -1058,19 +201,43 @@
         <option value="$PROJECT_DIR$/src/coreLogic/AspectAOB.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Torpedoes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/TgtShip.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OwnShip.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadSCAF.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Ships.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/AspectAOB.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/IScafParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadShipXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadTorpXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteShipXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteTorpXML.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/PrepShipData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Ships.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionManualParser/ParseRecogS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/TgtShip.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/StopWatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/AngleComp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Nomo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OwnShip.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Ships.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Torpedoes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogSAOBS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/IScafParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadSCAF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fps/subskipper/core/OutFormatTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Torpedo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/AspectAOB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OKane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OKaneSolutionCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadShipXML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/WriteShipXML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/FileIO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/PrepShipData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/util/FileIO.java" />
       </list>
     </option>
   </component>
@@ -1135,7 +302,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="subskipper" type="462c0819:PsiDirectoryNode" />
-              <item name="scafParser" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+              <item name="recognitionmanualparser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+              <item name="scafparser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
@@ -1168,10 +362,23 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="org.sonarlint.intellij.config.project.SonarLintProjectConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fps.subskipper.core" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fps.subskipper.util" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1209,7 +416,7 @@
       <module name="fps.subskipper.core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fps.subskipper.core.*" />
+          <option name="PATTERN" value="fps.subskipper.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1270,6 +477,9 @@
     <history-entry file="fps_subskipper_core_in_fps_subskipper_core - 2018.10.06 at 11h 46m 47s.xml">
       <configuration name="fps.subskipper.core in fps.subskipper.core" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="fps_subskipper_core_in_fps_subskipper_core - 2018.10.06 at 12h 31m 44s.xml">
+      <configuration name="fps.subskipper.core in fps.subskipper.core" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1277,13 +487,13 @@
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.2973396" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.2973396" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286385" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286385" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -1291,7 +501,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="right" id="LuaJ" />
       <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286385" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.25039124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -1439,27 +649,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Torpedoes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/WriteTorpXML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/TgtShip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadSCAF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="272">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
-            <element signature="e#8721#8730#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/AngleComp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1470,10 +673,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/AspectAOB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Nomo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Torpedoes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/core/OutFormatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Ships.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1482,82 +709,215 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/OwnShip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/IScafParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/AspectAOB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadShipXML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="234">
+          <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadTorpXML.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Ships.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteShipXML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/WriteTorpXML.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadSCAF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadTorpXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/OKaneSolutionCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/WriteShipXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="66" lean-forward="true" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadShipXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/IScafParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/IrecognitionManualParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogSAOBS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Torpedo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/StopWatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+        <state relative-caret-position="170">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/PrepShipData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="144" column="26" lean-forward="true" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
+        <state relative-caret-position="374">
+          <caret line="200" column="75" selection-start-line="200" selection-start-column="75" selection-end-line="200" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6755#6756#0" expanded="true" />
+            <element signature="e#6784#6785#0" expanded="true" />
+            <element signature="e#6828#6829#0" expanded="true" />
+            <element signature="e#6864#6865#0" expanded="true" />
+            <element signature="e#6897#6898#0" expanded="true" />
+            <element signature="e#6926#6927#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#7006#7007#0" expanded="true" />
+            <element signature="e#7038#7039#0" expanded="true" />
+            <element signature="e#7066#7067#0" expanded="true" />
+            <element signature="e#7108#7109#0" expanded="true" />
+            <element signature="e#7142#7143#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="e#7264#7265#0" expanded="true" />
+            <element signature="e#7308#7309#0" expanded="true" />
+            <element signature="e#7338#7339#0" expanded="true" />
+            <element signature="e#7364#7365#0" expanded="true" />
+            <element signature="e#7402#7403#0" expanded="true" />
+            <element signature="e#7432#7433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/FileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/PrepShipData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/FileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

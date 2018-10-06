@@ -2,8 +2,6 @@ package fps.subskipper.core;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import core.TgtShip;
-import java.lang.invoke.MethodHandles;
 
 /**
  * @author fps
@@ -15,7 +13,7 @@ import java.lang.invoke.MethodHandles;
  */
 public class AspectAOB {
 
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
+    final static Logger logger = LogManager.getLogger(AspectAOB.class);
 
     /**
      * Wrapper for calculateAOB, calculates AOB bearing with AOB estimate
@@ -29,7 +27,7 @@ public class AspectAOB {
      * @param lenObs
      * @return
      */
-    public double aspectAOB(int estAOB, TgtShip target, double mastObs, double lenObs) {
+    public double aspectAOB(int estAOB, Ship target, double mastObs, double lenObs) {
         double obsAR = 0;
         // Check if it's a number. It's possible that NaN will be input by user.
         if (!Double.isNaN((lenObs / mastObs))) {
@@ -57,19 +55,19 @@ public class AspectAOB {
      * Calculates the AOB, does not account for front/back or port/stbd
      *
      * @param target
-     * @param obsAR
+     * @param observedAspectRatio
      * @return
      */
-    private double calculateAOB(TgtShip target, double obsAR) {
+    private double calculateAOB(Ship target, double observedAspectRatio) {
         // Reference Aspect Ratio, from Ship data
-        double refAR = target.getRefAspect();
-        double AOB = Math.toDegrees(Math.asin(obsAR / refAR));
+        double referenceAspectRatio = target.getReferenceAspectRatio();
+        double AOB = Math.toDegrees(Math.asin(observedAspectRatio / referenceAspectRatio));
         if (!Double.isNaN(AOB)) {
             return AOB;
-        } else {
+        }
+        else {
             return -2;
         }
-
     }
 
 }

@@ -1,11 +1,11 @@
-package recogManualParser;
+package fps.subskipper.recognitionmanualparser;
 
 import com.x5.template.Chunk;
 import com.x5.template.Theme;
-import coreLogic.FileIO;
-import coreLogic.OutFormat;
-import coreLogic.TgtShip;
-import xmlParser.Ships;
+import fps.subskipper.core.FileIO;
+import fps.subskipper.core.OutFormat;
+import fps.subskipper.core.Ship;
+import fps.subskipper.scafparser.Ships;
 
 //Parse data from XML parser which parses SCAF data, into long form HTML recognition manual.
 
@@ -48,7 +48,7 @@ public class ParseRecogL {
         return h.toString();
     }
 
-    private String HTMLShipL(TgtShip record, boolean imperial) {
+    private String HTMLShipL(Ship record, boolean imperial) {
 
         String unit = "m";
         if (imperial) {
@@ -68,7 +68,7 @@ public class ParseRecogL {
         h.set("height", f.addUnit(record.getMast(), unit));
         h.set("draft", f.addUnit(record.getDraft(), unit));
         h.set("disp", record.getDisp() + " GRT");
-        h.set("aspect", f.fourDP(record.getRefAspect()));
+        h.set("aspect", f.fourDP(record.getReferenceAspectRatio()));
 
         //Convert image path to filename
         String pngPath = record.getImagePath();

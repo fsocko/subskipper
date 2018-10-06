@@ -1,174 +1,88 @@
-package coreLogic;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.lang.invoke.MethodHandles;
+package fps.subskipper.core;
 
 // TODO: Auto-generated Javadoc
 
-/**
- * The Class Torpedo.
- */
 public class Torpedo {
 
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-
-    /**
-     * The id.
-     */
-    private int ID;
-
-    /**
-     * The name.
-     */
+    private int Id;
     private String name;
-
-    /**
-     * The speed Slow.
-     */
-    private double speedS;
-
-    /**
-     * The speed Medium.
-     */
-    private double speedM;
-
-    /**
-     * The speed Fast.
-     */
-    private double speedF; // fast speed
-
-    /**
-     * The range for a slow torpedo setting.
-     */
+    private double speedSlow;
+    private double speedMedium;
+    private double speedFast;
     private double rangeS;
-
-    /**
-     * The range for a Med torpedo setting
-     */
-    private double rangeM;
-
-    /**
-     * The range for a fast torpedo setting
-     */
-    private double rangeF;
+    private double rangeMedium;
+    private double rangeFast;
 
     /**
      * The impact Time for this solution / torpedo:
-     * set by Stopwatch, so mostlikely nano seconds. TODO:.
+     * set by Stopwatch, so mostlikely nano seconds.
      */
-    private double impactT;
+    private double impactTime;
 
     // TODO: location:
     // bearing
     // distance
     // time away
 
-    // TODO: get speed as L/M/H, determine speed value based on torpedo type and
-    // its properties.
+    // TODO: get speed as L/M/H, determine speed value based on torpedo type and its properties.
+    //
 
     /**
      * constructs a torpedo.
      *
      * @param name   torp Name
-     * @param speedS slow speed
-     * @param speedF fast speed
+     * @param speedSlow slow speed
+     * @param speedFast fast speed
      * @param speedM torp range, med
      * @param rangeS torp range, slow.
-     * @param rangeF torp range, fast.
+     * @param rangeFast torp range, fast.
      */
 
     // FIXME: add location data
-    public Torpedo(String name, double speedS, double speedF, double speedM, double rangeS, double rangeF) {
-        this.ID = 001;
+    public Torpedo(String name, double speedSlow, double speedFast, double speedM, double rangeS, double rangeFast) {
+        this.Id = 001;
         this.name = name;
-        this.speedS = speedS;
-        this.speedF = speedF;
+        this.speedSlow = speedSlow;
+        this.speedFast = speedFast;
         this.rangeS = rangeS;
-        this.rangeF = rangeF;
-        this.impactT = 0;
+        this.rangeFast = rangeFast;
+        this.impactTime = 0;
     }
 
-    /**
-     * Gets the id.
-     *
-     * @return the id
-     */
-    public int getID() {
-        return ID;
+    public int getId() {
+        return Id;
     }
 
-    /**
-     * Sets the id.
-     *
-     * @param iD the new id
-     */
-    public void setID(int iD) {
-        ID = iD;
+    public void setId(int iD) {
+        Id = iD;
     }
 
-    /**
-     * Gets the impact T.
-     *
-     * @return the impact T
-     */
-    public double getImpactT() {
-        return impactT;
+    public double getImpactTime() {
+        return impactTime;
     }
 
-    /**
-     * Sets the impact T.
-     *
-     * @param impactT the new impact T
-     */
-    public void setImpactT(double impactT) {
-        this.impactT = impactT;
+    public void setImpactTime(double impactTime) {
+        this.impactTime = impactTime;
     }
 
-    /**
-     * Gets the name.
-     *
-     * @return the name
-     */
     public String getName() {
         return name;
     }
 
-    /**
-     * Gets the speed S.
-     *
-     * @return the speed S
-     */
-    public double getSpeedS() {
-        return speedS;
+    public double getSpeedSlow() {
+        return speedSlow;
     }
 
-    /**
-     * Gets the speed F.
-     *
-     * @return the speed F
-     */
-    public double getSpeedF() {
-        return speedF;
+    public double getSpeedFast() {
+        return speedFast;
     }
 
-    /**
-     * Gets the range S.
-     *
-     * @return the range S
-     */
     public double getRangeS() {
         return rangeS;
     }
 
-    /**
-     * Gets the range F.
-     *
-     * @return the range F
-     */
-    public double getRangeF() {
-        return rangeF;
+    public double getRangeFast() {
+        return rangeFast;
     }
 
 }

@@ -3,9 +3,9 @@ package fps.subskipper.core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.lang.invoke.MethodHandles;
 import java.text.DecimalFormat;
 import java.util.concurrent.TimeUnit;
+import static fps.subskipper.util.Constants.*;
 
 // TODO: Auto-generated Javadoc
 
@@ -13,51 +13,13 @@ import java.util.concurrent.TimeUnit;
  * The Class OutFormat.
  *
  * @author fps Method for formatting output using a formatter to a String.
- * String aString = String.format("%03d", "0.00123332");
  */
 public class OutFormat {
 
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
+    final static Logger logger = LogManager.getLogger(OutFormat.class);
 
     /**
-     * Degree out.
-     *
-     * @param degIn the deg in, unformatted.
-     * @return formatted degree string.
-     */
-    public static String degreeOut(double degIn) {
-        return addUnit(degIn, "deg");
-    }
-
-    /**
-     * convert from metre per second to knot.
-     *
-     * @param ms the speed in ms
-     * @return the string
-     */
-    @Deprecated
-    public static String msToKnot(double ms) {
-        double kt = ms * 1.94384449;
-        return addUnit(kt, "kt");
-
-    }
-
-    /**
-     * M to ft. convert from m to ft -- Deprecated. Use UnitConversions.java,
-     * then addUnit() as needed.
-     *
-     * @param m the value in metres
-     * @return the string
-     */
-    @Deprecated
-    public static String mToFt(double m) {
-        double ft = m * 3.28084;
-        String out = addUnit(ft, "ft");
-        return out;
-    }
-
-    /**
-     * Adds the unit. UnitConversions.java, then addUnit() as needed.
+     * Appends arbitrary unit to value.
      *
      * @param value the value
      * @param unit  the unit
@@ -69,47 +31,29 @@ public class OutFormat {
         String v = Double.toString(value);
 
         if ("deg".equals(unit)) {
-            v = degFormat(value);
-            unit = "\u00b0";
+            v = formatNumberToDegree(value);
+            u = DEGREE_SYMBOL;
         }
-
         return v + u;
     }
 
-    /**
-     * Two DP.
-     *
-     * @param twoDP the value formatted to two DP string
-     * @return the string
-     */
-    // Two figures after decimal
-    public static String twoDP(double twoDP) {
-
-        DecimalFormat formatter = new DecimalFormat("0.00");
-        String out = formatter.format(twoDP);
-        return out;
+    private static String arbitraryDecimalPlaces(double input, int decimalPlaces) {
+        String format = ("%." + decimalPlaces + "f");
+        DecimalFormat formatter = new DecimalFormat(format);
+        return formatter.format(input);
     }
 
-    /**
-     * Four DP. Four figures after decimal
-     *
-     * @param fourDP the four DP
-     * @return the string
-     */
-    public static String fourDP(double fourDP) { // TODO: arbitrary DP would be
-        // nice.
-        DecimalFormat formatter = new DecimalFormat("0.0000");
-        return formatter.format(fourDP);
+    public static String twoDP(double input) {
+        return arbitraryDecimalPlaces(input, 2);
     }
 
-    /**
-     * Deg format.
-     *
-     * @param degIn the deg in
-     * @return the string
-     */
-    public static String degFormat(double degIn) {
+    public static String fourDP(double input) {
+        return arbitraryDecimalPlaces(input, 4);
+    }
+
+    public static String formatNumberToDegree(double degIn) {
         DecimalFormat formatter = new DecimalFormat("000");
+        degIn = degIn % 360; //TODO perhaps throw ex to check for invalid deg?
         return formatter.format(degIn);
     }
 
@@ -131,50 +75,18 @@ public class OutFormat {
     }
 
 
-    /**
-     * The Class UnitConversions.
-     */
     private class UnitConversions {
 
-        // Speed: Meter per second to knot
-
-        /**
-         * Ms kn.
-         *
-         * @param ms the ms
-         * @return the double
-         */
-        // 1 metre per second = 1.94384449 knot
-        public double msKn(double ms) {
-            return ms * 1.94384449;
+        public double metrePerSecondToKnot(double ms) {
+            return ms * KNOTS_FOR_EVERY_METRE_PER_SECOND;
         }
 
-        // Knot to Kph
-
-        /**
-         * Kn kmh.
-         *
-         * @param knot the knot
-         * @return the double
-         */
-        // 1knots= 1.8520000kph
-        public double knKmh(double knot) {
-            return knot * 1.8520000;
-
+        public double knotToKilometrePerHour(double knot) {
+            return knot * KNOTS_FOR_EVERY_KILOMETRE_PER_HOUR;
         }
 
-        // m per Minute to knot
-
-        /**
-         * M M kn.
-         *
-         * @param mM the m M
-         * @return the double
-         */
-        // 1 metre per minute = 0.0323974082 knot
-        public double mMKn(double mM) {
-            return mM * 0.0323974082;
+        public double meterPerMinuteToKnot(double mM) {
+            return mM * METRES_PER_MINUTE_FOR_EVERY_KNOT;
         }
     }
-
 }

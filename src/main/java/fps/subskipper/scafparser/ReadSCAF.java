@@ -1,9 +1,10 @@
 //reads SCAF data files, converts from SH4 format to XML to be used
 //by SubSkipper
 
-package fps.subskipper.scafParser;
+package fps.subskipper.scafparser;
 
-import core.TgtShip;
+
+import fps.subskipper.core.Ship;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -63,12 +64,13 @@ public class ReadSCAF {
     }
 
     //This method formats a SCAF record for parsing with makeShips()
-    private String[] readShipRecord(String file) {
+    private String[] readShipRecord(String file) throws IOException {
         String[] tempShips = new String[8];
         FileInputStream fs = null;
+        BufferedReader br = null;
         try {
             fs = new FileInputStream(file);
-            BufferedReader br = new BufferedReader(new InputStreamReader(fs));
+            br = new BufferedReader(new InputStreamReader(fs));
             String curLine = "";
             int append = 0; // incremented when adding to tempShips array so we don't add nulls.
             while (br.ready()) {
@@ -109,6 +111,8 @@ public class ReadSCAF {
         } catch (IOException e) {
             e.printStackTrace();
             logger.info("could not read file.");
+        } finally {
+            br.close();
         }
 
         return tempShips;
@@ -134,33 +138,33 @@ public class ReadSCAF {
 
     //this method looks up a query from names.cfg using a linear line-by-line search.
     //takes the short className from the Ship file as its input, and returns a stripped ship name.
-    public String typeNameLookup(String typeNum) {
+    public String typeNameLookup(String typeNum) throws IOException {
         typeNum = "Type" + typeNum.trim();
         return nameLookup(typeNum);
     }
 
     //Looks up a name using a String Query from the separate Names.cfg file
-    public String nameLookup(String query) {
+    public String nameLookup(String query) throws IOException {
         boolean found = false;
         String curLine = "ReadShips.nameLookup() failed";
         FileInputStream fs = null;
 
         try {
             fs = new FileInputStream(namesPath);
-            BufferedReader br = new BufferedReader(new InputStreamReader(fs));
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(fs))) {
+                while (!found) {
+                    if (!br.ready()) {
+                        logger.info("Reached Names.cfg EOF. Breaking.");
+                        break;
+                    }
 
-            while (!found) {
-                if (!br.ready()) {
-                    logger.info("Reached Names.cfg EOF. Breaking.");
-                    break;
-                }
+                    curLine = br.readLine().trim();
 
-                curLine = br.readLine().trim();
-
-                if (curLine.contains(query)) { //we found the name, change tempShips[0]
-                    curLine = curLine.substring(curLine.indexOf("=") + 1, curLine.length());
-                    br.close();
-                    found = true;
+                    if (curLine.contains(query)) { //we found the name, change tempShips[0]
+                        curLine = curLine.substring(curLine.indexOf("=") + 1, curLine.length());
+                        br.close();
+                        found = true;
+                    }
                 }
             }
         } catch (FileNotFoundException F) {
@@ -169,6 +173,7 @@ public class ReadSCAF {
             e.printStackTrace();
             logger.info("could not read file.");
         }
+        finally{fs.close();}
 
         if (found) {
             return curLine;
@@ -179,7 +184,7 @@ public class ReadSCAF {
     }
 
     //Format and construct a ship object using data in tempShips
-    public TgtShip makeShip(String path) {
+    public Ship makeShip(String path) throws IOException {
         //First run listF
         ArrayList<File> shipFiles = new ArrayList<File>();
         listFile("data", shipFiles);
@@ -203,7 +208,7 @@ public class ReadSCAF {
         double draft = Double.parseDouble(tempShips[6]);
         double disp = Double.parseDouble(tempShips[7]);
 
-        TgtShip testShip = new TgtShip(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
+        Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
         return testShip;
     }
 
@@ -218,17 +223,17 @@ public class ReadSCAF {
     }
 
     //Returns an arrayList of Ship objects, for passing to WriteShipXML
-    public ArrayList<TgtShip> makeShips() {
+    public ArrayList<Ship> makeShips() throws IOException {
         logger.info("ReadSCAF.makeShips() started.");
         ArrayList<File> shipFiles = new ArrayList<File>();
-        ArrayList<TgtShip> shipData = new ArrayList<TgtShip>();
-        TgtShip writeShip = new TgtShip();
+        ArrayList<Ship> shipData = new ArrayList<Ship>();
+        Ship writeShip = new Ship();
 
         listFile("data", shipFiles);
 
         for (int i = 0; i < shipFiles.size(); i++) {
             writeShip = makeShip(shipFiles.get(i).toString());
-            writeShip.setID(i);
+            writeShip.setId(i);
             shipData.add(writeShip);
         }
         return shipData;

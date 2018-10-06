@@ -1,7 +1,7 @@
-package fps.subskipper.scafParser;
+package fps.subskipper.scafparser;
 
 
-import coreLogic.Torpedo;
+import fps.subskipper.core.Torpedo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

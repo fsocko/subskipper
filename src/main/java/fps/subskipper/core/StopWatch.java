@@ -1,4 +1,4 @@
-package coreLogic;
+package fps.subskipper.core;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,20 +17,18 @@ import java.lang.invoke.MethodHandles;
 public class StopWatch {
 
     /**
+     * The log.
+     */
+    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
+    /**
      * The start time.
      */
     //main timer values
     private Long startTime;
-
     /**
      * The end time.
      */
     private Long endTime;
-
-    /**
-     * The log.
-     */
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     /**
      * set class startTime to the current time.

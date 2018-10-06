@@ -1,7 +1,7 @@
 /**
  *
  */
-package coreLogic;
+package fps.subskipper.core;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,25 +9,22 @@ import org.apache.logging.log4j.Logger;
 import java.lang.invoke.MethodHandles;
 
 /**
- * The Class OKane.
+ * The Class OKaneSolutionCalculator.
  *
  * @author fps
  * <p>
  * Lead Angle for O'Kane firing solution. - note that method does not
  * know whether to add or subtract ie if T is facing port or stbd.
  */
-public class OKane {
+public class OKaneSolutionCalculator {
 
-    /**
-     * The logger.
-     */
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     // TODO: check range to target is not too large for the solution
 
     /**
      * OK solution.
-     * Method for generating OKane firing solution, returns firing
+     * Method for generating OKaneSolutionCalculator firing solution, returns firing
      * bearing. Inputs: AOB- determines port or strbd, Speed (F/S)
      * default to slow; torpedo object
      *
@@ -92,20 +89,19 @@ public class OKane {
         }
         // If speed is 0, no lead required
         if (targS == 0) {
-            logger.info("Lead is:{}", OutFormat.degreeOut(targS));
+            logger.info("Lead is:{}", OutFormat.formatNumberToDegree(targS));
             return 0;
         }
         double lead = 0;
         // 90 - inverseTan(torpS/targS)
         lead = 90 - Math.toDegrees(Math.atan(torpS / targS));
         if (lead > 90) {
-            logger.error("Lead is:{}. Impossible solution.", OutFormat.degreeOut(lead));
+            logger.error("Lead is:{}. Impossible solution.", OutFormat.formatNumberToDegree(lead));
             lead = -3;
 
         }
 
         //Okane relies on being ahead of the target, we would have an impossible soluton.
-
         return lead;
     }
 }

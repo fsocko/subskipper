@@ -1,4 +1,4 @@
-package coreLogic;
+package fps.subskipper.core;
 
 public class AngleComp {
 
