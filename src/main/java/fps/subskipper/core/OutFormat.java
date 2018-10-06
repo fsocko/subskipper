@@ -32,7 +32,7 @@ public class OutFormat {
 
         if ("deg".equals(unit)) {
             v = formatNumberToDegree(value);
-            u = DEGREE_SYMBOL;
+            u = UNIT_DEGREE;
         }
         return v + u;
     }
@@ -88,5 +88,6 @@ public class OutFormat {
         public double meterPerMinuteToKnot(double mM) {
             return mM * METRES_PER_MINUTE_FOR_EVERY_KNOT;
         }
+
     }
 }

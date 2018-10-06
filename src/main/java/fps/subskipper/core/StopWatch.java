@@ -16,13 +16,10 @@ import java.lang.invoke.MethodHandles;
 
 public class StopWatch {
 
-    /**
-     * The log.
-     */
+
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-    /**
-     * The start time.
-     */
+
+
     //main timer values
     private Long startTime;
     /**

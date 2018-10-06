@@ -14,7 +14,7 @@
 {#startTable}
 <div class = "startTable row">
 	<div class="name header cell">Name</div>
-	<div class="disp header cell">Tonnage (GRT)</div>
+	<div class="displacement header cell">Tonnage (GRT)</div>
 	<div class="speed header cell">Speed (kn)</div>
 	<div class="length header cell">Length {$unit}</div>
 	<div class="height header cell">Height {$unit}</div>
@@ -26,7 +26,7 @@
 {#ship}
 <div id="shipRow{$rowID}" class="shipRow row">
 	<div class="name cell">{$name}</div>
-	<div class="disp cell">{$disp}</div>
+	<div class="displacement cell">{$displacement}</div>
 	<div class="speed cell">{$speed}</div>
 	<div class="length cell">{$length}</div>
 	<div class="height cell">{$height}</div>

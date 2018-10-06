@@ -45,7 +45,7 @@ Class:&nbsp{$class}
 <div class = data style = "width: 100%" >
 
 <div class = dataContainer id=t>
-Tonnage:{$disp}
+Tonnage:{$displacement}
 </div>
 <div class = dataContainer id=s>
 &nbspSpeed:{$speed}

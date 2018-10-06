@@ -5,30 +5,38 @@ import com.x5.template.Theme;
 import fps.subskipper.core.FileIO;
 import fps.subskipper.core.OutFormat;
 import fps.subskipper.core.Ship;
-import fps.subskipper.scafparser.Ships;
+import fps.subskipper.core.Ships;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.lang.invoke.MethodHandles;
+
+import static fps.subskipper.util.Constants.UNIT_FOOT;
+import static fps.subskipper.util.Constants.UNIT_KNOT;
+import static fps.subskipper.util.Constants.UNIT_METRE;
 
 //Parse data from XML parser which parses SCAF data, into long form HTML recognition manual.
 
-public class ParseRecogL {
+public class ParseRecognitionManualLong {
 
+    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     //takes Ship list Ships, takes filename of doc. - Long recog manual
     //with images and data in long format, styled with CSS.
     //boolean imperial turns relevant units to "wrong units"
     public void writeRecogLHTML(Ships shipList, String filename, boolean imperial) {
-
         //<head>
-        String htmlDoc = HTMLStartL(imperial);
+        StringBuilder htmlDoc = new StringBuilder();
+        htmlDoc.append(HTMLStartL(imperial));
 
         //Main Ship HTML
-        for (int i = 0; i < shipList.getShips().size(); i++) {
-            htmlDoc += HTMLShipL(shipList.getShip(i), imperial);
+        for (Ship ship : shipList.getShips()) {
+            htmlDoc.append(HTMLShipL(ship, imperial));
         }
         //Close remaining tags
-        htmlDoc += HTMLEndL();
-        writeHTML(htmlDoc, filename);
-
-        System.out.println("HTML Written.");
+        htmlDoc.append(HTMLEndL());
+        writeHTML(htmlDoc.toString(), filename);
+        logger.info("HTML Written.");
     }
 
     private String HTMLStartL(boolean imperial) {
@@ -50,25 +58,28 @@ public class ParseRecogL {
 
     private String HTMLShipL(Ship record, boolean imperial) {
 
-        String unit = "m";
-        if (imperial) {
-            unit = "ft";
-            record.makeImperial();
+        String unit = UNIT_METRE;
 
-        }
-
-        OutFormat f = new OutFormat();
+        OutFormat formatter = new OutFormat();
         Theme theme = new Theme();
         Chunk h = theme.makeChunk("recogL2#ship");
         h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
         h.set("name", record.getName());
         h.set("class", record.getTypeName());
-        h.set("speed", f.addUnit(record.getMaxSpeed(), "kn"));
-        h.set("length", f.addUnit(record.getLength(), unit));
-        h.set("height", f.addUnit(record.getMast(), unit));
-        h.set("draft", f.addUnit(record.getDraft(), unit));
-        h.set("disp", record.getDisp() + " GRT");
-        h.set("aspect", f.fourDP(record.getReferenceAspectRatio()));
+        h.set("speed", formatter.addUnit(record.getMaxSpeed(), UNIT_KNOT));
+
+        h.set("length", formatter.addUnit(record.getLength(), unit));
+        h.set("height", formatter.addUnit(record.getMast(), unit));
+        h.set("draft", formatter.addUnit(record.getDraft(), unit));
+
+        if(imperial){
+            h.set("length", formatter.addUnit(record.getImperialLength(), UNIT_FOOT));
+            h.set("height", formatter.addUnit(record.getImperialMast(), UNIT_FOOT));
+            h.set("draft", formatter.addUnit(record.getImperialDraft(), UNIT_FOOT));
+        }
+
+        h.set("disp", record.getDisplacement() + " GRT");
+        h.set("aspect", formatter.fourDP(record.getReferenceAspectRatio()));
 
         //Convert image path to filename
         String pngPath = record.getImagePath();
@@ -76,7 +87,6 @@ public class ParseRecogL {
         String figPath = "../figures/" + pngPath + ".png";
         h.set("image", figPath);
         return h.toString(); //Temporarily outputs to console. Will make it send to file.
-
     }
 
     private String HTMLEndL() {
@@ -86,7 +96,6 @@ public class ParseRecogL {
     }
 
     private void writeHTML(String input, String path) {
-
         FileIO htmlW = new FileIO();
         htmlW.writeLine(path, input);
     }

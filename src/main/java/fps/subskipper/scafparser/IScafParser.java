@@ -1,22 +1,25 @@
 package fps.subskipper.scafparser;
 
-import fps.subskipper.core.Ship;
-import fps.subskipper.core.Torpedo;
+import fps.subskipper.core.Ships;
 
-import java.util.List;
+import javax.xml.bind.JAXBException;
+import java.io.IOException;
 
 public interface IScafParser {
 
-    public void readScaf();
+    void writeShipsToFile(Ships ships) throws JAXBException;
 
-    public void writeShipXml();
+    /**
+     * This method attempts to read Ships from XML. if no XML is found,
+     * It parses SCAF and creates the XML file, then returns Ships object.
+     */
+    Ships loadShipsToMemory() throws JAXBException, IOException;
 
-    public void writeTorpedoXml();
 
-    public List<Ship> readShipXml();
+//TODO:
+//    public void writeTorpedoXml();
+//
+//    public List<Torpedo> readTorpedoXml();
 
-    public List<Torpedo> readTorpedoXml();
-
-    public Ship getShipById(int id);
 
 }

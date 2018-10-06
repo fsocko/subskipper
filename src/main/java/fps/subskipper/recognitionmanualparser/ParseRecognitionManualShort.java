@@ -5,35 +5,35 @@ import com.x5.template.Theme;
 import fps.subskipper.core.FileIO;
 import fps.subskipper.core.OutFormat;
 import fps.subskipper.core.Ship;
-import fps.subskipper.scafparser.Ships;
+import fps.subskipper.core.Ships;
+
+import static fps.subskipper.util.Constants.UNIT_FOOT;
+import static fps.subskipper.util.Constants.UNIT_METRE;
 
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
 
-public class ParseRecogS {
+public class ParseRecognitionManualShort {
 
     //takes Ship list Ships, takes filename of doc. - Short style
     //shipList is a Ships object, filename is the name of output file, imperial=true converts
     //units to imperial where relevant. AOB table generates a row of common AOB ratios.
     public void writeRecogSHTML(Ships shipList, String filename, boolean imperial, boolean AOBTable) {
 
-        String htmlDoc = "";
-        htmlDoc += writeHead(imperial);
-        htmlDoc += startTable(imperial);
+        StringBuilder htmlDoc = new StringBuilder();
+        htmlDoc.append(writeHead(imperial));
+        htmlDoc.append(startTable(imperial));
 
         //Main Ship table row
         for (int i = 0; i < shipList.getShips().size(); i++) {
-            htmlDoc += shipRow(shipList.getShip(i), i, imperial);
+            htmlDoc.append(shipRow(shipList.getShips().get(i), i, imperial));
             if (AOBTable) {
-                htmlDoc += AOBRow(shipList.getShip(i), i);
+                htmlDoc.append(AOBRow(shipList.getShips().get(i), i));
             }
-
             if (i % 50 == 0 && i > 0) {
-                htmlDoc += splitTable(imperial); //split the table if this is a page break
+                htmlDoc.append(splitTable(imperial)); //split the table if this is a page break
             }
         }
-
-
-        writeHTML(htmlDoc, filename);
+        writeHTML(htmlDoc.toString(), filename);
     }
 
     //Write HTML Head - done once at start.
@@ -53,18 +53,15 @@ public class ParseRecogS {
         return h.toString();
     }
 
-
     //start the table - return heading with correct units
     private String startTable(boolean imperial) {
-
         Theme theme = new Theme();
         Chunk tableStart = theme.makeChunk("recogSDiv#startTable");
         if (imperial) {
-            tableStart.set("unit", "(ft)");
+            tableStart.set("unit", UNIT_FOOT);
         } else {
-            tableStart.set("unit", "(m)");
+            tableStart.set("unit", UNIT_METRE);
         }
-
         return tableStart.toString();
     }
 
@@ -75,10 +72,6 @@ public class ParseRecogS {
         Theme theme = new Theme();
         Chunk h = theme.makeChunk("recogSDiv#ship");
 
-        if (imperial) {
-            record.makeImperial();
-        }
-
         h.set("rowID", i); //was: h.set("rowID", record.getId());
         /*Originally the rowID was the ID of the ship record.
          * If the records are sorted by Name, which is how I sorted
@@ -88,11 +81,21 @@ public class ParseRecogS {
          */
 
         h.set("name", record.getName());
-        h.set("disp", f.twoDP(record.getDisp()));
+        h.set("disp", f.twoDP(record.getDisplacement()));
         h.set("speed", f.twoDP(record.getMaxSpeed()));
+
         h.set("draft", f.twoDP(record.getDraft()));
         h.set("length", f.twoDP(record.getLength()));
         h.set("height", f.twoDP(record.getMast()));
+
+        if(imperial){
+            if(imperial){
+                h.set("draft", f.twoDP(record.getImperialDraft()));
+                h.set("length", f.twoDP(record.getImperialLength()));
+                h.set("height", f.twoDP(record.getImperialMast()));
+            }
+        }
+
         h.set("aspect", f.fourDP(record.getReferenceAspectRatio()));
         return h.toString();
     }

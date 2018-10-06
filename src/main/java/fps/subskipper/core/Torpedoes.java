@@ -1,4 +1,4 @@
-package fps.subskipper.scafparser;
+package fps.subskipper.core;
 
 
 import fps.subskipper.core.Torpedo;

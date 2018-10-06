@@ -1,16 +1,10 @@
 package fps.subskipper.recognitionmanualparser;
 
 
-import com.x5.template.Chunk;
-import com.x5.template.Theme;
-import fps.subskipper.core.FileIO;
-import fps.subskipper.core.OutFormat;
-import fps.subskipper.core.Ship;
-import fps.subskipper.scafparser.Ships;
-
-
 public class ParseRecogSAOBS {
 
+
+    /*
 
     //takes Ship list Ships, takes filename of doc. - Short style
     //shipList is a Ships object, filename is the name of output file, imperial=true converts
@@ -57,7 +51,7 @@ public class ParseRecogSAOBS {
         }
 
         h.set("name", record.getName());
-        h.set("disp", f.twoDP(record.getDisp()));
+        h.set("disp", f.twoDP(record.getDisplacement()));
         h.set("speed", f.twoDP(record.getMaxSpeed()));
         h.set("draft", f.twoDP(record.getDraft()));
         h.set("length", f.twoDP(record.getLength()));
@@ -72,5 +66,7 @@ public class ParseRecogSAOBS {
         htmlW.writeLine(path, input);
         System.out.println("HTML Written.");
     }
+
+    */
 }
 		

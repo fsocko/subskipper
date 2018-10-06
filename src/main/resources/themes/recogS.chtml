@@ -19,7 +19,7 @@
 <tr id="{$rowID}" class="{$rowClass}">
 
 <td class="name" colspan="2">{$name}</td>
-<td class="disp">{$disp}</td>
+<td class="displacement">{$displacement}</td>
 <td class="speed">{$speed}</td>
 <td class="length">{$length}</td>
 <td class="height">{$height}</td>

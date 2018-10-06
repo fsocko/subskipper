@@ -1,39 +1,21 @@
 package fps.subskipper.recognitionmanualparser;
 
 
-import fps.subskipper.scafparser.PrepShipData;
-
-import java.io.IOException;
-
 public class RecogMain {
 
     public static void main(String[] args) {
 
-        ParseRecogL recogL = new ParseRecogL();
-        ParseRecogS recogS = new ParseRecogS();
-        PrepShipData target = new PrepShipData();
+        ParseRecognitionManualLong recogL = new ParseRecognitionManualLong();
+        ParseRecognitionManualShort recogS = new ParseRecognitionManualShort();
 
-
-        //long Euro / Name Sort
-        //recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNm.html", false);
-        //long Imperial / Name Sort
-        //recogL.writeRecogLHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogLSNi.html", true);
-        //long Euro / Type Sort
-        //recogL.writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLSTm.html", false);
-        //long Imperial / Type Sort
-        //recogL.writeRecogLHTML(target.sortShipsType(target.getShips()), "recog/recogHTML/recogLSTi.html", true);
+        //ScafParser.
 
         //short Euro
-        try {
-            recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, false);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //Short Imperial
-        try {
-            recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSi.html", true, false);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, false);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
     }
 }
