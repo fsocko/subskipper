@@ -1,8 +1,0 @@
-I found this information on Page 68 of the SH4 Manual.
-
-The meaning of the reticle marks is outlined in the table below:
-
-Optic Used-----------(Zoom Level)----------------Small Marks-------------Large Marks
-Periscope------------(Low Magnification)-----------1°-------------------------4°
-Periscope------------(High Magnification)----------0.25°(0°15’)---------------1°
-TBT-----------------------(7x)---------------------0.2° (0°12’)---------------1°

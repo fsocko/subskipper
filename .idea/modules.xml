@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SubSkipper.iml" filepath="$PROJECT_DIR$/SubSkipper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fps.subskipper.core.iml" filepath="$PROJECT_DIR$/fps.subskipper.core.iml" />
     </modules>
   </component>
 </project>
