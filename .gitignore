@@ -9,5 +9,6 @@
 /target/
 /logs/
 /docs/SubSkipperSrc/
+.idea/
 *.nfo
 *.class
