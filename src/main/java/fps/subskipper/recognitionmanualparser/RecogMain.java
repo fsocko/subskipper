@@ -1,21 +1,20 @@
 package fps.subskipper.recognitionmanualparser;
 
 
+import fps.subskipper.core.Ships;
+import fps.subskipper.scafparser.ScafParser;
+import fps.subskipper.util.Constants;
+
+import java.io.IOException;
+
 public class RecogMain {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        ParseRecognitionManualLong recogL = new ParseRecognitionManualLong();
         ParseRecognitionManualShort recogS = new ParseRecognitionManualShort();
 
-        //ScafParser.
-
-        //short Euro
-//        try {
-//            recogS.writeRecogSHTML(target.sortShipsName(target.getShips()), "recog/recogHTML/recogSm.html", false, false);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+            Ships shipList = new ScafParser().loadShipsToMemory();
+            recogS.writeRecogSHTML(shipList, Constants.RESOURCES_PATH + "\\recogSm.html", false, false);
 
     }
 }

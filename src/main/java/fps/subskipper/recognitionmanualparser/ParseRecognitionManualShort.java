@@ -6,9 +6,9 @@ import fps.subskipper.core.FileIO;
 import fps.subskipper.core.OutFormat;
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
+import fps.subskipper.util.Constants;
 
 import static fps.subskipper.util.Constants.UNIT_FOOT;
-import static fps.subskipper.util.Constants.UNIT_METRE;
 
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
 
@@ -60,7 +60,7 @@ public class ParseRecognitionManualShort {
         if (imperial) {
             tableStart.set("unit", UNIT_FOOT);
         } else {
-            tableStart.set("unit", UNIT_METRE);
+            tableStart.set("unit", Constants.UNIT_METRE);
         }
         return tableStart.toString();
     }

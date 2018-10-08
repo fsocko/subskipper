@@ -1,6 +1,5 @@
 package fps.subskipper.core;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-//Wrapper for martialing XML correctly. Stores Ship object as a list of Ships
+//Wrapper for marshalling XML correctly. Stores Ship object as a list of Ships
 @XmlRootElement(name = "ships")
 public class Ships {
 
@@ -23,6 +22,18 @@ public class Ships {
         this.setShips(ships);
     }
 
+    public Ships(){}
+
+//    public Ships(){
+//        try {
+//            //XmlUnmarshaller returns a Ships object, so this is a workaround to load a list of Ship into _this_ object.
+//            this.setShips(new ScafParser().loadShipsToMemory().getShips());
+//        }
+//        catch (JAXBException | IOException e) {
+//            logger.error("Failed to get ship list from ScafParser", e.getMessage());
+//        }
+//    }
+
     @XmlElement(name = "ship")
     public void setShips(ArrayList<Ship> ships) {
         this.ships = ships;
@@ -33,7 +44,6 @@ public class Ships {
         return ships;
     }
 
-
     public Ship getShipByID(int shipId) {
         for (Ship idShip : ships) {
             if (idShip.getId() == shipId) {
@@ -43,14 +53,20 @@ public class Ships {
         return null;
     }
 
-    //Sort Ships based on Type int; ascending
-    public void sortShipsByType() {
+    //Sort Ships based on Type
+    public Ships sortShipsByType() {
+        ArrayList sortedShips = new ArrayList(this.getShips());
         Collections.sort(this.ships, Ship.sTypeComparatorDescending);
+        this.setShips(sortedShips);
+        return this;
     }
 
-    //Sort Ships based on Type int; ascending
-    public void sortShipsByName() {
-        Collections.sort(this.ships, Ship.sNameComparatorDescending);
+    //Sort Ships based on name
+    public Ships sortShipsByName() {
+        ArrayList sortedShips = new ArrayList(this.getShips());
+        Collections.sort(sortedShips, Ship.sNameComparatorDescending);
+        this.setShips(sortedShips);
+        return this;
     }
 
     @Override

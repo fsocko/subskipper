@@ -18,15 +18,14 @@ public class EntityXmlMarshaller {
 
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
-    public Ships readShipsFromXml() throws JAXBException {
+    public Ships readShipsFromXml() throws JAXBException, NullPointerException {
         try {
             File file = new File(SHIPLIST_PATH);
             JAXBContext jaxbContext = JAXBContext.newInstance(Ships.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            Ships shipsXml = (Ships) jaxbUnmarshaller.unmarshal(file);
-            return shipsXml;
+            return (Ships) jaxbUnmarshaller.unmarshal(file);
         }
-        catch (JAXBException e) {
+        catch (JAXBException | NullPointerException e) {
             logger.error("Failed to read ships from file:", e.getMessage());
             throw e;
         }

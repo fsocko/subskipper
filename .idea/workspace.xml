@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a72cad-a6c7-45c8-9f5f-79d7bea9e6d8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_x5dev_chunk_templates_3_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/util/Find.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ships.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ships.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualShort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualShort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/EntityXmlMarshaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/EntityXmlMarshaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ScafParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ScafParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +27,12 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ScafParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ScafParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="111" column="85" selection-start-line="111" selection-start-column="85" selection-end-line="111" selection-end-column="85" />
+            <state relative-caret-position="153">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,20 +40,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindFilePath.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java">
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/core/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="185">
+              <caret line="87" column="53" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindFilePathTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java">
+      <file leaf-file-name="ScafParserTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/core/scafparser/ScafParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="236">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParseRecognitionManualShort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualShort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,62 +88,10 @@
       <file leaf-file-name="RecogMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ship.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="323">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2058#2059#0" expanded="true" />
-                <element signature="e#2083#2084#0" expanded="true" />
-                <element signature="e#2006#2007#0" expanded="true" />
-                <element signature="e#2036#2037#0" expanded="true" />
-                <element signature="e#2168#2169#0" expanded="true" />
-                <element signature="e#2195#2196#0" expanded="true" />
-                <element signature="e#2223#2224#0" expanded="true" />
-                <element signature="e#2250#2251#0" expanded="true" />
-                <element signature="e#2285#2286#0" expanded="true" />
-                <element signature="e#2316#2317#0" expanded="true" />
-                <element signature="e#2352#2353#0" expanded="true" />
-                <element signature="e#2384#2385#0" expanded="true" />
-                <element signature="e#2419#2420#0" expanded="true" />
-                <element signature="e#2450#2451#0" expanded="true" />
-                <element signature="e#2483#2484#0" expanded="true" />
-                <element signature="e#2512#2513#0" expanded="true" />
-                <element signature="e#2553#2554#0" expanded="true" />
-                <element signature="e#2605#2606#0" expanded="true" />
-                <element signature="e#2660#2661#0" expanded="true" />
-                <element signature="e#2688#2689#0" expanded="true" />
-                <element signature="e#2728#2729#0" expanded="true" />
-                <element signature="e#2779#2780#0" expanded="true" />
-                <element signature="e#2833#2834#0" expanded="true" />
-                <element signature="e#2860#2861#0" expanded="true" />
-                <element signature="e#2899#2900#0" expanded="true" />
-                <element signature="e#2949#2950#0" expanded="true" />
-                <element signature="e#3004#3005#0" expanded="true" />
-                <element signature="e#3032#3033#0" expanded="true" />
-                <element signature="e#3072#3073#0" expanded="true" />
-                <element signature="e#3123#3124#0" expanded="true" />
-                <element signature="e#3185#3186#0" expanded="true" />
-                <element signature="e#3220#3221#0" expanded="true" />
-                <element signature="e#3267#3268#0" expanded="true" />
-                <element signature="e#3299#3300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,21 +100,8 @@
       <file leaf-file-name="Ships.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ships.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityXmlMarshaller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/EntityXmlMarshaller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="117">
+              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +115,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Gradle Kotlin DSL Build Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -170,7 +126,15 @@
       <find>xmlParser</find>
       <find>EOF</find>
       <find>recogLatex</find>
+      <find>//</find>
+      <find>static</find>
+      <find />
+      <find />
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,8 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/Torpedoes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadSCAF.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/IScafParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadShipXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafParser/ReadTorpXML.java" />
@@ -209,26 +171,28 @@
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ReadTorpXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ShipXmlMarshaller.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/torpedoXmlMarshaller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/EntityXmlMarshaller.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/Ships.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ships.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/PrepShipData.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/ImperialShip.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/StopWatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogL.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogS.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogShort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualShort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogSAOBS.java" />
+        <option value="$PROJECT_DIR$/profiles.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/IScafParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/EntityXmlMarshaller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/util/Find.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualShort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ships.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogSAOBS.java" />
         <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ScafParser.java" />
-        <option value="$PROJECT_DIR$/profiles.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java" />
-        <option value="$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fps/subskipper/core/scafparser/ScafParserTest.java" />
       </list>
     </option>
   </component>
@@ -253,6 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,6 +264,31 @@
               <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
               <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+              <item name="scafparser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,13 +298,39 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubSkipper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubSkipper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="subskipper" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="scafparser" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,14 +366,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FindFilePathTest.findFilepathRecursivelyTest">
-    <configuration name="FindFilePath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindFilePath" />
+  <component name="RunManager" selected="JUnit.ScafParserTest">
+    <configuration name="RecogMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.recognitionmanualparser.RecogMain" />
       <module name="fps.subskipper.core" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fps.subskipper.util.*" />
+          <option name="PATTERN" value="fps.subskipper.recognitionmanualparser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -365,7 +381,7 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="FindFilePathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fps.subskipper.core" />
       <extension name="coverage">
         <pattern>
@@ -376,7 +392,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="fps.subskipper.util" />
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindFilePathTest" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -388,7 +404,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FindFilePathTest.findFilePathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindTest.findFilepathRecursivelySuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fps.subskipper.core" />
       <extension name="coverage">
         <pattern>
@@ -399,8 +415,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="fps.subskipper.util" />
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindFilePathTest" />
-      <option name="METHOD_NAME" value="findFilePathTest" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindTest" />
+      <option name="METHOD_NAME" value="findFilepathRecursivelySuccessTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -411,19 +427,42 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FindFilePathTest.findFilepathRecursivelyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScafParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fps.subskipper.core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fps.subskipper.util.*" />
+          <option name="PATTERN" value="fps.subskipper.core.scafparser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="fps.subskipper.util" />
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindFilePathTest" />
-      <option name="METHOD_NAME" value="findFilepathRecursivelyTest" />
+      <option name="PACKAGE_NAME" value="fps.subskipper.core.scafparser" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.core.scafparser.ScafParserTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ScafParserTest.loadShipsToMemory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fps.subskipper.core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fps.subskipper.core.scafparser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="fps.subskipper.core.scafparser" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.core.scafparser.ScafParserTest" />
+      <option name="METHOD_NAME" value="loadShipsToMemory" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -441,29 +480,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="fps.subskipper.core in fps.subskipper.core" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fps.subskipper.core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fps.subskipper.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="fps.subskipper.core" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -496,19 +512,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.fps.subskipper.core in fps.subskipper.core" />
-      <item itemvalue="JUnit.FindFilePathTest.findFilePathTest" />
-      <item itemvalue="JUnit.FindFilePathTest" />
-      <item itemvalue="Application.FindFilePath" />
-      <item itemvalue="JUnit.FindFilePathTest.findFilepathRecursivelyTest" />
+      <item itemvalue="JUnit.FindTest.findFilepathRecursivelySuccessTest" />
+      <item itemvalue="Application.RecogMain" />
+      <item itemvalue="JUnit.FindTest" />
+      <item itemvalue="JUnit.ScafParserTest.loadShipsToMemory" />
+      <item itemvalue="JUnit.ScafParserTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindFilePathTest.findFilepathRecursivelyTest" />
-        <item itemvalue="Application.FindFilePath" />
-        <item itemvalue="JUnit.FindFilePathTest.findFilePathTest" />
-        <item itemvalue="JUnit.FindFilePathTest" />
-        <item itemvalue="JUnit.fps.subskipper.core in fps.subskipper.core" />
+        <item itemvalue="JUnit.ScafParserTest" />
+        <item itemvalue="JUnit.ScafParserTest.loadShipsToMemory" />
+        <item itemvalue="Application.RecogMain" />
+        <item itemvalue="JUnit.FindTest" />
+        <item itemvalue="JUnit.FindTest.findFilepathRecursivelySuccessTest" />
       </list>
     </recent_temporary>
   </component>
@@ -523,68 +539,68 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 20m 58s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelyFailWithInvalidStartDirectoryTest - 2018.10.08 at 14h 57m 39s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 21m 14s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelySuccessTest - 2018.10.08 at 14h 59m 04s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelySuccessTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 23m 14s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelyFailWithInvalidStartDirectoryTest - 2018.10.08 at 14h 59m 17s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 24m 18s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelyFailWithInvalidStartDirectoryTest - 2018.10.08 at 15h 00m 05s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 25m 12s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelySuccessTest - 2018.10.08 at 15h 02m 07s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelySuccessTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 26m 25s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelySuccessTest - 2018.10.08 at 15h 03m 17s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelySuccessTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 27m 50s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelySuccessTest - 2018.10.08 at 15h 03m 32s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelySuccessTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 29m 51s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindFilePathTest_findFilepathRecursivelySuccessTest - 2018.10.08 at 15h 09m 36s.xml">
+      <configuration name="FindFilePathTest.findFilepathRecursivelySuccessTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilePathTest - 2018.10.06 at 19h 30m 24s.xml">
-      <configuration name="FindFilePathTest.findFilePathTest" configurationId="JUnit" />
+    <history-entry file="FindTest - 2018.10.08 at 16h 28m 07s.xml">
+      <configuration name="FindTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindFilePathTest_findFilepathRecursivelyTest - 2018.10.07 at 19h 06m 02s.xml">
-      <configuration name="FindFilePathTest.findFilepathRecursivelyTest" configurationId="JUnit" />
+    <history-entry file="FindTest - 2018.10.08 at 16h 28m 18s.xml">
+      <configuration name="FindTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49926794" weight="0.2973396" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.47218156" side_tool="true" weight="0.38184664" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.52781844" visible="true" weight="0.45696402" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3023426" />
-      <window_info anchor="right" id="LuaJ" />
-      <window_info anchor="bottom" id="SonarLint" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49926794" weight="0.2973396" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.47218156" side_tool="true" weight="0.38184664" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.52781844" visible="true" weight="0.342723" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27452415" />
+      <window_info anchor="right" id="LuaJ" order="3" />
+      <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25039124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3051643" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
@@ -593,7 +609,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ScafParser.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -611,38 +635,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/coreLogic/AngleComp.java" />
     <entry file="file://$PROJECT_DIR$/src/recogManualParser/ParseRecogSAOBS.java" />
     <entry file="file://$PROJECT_DIR$/src/coreLogic/AspectAOB.java" />
@@ -743,13 +735,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/torpedoXmlMarshaller.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/WriteTorpXML.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/PrepShipData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/IrecognitionManualParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/OutFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -783,118 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualShort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualLong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/IScafParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/EntityXmlMarshaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ships.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-            <element signature="e#2006#2007#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2168#2169#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2316#2317#0" expanded="true" />
-            <element signature="e#2352#2353#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2419#2420#0" expanded="true" />
-            <element signature="e#2450#2451#0" expanded="true" />
-            <element signature="e#2483#2484#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="e#2553#2554#0" expanded="true" />
-            <element signature="e#2605#2606#0" expanded="true" />
-            <element signature="e#2660#2661#0" expanded="true" />
-            <element signature="e#2688#2689#0" expanded="true" />
-            <element signature="e#2728#2729#0" expanded="true" />
-            <element signature="e#2779#2780#0" expanded="true" />
-            <element signature="e#2833#2834#0" expanded="true" />
-            <element signature="e#2860#2861#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2949#2950#0" expanded="true" />
-            <element signature="e#3004#3005#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#3123#3124#0" expanded="true" />
-            <element signature="e#3185#3186#0" expanded="true" />
-            <element signature="e#3220#3221#0" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
-            <element signature="e#3299#3300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ScafParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="111" column="85" selection-start-line="111" selection-start-column="85" selection-end-line="111" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecogSAOBS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -909,31 +782,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/profiles.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualLong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/javax/xml/bind/Unmarshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="430" column="18" selection-start-line="430" selection-start-column="18" selection-end-line="430" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1306">
+          <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2355#2356#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/IrecognitionManualParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="277" column="9" lean-forward="true" selection-start-line="277" selection-start-column="9" selection-end-line="277" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/IScafParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/EntityXmlMarshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/ParseRecognitionManualShort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/recognitionmanualparser/RecogMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/core/Ships.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="117">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/FindFilePath.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/recognitionManual/recogHTML/brownbg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/util/FindFilePathTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/util/Find.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/core/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="87" column="53" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fps/subskipper/scafparser/ScafParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fps/subskipper/core/scafparser/ScafParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

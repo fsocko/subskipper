@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 import static fps.subskipper.util.Constants.SCAF_ROOT_PATH;
 
+
 public class ScafParser implements IScafParser {
 
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
@@ -24,41 +25,33 @@ public class ScafParser implements IScafParser {
         EntityXmlMarshaller shipMarshaller = new EntityXmlMarshaller();
         try {
             shipMarshaller.writeShipsToXml(ships);
-        }
-        catch(JAXBException j){
+        } catch (JAXBException j) {
             logger.error("Threw JAXB exception when writing ships to file.", j.getMessage());
             throw j;
         }
     }
 
     @Override
-    public Ships loadShipsToMemory() throws JAXBException, IOException {
-            EntityXmlMarshaller readShips = new EntityXmlMarshaller();
-            Ships ships;
-            try {
-                    ships = readShips.readShipsFromXml();
-                }
-                catch (JAXBException j) {
-                    logger.error("Threw JAXB exception when reading ships from file.", j.getMessage());
-                    throw j;
-                }
-                if(ships != null && !ships.getShips().isEmpty()){
-                    return ships;
-                }
-                else{
-                    try {
-                        ships = parseShipsFromScaf(SCAF_ROOT_PATH);
-                    }
-                    catch (IOException e) {
-                        logger.error("Threw IOException when parsing ships from SCAF.", e.getMessage());
-                        throw e;
-                    }
-                }
-                return ships;
-            }
+    public Ships loadShipsToMemory() throws IOException {
+        EntityXmlMarshaller readShips = new EntityXmlMarshaller();
+        Ships ships;
+        try {
+            ships = readShips.readShipsFromXml();
+        } catch (Exception e) {
+            logger.error("Threw exception when reading ships from file.", e.getMessage());
+        }
+        try {
+            ships = parseShipsFromScaf(SCAF_ROOT_PATH);
+        }
+        catch (IOException e) {
+            logger.error("Threw IOException when parsing ships from SCAF.", e.getMessage());
+            throw e;
+        }
+        return ships;
+    }
 
 
-    public Ships parseShipsFromScaf(String scafPath) throws IOException {
+    private Ships parseShipsFromScaf(String scafPath) throws IOException {
         logger.info("ScafParser.parseShipsFromScaf() started.");
         ArrayList<File> shipFiles = new ArrayList<>();
         ArrayList<Ship> shipData = new ArrayList<>();
@@ -72,7 +65,7 @@ public class ScafParser implements IScafParser {
     }
 
     //Format and construct a ship object using data in tempShips
-    public Ship makeShip(String path) throws IOException {
+    private Ship makeShip(String path) throws IOException {
         //First run listF
         ArrayList<File> shipFiles = new ArrayList<File>();
         listShipFiles("data", shipFiles);
@@ -117,8 +110,7 @@ public class ScafParser implements IScafParser {
                     && file.toString().toLowerCase().endsWith(".cfg")
                     ) {
                 files.add(file);
-            }
-            else if (file.isDirectory()) {
+            } else if (file.isDirectory()) {
                 listShipFiles(file.getPath(), files);
             }
         }
@@ -159,15 +151,12 @@ public class ScafParser implements IScafParser {
                     append++;
                 }
             }
-        }
-        catch (FileNotFoundException f) {
+        } catch (FileNotFoundException f) {
             logger.info("File not found: ", file);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             logger.info("could not read file.", e.getMessage());
             throw e;
-        }
-        finally {
+        } finally {
             br.close();
         }
         return tempShips;
@@ -175,7 +164,7 @@ public class ScafParser implements IScafParser {
 
     //methods for further formatting public array tempShips into format suitable for Ship.class
     //after that construct an instance of the ship, to be later parsed to XML. takes no arguments
-    public void stripVars(String[] tempShips) { //Strips incompatible data from array created by loadShipsToMemory
+    private void stripVars(String[] tempShips) { //Strips incompatible data from array created by loadShipsToMemory
         String curTempShip = "";
         for (int i = 0; i < tempShips.length; i++) { //go through all array cells.
 
@@ -225,14 +214,12 @@ public class ScafParser implements IScafParser {
         } catch (IOException e) {
             e.printStackTrace();
             logger.info("could not read file.");
-        }
-        finally {
+        } finally {
             fs.close();
         }
         if (found) {
             return curLine;
-        }
-        else {
+        } else {
             return curLine + " | ERROR: \"" + query + "\" not found in ReadShips.nameLookup().";
         }
     }

@@ -158,9 +158,6 @@ public class Ship implements Comparable<Ship> {
         }
     }
 
-    /**
-     * The type comparator, descending
-     */
     public static Comparator<Ship> sTypeComparatorDescending = new Comparator<Ship>() {
         public int compare(Ship s1, Ship s2) {
             int s1T = s1.getType();
@@ -169,9 +166,6 @@ public class Ship implements Comparable<Ship> {
         }
     };
 
-    /**
-     * The name comparator, descending
-     */
     public static Comparator<Ship> sNameComparatorDescending = new Comparator<Ship>() {
         public int compare(Ship s1, Ship s2) {
             String s1Name = s1.getName().toUpperCase();
