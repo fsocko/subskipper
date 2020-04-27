@@ -13,10 +13,10 @@ import java.io.*;
 import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 
-import static fps.subskipper.recognitionManualParser.util.RecogConstants.SCAF_ROOT_PATH;
+import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.SCAF_ROOT_PATH;
 
 
-public abstract class RecognitionManualDataReader implements RecognitionManualMainInterface {
+public class RecognitionManualDataReader {
 
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 

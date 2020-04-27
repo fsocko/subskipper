@@ -12,7 +12,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.lang.invoke.MethodHandles;
 
-import static fps.subskipper.recognitionManualParser.util.RecogConstants.SHIPLIST_PATH;
+import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.SHIPLIST_PATH;
 
 public class EntityXmlMarshaller {
 

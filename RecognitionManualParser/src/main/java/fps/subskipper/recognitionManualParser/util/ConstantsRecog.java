@@ -3,7 +3,7 @@ package fps.subskipper.recognitionManualParser.util;
 
 import static fps.subskipper.recognitionManualParser.util.Find.findFile;
 
-public class RecogConstants {
+public class ConstantsRecog {
 
     //PATHS
     public static String RESOURCES_PATH;
@@ -15,7 +15,7 @@ public class RecogConstants {
     public static final String COMMAND_LINE_USAGE_MESSAGE = "*SubSkipper Recognition Manual Parser*" +
             "Usage: ";
 
-    public RecogConstants() {
+    public ConstantsRecog() {
 
         this.RESOURCES_PATH = findFile(System.getProperty("user.dir"), "resources").getAbsolutePath();
         this.SHIPLIST_PATH = findFile(System.getProperty("user.dir"), "resources").getAbsolutePath();

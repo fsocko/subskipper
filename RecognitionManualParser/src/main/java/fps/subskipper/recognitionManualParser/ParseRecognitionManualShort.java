@@ -10,33 +10,20 @@ import fps.subskipper.recognitionManualParser.util.FileIO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.xml.bind.JAXBException;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 
 import static fps.subskipper.core.util.Constants.UNIT_FOOT;
 
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
 
-public class ParseRecognitionManualShort implements RecognitionManualMainInterface {
+public class ParseRecognitionManualShort {
 
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-
-    @Override
-    public Ships loadShipsToMemory() throws IOException {
-        throw new UnsupportedOperationException("Operation not supported in " + MethodHandles.lookup().lookupClass().toGenericString());
-    }
-
-    @Override
-    public void writeShipsToFile(Ships ships) throws JAXBException {
-        throw new UnsupportedOperationException("Operation not supported in " + MethodHandles.lookup().lookupClass().toGenericString());
-    }
 
     //takes Ship list Ships, takes filename of doc. - Short style
     //shipList is a Ships object, filename is the name of output file, imperial=true converts
     //units to imperial where relevant. AOB table generates a row of common AOB ratios.
-    @Override
     public void writeRecogSHTML(Ships shipList, String filename, boolean imperial, boolean AOBTable) throws FileNotFoundException {
 
         StringBuilder htmlDoc = new StringBuilder();
@@ -56,10 +43,6 @@ public class ParseRecognitionManualShort implements RecognitionManualMainInterfa
         writeHTML(htmlDoc.toString(), filename);
     }
 
-    @Override
-    public void writeRecogLHTML(Ships shipList, String filename, boolean imperial) throws FileNotFoundException {
-
-    }
 
     //Write HTML Head - done once at start.
     private String writeHead(boolean imperial) {

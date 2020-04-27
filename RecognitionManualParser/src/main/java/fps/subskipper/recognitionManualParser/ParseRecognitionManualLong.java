@@ -16,7 +16,7 @@ import static fps.subskipper.core.util.Constants.*;
 
 //Parse data from XML parser which parses SCAF data, into long form HTML recognition manual.
 
-public abstract class ParseRecognitionManualLong implements RecognitionManualMainInterface {
+public class ParseRecognitionManualLong {
 
     final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
