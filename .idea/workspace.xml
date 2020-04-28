@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a72cad-a6c7-45c8-9f5f-79d7bea9e6d8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/RecognitionManualParser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/RecognitionManualParser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/EntityXmlMarshaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/EntityXmlMarshaller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/ParseRecognitionManualLong.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/ParseRecognitionManualLong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/ParseRecognitionManualShort.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/ParseRecognitionManualShort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/RecogMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/RecognitionManualDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/RecognitionManualDataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/util/RecogConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/util/ConstantsRecog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/test/java/fps/subskipper/recognitionManualParser/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/test/java/fps/subskipper/recognitionManualParser/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/test/java/fps/subskipper/recognitionManualParser/RecognitionManualDataReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/test/java/fps/subskipper/recognitionManualParser/RecognitionManualDataReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/RecognitionManualMainImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/RecognitionManualMainImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/RecognitionManualMainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/RecognitionManualMainInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/util/ConstantsRecog.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/util/ConstantsRecog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/util/Find.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecognitionManualParser/src/main/java/fps/subskipper/recognitionManualParser/util/Find.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecognitionManualParser/src/test/java/fps/subskipper/recognitionManualParser/FindTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/fps/subskipper/core/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/fps/subskipper/core/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/SubSkipper.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/SubSkipper.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +26,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Gradle Kotlin DSL Build Script" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -61,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="fps.subskipper.recognitionManualParser.util" />
       <recent name="fps.subskipper.util" />
       <recent name="fps.subskipper.core" />
     </key>
@@ -79,21 +82,7 @@
       <recent name="D:\002-git\SubSkipper\RecognitionManualParser\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScafParserTest">
-    <configuration name="RecogMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.recognitionmanualparser.RecogMain" />
-      <module name="fps.subskipper.core" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fps.subskipper.recognitionmanualparser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FindTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest (1)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -101,31 +90,65 @@
       </method>
     </configuration>
     <configuration name="FindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fps.subskipper.core" />
+      <module name="RecognitionManualParser" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="fps.subskipper.recognitionManualParser.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fps.subskipper.util" />
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindTest" />
+      <option name="PACKAGE_NAME" value="fps.subskipper.recognitionManualParser.util" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.recognitionManualParser.util.FindTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindTest.findFilepathRecursivelySuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fps.subskipper.core" />
+    <configuration name="FindTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RecognitionManualParser" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="fps.subskipper.recognitionManualParser.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fps.subskipper.util" />
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.util.FindTest" />
+      <option name="PACKAGE_NAME" value="fps.subskipper.recognitionManualParser.util" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.recognitionManualParser.util.FindTest" />
+      <option name="METHOD_NAME" value="findFilepathRecursivelyFailWithInvalidStartDirectoryTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RecognitionManualParser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fps.subskipper.recognitionManualParser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fps.subskipper.recognitionManualParser" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.recognitionManualParser.FindTest" />
+      <option name="METHOD_NAME" value="findFilepathRecursivelyFailWithInvalidStartDirectoryTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindTest.findFilepathRecursivelySuccessTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RecognitionManualParser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fps.subskipper.recognitionManualParser.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fps.subskipper.recognitionManualParser.util" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.recognitionManualParser.util.FindTest" />
       <option name="METHOD_NAME" value="findFilepathRecursivelySuccessTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -133,33 +156,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScafParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fps.subskipper.core" />
+    <configuration name="FindTest.findFilepathRecursivelySuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RecognitionManualParser" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fps.subskipper.recognitionManualParser.RecognitionManualDataReader" />
+          <option name="PATTERN" value="fps.subskipper.recognitionManualParser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fps.subskipper.core.scafparser" />
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.core.scafparser.ScafParserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScafParserTest.loadShipsToMemory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fps.subskipper.core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fps.subskipper.recognitionManualParser.RecognitionManualDataReader" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fps.subskipper.core.scafparser" />
-      <option name="MAIN_CLASS_NAME" value="fps.subskipper.core.scafparser.ScafParserTest" />
-      <option name="METHOD_NAME" value="loadShipsToMemory" />
+      <option name="PACKAGE_NAME" value="fps.subskipper.recognitionManualParser" />
+      <option name="MAIN_CLASS_NAME" value="fps.subskipper.recognitionManualParser.FindTest" />
+      <option name="METHOD_NAME" value="findFilepathRecursivelySuccessTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -183,18 +190,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RecogMain" />
       <item itemvalue="JUnit.FindTest.findFilepathRecursivelySuccessTest" />
+      <item itemvalue="JUnit.FindTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest" />
+      <item itemvalue="JUnit.FindTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest (1)" />
+      <item itemvalue="JUnit.FindTest.findFilepathRecursivelySuccessTest (1)" />
       <item itemvalue="JUnit.FindTest" />
-      <item itemvalue="JUnit.ScafParserTest.loadShipsToMemory" />
-      <item itemvalue="JUnit.ScafParserTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ScafParserTest" />
-        <item itemvalue="JUnit.ScafParserTest.loadShipsToMemory" />
-        <item itemvalue="Application.RecogMain" />
+        <item itemvalue="JUnit.FindTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest (1)" />
+        <item itemvalue="JUnit.FindTest.findFilepathRecursivelySuccessTest (1)" />
         <item itemvalue="JUnit.FindTest" />
+        <item itemvalue="JUnit.FindTest.findFilepathRecursivelyFailWithInvalidStartDirectoryTest" />
         <item itemvalue="JUnit.FindTest.findFilepathRecursivelySuccessTest" />
       </list>
     </recent_temporary>
@@ -223,10 +230,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1588003292739" />
-    <state x="700" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1588011381501">
+    <state x="441" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588086524016">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="700" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1588011381501" />
+    <state x="441" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1588086524016" />
+    <state x="700" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1588084557912">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="700" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1588084557912" />
     <state x="413" y="148" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1588002161205">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -239,6 +250,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="427" y="228" width="511" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1588003416634" />
+    <state x="445" y="199" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1588080133189">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="445" y="199" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1366.738@0.0.1366.738" timestamp="1588080133189" />
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588004930430">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -251,26 +266,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1588000829822" />
-    <state width="1323" height="138" key="GridCell.Tab.0.bottom" timestamp="1588009477468">
+    <state width="800" height="303" key="GridCell.Tab.0.bottom" timestamp="1588089398079">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588009477468" />
-    <state width="1323" height="138" key="GridCell.Tab.0.center" timestamp="1588009477467">
+    <state width="800" height="303" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588089398079" />
+    <state width="800" height="303" key="GridCell.Tab.0.center" timestamp="1588089398079">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588009477467" />
-    <state width="1323" height="138" key="GridCell.Tab.0.left" timestamp="1588009477467">
+    <state width="800" height="303" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588089398079" />
+    <state width="800" height="303" key="GridCell.Tab.0.left" timestamp="1588089398079">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588009477467" />
-    <state width="1323" height="138" key="GridCell.Tab.0.right" timestamp="1588009477468">
+    <state width="800" height="303" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588089398079" />
+    <state width="800" height="303" key="GridCell.Tab.0.right" timestamp="1588089398079">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588009477468" />
+    <state width="800" height="303" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588089398079" />
     <state x="184" y="11" key="SettingsEditor" timestamp="1588003562578">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="11" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1588003562578" />
+    <state x="422" y="87" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588087265665">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="422" y="87" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.738@0.0.1366.738" timestamp="1588087265665" />
     <state x="379" y="101" width="658" height="536" key="find.popup" timestamp="1588012355847">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -283,10 +302,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1588008219506" />
-    <state x="346" y="59" key="search.everywhere.popup" timestamp="1588004816763">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1588084865374">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1588004816763" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1588084865374" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

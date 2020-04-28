@@ -21,13 +21,13 @@ public class RecognitionManualMainImpl implements RecognitionManualMainInterface
     }
 
     @Override
-    public void writeRecogSHTML(Ships shipList, String filename, boolean imperial, boolean AOBTable) throws FileNotFoundException {
+    public void publishRecognitionManualShort(Ships shipList, String filename, boolean imperial, boolean aobTable) throws FileNotFoundException {
         ParseRecognitionManualShort parseShortManual = new ParseRecognitionManualShort();
-        parseShortManual.writeRecogSHTML(shipList, filename, imperial, AOBTable);
+        parseShortManual.writeRecogSHTML(shipList, filename, imperial, aobTable);
     }
 
     @Override
-    public void writeRecogLHTML(Ships shipList, String filename, boolean imperial) throws FileNotFoundException {
+    public void publishRecognitionManualLong(Ships shipList, String filename, boolean imperial) throws FileNotFoundException {
         ParseRecognitionManualLong parseLongManual = new ParseRecognitionManualLong();
         parseLongManual.writeRecogLHTML(shipList, filename, imperial);
     }

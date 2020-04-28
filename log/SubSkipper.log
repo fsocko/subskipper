@@ -1,0 +1,6 @@
+[ERROR  ] [28/04/2020 15:14:20,482] EntityXmlMarshaller:29 (main) - Failed to read ships from file:
+[ERROR  ] [28/04/2020 15:14:20,482] RecognitionManualDataReader:39 (main) - Threw exception when reading ships from file.
+[INFO   ] [28/04/2020 15:14:20,482] RecognitionManualDataReader:52 (main) - RecognitionManualDataReader.parseShipsFromScaf() started.
+[ERROR  ] [28/04/2020 16:03:40,059] EntityXmlMarshaller:29 (main) - Failed to read ships from file:
+[ERROR  ] [28/04/2020 16:03:40,075] RecognitionManualDataReader:39 (main) - Threw exception when reading ships from file.
+[INFO   ] [28/04/2020 16:03:40,075] RecognitionManualDataReader:52 (main) - RecognitionManualDataReader.parseShipsFromScaf() started.

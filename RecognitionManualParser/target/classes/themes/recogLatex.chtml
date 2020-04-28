@@ -1,0 +1,23 @@
+{#preamble}
+%%--Custom Recognition Manual
+\author{Filip Socko}
+\begin{document}
+\section{{$title}}
+\centering
+{#}
+
+{#start}
+\begin{tabular}{|l|c|c|c|c|c|}
+Name & Max Speed & Length & Mast Height & Draft & Aspect\\
+{#}
+
+{#ship}
+\hline
+{$name} & ${$speed}$ & ${$length}$ & ${$mast}$ & ${$draft}$ & ${$aspect}$ \\
+{#}
+
+{#end}
+\hline
+\end{tabular}
+\end{document}
+{#}

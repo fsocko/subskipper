@@ -15,9 +15,9 @@ public interface RecognitionManualMainInterface {
     void writeShipsToFile(Ships ships) throws JAXBException;
 
     //Publish Short Manual
-    void writeRecogSHTML(Ships shipList, String filename, boolean imperial, boolean AOBTable) throws FileNotFoundException;
+    void publishRecognitionManualShort(Ships shipList, String filename, boolean imperial, boolean AOBTable) throws FileNotFoundException;
 
     //Publish Long Manual
-    void writeRecogLHTML(Ships shipList, String filename, boolean imperial) throws FileNotFoundException;
+    void publishRecognitionManualLong(Ships shipList, String filename, boolean imperial) throws FileNotFoundException;
 
 }
