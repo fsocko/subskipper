@@ -1,21 +1,41 @@
 package fps.subskipper.recognitionManualParser;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 
-import static org.junit.Assert.assertTrue;
+import java.io.File;
+import java.io.IOException;
+
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    @Rule
+    public TemporaryFolder folder = new TemporaryFolder();
+
+    /*
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void testXYZ() {
+        final File expected = new File("xyz.txt");
+        final File output = folder.newFile("xyz.txt");
+        TestClass.xyz(output);
+        Assert.assertEquals(FileUtils.readLines(expected), FileUtils.readLines(output));
+    }
+    */
+
+    private final String testResourcesPath = (System.getProperty("user.dir") + "\\src\\test\\resources\\");
+
+    @Test
+    public void shouldPublishShortRecogManual() throws IOException {
+        App app = new App();
+        app.publishShortRecognitionManual(testResourcesPath, true, true);
+
+        assertNotNull(new File(testResourcesPath) + "\\testFile.html");
+
     }
 }
 

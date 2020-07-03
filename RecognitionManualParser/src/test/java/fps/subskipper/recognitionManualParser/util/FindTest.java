@@ -9,6 +9,8 @@ import java.io.FileNotFoundException;
 import static fps.subskipper.recognitionManualParser.util.Find.findFile;
 import static org.junit.Assert.assertEquals;
 
+
+
 public class FindTest {
 
     private final String testFileName = "findTestFile.2";
