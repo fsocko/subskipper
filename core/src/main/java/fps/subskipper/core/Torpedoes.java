@@ -1,6 +1,7 @@
 package fps.subskipper.core;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,11 +10,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 
-
+@Slf4j
 //Wrapper for martialing XML correctly. Stores Ship object as a list of Ships
 @XmlRootElement(name = "torpedoes")
 public class Torpedoes {
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
     ArrayList<Torpedo> torpedoes;
 
     @XmlElement(name = "torpedo")

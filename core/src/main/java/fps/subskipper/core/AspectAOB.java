@@ -1,5 +1,6 @@
 package fps.subskipper.core;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,9 +12,8 @@ import org.apache.logging.log4j.Logger;
  * it will return wildly inaccurate figures, because that's how
  * trigonometry works.
  */
+@Slf4j
 public class AspectAOB {
-
-    final static Logger logger = LogManager.getLogger(AspectAOB.class);
 
     /**
      * Wrapper for calculateAOB, calculates AOB bearing with AOB estimate

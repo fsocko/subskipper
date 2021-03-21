@@ -1,5 +1,6 @@
 package fps.subskipper.core;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,12 +14,8 @@ import java.lang.invoke.MethodHandles;
  * Class for returning various timers.
  * All time handling done in System.nanoTime / Long type.
  */
-
+@Slf4j
 public class StopWatch {
-
-
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-
 
     //main timer values
     private Long startTime;
@@ -32,7 +29,7 @@ public class StopWatch {
      */
     public void startTimer() {
         this.startTime = System.nanoTime();
-        logger.info("StartTime:{}" + startTime);
+        log.info("StartTime:{}" + startTime);
     }
 
     /**
@@ -67,7 +64,7 @@ public class StopWatch {
      */
     public String showTime() {
 
-        logger.info("Time:{}", this.endTime);
+        log.info("Time:{}", this.endTime);
         return "TIME";
 
     }

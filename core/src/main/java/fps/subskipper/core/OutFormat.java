@@ -1,5 +1,6 @@
 package fps.subskipper.core;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.text.DecimalFormat;
@@ -14,9 +15,8 @@ import static fps.subskipper.core.util.Constants.*;
  *
  * @author fps Method for formatting output using a formatter to a String.
  */
+@Slf4j
 public class OutFormat {
-
-    final static Logger logger = LogManager.getLogger(OutFormat.class);
 
     /**
      * Appends arbitrary unit to value.

@@ -2,6 +2,8 @@
 //by SubSkipper Android.
 package fps.subskipper.core;
 
+import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,12 +16,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static fps.subskipper.core.util.Constants.FEET_FOR_EVERY_METRE;
 
+@Slf4j
 @XmlRootElement(name = "ship")
 @XmlAccessorType(XmlAccessType.FIELD)
-
 public class Ship implements Comparable<Ship> {
-
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     private int id;
     private final String nation;
@@ -153,7 +153,7 @@ public class Ship implements Comparable<Ship> {
         } else if (ship.getType() == this.getType()) {
             return 0;
         } else {
-            logger.error("Unable to compare\n%s\nto:\n%s by type. Returning 0.", this.toString(), ship.toString());
+            log.error("Unable to compare\n%s\nto:\n%s by type. Returning 0.", this.toString(), ship.toString());
             return 0;
         }
     }

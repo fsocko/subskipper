@@ -7,6 +7,7 @@ import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
 import fps.subskipper.core.util.Constants;
 import fps.subskipper.recognitionManualParser.util.FileIO;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,10 +17,8 @@ import java.lang.invoke.MethodHandles;
 import static fps.subskipper.core.util.Constants.UNIT_FOOT;
 
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
-
+@Slf4j
 public class ParseRecognitionManualShort {
-
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     //takes Ship list Ships, takes filename of doc. - Short style
     //shipList is a Ships object, filename is the name of output file, imperial=true converts
@@ -149,7 +148,7 @@ public class ParseRecognitionManualShort {
     private void writeHTML(String input, String path) throws FileNotFoundException {
         FileIO htmlWriter = new FileIO();
         htmlWriter.writeLine(path, input);
-        logger.info("Parse Recognition Manual Short : Published successfully."); //FIXME: fix
+        log.info("Parse Recognition Manual Short : Published successfully."); //FIXME: fix
     }
 
 }

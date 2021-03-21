@@ -1,5 +1,6 @@
 package fps.subskipper.core;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,13 +14,8 @@ import java.lang.invoke.MethodHandles;
  * NOTE: as long as distance and speed corespond to speed: e.g. speed = m/s,
  * d=m, t=s then units do not matter. Really though, it should probably be m/s.
  */
-
+@Slf4j
 public final class Nomo {
-
-    /**
-     * The logger.
-     */
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     private Long speed = 0l;
     private Long dist = 0l;
@@ -31,20 +27,20 @@ public final class Nomo {
      * every time. Output doesn't need to be *THAT* accurate anyway and it stops
      * rounding errors.
      *
-     * @param speed the speed
-     * @param dist  the dist
-     * @param time  the time
+     * @param s the speed
+     * @param d  the dist
+     * @param t  the time
      */
     public Nomo(Double s, Double d, Long t) {
-        logger.error("Double nomo input not implemented.");
+        log.error("Double nomo input not implemented.");
     }
 
     /**
      * Instantiates a new nomo.
      *
-     * @param speed the speed
-     * @param dist  the dist
-     * @param time  the time
+     * @param s the speed
+     * @param d  the dist
+     * @param t  the time
      */
     public Nomo(Long s, Long d, Long t) {
 
@@ -66,27 +62,27 @@ public final class Nomo {
         //I.e., if Nomo has 2 params.
         if (valCheck != 9 || valCheck != 5 || valCheck != 8) {
             isValid = false;
-            logger.error("Invalid Nomo: s{}, d{}, t{}", this.getSpeed(), this.getDist(), this.getTime());
+            log.error("Invalid Nomo: s{}, d{}, t{}", this.getSpeed(), this.getDist(), this.getTime());
         } else {
             // s = d/t
             if (valCheck == 9) {
                 this.speed = (this.dist / this.time);
                 isValid = true;
-                logger.info("Valid Nomo; speed set to:{}", this.getSpeed());
+                log.info("Valid Nomo; speed set to:{}", this.getSpeed());
             }
 
             // t = d/s
             if (valCheck == 5) {
                 this.time = (this.dist / this.speed);
                 isValid = true;
-                logger.info("Valid Nomo; time set to:{}", this.getTime());
+                log.info("Valid Nomo; time set to:{}", this.getTime());
             }
 
             // d = st
             if (valCheck == 8) {
                 this.dist = (this.speed * this.time);
                 isValid = true;
-                logger.info("Valid Nomo; speed set to:{}", this.getSpeed());
+                log.info("Valid Nomo; speed set to:{}", this.getSpeed());
             }
 
         }

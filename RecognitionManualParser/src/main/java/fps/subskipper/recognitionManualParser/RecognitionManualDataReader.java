@@ -3,29 +3,28 @@
 
 package fps.subskipper.recognitionManualParser;
 
+import com.sun.corba.se.impl.orbutil.closure.Constant;
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import fps.subskipper.recognitionManualParser.util.ConstantsRecog;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.xml.bind.JAXBException;
 import java.io.*;
-import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 
+import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.SCAF_DATA_PATH;
 import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.SCAF_ROOT_PATH;
 
-
+@Slf4j
 public class RecognitionManualDataReader {
-
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     public void writeShipsToFile(Ships ships) throws JAXBException {
         EntityXmlMarshaller shipMarshaller = new EntityXmlMarshaller();
         try {
             shipMarshaller.writeShipsToXml(ships);
         } catch (JAXBException j) {
-            logger.error("Threw JAXB exception when writing ships to file.", j.getMessage());
+            log.error("Threw JAXB exception when writing ships to file.", j);
             throw j;
         }
     }
@@ -36,24 +35,24 @@ public class RecognitionManualDataReader {
         try {
             ships = readShips.readShipsFromXml();
         } catch (Exception e) {
-            logger.error("Threw exception when reading ships from file.", e.getMessage());
+            log.error("Threw exception when reading ships from file.", e);
         }
         try {
-            ships = parseShipsFromScaf(SCAF_ROOT_PATH);
+            ships = parseShipsFromScaf();
         } catch (IOException e) {
-            logger.error("Threw IOException when parsing ships from SCAF.", e.getMessage());
+            log.error("Threw IOException when parsing ships from SCAF.", e);
             throw e;
         }
         return ships;
     }
 
 
-    private Ships parseShipsFromScaf(String scafPath) throws IOException {
-        logger.info("RecognitionManualDataReader.parseShipsFromScaf() started.");
+    public Ships parseShipsFromScaf() throws IOException {
+        log.info("RecognitionManualDataReader.parseShipsFromScaf() started.");
         ArrayList<File> shipFiles = new ArrayList<>();
         ArrayList<Ship> shipData = new ArrayList<>();
 
-        listShipFiles(scafPath, shipFiles);
+        listShipFiles(SCAF_ROOT_PATH, shipFiles);
 
         for (int i = 0; i < shipFiles.size(); i++) {
             shipData.add(makeShip(shipFiles.get(i).toString()));
@@ -62,10 +61,8 @@ public class RecognitionManualDataReader {
     }
 
     //Format and construct a ship object using data in tempShips
-    private Ship makeShip(String path) throws IOException {
-        //First run listF
+    public Ship makeShip(String path) throws IOException {
         ArrayList<File> shipFiles = new ArrayList<File>();
-        listShipFiles("data", shipFiles);
         String[] tempShips = formatScafShipRecord(path);
         stripVars(tempShips); //remove descriptor strings.
 
@@ -91,7 +88,7 @@ public class RecognitionManualDataReader {
     }
 
     //recursively goes through directories, filters out ship cfg files. TODO: should be listShipFiles or to that effect
-    private void listShipFiles(String directoryName, ArrayList<File> files) {
+    public void listShipFiles(String directoryName, ArrayList<File> files) {
         File directory = new File(directoryName);
         // recursively list files in directory and sub directories.
         File[] fList = directory.listFiles();
@@ -149,9 +146,9 @@ public class RecognitionManualDataReader {
                 }
             }
         } catch (FileNotFoundException f) {
-            logger.info("File not found: ", file);
+            log.info("File not found: ", file);
         } catch (IOException e) {
-            logger.info("could not read file.", e.getMessage());
+            log.info("could not read file.", e.getMessage());
             throw e;
         } finally {
             br.close();
@@ -160,7 +157,7 @@ public class RecognitionManualDataReader {
     }
 
     //methods for further formatting public array tempShips into format suitable for Ship.class
-    //after that construct an instance of the ship, to be later parsed to XML. takes no arguments
+    //after that construct an instance of the ship, to be later parsed to XML.
     private void stripVars(String[] tempShips) { //Strips incompatible data from array created by loadShipsToMemory
         String curTempShip = "";
         for (int i = 0; i < tempShips.length; i++) { //go through all array cells.
@@ -189,11 +186,11 @@ public class RecognitionManualDataReader {
         FileInputStream fs = null;
 
         try {
-            fs = new FileInputStream(""); //TODO: was: fs = new FileInputStream(namesPath);
+            fs = new FileInputStream(ConstantsRecog.SCAF_NAMES_PATH); //TODO: was: fs = new FileInputStream(namesPath);
             try (BufferedReader br = new BufferedReader(new InputStreamReader(fs))) {
                 while (!found) {
                     if (!br.ready()) {
-                        logger.info("Reached Names.cfg EOF. Breaking.");
+                        log.info("Reached Names.cfg EOF. Breaking.");
                         break;
                     }
                     curLine = br.readLine().trim();
@@ -206,18 +203,18 @@ public class RecognitionManualDataReader {
                 }
             }
         } catch (FileNotFoundException f) {
-            logger.info("Could not find file.");
+            log.info("Could not find file.", f);
 
         } catch (IOException e) {
             e.printStackTrace();
-            logger.info("could not read file.");
+            log.info("could not read file.", e);
         } finally {
             fs.close();
         }
         if (found) {
             return curLine;
         } else {
-            logger.error(curLine + "query not found in ReadShips.nameLookup().");
+            log.error(curLine + "query not found in ReadShips.nameLookup().");
             return curLine + " | ERROR: \"" + query + "\" not found in ReadShips.nameLookup().";
         }
     }

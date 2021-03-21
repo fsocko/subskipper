@@ -6,6 +6,7 @@ import fps.subskipper.core.OutFormat;
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
 import fps.subskipper.recognitionManualParser.util.FileIO;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,10 +16,8 @@ import java.lang.invoke.MethodHandles;
 import static fps.subskipper.core.util.Constants.*;
 
 //Parse data from XML parser which parses SCAF data, into long form HTML recognition manual.
-
+@Slf4j
 public class ParseRecognitionManualLong {
-
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
 
     //takes Ship list Ships, takes filename of doc. - Long recog manual
     //with images and data in long format, styled with CSS.
@@ -35,7 +34,7 @@ public class ParseRecognitionManualLong {
         //Close remaining tags
         htmlDoc.append(HTMLEndL());
         writeHTML(htmlDoc.toString(), filename);
-        logger.info("HTML Written.");
+        log.info("HTML Written.");
     }
 
     private String HTMLStartL(boolean imperial) {

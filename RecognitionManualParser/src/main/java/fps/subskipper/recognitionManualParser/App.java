@@ -1,7 +1,9 @@
 package fps.subskipper.recognitionManualParser;
 
+import com.sun.corba.se.impl.orbutil.closure.Constant;
 import fps.subskipper.core.Ships;
 import fps.subskipper.recognitionManualParser.util.ConstantsRecog;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import picocli.CommandLine;
@@ -19,13 +21,12 @@ import java.util.concurrent.Callable;
  */
 @CommandLine.Command(description = "Prints the checksum (MD5 by default) of a file to STDOUT.",
         name = "checksum", mixinStandardHelpOptions = true, version = "checksum 3.0")
-
+@Slf4j
 public class App implements Callable<Integer> {
 
     public App() throws IOException {
     }
 
-    final static Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
     RecognitionManualMainImpl recognitionManualMain = new RecognitionManualMainImpl();
     final Ships shipList = recognitionManualMain.loadShipsToMemory();
 
@@ -33,7 +34,7 @@ public class App implements Callable<Integer> {
     private boolean isLongManual = true;
 
     @CommandLine.Option(names = {"-i", "--imperial"}, description = "Converts measurements to imperial.")
-    private boolean isImperial;
+    private boolean isImperial = false;
 
     @CommandLine.Option(names = {"-a", "--aob"}, description = "Prints aspects at common AOB values (Short manual only)")
     private boolean isAOB;
@@ -88,36 +89,17 @@ public class App implements Callable<Integer> {
     }
 
     public static void main(String... args) throws Exception {
+        ConstantsRecog constantsRecog = new ConstantsRecog();
         int exitCode = new CommandLine(new App()).execute(args);
         System.exit(exitCode);
     }
 
-
-
-//    public static void main(String[] args) {
-//
-//        System.out.println(ConstantsRecog.COMMAND_LINE_USAGE_MESSAGE);
-//        //TODO:
-//        //Output path -- Default to Target/Generate filename based on attributes. - Change title based on attributes i.e. not always SCAF
-//        //Imperial
-//        //AobTable (Short Only)
-//
-//        //Command example: Short or Long S/L - (default short), TargetPath (default to const), imperial? (optional, default false) AobTable? (optional, default to false)
-//
-//        Boolean isShortManual = Optional.ofNullable(args[0].trim().toUpperCase()).equals("S") ? true : false;
-//        Optional<String> targetPath = Optional.ofNullable(args[1].trim()).orElseGet(ConstantsRecog.RECOGNITION_MANUAL_SHORT_FILENAME);
-//        Optional<String> isImperial = Optional.ofNullable(args[2].trim().toUpperCase()).equals("I") ? true : false;
-//        Optional<String> printAobTable = Optional.ofNullable(args[3]);
-//    }
-
-
-    public void publishShortRecognitionManual (String manualTargetPath, Boolean imperial, Boolean aobTable) throws
-            IOException {
+    public void publishShortRecognitionManual (String manualTargetPath, Boolean isImperial, Boolean isAobTable) throws IOException {
         recognitionManualMain.publishRecognitionManualShort(shipList, ConstantsRecog.RESOURCES_PATH + "\\" + ConstantsRecog.RECOGNITION_MANUAL_SHORT_FILENAME, false, false);
     }
 
-    public void publishLongRecognitionManual (String manualTargetPath, Boolean imperial) throws IOException {
-        recognitionManualMain.publishRecognitionManualLong(shipList, ConstantsRecog.RESOURCES_PATH + "\\recogLm.html", false);
+    public void publishLongRecognitionManual (String manualTargetPath, Boolean isImperial) throws IOException {
+        recognitionManualMain.publishRecognitionManualLong(shipList, ConstantsRecog.RESOURCES_PATH + "\\" + ConstantsRecog.RECOGNITION_MANUAL_LONG_FILENAME, isImperial);
     }
 }
 
