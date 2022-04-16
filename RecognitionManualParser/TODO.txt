@@ -1,0 +1,14 @@
+DDS Image library
+
+1. Integrate website.
+
+2. Recognition Manual browser 
+	Website with recog manual + index + buttons to advance + index automatically hosted on github with each release?
+	(In Swing/GWT Possibly? Show ships on second screen or Android ideally)
+	
+
+
+Command Line Interface
+
+
+

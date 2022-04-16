@@ -1,9 +1,11 @@
 /bin/
-/log/
+
+**/log
 /docs/SubSkipperSrc/
-/core/target/
-/RecognitionManualParser/target/
-/.idea/
+**/target
+
+.idea/
+
 *.nfo
 *.class
 *.log
