@@ -9,6 +9,8 @@
 /docs/SubSkipperSrc/
 
 .idea/
+.project/
+
 *.nfo
 *.class
 
