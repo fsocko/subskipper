@@ -3,7 +3,6 @@
 
 package fps.subskipper.recognitionManualParser;
 
-import com.sun.corba.se.impl.orbutil.closure.Constant;
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
 import fps.subskipper.recognitionManualParser.util.ConstantsRecog;
@@ -13,8 +12,7 @@ import javax.xml.bind.JAXBException;
 import java.io.*;
 import java.util.ArrayList;
 
-import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.SCAF_DATA_PATH;
-import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.SCAF_ROOT_PATH;
+import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.*;
 
 @Slf4j
 public class RecognitionManualDataReader {

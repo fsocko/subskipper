@@ -11,16 +11,16 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.lang.invoke.MethodHandles;
+import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.*;
 
 
 @Slf4j
 public class EntityXmlMarshaller {
 
-    ConstantsRecog constants = new ConstantsRecog();
 
     public Ships readShipsFromXml() throws JAXBException, NullPointerException {
         try {
-            File file = new File(constants.SHIPLIST_PATH);
+            File file = new File(SHIPLIST_PATH);
             JAXBContext jaxbContext = JAXBContext.newInstance(Ships.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             return (Ships) jaxbUnmarshaller.unmarshal(file);
@@ -35,7 +35,7 @@ public class EntityXmlMarshaller {
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(Ships.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-            File file = new File(constants.SHIPLIST_PATH);
+            File file = new File(SHIPLIST_PATH);
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             //jaxbMarshaller.marshal(shipWrap, System.out); //Used in debugging to print xml to sys.out
             jaxbMarshaller.marshal(shipWrapper, file);

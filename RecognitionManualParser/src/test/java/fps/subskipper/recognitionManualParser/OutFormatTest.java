@@ -1,4 +1,4 @@
-package fps.subskipper.core;
+package fps.subskipper.recognitionManualParser;
 
 import org.junit.Test;
 

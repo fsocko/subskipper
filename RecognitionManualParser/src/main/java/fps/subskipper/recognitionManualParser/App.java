@@ -1,6 +1,5 @@
 package fps.subskipper.recognitionManualParser;
 
-import com.sun.corba.se.impl.orbutil.closure.Constant;
 import fps.subskipper.core.Ships;
 import fps.subskipper.recognitionManualParser.util.ConstantsRecog;
 import lombok.extern.slf4j.Slf4j;
@@ -12,6 +11,8 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.util.concurrent.Callable;
+
+import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.*;
 
 /**
  * Simple main application
@@ -46,12 +47,12 @@ public class App implements Callable<Integer> {
 
         StringBuffer manualType = new StringBuffer("recognitionManual_");
 
-        if (isLongManual == false) {
+        if (!isLongManual) {
             manualType.append("short_");
         } else {
             manualType.append("long_");
         }
-        if (isImperial == true) {
+        if (isImperial) {
             manualType.append("imperial_");
         } else {
             manualType.append("metric_");
@@ -89,7 +90,6 @@ public class App implements Callable<Integer> {
     }
 
     public static void main(String... args) throws Exception {
-        ConstantsRecog constantsRecog = new ConstantsRecog();
         int exitCode = new CommandLine(new App()).execute(args);
         System.exit(exitCode);
     }

@@ -6,6 +6,7 @@ import fps.subskipper.core.Torpedoes;
 import fps.subskipper.recognitionManualParser.util.ConstantsRecog;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -24,16 +25,18 @@ public class EntityXmlMarshallerTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+        entityXmlMarshaller = new EntityXmlMarshaller();
     }
 
-    @Test
+    @Test @Ignore //TODO
     public void testReadShipsFromXml() throws Exception {
         Ships result = entityXmlMarshaller.readShipsFromXml();
-        //Assert.assertEquals(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))), result);
+        Assert.assertEquals(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))), result);
     }
 
-    @Test
+    @Test @Ignore //TODO
     public void testWriteShipsToXml() throws Exception {
-       //entityXmlMarshaller.writeShipsToXml(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))));
+       entityXmlMarshaller.writeShipsToXml(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))));
+       Assert.assertEquals(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))), entityXmlMarshaller.readShipsFromXml());
     }
 }
