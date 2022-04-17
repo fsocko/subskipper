@@ -1,0 +1,96 @@
+
+
+Ship_Centered_Accuracy_Fix for TMO_2
+July, 2010
+By CapnScurvy, Leander (Lee) Crawford
+
+
+This modification for Silent Hunter 4 Wolves of the Pacific will increase accuracy in manual targeting when using the Periscopes or TBT (UZO). The mod changes the reference point on many of the ships to a more central position, rather than using ship masts that are rarely centered. The new positions could be a ship's funnel(s), carrier flight deck, wheel house roof, top of the nationality flag, or other structures. This new reference point will be used like the masts, with the Stadimeter's ship waterline image being placed at its top to calculate range to target. The Recognition Manual pictures have been modified by adding a flag, or highlighting in red the new reference point positions to aid in finding the correct point. More importantly, the positions have been calibrated for accuracy with the target ship at several distances and angle on bow headings to give accurate range. This alone improves the reference point figures for correct solutions over the varied stock mast heights. It is proven that many stock mast heights are inaccurate, giving wrong range findings when manually targeting. Using the corrected heights at the designated reference points will provide as close to accurate range findings the game allows.  
+
+This mod version is compatible with patch 1.5 Add-on released late winter, 2008. It will work in both metric and imperial game play. It is compatible with the Generic Mod Enabler (JSGME). The mod is in .rar file compression format for ease of download. This Trigger Maru Overhauled v2.0 compatible edition of SCAF is meant to overlay TMO 2.0. There are editions of SCAF specifically compatible for other non modified Stock Silent Hunter 4 versions or a RSRDC v502 which is compatible with TMO 2.0. As always be careful how you mix and match mods together, one can overwrite the other's files, making the game perform outside of intended parameters. Assume that no mods are compatible with each other unless the author states they are.
+
+======================================
+
+
+How it works:
+
+The mod changes the stock game ship mast heights to a new reference point height. These new figures were calculated from testing ship to ship known distances, and calibrating the heights to the actual distance at an approximate 1500 yard range. An average accurate range to target was the basis after testing various target angles and distances. These heights have nothing to do with historically found measurements. They are based solely on how the game calculates these measurements and renders a distance sum from them. It was found that having the new reference position centered created greater accuracy when the target would present itself at various angles. The mod is equally accurate for both American and German side of play since all ships have been calibrated for accuracy.
+
+
+======================================
+
+
+What is changed with SCAF:
+
+1. Mast heights to all Japanese warships and merchants (except for sampans and smaller fishing boats), the Axis country ships. All Allied warships and merchants. A total of 102 stock ship classes were changed, with 14 additional TMO ship classes, 116 classes calibrated in all.
+
+2. The Recognition Manual ship pictures have the new reference point funnel(s)/structure highlighted in red to aid in reference point identification. The ship pictures not highlighted indicate the mast heights were not changed. Changes were made to some of the pictures to represent the actual display of some of the modified ships. Flags were added to several of the Jap Carriers, and many of the American Warships to indicate the Stadimeter reference point is at the top of the flag (where it attaches to the mast). New text was added to the Recognition Manual related to the changes. The Next/Previous page buttons were moved to a more convenient position. A different Recognition Manual cover was made by me, with minor changes to the interior pages color and design. The credit for the original Recognition Manual Mod goes to the fine work of OakGrove.
+
+
+ ======================================
+
+
+Optional Files: 
+
+MaxOptics IV for TMO_2
+
+This additional mod will increase the magnification of the Periscopes, TBT, Binocular, and Deck gun views. There are additional zoom levels added to these stations which will be found by using the �Tab� key or the wheel of the mouse. Activate after the TMO 2.0 and SCAF for TMO_2 mods. This mod is a �stand alone� mod for TMO 2.0, meaning SCAF does not need to be activated to use the zoomed features. However, do not use this mod with any other stock or ROW type �Camera.dat� file changing mod. It is to be used only with TMO 2.0. 
+
+I highly recommend the use of MaxOptics IV which will provide an easier and more accurate range finding capability when manually targeting. The greater the magnification, the easier the sighting of the reference point for Stadimeter placement. This will give you an increased distance capability for accurate range finding.
+
+
+
+How to install:
+
+First, download/install the Generic Mod Enabler (JSGME) to your computer if you do not already have it installed. The JSGME.exe file should be placed in the root directory of SH4. Follow it�s read me instructions. 
+Example; the default file tree of SH4 in a Windows XP system should look like this:
+ 
+ C:\Program Files
+                \Ubisoft
+                   \Silent Hunter Wolves of the Pacific   <<<This is the root directory of SH4
+                   \JSGME.exe
+                   \MODS    <<< From this folder JSGME "activates" the downloaded mods;            Extract all mods to this �MODS� folder  
+
+After downloading the "SCAF for TMO_2.rar" compressed file to your computer, put the opened file into the "MODS" folder that was created when you first ran JSGME. The file structure of the mod is:
+
+ SCAF for TMO_2
+                                 \Data
+                                        \Menu                                                    
+                                        \ROSTER
+                                        \SEA
+
+Run JSGME.exe to find the "SCAF for TMO_2" in the left hand panel of the enabler. Click the arrow to move it to the �Activated� right hand panel, after activating the TMO 2.0. Be aware, any newer patches may not be compatible with SCAF. To add the MaxOptics IV for TMO 2.0 optional mod, do so after activating TMO, its patches, and the SCAF mod. 
+
+Close the JSGME mod enabler, and run Silent Hunter. To remove, just reverse the above.
+
+How to use:
+
+Basic Rule:
+Place the Stadimeter's overlay image with the ship's waterline, just slightly touching the top of the funnel/structure/flag as marked in the Recognition Manual.
+
+Although accuracy has been found to be as good as 11 yards at 5000 yards distance with the above guidelines followed. The sea state, visibility, and in which cheek you stick your tongue, play a role in accurate range finding. The slightest twitch of the mouse click can create a 150 yard difference with target ships at long distances. This is why I recommend the use of a tool such as MaxOptics which improves the magnification of the ship reference point for greater manual range finding accuracy.   
+
+
+Specifically: 
+
+1. On ships that have a funnel guard or rounded grid at the funnel opening, place the waterline at the top of the guard or grid.
+
+2. On ships that have angled funnel tops, place the waterline at the top of the angle.
+
+3. Some destroyers have a small light or box at the top of the funnel. Ignore this and place the waterline at the top of the funnel proper.
+
+4. Some aircraft carriers will use the top of their flight decks. Other ships will use overhead cables or wires. In both cases, wherever the reference point intersects with the periscope or TBT vertical crosshair, place the waterline at that intersecting point. The target ship should be "Locked" in view to find the center however, if you find the centerline obstructs your view "Unlock" it and move it slightly to the left or right, placing the waterline at the found "Locked" center position.   
+
+5. The two larger passenger ships have two funnels. Try to split the difference between the funnels when the ships are at sharp AoB bearings. Example; Huge European Liner, or  Large Old Passenger at 40 degree AoB or less,  place waterline on the first funnel top, then move down 1click to set the image when the range to target is about 1500 yards distance. Move down more if the ships are closer to the sub, less if further away. If they're at a 90 AoB, use the basic rule above.
+
+6. On the Recognition Manual pictures that have a flag flying on a mast, use the top of the flag where it meets the mast to place the Stadimeter's second image. 
+
+=====================================
+
+I would like to thank Jaesen Jones and Jimimadrid for their mod enablers, which make installation (and my testing) so much easier. Thanks to Skwas for his Silent 3ditor. This tool worked great. I was finally able to make sense of data game files with it. Plus, Nvdrifter and so many others that have worked on tweak files that made Skwas's tool possible. Also a thank you to zAmboni for his great tutorial of "Deconstructing the menu_1024_768.ini file".
+
+This mod is for the enjoyment of the Submarine Simulation game community, and is not intended to be used in whole or part for monetary gain or resale. It is to be considered freeware for the public to use in whatever way the user feels necessary, free of cost. Any and all parts may be reworked to your desire, just give credit where credit is due. 
+
+
+CapnScurvy
+
