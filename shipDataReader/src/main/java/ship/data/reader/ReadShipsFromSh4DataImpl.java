@@ -14,7 +14,7 @@ import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
 import lombok.extern.slf4j.Slf4j;
 
-import static ship.data.reader.Constants.*;
+import static ship.data.reader.DataReaderConstants.*;
 
 @Slf4j
 public class ReadShipsFromSh4DataImpl {

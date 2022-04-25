@@ -13,10 +13,9 @@ import javax.imageio.ImageReader;
 import javax.imageio.stream.FileImageInputStream;
 
 
+@Deprecated
 public class Sh4ImageProcessor {
-
 	
-
 	public BufferedImage read(File file, int imageIndex) throws IOException{
 	    Iterator<ImageReader> iterator = ImageIO.getImageReadersBySuffix("dds");
 	    if (iterator.hasNext()){
