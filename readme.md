@@ -4,5 +4,5 @@ The GitHub SubSkipper repository contains the core logic of the app, such that i
 
 The main purpose of the repository and documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
 
-For more details, see the official documentation:
-https://github.com/fsocko/SubSkipper/blob/master/docs/SubSkipperDoc.pdf
+For more details, see the github page: http://fsocko.github.io/subskipper/
+or wiki.
