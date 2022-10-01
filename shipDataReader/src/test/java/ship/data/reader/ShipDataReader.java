@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 import static ship.data.reader.DataReaderConstants.*;
 
 @Slf4j
-public class IShipDataReader {
+public class ShipDataReader {
 
 	public void writeShipsToFile(Ships ships) throws JAXBException {
 	       

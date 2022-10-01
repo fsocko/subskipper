@@ -13,7 +13,6 @@ import java.io.File;
 import java.lang.invoke.MethodHandles;
 import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.*;
 
-
 @Slf4j
 public class EntityXmlMarshaller {
 

@@ -16,7 +16,6 @@ import javax.imageio.ImageIO;
 import javax.xml.bind.DatatypeConverter;
 
 import lombok.extern.slf4j.Slf4j;
-import ship.data.reader.DDSReader;
 import ship.data.reader.DataReaderConstants;
 
 @Slf4j

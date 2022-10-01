@@ -22,13 +22,13 @@ public class RecognitionManualMainImpl implements RecognitionManualMainInterface
 
     @Override
     public void publishRecognitionManualShort(Ships shipList, String filename, boolean imperial, boolean aobTable) throws FileNotFoundException {
-        ParseRecognitionManualShort parseShortManual = new ParseRecognitionManualShort();
+        WriteRecognitionManualShort parseShortManual = new WriteRecognitionManualShort();
         parseShortManual.writeRecogSHTML(shipList, filename, imperial, aobTable);
     }
 
     @Override
     public void publishRecognitionManualLong(Ships shipList, String filename, boolean imperial) throws FileNotFoundException {
-        ParseRecognitionManualLong parseLongManual = new ParseRecognitionManualLong();
+        WriteRecognitionManualLong parseLongManual = new WriteRecognitionManualLong();
         parseLongManual.writeRecogLHTML(shipList, filename, imperial);
     }
 }

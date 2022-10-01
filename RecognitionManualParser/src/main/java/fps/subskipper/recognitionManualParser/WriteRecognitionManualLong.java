@@ -17,7 +17,7 @@ import static fps.subskipper.core.util.Constants.*;
 
 //Parse data from XML parser which parses SCAF data, into long form HTML recognition manual.
 @Slf4j
-public class ParseRecognitionManualLong {
+public class WriteRecognitionManualLong {
 
     //takes Ship list Ships, takes filename of doc. - Long recog manual
     //with images and data in long format, styled with CSS.

@@ -1,4 +1,4 @@
-package ship.data.reader;
+package image.processor;
 
 /**
  * DDSReader.java

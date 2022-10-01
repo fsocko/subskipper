@@ -18,7 +18,7 @@ import static fps.subskipper.core.util.Constants.UNIT_FOOT;
 
 //Parse data from XML parser which parses SCAF data, into short table form HTML recognition manual.
 @Slf4j
-public class ParseRecognitionManualShort {
+public class WriteRecognitionManualShort {
 
     //takes Ship list Ships, takes filename of doc. - Short style
     //shipList is a Ships object, filename is the name of output file, imperial=true converts
