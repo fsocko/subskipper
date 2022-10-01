@@ -8,13 +8,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import javax.xml.bind.JAXBException;
-
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
+import image.processor.ImageProcessor;
+import image.processor.ImageProcessorImpl;
 import lombok.extern.slf4j.Slf4j;
 
-import static ship.data.reader.DataReaderConstants.*;
+import static fps.subskipper.core.util.Constants.SCAF_NAMES_PATH;
+import static fps.subskipper.core.util.Constants.SCAF_ROOT_PATH;
 
 @Slf4j
 public class ReadShipsFromSh4DataImpl {
@@ -23,11 +24,10 @@ public class ReadShipsFromSh4DataImpl {
         log.info("parseShipsFromScaf() started.");
         ArrayList<File> shipFiles = new ArrayList<>();
         ArrayList<Ship> shipData = new ArrayList<>();
-
         listShipFiles(SCAF_ROOT_PATH, shipFiles);
 
-        for (int i = 0; i < shipFiles.size(); i++) {
-            shipData.add(makeShip(shipFiles.get(i).toString()));
+        for (File textShip : shipFiles) {
+            shipData.add(makeShip(textShip.toString()));
         }
         return new Ships(shipData);
     }
@@ -49,6 +49,9 @@ public class ReadShipsFromSh4DataImpl {
         imagePath += "_sil.dds";
         imagePath = "\"" + imagePath + "\"";
 
+        ImageProcessor ip = new ImageProcessorImpl();
+        String shipImageB64 = ip.ddsPathToB64Image(imagePath);
+
         double maxSpeed = Double.parseDouble(tempShips[2]);
         double length = Double.parseDouble(tempShips[3]);
         double width = Double.parseDouble(tempShips[4]);
@@ -56,7 +59,7 @@ public class ReadShipsFromSh4DataImpl {
         double draft = Double.parseDouble(tempShips[6]);
         double disp = Double.parseDouble(tempShips[7]);
 
-        Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
+        Ship testShip = new Ship(name, type, typeName, imagePath, shipImageB64, maxSpeed, length, width, mast, draft, disp);
         return testShip;
     }
 

@@ -1,9 +1,7 @@
 package image.processor;
 
+import static fps.subskipper.core.util.Constants.*;
 import static org.junit.Assert.assertEquals;
-import static ship.data.reader.DataReaderConstants.NO_DATA_IMAGE_B64;
-import static ship.data.reader.DataReaderConstants.RESOURCES_PATH;
-import static ship.data.reader.DataReaderConstants.SFS;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -30,7 +28,6 @@ public class ImageProcessorImplTest {
 	@Ignore
 	public void testReadDdsFileToBufferedImage() throws IOException {
 		BufferedImage image1 = proc.readDdsFileToBufferedImage(testImageDirPath);
-
 		// parseOK
 		assertEquals(b64IowaTestImage, proc.bufferedImageToB64Png(image1));
 		// Parse no file, return no data image
@@ -51,6 +48,21 @@ public class ImageProcessorImplTest {
 	public void testB64PngToBufferedImage() {
 		BufferedImage image1 = proc.readDdsFileToBufferedImage(testImageDirPath);
 		assertEquals(b64IowaTestImage, proc.bufferedImageToB64Png(proc.b64PngToBufferedImage(b64IowaTestImage)));
+	}
+
+	@Test
+	public void testDDSPathToB64PngBufferedImage() throws IOException {
+
+		BufferedImage expectedImage = proc.readDdsFileToBufferedImage(testImageDirPath);
+		// parseOK
+		// Parse no file, return no data image
+		assertEquals(NO_DATA_IMAGE_B64, proc.ddsPathToB64Image(new File(testImageDirPath)
+				.getParentFile().getCanonicalPath()));
+
+		// Null file, return no data image
+		assertEquals(NO_DATA_IMAGE_B64, proc.ddsPathToB64Image(""));
+
+
 	}
 
 }

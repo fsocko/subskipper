@@ -2,17 +2,12 @@
 //by SubSkipper Android.
 package fps.subskipper.core;
 
-import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import java.awt.image.BufferedImage;
-import java.lang.invoke.MethodHandles;
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -29,7 +24,8 @@ public class Ship implements Comparable<Ship> {
     private final int type;
     private final String typeName;
     private final String imagePath;
-    private final BufferedImage image;
+
+    private final String b64ShipImage;
     private final double maxSpeed;
     private final double length;
     private final double width;
@@ -37,10 +33,8 @@ public class Ship implements Comparable<Ship> {
     private final double draft;
     private final double displacement;
     private final double refAspect;
-    //TODO: Angle solver data goes here in new object.. e.g. AOB, Target Bearing etc.
 
-
-    public Ship(String name, int type, String typeName, String imagePath, BufferedImage image, double maxSpeed, double length, double width,
+    public Ship(String name, int type, String typeName, String imagePath, String b64ShipImage, double maxSpeed, double length, double width,
                 double mast, double draft, double displacement) {
 
         this.id = new AtomicInteger().addAndGet(1);
@@ -49,7 +43,7 @@ public class Ship implements Comparable<Ship> {
         this.type = type;
         this.typeName = typeName;
         this.imagePath = imagePath;
-        this.image = image;
+        this.b64ShipImage = b64ShipImage;
         this.maxSpeed = maxSpeed;
         this.length = length;
         this.width = width;
@@ -136,6 +130,7 @@ public class Ship implements Comparable<Ship> {
                 ", type=" + type +
                 ", typeName='" + typeName + '\'' +
                 ", imagePath='" + imagePath + '\'' +
+                ", base64ShipImage='" + b64ShipImage + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 ", length=" + length +
                 ", width=" + width +

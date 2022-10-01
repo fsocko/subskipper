@@ -1,4 +1,4 @@
-package fps.subskipper.recognitionManualParser;
+package ship.data.reader;
 
 import com.google.gson.Gson;
 import fps.subskipper.core.Ships;
@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 
 
 @Slf4j
-@Deprecated
 public class ShipsToJsonFileWriter {
 
     public static void writeShipsToJsonFile(Ships ships, String shipListPath) throws IOException {

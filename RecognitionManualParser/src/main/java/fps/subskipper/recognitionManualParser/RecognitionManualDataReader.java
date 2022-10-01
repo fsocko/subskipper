@@ -82,7 +82,7 @@ public class RecognitionManualDataReader {
         double draft = Double.parseDouble(tempShips[6]);
         double disp = Double.parseDouble(tempShips[7]);
 
-        Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
+        Ship testShip = new Ship(name, type, typeName, imagePath, "IMAGE", maxSpeed, length, width, mast, draft, disp);
         return testShip;
     }
 

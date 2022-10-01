@@ -12,4 +12,5 @@ public interface ImageProcessor {
 
 	BufferedImage b64PngToBufferedImage(String b64Image);
 
+	String ddsPathToB64Image(String ddsPath);
 }

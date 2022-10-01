@@ -14,6 +14,7 @@ import java.lang.invoke.MethodHandles;
 import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.*;
 
 @Slf4j
+@Deprecated
 public class EntityXmlMarshaller {
 
 

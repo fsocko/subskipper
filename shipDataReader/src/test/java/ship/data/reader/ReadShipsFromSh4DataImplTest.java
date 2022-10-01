@@ -16,7 +16,7 @@ public class ReadShipsFromSh4DataImplTest {
 		try {
 			ReadShipsFromSh4DataImpl sr = new ReadShipsFromSh4DataImpl();
 			Ships testShips = sr.parseShipsFromScaf();
-			assertEquals(expectedShips().toString(), testShips.toString());
+			assertEquals(CoreStringUtils.stripSpaces(expectedShips()), CoreStringUtils.stripSpaces(testShips.toString()));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

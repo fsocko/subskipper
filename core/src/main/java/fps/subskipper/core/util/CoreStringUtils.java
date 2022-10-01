@@ -9,9 +9,7 @@ public class CoreStringUtils {
 	}
 	
 	public static String stripSpaces(String testString) {
-		StringUtils.remove(testString, "\r" );
-		StringUtils.remove(testString, "\n" );
-		return StringUtils.remove(testString, " " );
+		return StringUtils.remove( StringUtils.remove(StringUtils.remove(testString, "\r" ), "\n" ), " ");
 	}
 	
 }

@@ -1,7 +1,5 @@
 package image.processor;
 
-import static ship.data.reader.DataReaderConstants.NO_DATA_IMAGE_B64;
-import static ship.data.reader.DataReaderConstants.PNG_FORMAT_CONSTANT;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
@@ -17,6 +15,9 @@ import javax.xml.bind.DatatypeConverter;
 
 import lombok.extern.slf4j.Slf4j;
 import ship.data.reader.DataReaderConstants;
+
+import static fps.subskipper.core.util.Constants.NO_DATA_IMAGE_B64;
+import static fps.subskipper.core.util.Constants.PNG_FORMAT_CONSTANT;
 
 @Slf4j
 public class ImageProcessorImpl implements ImageProcessor {
@@ -38,7 +39,7 @@ public class ImageProcessorImpl implements ImageProcessor {
 		if (image != null) {
 			return bufferedImageToBase64String(image, PNG_FORMAT_CONSTANT);
 		} else {
-			return DataReaderConstants.NO_DATA_IMAGE_B64;
+			return NO_DATA_IMAGE_B64;
 		}
 
 	}
@@ -50,6 +51,11 @@ public class ImageProcessorImpl implements ImageProcessor {
 		} else {
 			return base64StringToBufferedImage(NO_DATA_IMAGE_B64);
 		}
+	}
+
+	@Override
+	public String ddsPathToB64Image(String ddsPath) {
+			return bufferedImageToB64Png(readDdsFileToBufferedImage(ddsPath));
 	}
 
 	private static BufferedImage createBufferedImageFromDdsFile(String path) {

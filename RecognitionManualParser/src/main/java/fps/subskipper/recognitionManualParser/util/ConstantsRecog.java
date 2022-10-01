@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.lang.invoke.MethodHandles;
 @Slf4j
 @NoArgsConstructor
+@Deprecated
 public class ConstantsRecog { //extends Constants {
 
     public static String RESOURCES_PATH = System.getProperty("user.dir") + "\\src\\main\\resources";
