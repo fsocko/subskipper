@@ -6,3 +6,8 @@ The main purpose of the repository and documentation is to record techniques and
 
 For more details, see the github page: http://fsocko.github.io/subskipper/
 or wiki.
+
+
+UBOAT:
+
+D:\SteamLibrary\steamapps\common\UBOAT\UBOAT_Data\Data Sheets\Entities.xlsx (Sheet -> types )

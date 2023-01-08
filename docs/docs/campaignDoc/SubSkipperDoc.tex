@@ -1,5 +1,8 @@
 %%--SubSkipper Documentation
-%%--Modified 17/06/17
+%%--Modified 2023.01.08
+
+%% - To compile (Run twice to generate TOC):
+%% - pdflatex SubSkipperDoc.tex
 
 \documentclass{article}
 
@@ -54,7 +57,7 @@ $\begin{array}{rcl}
 }
 
 \author{fSocko}
-\title{Pacific Campaign and Torpedo Solution Reference (v0.5)}
+\title{Pacific Campaign and Torpedo Solution Reference (v0.5.1)}
 
 \begin{document}
 
@@ -65,7 +68,7 @@ $\begin{array}{rcl}
 
 \section{Introduction}
 
-The main purpose of this documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), as well as acting as a reference for Submarine Simulators.
+The purpose of this documentation is to record techniques and methods of early submarine attack techniques in a way which are simple to employ in computer programs (i.e. showing mathematical equations where possible), and/or slide-rules. as well as acting as a reference for Submarine Simulators.
 \\ \\
 This document is a reference for Torpedo types and common conversion factors, as well as types of US Fleet Boats and Types of US Torpedoes. A brief recognition manual will be provided in an appendix. This document also aims to provide a brief overview of common torpedo solution methods.
 
@@ -115,15 +118,15 @@ This document is a reference for Torpedo types and common conversion factors, as
 \subsection{Speed}
 \includegraphics[width=\textwidth]{speedConversion}
 
-\subsection{Nomogram (Metric)}
+\subsection{Speed Nomogram (Metric)}
 \vspace{24pt}
 
 \includegraphics[height=\textwidth, angle=90]{nomo-metric}
 \pagebreak
 
-\section{Torpedo Data}
+\section{Torpedo Data - US}
 
-The following is torpedo for American torpedo types as used predominantly in the Pacific theatre. Slow and Fast speeds and ranges removed as appropriate. Torpedo data adapted from \cite{ultTorp}.
+The following is torpedo for American torpedo types as used predominantly in the Pacific theatre. Slow and Fast speeds shown as appropriate. Torpedo data adapted from \cite{ultTorp}.
 
 \subsubsection{Mark 10}
 \begin{tabular}{l|l}
@@ -214,13 +217,62 @@ The chance of having gyro problems is 0.3\% at the introduction time of all torp
 \subsubsection{Homing torpedos}
 The Mk. 27 will run straight for 200m before homing.
 
+\clearpage
 
-\section{Trigger Maru Overhaul - Fleet Boat Types}
-This section consists of pages 25-28 of the Trigger Maru Overhaul Manual which detail fleet boat types:
-\includegraphics[page={25}, width=\textwidth, height=.95\textheight]{TMO_Manual}
-\includegraphics[page={26}, width=\textwidth, height=\textheight]{TMO_Manual}
-\includegraphics[page={27}, width=\textwidth, height=\textheight]{TMO_Manual}
-\includegraphics[page={28}, width=\textwidth, height=\textheight]{TMO_Manual}
+\section{Torpedo Data - German }
+
+\subsubsection{G7a T1}
+\begin{tabular}{l|l}
+Available from:& Always\\
+Range(Slow)(m):& 14000\\
+Range(Med)(m):& 8000\\
+Range(Fast)(m):& 6000\\
+Speed(Slow)(kt):& 30\\
+Speed(Med)(kt):& 40\\
+Speed(Fast)(kt):& 44\\
+\end{tabular} \\
+Notes:
+The pre-war issue torpedo, it had the disadvantage of leaving a visible trail of bubbles on the surface on its way to the target. \cite{uboatnetTorpedoes}
+
+\subsubsection{G7e T2}
+\begin{tabular}{l|l}
+Available from:& Always\\
+Range(Slow)(m):& 5000\\
+Speed(Slow)(kt):& 30\\
+\end{tabular} \\
+Notes:
+The standard electric torpedo of the war. It suffered from early problems with its internal depth-keeping equipment, and its firing pistol, but these were solved after the Norwegian Campaign. \cite{uboatnetTorpedoes}
+
+\subsubsection{G7e T3}
+\begin{tabular}{l|l}
+Available from:& 1942\\
+Range(Slow)(m):& 5000\\
+Speed(Slow)(kt):& 30\\
+\end{tabular} \\
+Notes:
+As for T2 but fitted with an influence fuse. \cite{uboatnetTorpedoes}
+
+\subsubsection{G7e T4 "Falke"}
+\begin{tabular}{l|l}
+Available from:& March 1943\\
+Range(Slow)(m):& 7500\\
+Speed(Slow)(kt):& 24\\
+\end{tabular} \\
+Notes:
+Falke, the first homing torpedo, was fitted with a passive acoustic homing device. \cite{uboatnetTorpedoes}
+
+
+\subsubsection{G7es T5 "Zaunkonig"}
+\begin{tabular}{l|l}
+Available from:& Autumn 1943\\
+Range(Slow)(m):& 5700\\
+Speed(Slow)(kt):& 24\\
+\end{tabular} \\
+Notes:
+The Zaunkonig (Wren) came into service during the autumn of 1943. Intended to be an escort-killer. \cite{uboatnetTorpedoes}
+
+
+\clearpage
 
 %% Contents of original AngriffScheibe Handbuch which are relevant w/out the disk:
 %Example 4: Determine the speed of a target by plotting position over time
@@ -299,7 +351,7 @@ As you manoeuvre into a firing position, it is useful to know your distance to t
 $$Distance to Track = Range * \left( sin(AOB) \right)$$
 
 
-\section{Determine the lead angle for a perpendicular attack with 0\degree gyro angle (AKA O\'Kane Solution)}
+\section{Determine the lead angle for a perpendicular attack with 0\degree gyro angle (AKA O\' Kane Solution)}
 
 Once you are turned onto a perpendicular intercept course, this method calculates when to fire. The lead angle is simply the target bearing at the moment you fire. The range is irrelevant to the calculation although it is best to plan the attack within 500-1000m.
 
@@ -385,6 +437,13 @@ Ship interception made easy!,
 %%http://forums.ubi.com/showthread.php/396040-ship-interception-made-easy!-Forums
 04.10.2005,
 Accessed: 17.07.2017.
+
+\bibitem{uboatnetTorpedoes}
+uboat.net,
+Technologies - The Torpedoes
+%%https://www.uboat.net/technical/torpedoes.htm
+Accessed: 08.01.2023
+
 
 \end{thebibliography}
 
