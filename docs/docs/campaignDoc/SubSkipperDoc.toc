@@ -1,0 +1,38 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Unit Conversion Factors}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Speed}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Speed Nomogram (Metric)}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Torpedo Data - US}{5}{section.3}%
+\contentsline {subsubsection}{\numberline {3.0.1}Mark 10}{5}{subsubsection.3.0.1}%
+\contentsline {subsubsection}{\numberline {3.0.2}Mark 14}{5}{subsubsection.3.0.2}%
+\contentsline {subsubsection}{\numberline {3.0.3}Mark 16}{5}{subsubsection.3.0.3}%
+\contentsline {subsubsection}{\numberline {3.0.4}Mark 18}{5}{subsubsection.3.0.4}%
+\contentsline {subsubsection}{\numberline {3.0.5}Mark 23}{5}{subsubsection.3.0.5}%
+\contentsline {subsubsection}{\numberline {3.0.6}Mark 27 "Cutie"}{6}{subsubsection.3.0.6}%
+\contentsline {subsubsection}{\numberline {3.0.7}Torpedo minimum arming distance}{6}{subsubsection.3.0.7}%
+\contentsline {subsubsection}{\numberline {3.0.8}Torpedo max dive angle}{6}{subsubsection.3.0.8}%
+\contentsline {subsubsection}{\numberline {3.0.9}Torpedo maximum turn angle}{6}{subsubsection.3.0.9}%
+\contentsline {subsubsection}{\numberline {3.0.10}Magnetic detonation range}{6}{subsubsection.3.0.10}%
+\contentsline {subsubsection}{\numberline {3.0.11}Circular runner torpedos}{6}{subsubsection.3.0.11}%
+\contentsline {subsubsection}{\numberline {3.0.12}Gyro problems}{6}{subsubsection.3.0.12}%
+\contentsline {subsubsection}{\numberline {3.0.13}Homing torpedos}{6}{subsubsection.3.0.13}%
+\contentsline {section}{\numberline {4}Torpedo Data - German }{7}{section.4}%
+\contentsline {subsubsection}{\numberline {4.0.1}G7a T1}{7}{subsubsection.4.0.1}%
+\contentsline {subsubsection}{\numberline {4.0.2}G7e T2}{7}{subsubsection.4.0.2}%
+\contentsline {subsubsection}{\numberline {4.0.3}G7e T3}{7}{subsubsection.4.0.3}%
+\contentsline {subsubsection}{\numberline {4.0.4}G7e T4 "Falke"}{7}{subsubsection.4.0.4}%
+\contentsline {subsubsection}{\numberline {4.0.5}G7es T5 "Zaunkonig"}{7}{subsubsection.4.0.5}%
+\contentsline {section}{\numberline {5}Calculating AOB Based on Aspect Ratio}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Determine an observed \emph {aspect ratio}.}{8}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Determine the Reference Aspect Ratio}{8}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}AOB calculation}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Target Interception Formulas}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Determine Interception Lead Angle given known Target Speed, known Own Speed and known AOB}{8}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Determine Minimum speed for interception}{8}{subsubsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.2}Determine the distance to the track of a target}{9}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Determine the lead angle for a perpendicular attack with 0$^{\circ }$gyro angle (AKA O\' Kane Solution)}{9}{section.7}%
+\contentsline {section}{\numberline {8}Determine the torpedo gyro angle}{9}{section.8}%
+\contentsline {section}{\numberline {9}O'Kane Table of Values}{9}{section.9}%
+\contentsline {section}{\numberline {10}Torpedo spread at range (m) per angle of spread ($^{\circ }$)}{10}{section.10}%
+\contentsline {section}{\numberline {11}Knot to Km Travelled Conversion Chart}{10}{section.11}%
+\contentsline {section}{\numberline {12}Recognition Manual (Short, Metric)}{11}{section.12}%
