@@ -1,4 +1,4 @@
-package ship.data.reader;
+package sh4.ship.data.reader;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;

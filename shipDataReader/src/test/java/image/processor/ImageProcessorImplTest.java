@@ -1,9 +1,9 @@
 package image.processor;
 
 import static org.junit.Assert.assertEquals;
-import static ship.data.reader.DataReaderConstants.NO_DATA_IMAGE_B64;
-import static ship.data.reader.DataReaderConstants.RESOURCES_PATH;
-import static ship.data.reader.DataReaderConstants.SFS;
+import static sh4.ship.data.reader.DataReaderConstants.NO_DATA_IMAGE_B64;
+import static sh4.ship.data.reader.DataReaderConstants.RESOURCES_PATH;
+import static sh4.ship.data.reader.DataReaderConstants.SFS;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;

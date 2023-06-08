@@ -1,4 +1,4 @@
-package ship.data.reader;
+package sh4.ship.data.reader;
 
 
 import java.io.BufferedReader;
@@ -14,7 +14,7 @@ import javax.xml.bind.JAXBException;
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
 import lombok.extern.slf4j.Slf4j;
-import static ship.data.reader.DataReaderConstants.*;
+import static sh4.ship.data.reader.DataReaderConstants.*;
 
 @Slf4j
 public class IShipDataReader {

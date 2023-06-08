@@ -1,4 +1,4 @@
-package ship.data.reader;
+package sh4.ship.data.reader;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,13 +8,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import javax.xml.bind.JAXBException;
-
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
 import lombok.extern.slf4j.Slf4j;
 
-import static ship.data.reader.DataReaderConstants.*;
+import static sh4.ship.data.reader.DataReaderConstants.*;
 
 @Slf4j
 public class ReadShipsFromSh4DataImpl {
@@ -60,7 +58,7 @@ public class ReadShipsFromSh4DataImpl {
         return testShip;
     }
 
-    //recursively goes through directories, filters out ship cfg files. TODO: should be listShipFiles or to that effect
+    //recursively goes through directories, filters out ship cfg files. TODO: should be listShipFiles or to that effect and return a Ships object
     private void listShipFiles(String directoryName, ArrayList<File> files) {
         File directory = new File(directoryName);
         // recursively list files in directory and sub directories.

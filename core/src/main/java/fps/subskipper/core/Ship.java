@@ -29,7 +29,6 @@ public class Ship implements Comparable<Ship> {
     private final int type;
     private final String typeName;
     private final String imagePath;
-    private final BufferedImage image;
     private final double maxSpeed;
     private final double length;
     private final double width;
@@ -40,7 +39,7 @@ public class Ship implements Comparable<Ship> {
     //TODO: Angle solver data goes here in new object.. e.g. AOB, Target Bearing etc.
 
 
-    public Ship(String name, int type, String typeName, String imagePath, BufferedImage image, double maxSpeed, double length, double width,
+    public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
                 double mast, double draft, double displacement) {
 
         this.id = new AtomicInteger().addAndGet(1);
@@ -49,7 +48,6 @@ public class Ship implements Comparable<Ship> {
         this.type = type;
         this.typeName = typeName;
         this.imagePath = imagePath;
-        this.image = image;
         this.maxSpeed = maxSpeed;
         this.length = length;
         this.width = width;

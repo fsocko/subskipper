@@ -27,6 +27,7 @@ public class AppTest
     }
     */
 
+    //FIXME: refactor to use TestUtilities method from core.
     private final String testResourcesPath = (System.getProperty("user.dir") + "\\src\\test\\resources\\");
 
     @Test

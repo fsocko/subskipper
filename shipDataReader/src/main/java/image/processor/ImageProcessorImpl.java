@@ -1,7 +1,7 @@
 package image.processor;
 
-import static ship.data.reader.DataReaderConstants.NO_DATA_IMAGE_B64;
-import static ship.data.reader.DataReaderConstants.PNG_FORMAT_CONSTANT;
+import static sh4.ship.data.reader.DataReaderConstants.NO_DATA_IMAGE_B64;
+import static sh4.ship.data.reader.DataReaderConstants.PNG_FORMAT_CONSTANT;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
@@ -16,8 +16,8 @@ import javax.imageio.ImageIO;
 import javax.xml.bind.DatatypeConverter;
 
 import lombok.extern.slf4j.Slf4j;
-import ship.data.reader.DDSReader;
-import ship.data.reader.DataReaderConstants;
+import sh4.ship.data.reader.DDSReader;
+import sh4.ship.data.reader.DataReaderConstants;
 
 @Slf4j
 public class ImageProcessorImpl implements ImageProcessor {
