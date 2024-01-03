@@ -4,16 +4,14 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import ship.data.reader.IReadShipsFromData;
+import ship.data.reader.IShipDataReader;
 import fps.subskipper.core.Ships;
-import ship.data.reader.RMShip;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Iterator;
-import java.util.List;
 
-public class ReadUboatShipData implements IReadShipsFromData {
+public class ReadUboatShipData implements IShipDataReader {
 
     @Override
     public Ships readShipsFromFile(File uboatDataFile) {

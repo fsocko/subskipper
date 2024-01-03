@@ -1,21 +1,20 @@
 package fps.subskipper.recognitionManualParser;
 
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
+
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 
-import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
-    @Rule
-    public TemporaryFolder folder = new TemporaryFolder();
+//    @Rule
+//    public TemporaryFolder folder = new TemporaryFolder();
 
     /*
     @Test

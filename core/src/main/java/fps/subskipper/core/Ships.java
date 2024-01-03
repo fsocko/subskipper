@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 @Slf4j
+//@Getter
+//@Setter
 @Deprecated
 public class Ships {
 
@@ -22,7 +24,7 @@ public class Ships {
     }
 
     //return this for array list of ships
-    public ArrayList<Ship> getShips() {
+    public ArrayList<Ship> getShipList() {
         return ships;
     }
 
@@ -37,7 +39,7 @@ public class Ships {
 
     //Sort Ships based on Type
     public Ships sortShipsByType() {
-        ArrayList sortedShips = new ArrayList(this.getShips());
+        ArrayList sortedShips = new ArrayList(this.getShipList());
         Collections.sort(this.ships, Ship.sTypeComparatorDescending);
         this.setShips(sortedShips);
         return this;
@@ -45,7 +47,7 @@ public class Ships {
 
     //Sort Ships based on name
     public Ships sortShipsByName() {
-        ArrayList sortedShips = new ArrayList(this.getShips());
+        ArrayList sortedShips = new ArrayList(this.getShipList());
         Collections.sort(sortedShips, Ship.sNameComparatorDescending);
         this.setShips(sortedShips);
         return this;

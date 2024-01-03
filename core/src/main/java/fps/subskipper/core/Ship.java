@@ -3,6 +3,8 @@
 package fps.subskipper.core;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Comparator;
@@ -12,6 +14,8 @@ import static fps.subskipper.util.Constants.FEET_FOR_EVERY_METRE;
 
 
 @Slf4j
+@Getter
+@Setter
 @XmlRootElement(name = "ship")
 public class Ship implements Comparable<Ship> {
 
@@ -28,7 +32,7 @@ public class Ship implements Comparable<Ship> {
     private final double draft;
     private final double displacement;
     private final double refAspect;
-    //TODO: Angle solver data goes here in new object.. e.g. AOB, Target Bearing etc.
+    //TODO: Angle solver data
 
 
     public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
@@ -48,71 +52,18 @@ public class Ship implements Comparable<Ship> {
         this.displacement = displacement;
         this.refAspect = length / mast;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getNation() {
-        return nation;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getType() {
-        return type;
-    }
-
-    public String getTypeName() {
-        return typeName;
-    }
-
-    public String getImagePath() {
-        return imagePath;
-    }
-
-    public double getMaxSpeed() {
-        return maxSpeed;
-    }
-
-    public double getLength() {
-        return length;
-    }
-
     public double getImperialLength() {
         return length * FEET_FOR_EVERY_METRE;
     } //Imperial conversions
-
-    public double getWidth() {
-        return width;
-    }
-
     public double getImperialWidth() {
         return width * FEET_FOR_EVERY_METRE;
     } //Imperial conversions
-
-    public double getMast() {
-        return mast;
-    }
-
     public double getImperialMast() {
         return mast * FEET_FOR_EVERY_METRE;
     } //Imperial conversions
-
-    public double getDraft() {
-        return draft;
-    }
-
     public double getImperialDraft() {
         return draft * FEET_FOR_EVERY_METRE;
     } //Imperial conversions
-
-    public double getDisplacement() {
-        return displacement;
-    }
-
     public double getReferenceAspectRatio() {
         return refAspect;
     }

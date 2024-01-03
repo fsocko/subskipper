@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Short Recognition Manual for SH4,TMO,SCAF. (Imperial Version)</title> 
+  <link rel="stylesheet" type="text/css" href="recogS.css" />
+</head>
+<body>
+<div class="wrapper">
+<h1>Short Recognition Manual for SH4,TMO,SCAF. (Imperial Version)</h1>
+<div class = "startTable row">
+	<div class="name header cell">Name</div>
+	<div class="displacement header cell">Tonnage (GRT)</div>
+	<div class="speed header cell">Speed (kn)</div>
+	<div class="length header cell">Length ft</div>
+	<div class="height header cell">Height ft</div>
+	<div class="draft header cell">Draft ft</div>
+	<div class="aspect header cell">Aspect</div>
+</div>
+<div id="shipRow0" class="shipRow row">
+	<div class="name cell">name</div>
+	<div class="displacement cell">{$displacement}</div>
+	<div class="speed cell">%0.2f</div>
+	<div class="length cell">%0.2f</div>
+	<div class="height cell">%0.2f</div>
+	<div class="draft cell">%0.2f</div>
+	<div class="aspect cell">NaN</div>
+</div>
+<div id="AOB0" class="AOBRow row">
+
+	<div class="AOBDesc cell">Aspect at AOB:</div>
+	<div class="deg cell">10&deg;: NaN</div>
+	<div class="deg cell">20&deg;: NaN</div>
+	<div class="deg cell">30&deg;: NaN</div>
+	<div class="deg cell">40&deg;: NaN</div>
+	<div class="deg cell">50&deg;: NaN</div>
+	<div class="deg cell">60&deg;: NaN</div>
+	<div class="deg cell">70&deg;: NaN</div>
+	<div class="deg cell">80&deg;: NaN</div>
+	<div class="deg cell">90&deg;: NaN</div>
+</div>
+

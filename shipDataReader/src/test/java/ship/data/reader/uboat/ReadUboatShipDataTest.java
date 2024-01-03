@@ -2,27 +2,31 @@ package ship.data.reader.uboat;
 
 import fps.subskipper.core.Ships;
 import fps.subskipper.util.TestUtilities;
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
+
 import java.io.File;
 import java.net.URISyntaxException;
 
-public class ReadUboatShipDataTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+public class ReadUboatShipDataTest {
 
     public void setUp() throws Exception {
-        super.setUp();
+
     }
 
+    @Test
     public void testReadShipsFromFile() throws URISyntaxException {
 
 
         ReadUboatShipData readUboatData = new ReadUboatShipData();
-        File uboatDataFile = TestUtilities.getFileFromResources("excel_test_file.xlsx");
+        File uboatDataFile = TestUtilities.getFileFromResources("uboot/excel_test_file.xlsx");
         System.out.println(uboatDataFile.getAbsoluteFile().toString());
 
         Ships uboatShips = readUboatData.readShipsFromFile(uboatDataFile);
         //TODO: System.out.println(uboatShips.toString());
 
-        assertFalse("TODO: UboatReadShips is a quick POI example.", true);
+        assertFalse(true, "TODO: UboatReadShips is a quick POI example.");
 
     }
 }

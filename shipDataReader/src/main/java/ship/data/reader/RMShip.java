@@ -3,6 +3,7 @@ package ship.data.reader;
 import fps.subskipper.core.Ship;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.awt.image.BufferedImage;
 
@@ -17,4 +18,10 @@ public class RMShip extends Ship {
         this.setImage(image);
     }
 
+    @Override
+    public String toString() {
+        return "RMShip{ " + super.toString() +
+                "\n image=" + image +
+                " } ";
+    }
 }

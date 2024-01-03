@@ -27,10 +27,10 @@ public class ParseRecognitionManualShort {
         htmlDoc.append(startTable(imperial));
 
         //Main Ship table row
-        for (int i = 0; i < shipList.getShips().size(); i++) {
-            htmlDoc.append(shipRow(shipList.getShips().get(i), i, imperial));
+        for (int i = 0; i < shipList.getShipList().size(); i++) {
+            htmlDoc.append(shipRow(shipList.getShipList().get(i), i, imperial));
             if (AOBTable) {
-                htmlDoc.append(AOBRow(shipList.getShips().get(i), i));
+                htmlDoc.append(AOBRow(shipList.getShipList().get(i), i));
             }
             if (i % 50 == 0 && i > 0) {
                 htmlDoc.append(splitTable(imperial)); //split the table if this is a page break

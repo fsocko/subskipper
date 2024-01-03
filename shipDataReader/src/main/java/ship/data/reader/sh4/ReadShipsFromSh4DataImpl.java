@@ -1,5 +1,6 @@
 package ship.data.reader.sh4;
 
+import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,29 +11,36 @@ import java.util.ArrayList;
 
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import ship.data.reader.RMShip;
+import ship.data.reader.sh4.image.processor.ImageProcessor;
+import ship.data.reader.sh4.image.processor.ImageProcessorImpl;
 
 import static ship.data.reader.sh4.DataReaderConstants.*;
 
 @Slf4j
+@Getter
 public class ReadShipsFromSh4DataImpl {
+
+    private ArrayList<File> shipFiles = new ArrayList<>();
 
     public Ships parseShipsFromScaf() throws IOException {
         log.info("parseShipsFromScaf() started.");
-        ArrayList<File> shipFiles = new ArrayList<>();
+        this.shipFiles = new ArrayList<>();
         ArrayList<Ship> shipData = new ArrayList<>();
 
-        listShipFiles(SCAF_ROOT_PATH, shipFiles);
+        listShipFiles(SCAF_ROOT_PATH);
 
         for (int i = 0; i < shipFiles.size(); i++) {
             shipData.add(makeShip(shipFiles.get(i).toString()));
         }
         return new Ships(shipData);
     }
-    
+
 
     //Format and construct a ship object using data in tempShips
-    public Ship makeShip(String path) throws IOException {
+    public RMShip makeShip(String path) throws IOException {
         ArrayList<File> shipFiles = new ArrayList<File>();
         String[] tempShips = formatScafShipRecord(path);
         stripVars(tempShips); //remove descriptor strings.
@@ -47,36 +55,41 @@ public class ReadShipsFromSh4DataImpl {
         imagePath += "_sil.dds";
         imagePath = "\"" + imagePath + "\"";
 
+        ImageProcessor sh4ImageProcessor = new ImageProcessorImpl();
+        BufferedImage bufferedImage = sh4ImageProcessor.readDdsFileToBufferedImage(imagePath);
+
         double maxSpeed = Double.parseDouble(tempShips[2]);
         double length = Double.parseDouble(tempShips[3]);
         double width = Double.parseDouble(tempShips[4]);
         double mast = Double.parseDouble(tempShips[5]);
         double draft = Double.parseDouble(tempShips[6]);
-        double disp = Double.parseDouble(tempShips[7]);
+        double displacement = Double.parseDouble(tempShips[7]);
 
-        Ship testShip = new Ship(name, type, typeName, imagePath, maxSpeed, length, width, mast, draft, disp);
+        RMShip testShip = new RMShip(name, type, typeName, imagePath, bufferedImage, maxSpeed, length, width, mast, draft, displacement);
         return testShip;
     }
 
-    //recursively goes through directories, filters out ship cfg files. TODO: should be listShipFiles or to that effect and return a Ships object
-    private void listShipFiles(String directoryName, ArrayList<File> files) {
+    //recursively goes through directories, filters out ship cfg files.
+    // TODO: should be listShipFiles or to that effect and return a Ships object
+    //TODO: was private
+    protected void listShipFiles(String directoryName) {
         File directory = new File(directoryName);
         // recursively list files in directory and sub directories.
         File[] fList = directory.listFiles();
         for (File file : fList) {
             if (file.isFile() &&
+                    //file extension filter. We're only interested in .cfg
+                    file.toString().toLowerCase().endsWith(".cfg") &&
                     //Exclude these as for some reason their data is broken:
                     !((file.toString().toLowerCase().contains("walleye")) ||
                             (file.toString().toLowerCase().contains("nde_parker")) ||
                             (file.toString().toLowerCase().contains("ryuun")) ||
                             (file.toString().toLowerCase().contains("cargodef")) ||
                             (file.toString().toLowerCase().contains("roster")))
-                    //file extension filter. We're only interested in .cfg
-                    && file.toString().toLowerCase().endsWith(".cfg")
             ) {
-                files.add(file);
+                this.shipFiles.add(file);
             } else if (file.isDirectory()) {
-                listShipFiles(file.getPath(), files);
+                listShipFiles(file.getPath());
             }
         }
     }
@@ -191,5 +204,4 @@ public class ReadShipsFromSh4DataImpl {
     }
 
 
-	
 }

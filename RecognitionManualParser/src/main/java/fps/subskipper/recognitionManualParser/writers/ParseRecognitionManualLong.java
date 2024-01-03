@@ -25,7 +25,7 @@ public class ParseRecognitionManualLong {
         htmlDoc.append(HTMLStartL(imperial));
 
         //Main Ship HTML
-        for (Ship ship : shipList.getShips()) {
+        for (Ship ship : shipList.getShipList()) {
             htmlDoc.append(HTMLShipL(ship, imperial));
         }
         //Close remaining tags
@@ -76,11 +76,13 @@ public class ParseRecognitionManualLong {
         h.set("disp", record.getDisplacement() + " GRT"); //FIXME: should be unit
         h.set("aspect", formatter.fourDP(record.getReferenceAspectRatio()));
 
-        //Convert image path to filename
-        String pngPath = record.getImagePath();
-        pngPath = pngPath.substring((pngPath.lastIndexOf("\\") + 1), pngPath.lastIndexOf("."));
-        String figPath = "../figures/" + pngPath + ".png";
-        h.set("image", figPath);
+        //TODO: implement image reader
+//        //Convert image path to filename
+//        String pngPath = record.getImagePath();
+//        pngPath = pngPath.substring((pngPath.lastIndexOf("\\") + 1), pngPath.lastIndexOf("."));
+//        String figPath = "../figures/" + pngPath + ".png";
+//        h.set("image", figPath);
+
         return h.toString(); //Temporarily outputs to console. Will make it send to file.
     }
 

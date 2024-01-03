@@ -6,9 +6,9 @@ public class DataReaderConstants {
 
 		public static final String SFS = File.separator;
 	   	public static final String RESOURCES_PATH = System.getProperty("user.dir")+SFS+"src"+SFS+"main"+SFS+"resources";
-	    public static final String SHIPLIST_PATH = RESOURCES_PATH +SFS+"shipList.xml";
-	    public static final String SCAF_ROOT_PATH = RESOURCES_PATH +SFS+"\\SCAF for TMO_2";
-	    public static final String SCAF_DATA_PATH = SCAF_ROOT_PATH +SFS+"\\SCAF for TMO_2"+SFS+"Data";
+	    public static final String SHIPLIST_PATH = RESOURCES_PATH +SFS+ "shipList.xml";
+	    public static final String SCAF_ROOT_PATH = RESOURCES_PATH +SFS+"SCAF for TMO_2";
+	    public static final String SCAF_DATA_PATH = SCAF_ROOT_PATH +SFS+ "Data";
 	    public static final String SCAF_NAMES_PATH = SCAF_ROOT_PATH +SFS+"Data"+SFS+"Roster"+SFS+"Names.cfg";
 	    public static final String TARGET_PATH = System.getProperty("user.dir")+SFS+"target";
 	    
