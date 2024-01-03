@@ -28,30 +28,30 @@ public class RecognitionManualDataReaderTest {
         MockitoAnnotations.initMocks(this);
     }
 
-    @Test @Ignore
+    @Test @Ignore //BROKEN! FIXME
     public void testWriteShipsToFile() throws Exception {
         recognitionManualDataReader.writeShipsToFile(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))));
     }
 
-    @Test @Ignore
-    public void testLoadShipsToMemory() throws Exception {
+    @Test
+    public void testLoadShipsToMemory() throws Exception { //BROKEN FIXME
         Ships result = recognitionManualDataReader.loadShipsToMemory();
         Assert.assertEquals(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))), result);
     }
 
-    @Test @Ignore
+    @Test
     public void testParseShipsFromScaf() throws Exception {
         Ships result = recognitionManualDataReader.parseShipsFromScaf();
         Assert.assertEquals(118, result.getShips().size());
     }
 
-    @Test @Ignore
+    @Test
     public void testMakeShip() throws Exception {
         Ship result = recognitionManualDataReader.makeShip("path");
         Assert.assertEquals(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d), result);
     }
 
-    @Test @Ignore
+    @Test
     public void testListShipFiles() throws Exception {
         recognitionManualDataReader.listShipFiles("directoryName", new ArrayList<File>(Arrays.asList(new File(getClass().getResource("/fps/subskipper/recognitionManualParser/PleaseReplaceMeWithTestFile.txt").getFile()))));
     }

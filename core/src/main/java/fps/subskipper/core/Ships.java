@@ -1,16 +1,12 @@
 package fps.subskipper.core;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 import java.util.Collections;
 
 @Slf4j
+@Deprecated
 public class Ships {
 
     private ArrayList<Ship> ships;

@@ -2,25 +2,17 @@
 //by SubSkipper Android.
 package fps.subskipper.core;
 
-import lombok.NoArgsConstructor;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-
-import java.awt.image.BufferedImage;
-import java.lang.invoke.MethodHandles;
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static fps.subskipper.core.util.Constants.FEET_FOR_EVERY_METRE;
+import static fps.subskipper.util.Constants.FEET_FOR_EVERY_METRE;
+
 
 @Slf4j
 @XmlRootElement(name = "ship")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Ship implements Comparable<Ship> {
 
     private int id;

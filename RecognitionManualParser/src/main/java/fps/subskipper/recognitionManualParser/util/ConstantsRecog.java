@@ -1,13 +1,8 @@
 package fps.subskipper.recognitionManualParser.util;
 
-import fps.subskipper.core.util.Constants;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
 
-import java.io.FileNotFoundException;
-import java.lang.invoke.MethodHandles;
 @Slf4j
 @NoArgsConstructor
 public class ConstantsRecog { //extends Constants {
@@ -22,6 +17,13 @@ public class ConstantsRecog { //extends Constants {
 
     public static final String RECOGNITION_MANUAL_LONG_FILENAME = "recognitionManual_long.html";
     public static final String RECOGNITION_MANUAL_SHORT_FILENAME = "recognitionManual_short.html";
+
+    public static final String LOG_LOCATION = "";
+
+    //Command Line
     public static final String COMMAND_LINE_USAGE_MESSAGE = "*SubSkipper Recognition Manual Parser*" +
             "Usage: ";
+
+
+
 }

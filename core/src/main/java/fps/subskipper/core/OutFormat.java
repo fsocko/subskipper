@@ -1,12 +1,11 @@
 package fps.subskipper.core;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 import java.text.DecimalFormat;
 import java.util.concurrent.TimeUnit;
 
-import static fps.subskipper.core.util.Constants.*;
+import static fps.subskipper.util.Constants.*;
 
 // TODO: Auto-generated Javadoc
 

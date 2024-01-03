@@ -83,10 +83,10 @@ public class App implements Callable<Integer> {
             publishLongRecognitionManual(pathWithFile, isImperial);
         } else{
             System.err.println("ERROR: Failed to publish recognition manual: " + pathWithFile);
-            return new Integer(1);
+            return Integer.valueOf(1);
         }
         System.out.println("SUCCESS: Published recognition manual: " + pathWithFile);
-        return new Integer(0);
+        return Integer.valueOf(1);
     }
 
     public static void main(String... args) throws Exception {

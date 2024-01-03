@@ -26,14 +26,14 @@ public class FindTest {
         }
     }
 
-    @Test @Ignore
+    @Test
     public void findFilepathRecursivelySuccessTest() throws FileNotFoundException {
         assertEquals(
             new File(System.getProperty("user.dir") + "\\src\\test\\resources\\"+testFileName),
             findFile(System.getProperty("user.dir"), testFileName));
     }
 
-    @Test @Ignore
+    @Test
     public void findFilepathRecursivelyFailWithInvalidStartDirectoryTest() {
         try {
             findFile("Z:\\invalidPath\\invalidFile.zzz", "FindTest.java");

@@ -1,54 +1,24 @@
-//reads SCAF data files, converts from SH4 format to XML to be used
-//by SubSkipper
+package ship.data.reader.sh4;
 
-package fps.subskipper.recognitionManualParser;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
-import fps.subskipper.recognitionManualParser.util.ConstantsRecog;
-import fps.subskipper.recognitionManualParser.util.EntityXmlMarshaller;
-import jakarta.xml.bind.JAXBException;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.*;
-import java.util.ArrayList;
+import static ship.data.reader.sh4.DataReaderConstants.*;
 
-import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.SCAF_ROOT_PATH;
-
-@Deprecated
 @Slf4j
-public class RecognitionManualDataReader {
-
-    public void writeShipsToFile(Ships ships) throws JAXBException {
-        EntityXmlMarshaller shipMarshaller = new EntityXmlMarshaller();
-        try {
-            shipMarshaller.writeShipsToXml(ships);
-        } catch (JAXBException j) {
-            log.error("Threw JAXB exception when writing ships to file.", j);
-            throw j;
-        }
-    }
-
-    public Ships loadShipsToMemory() throws IOException {
-        EntityXmlMarshaller readShips = new EntityXmlMarshaller();
-        Ships ships;
-        try {
-            ships = readShips.readShipsFromXml();
-        } catch (Exception e) {
-            log.error("Threw exception when reading ships from file.", e);
-        }
-        try {
-            ships = parseShipsFromScaf();
-        } catch (IOException e) {
-            log.error("Threw IOException when parsing ships from SCAF.", e);
-            throw e;
-        }
-        return ships;
-    }
-
+public class ReadShipsFromSh4DataImpl {
 
     public Ships parseShipsFromScaf() throws IOException {
-        log.info("RecognitionManualDataReader.parseShipsFromScaf() started.");
+        log.info("parseShipsFromScaf() started.");
         ArrayList<File> shipFiles = new ArrayList<>();
         ArrayList<Ship> shipData = new ArrayList<>();
 
@@ -59,6 +29,7 @@ public class RecognitionManualDataReader {
         }
         return new Ships(shipData);
     }
+    
 
     //Format and construct a ship object using data in tempShips
     public Ship makeShip(String path) throws IOException {
@@ -87,8 +58,8 @@ public class RecognitionManualDataReader {
         return testShip;
     }
 
-    //recursively goes through directories, filters out ship cfg files. TODO: should be listShipFiles or to that effect
-    public void listShipFiles(String directoryName, ArrayList<File> files) {
+    //recursively goes through directories, filters out ship cfg files. TODO: should be listShipFiles or to that effect and return a Ships object
+    private void listShipFiles(String directoryName, ArrayList<File> files) {
         File directory = new File(directoryName);
         // recursively list files in directory and sub directories.
         File[] fList = directory.listFiles();
@@ -186,7 +157,7 @@ public class RecognitionManualDataReader {
         FileInputStream fs = null;
 
         try {
-            fs = new FileInputStream(ConstantsRecog.SCAF_NAMES_PATH); //TODO: was: fs = new FileInputStream(namesPath);
+            fs = new FileInputStream(SCAF_NAMES_PATH);
             try (BufferedReader br = new BufferedReader(new InputStreamReader(fs))) {
                 while (!found) {
                     if (!br.ready()) {
@@ -218,5 +189,7 @@ public class RecognitionManualDataReader {
             return curLine + " | ERROR: \"" + query + "\" not found in ReadShips.nameLookup().";
         }
     }
-}
 
+
+	
+}

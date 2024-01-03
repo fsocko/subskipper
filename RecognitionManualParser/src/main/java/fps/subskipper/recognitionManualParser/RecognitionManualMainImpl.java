@@ -1,8 +1,10 @@
 package fps.subskipper.recognitionManualParser;
 
 import fps.subskipper.core.Ships;
+import fps.subskipper.recognitionManualParser.writers.ParseRecognitionManualLong;
+import fps.subskipper.recognitionManualParser.writers.ParseRecognitionManualShort;
+import jakarta.xml.bind.JAXBException;
 
-import javax.xml.bind.JAXBException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 

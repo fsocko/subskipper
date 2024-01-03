@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   
-  <artifactId>shipDataReader</artifactId>
+  <artifactId>ship-data-reader</artifactId>
 
 	
 	<dependencies>
