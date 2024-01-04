@@ -11,8 +11,9 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.Base64;
 
-import static ship.data.reader.sh4.DataReaderConstants.NO_DATA_IMAGE_B64;
-import static ship.data.reader.sh4.DataReaderConstants.PNG_FORMAT_CONSTANT;
+import static fps.subskipper.util.Constants.NO_DATA_IMAGE_B64;
+import static fps.subskipper.util.Constants.PNG_FORMAT_CONSTANT;
+
 
 @Slf4j
 public class ImageProcessorImpl implements ImageProcessor {
@@ -34,7 +35,7 @@ public class ImageProcessorImpl implements ImageProcessor {
 		if (image != null) {
 			return bufferedImageToBase64String(image, PNG_FORMAT_CONSTANT);
 		} else {
-			return DataReaderConstants.NO_DATA_IMAGE_B64;
+			return NO_DATA_IMAGE_B64;
 		}
 	}
 

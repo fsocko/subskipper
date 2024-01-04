@@ -11,12 +11,16 @@ import java.util.ArrayList;
 
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
+import jakarta.xml.bind.JAXBException;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import ship.data.reader.RMShip;
 import ship.data.reader.sh4.image.processor.ImageProcessor;
 import ship.data.reader.sh4.image.processor.ImageProcessorImpl;
+import ship.data.writer.JsonEntityMarshaller;
 
+import static fps.subskipper.util.Constants.SCAF_NAMES_PATH;
+import static fps.subskipper.util.Constants.SCAF_ROOT_PATH;
 import static ship.data.reader.sh4.DataReaderConstants.*;
 
 @Slf4j
@@ -24,6 +28,27 @@ import static ship.data.reader.sh4.DataReaderConstants.*;
 public class ReadShipsFromSh4DataImpl {
 
     private ArrayList<File> shipFiles = new ArrayList<>();
+
+    public void writeShipsToFile(Ships ships) throws IOException {
+            JsonEntityMarshaller.writeShipsToJsonFile(ships);
+    }
+
+    public Ships loadShipsToMemory() throws IOException {
+
+        Ships ships;
+        try {
+            ships = JsonEntityMarshaller.readShipsFromFile();
+        } catch (Exception e) {
+            log.error("Threw exception when reading ships from file.", e);
+        }
+        try {
+            ships = parseShipsFromScaf();
+        } catch (IOException e) {
+            log.error("Threw IOException when parsing ships from SCAF.", e);
+            throw e;
+        }
+        return ships;
+    }
 
     public Ships parseShipsFromScaf() throws IOException {
         log.info("parseShipsFromScaf() started.");
@@ -41,7 +66,6 @@ public class ReadShipsFromSh4DataImpl {
 
     //Format and construct a ship object using data in tempShips
     public RMShip makeShip(String path) throws IOException {
-        ArrayList<File> shipFiles = new ArrayList<File>();
         String[] tempShips = formatScafShipRecord(path);
         stripVars(tempShips); //remove descriptor strings.
 

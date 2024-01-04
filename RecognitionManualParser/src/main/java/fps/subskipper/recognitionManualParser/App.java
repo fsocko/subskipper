@@ -1,18 +1,14 @@
 package fps.subskipper.recognitionManualParser;
 
 import fps.subskipper.core.Ships;
-import fps.subskipper.recognitionManualParser.util.ConstantsRecog;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import picocli.CommandLine;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.invoke.MethodHandles;
 import java.util.concurrent.Callable;
 
-import static fps.subskipper.recognitionManualParser.util.ConstantsRecog.*;
+import static fps.subskipper.util.Constants.*;
 
 /**
  * Simple main application
@@ -72,7 +68,7 @@ public class App implements Callable<Integer> {
     public Integer call() throws Exception {
 
         if(targetPath == null){
-            targetPath = new File(ConstantsRecog.RECOGNITION_MANUALS_TARGET_PATH);
+            targetPath = new File(RECOGNITION_MANUALS_TARGET_PATH);
         }
 
         String pathWithFile = targetPath + File.separator + generateManualName();
@@ -95,11 +91,11 @@ public class App implements Callable<Integer> {
     }
 
     public void publishShortRecognitionManual (String manualTargetPath, Boolean isImperial, Boolean isAobTable) throws IOException {
-        recognitionManualMain.publishRecognitionManualShort(shipList, ConstantsRecog.RESOURCES_PATH + "\\" + ConstantsRecog.RECOGNITION_MANUAL_SHORT_FILENAME, false, false);
+        recognitionManualMain.publishRecognitionManualShort(shipList, RESOURCES_PATH + "\\" + RECOGNITION_MANUAL_SHORT_FILENAME, false, false);
     }
 
     public void publishLongRecognitionManual (String manualTargetPath, Boolean isImperial) throws IOException {
-        recognitionManualMain.publishRecognitionManualLong(shipList, ConstantsRecog.RESOURCES_PATH + "\\" + ConstantsRecog.RECOGNITION_MANUAL_LONG_FILENAME, isImperial);
+        recognitionManualMain.publishRecognitionManualLong(shipList, RESOURCES_PATH + "\\" + RECOGNITION_MANUAL_LONG_FILENAME, isImperial);
     }
 }
 

@@ -10,9 +10,9 @@ import ship.data.reader.RMShip;
 import java.io.File;
 import java.io.IOException;
 
+import static fps.subskipper.util.Constants.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static ship.data.reader.sh4.DataReaderConstants.*;
 
 class ReadShipsFromSh4DataImplTest {
 

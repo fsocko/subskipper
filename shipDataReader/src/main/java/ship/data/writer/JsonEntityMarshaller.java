@@ -1,4 +1,4 @@
-package fps.subskipper.recognitionManualParser.util;
+package ship.data.writer;
 
 import com.google.gson.Gson;
 import fps.subskipper.core.Ships;
@@ -11,27 +11,30 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
+import static fps.subskipper.util.Constants.SHIPLIST_PATH;
+
 
 @Slf4j
 public class JsonEntityMarshaller {
 
-    public static void writeShipsToJsonFile(Ships ships, String shipListPath) throws IOException {
-        FileWriter writer = null;
-        try {
+    public static void writeShipsToJsonFile(Ships ships) throws IOException {
+        writeShipsToJsonFile(ships, SHIPLIST_PATH);
+    }
+
+    public static void writeShipsToJsonFile( Ships ships, String shipListPath) throws IOException {
+
+        try (FileWriter writer = new FileWriter(shipListPath)) {
             Gson gson = new Gson();
-            String writeShips = gson.toJson(ships);
-            writer = new FileWriter(shipListPath);
+            String writeShips = gson.toJson(ships.getShipList());
             writer.write(writeShips);
         } catch (IOException ie) {
             log.error("Failed to write Ships.", ie);
-        } finally {
-            try {
-                writer.close();
-            } catch (IOException ioe) {
-                log.error("Failed to close writer:", ioe);
-                throw ioe;
-            }
+            throw ie;
         }
+    }
+
+    public static Ships readShipsFromFile() throws IOException {
+        return readShipsFromFile( SHIPLIST_PATH);
     }
 
     public static Ships readShipsFromFile(String shipListPath) throws IOException {

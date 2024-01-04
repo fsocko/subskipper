@@ -13,17 +13,6 @@ public class RecognitionManualMainImplTest {
     RecognitionManualMainImpl recognitionManualMainImpl = new RecognitionManualMainImpl();
 
     @Test
-    public void testLoadShipsToMemory() throws Exception {
-        Ships result = recognitionManualMainImpl.loadShipsToMemory();
-        assertEquals(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))), result);
-    }
-
-    @Test
-    public void testWriteShipsToFile() throws Exception {
-     recognitionManualMainImpl.writeShipsToFile(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))));
-    }
-
-    @Test
     public void testPublishRecognitionManualShort() throws Exception {
         recognitionManualMainImpl.publishRecognitionManualShort(new Ships(new ArrayList<Ship>(Arrays.asList(new Ship("name", 0, "typeName", "imagePath", 0d, 0d, 0d, 0d, 0d, 0d)))), "filename", true, true);
     }
