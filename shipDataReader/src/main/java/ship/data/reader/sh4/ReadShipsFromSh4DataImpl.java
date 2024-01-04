@@ -1,51 +1,53 @@
 package ship.data.reader.sh4;
 
-import java.awt.image.BufferedImage;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
 import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
-import jakarta.xml.bind.JAXBException;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import ship.data.reader.IShipDataReader;
 import ship.data.reader.RMShip;
-import ship.data.reader.sh4.image.processor.ImageProcessor;
+import ship.data.reader.sh4.image.processor.IImageProcessor;
 import ship.data.reader.sh4.image.processor.ImageProcessorImpl;
 import ship.data.writer.JsonEntityMarshaller;
 
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.util.ArrayList;
+
 import static fps.subskipper.util.Constants.SCAF_NAMES_PATH;
 import static fps.subskipper.util.Constants.SCAF_ROOT_PATH;
-import static ship.data.reader.sh4.DataReaderConstants.*;
 
 @Slf4j
 @Getter
-public class ReadShipsFromSh4DataImpl {
+public class ReadShipsFromSh4DataImpl implements IShipDataReader {
 
     private ArrayList<File> shipFiles = new ArrayList<>();
 
-    public void writeShipsToFile(Ships ships) throws IOException {
-            JsonEntityMarshaller.writeShipsToJsonFile(ships);
+    @Override
+    public Ships readShipsFromData(File shipDataPath) {
+        try{
+            return this.loadShipsToMemory();
+        } catch(Exception e){
+            log.error("Failed to read SH4 Ships: ", e);
+            throw new RuntimeException(e);
+        }
     }
 
     public Ships loadShipsToMemory() throws IOException {
 
-        Ships ships;
+        Ships ships = null;
         try {
             ships = JsonEntityMarshaller.readShipsFromFile();
         } catch (Exception e) {
-            log.error("Threw exception when reading ships from file.", e);
+            log.error("Threw exception when reading SH4 ships from existing JSON file.", e);
         }
-        try {
-            ships = parseShipsFromScaf();
-        } catch (IOException e) {
-            log.error("Threw IOException when parsing ships from SCAF.", e);
-            throw e;
+        if(ships == null) {
+            try {
+                ships = parseShipsFromScaf();
+            } catch (IOException e) {
+                log.error("Threw IOException when parsing SH4 ships from SCAF.", e);
+                throw e;
+            }
         }
         return ships;
     }
@@ -79,8 +81,8 @@ public class ReadShipsFromSh4DataImpl {
         imagePath += "_sil.dds";
         imagePath = "\"" + imagePath + "\"";
 
-        ImageProcessor sh4ImageProcessor = new ImageProcessorImpl();
-        BufferedImage bufferedImage = sh4ImageProcessor.readDdsFileToBufferedImage(imagePath);
+        IImageProcessor sh4ImageProcessor = new ImageProcessorImpl();
+        String image = sh4ImageProcessor.readDdsFileToB64Png(imagePath);
 
         double maxSpeed = Double.parseDouble(tempShips[2]);
         double length = Double.parseDouble(tempShips[3]);
@@ -89,7 +91,7 @@ public class ReadShipsFromSh4DataImpl {
         double draft = Double.parseDouble(tempShips[6]);
         double displacement = Double.parseDouble(tempShips[7]);
 
-        RMShip testShip = new RMShip(name, type, typeName, imagePath, bufferedImage, maxSpeed, length, width, mast, draft, displacement);
+        RMShip testShip = new RMShip(name, type, typeName, imagePath, image, maxSpeed, length, width, mast, draft, displacement);
         return testShip;
     }
 
@@ -159,6 +161,7 @@ public class ReadShipsFromSh4DataImpl {
             log.info("could not read file.", e.getMessage());
             throw e;
         } finally {
+            fs.close();
             br.close();
         }
         return tempShips;
@@ -180,6 +183,7 @@ public class ReadShipsFromSh4DataImpl {
         }
     }
 
+    //FIXME: This should probably be saved in a temp file as a hash
     //this method looks up a query from names.cfg using a linear line-by-line search.
     //takes the short className from the Ship file as its input, and returns a stripped ship name.
     private String typeNameLookup(String typeNum) throws IOException {
@@ -187,6 +191,7 @@ public class ReadShipsFromSh4DataImpl {
         return nameLookup(typeNum);
     }
 
+    //FIXME: This should probably be saved in a temp file as a hash
     //Looks up a name using a String Query from the separate Names.cfg file
     private String nameLookup(String query) throws IOException {
         boolean found = false;
@@ -226,6 +231,5 @@ public class ReadShipsFromSh4DataImpl {
             return curLine + " | ERROR: \"" + query + "\" not found in ReadShips.nameLookup().";
         }
     }
-
 
 }

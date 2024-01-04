@@ -1,6 +1,7 @@
 package fps.subskipper.util;
 
 import java.io.File;
+import java.util.Base64;
 
 public class Constants {
 

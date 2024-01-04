@@ -23,7 +23,7 @@ public class ReadUboatShipDataTest {
         File uboatDataFile = TestUtilities.getFileFromResources("uboot/excel_test_file.xlsx");
         System.out.println(uboatDataFile.getAbsoluteFile().toString());
 
-        Ships uboatShips = readUboatData.readShipsFromFile(uboatDataFile);
+        Ships uboatShips = readUboatData.readShipsFromData(uboatDataFile);
         //System.out.println(uboatShips.toString());
 
         assertFalse(false, "TODO: UboatReadShips is a quick POI example.");

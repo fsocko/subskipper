@@ -6,6 +6,6 @@ import java.io.File;
 
 public interface IShipDataReader {
 
-    Ships readShipsFromFile(File shipDataFile);
+    Ships readShipsFromData(File shipDataPath) throws RuntimeException;
 
 }

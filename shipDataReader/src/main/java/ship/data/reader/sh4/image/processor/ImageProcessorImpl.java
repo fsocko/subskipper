@@ -4,7 +4,6 @@ import jakarta.xml.bind.DatatypeConverter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import ship.data.reader.sh4.DDSReader;
-import ship.data.reader.sh4.DataReaderConstants;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -16,7 +15,7 @@ import static fps.subskipper.util.Constants.PNG_FORMAT_CONSTANT;
 
 
 @Slf4j
-public class ImageProcessorImpl implements ImageProcessor {
+public class ImageProcessorImpl implements IImageProcessor {
 
 	@Override
 	public BufferedImage readDdsFileToBufferedImage(String path) {
@@ -37,6 +36,11 @@ public class ImageProcessorImpl implements ImageProcessor {
 		} else {
 			return NO_DATA_IMAGE_B64;
 		}
+	}
+
+	@Override
+	public String readDdsFileToB64Png(String path) {
+		return bufferedImageToB64Png(readDdsFileToBufferedImage(path));
 	}
 
 	@Override

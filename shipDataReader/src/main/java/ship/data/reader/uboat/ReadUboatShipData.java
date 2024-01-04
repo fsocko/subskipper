@@ -14,10 +14,10 @@ import java.util.Iterator;
 public class ReadUboatShipData implements IShipDataReader {
 
     @Override
-    public Ships readShipsFromFile(File uboatDataFile) {
+    public Ships readShipsFromData(File shipDataPath) {
 
         try {
-            FileInputStream file = new FileInputStream(new File(uboatDataFile.toURI()));
+            FileInputStream file = new FileInputStream(new File(shipDataPath.toURI()));
 
             //Create Workbook instance holding reference to .xlsx file
             XSSFWorkbook workbook = new XSSFWorkbook(file);
