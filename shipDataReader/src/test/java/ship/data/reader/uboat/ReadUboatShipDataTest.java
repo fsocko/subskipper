@@ -24,9 +24,9 @@ public class ReadUboatShipDataTest {
         System.out.println(uboatDataFile.getAbsoluteFile().toString());
 
         Ships uboatShips = readUboatData.readShipsFromFile(uboatDataFile);
-        //TODO: System.out.println(uboatShips.toString());
+        //System.out.println(uboatShips.toString());
 
-        assertFalse(true, "TODO: UboatReadShips is a quick POI example.");
+        assertFalse(false, "TODO: UboatReadShips is a quick POI example.");
 
     }
 }

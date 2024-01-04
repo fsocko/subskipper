@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
 
 @Slf4j
 //@Getter
@@ -11,20 +13,21 @@ import java.util.Collections;
 @Deprecated
 public class Ships {
 
-    private ArrayList<Ship> ships;
+    private List<Ship> ships;
 
-    public Ships(ArrayList<Ship> ships){
+    public Ships(List<Ship> ships) {
         this.setShips(ships);
     }
 
-    public Ships(){}
+    public Ships() {
+    }
 
-    public void setShips(ArrayList<Ship> ships) {
+    public void setShips(List<Ship> ships) {
         this.ships = ships;
     }
 
     //return this for array list of ships
-    public ArrayList<Ship> getShipList() {
+    public List<Ship> getShipList() {
         return ships;
     }
 
@@ -39,7 +42,7 @@ public class Ships {
 
     //Sort Ships based on Type
     public Ships sortShipsByType() {
-        ArrayList sortedShips = new ArrayList(this.getShipList());
+        List sortedShips = new ArrayList(this.getShipList());
         Collections.sort(this.ships, Ship.sTypeComparatorDescending);
         this.setShips(sortedShips);
         return this;
@@ -47,7 +50,7 @@ public class Ships {
 
     //Sort Ships based on name
     public Ships sortShipsByName() {
-        ArrayList sortedShips = new ArrayList(this.getShipList());
+        List sortedShips = new ArrayList(this.getShipList());
         Collections.sort(sortedShips, Ship.sNameComparatorDescending);
         this.setShips(sortedShips);
         return this;
@@ -55,11 +58,28 @@ public class Ships {
 
     @Override
     public String toString() {
-        StringBuilder shipStringBuilder = new StringBuilder();
-        for (Ship ship : ships) {
-            shipStringBuilder.append(ship.toString() + "\n\n");
+        return this.getShipList().toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Ships)) return false;
+        Ships ships1 = (Ships) o;
+
+        if (this.getShipList().size() == ships1.getShipList().size()) {
+            for (int i = 0; i < this.getShipList().size(); i++) {
+                if (this.getShipList().get(i).compareTo(ships1.getShipList().get(i)) != 0) {
+                    return false;
+                }
+            }
         }
-        return shipStringBuilder.toString();
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.getShipList());
     }
 }
 

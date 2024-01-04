@@ -44,6 +44,9 @@ public class Constants {
   public static String RECOGNITION_MANUALS_TARGET_PATH = TARGET_PATH + "\\recognitionManuals";
   public static final String RECOGNITION_MANUAL_LONG_FILENAME = "recognitionManual_long.html";
   public static final String RECOGNITION_MANUAL_SHORT_FILENAME = "recognitionManual_short.html";
+
+
+  //Recognition Manual CMD
   public static final String COMMAND_LINE_USAGE_MESSAGE = "*SubSkipper Recognition Manual Parser*" +
           "Usage: ";
 

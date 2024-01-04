@@ -3,7 +3,9 @@
 package fps.subskipper.core;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,25 +17,87 @@ import static fps.subskipper.util.Constants.FEET_FOR_EVERY_METRE;
 
 @Slf4j
 @Getter
-@Setter
 @XmlRootElement(name = "ship")
 public class Ship implements Comparable<Ship> {
 
     private int id;
-    private final String nation;
-    private final String name;
-    private final int type;
-    private final String typeName;
-    private final String imagePath;
-    private final double maxSpeed;
-    private final double length;
-    private final double width;
-    private final double mast;
-    private final double draft;
-    private final double displacement;
-    private final double refAspect;
+    private String nation;
+    private String name;
+    private int type;
+    private String typeName;
+    private String imagePath;
+    private double maxSpeed;
+    private double length;
+    private double width;
+    private double mast;
+    private double draft;
+    private double displacement;
+    private double refAspect;
     //TODO: Angle solver data
 
+    public Ship(String... params) {
+        this.id = new AtomicInteger().addAndGet(1);
+        this.nation = "none";
+        this.name = "";
+        this.type = -1;
+        this.typeName = "";
+        this.imagePath = "";
+        this.maxSpeed = -1;
+        this.length = -1;
+        this.width = -1;
+        this.mast = -1;
+        this.draft = -1;
+        this.displacement = -1;
+        this.refAspect = length / mast;
+
+        if (params.length >= 1) {
+            this.name = params[0];
+        }
+        if (params.length >= 2) {
+            this.type = Integer.parseInt(params[1]);
+        }
+        if (params.length >= 3) {
+            this.typeName = params[2];
+        }
+        if (params.length >= 4) {
+            this.imagePath = params[3];
+        }
+        if (params.length >= 5) {
+            this.maxSpeed = Double.parseDouble(params[4]);
+        }
+        if (params.length >= 6) {
+            this.length = Double.parseDouble(params[5]);
+        }
+        if (params.length >= 7) {
+            this.width = Double.parseDouble(params[6]);
+        }
+        if (params.length >= 8) {
+            this.mast = Double.parseDouble(params[7]);
+        }
+        if (params.length >= 9) {
+            this.draft = Double.parseDouble(params[8]);
+        }
+        if (params.length >= 10) {
+            this.displacement = Double.parseDouble(params[9]);
+        }
+        this.refAspect = length / mast;
+    }
+
+    public Ship() {
+        this.id = new AtomicInteger().addAndGet(1);
+        this.nation = "none";
+        this.name = "";
+        this.type = -1;
+        this.typeName = "";
+        this.imagePath = "";
+        this.maxSpeed = -1;
+        this.length = -1;
+        this.width = -1;
+        this.mast = -1;
+        this.draft = -1;
+        this.displacement = -1;
+        this.refAspect = length / mast;
+    }
 
     public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
                 double mast, double draft, double displacement) {
@@ -52,6 +116,7 @@ public class Ship implements Comparable<Ship> {
         this.displacement = displacement;
         this.refAspect = length / mast;
     }
+
     public double getImperialLength() {
         return length * FEET_FOR_EVERY_METRE;
     } //Imperial conversions
@@ -98,8 +163,7 @@ public class Ship implements Comparable<Ship> {
         } else if (ship.getType() == this.getType()) {
             return 0;
         } else {
-            log.error("Unable to compare\n%s\nto:\n%s by type. Returning 0.", this.toString(), ship.toString());
-            return 0; //TODO: Throw Exception?
+            throw new RuntimeException("Unable to compare by type:" + this.getType() +" -> "+ ship.getType());
         }
     }
 
