@@ -29,7 +29,7 @@ public class Constants {
   public static final String CORE_RESOURCES_PATH = System.getProperty("user.dir")+SFS+"core"+SFS+"src"+SFS+"main"+SFS+"resources";
   public static final String SHIP_DATA_READER_RESOURCES_PATH = System.getProperty("user.dir")+SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources";
   public static final String SHIPLIST_PATH = new File(System.getProperty("user.dir")).getParent() +SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "shipList.json";
-  public static final String SCAF_ROOT_PATH = RESOURCES_PATH +SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "SCAF for TMO_2";
+  public static final String SCAF_ROOT_PATH = RESOURCES_PATH+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "SCAF for TMO_2";
   public static final String SCAF_DATA_PATH = SCAF_ROOT_PATH +SFS+ "Data";
   public static final String SCAF_NAMES_PATH = SCAF_ROOT_PATH +SFS+"Data"+SFS+"Roster"+SFS+"Names.cfg";
 

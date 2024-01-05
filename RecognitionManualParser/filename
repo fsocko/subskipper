@@ -2,65 +2,41 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>Long Recognition Manual for SH4,TMO,SCAF. (Imperial Version)</title>
-  <link rel="stylesheet" type="text/css" href="recogL.css" />
-  
-  <script language="JavaScript">
-	function imgError(image) {
-    image.onerror = "";
-    image.src = "../figures/noImage.png";
-    return true;
-	}
-  </script>
-  
+  <title>Short Recognition Manual for SH4,TMO,SCAF. (Imperial Version)</title> 
+  <link rel="stylesheet" type="text/css" href="recogS.css" />
 </head>
 <body>
-<div class = wrapper id = header>
-<h1>Long Recognition Manual for SH4,TMO,SCAF. (Imperial Version)</h1>
+<div class="wrapper">
+<h1>Short Recognition Manual for SH4,TMO,SCAF. (Imperial Version)</h1>
+<div class = "startTable row">
+	<div class="name header cell">Name</div>
+	<div class="displacement header cell">Tonnage (GRT)</div>
+	<div class="speed header cell">Speed (kn)</div>
+	<div class="length header cell">Length ft</div>
+	<div class="height header cell">Height ft</div>
+	<div class="draft header cell">Draft ft</div>
+	<div class="aspect header cell">Aspect</div>
 </div>
-<div class=wrapper>
+<div id="shipRow0" class="shipRow row">
+	<div class="name cell">name</div>
+	<div class="displacement cell">%0.2f</div>
+	<div class="speed cell">%0.2f</div>
+	<div class="length cell">%0.2f</div>
+	<div class="height cell">%0.2f</div>
+	<div class="draft cell">%0.2f</div>
+	<div class="aspect cell">NaN</div>
+</div>
+<div id="AOB0" class="AOBRow row">
 
-<div class=flag>
-</div>
-
-<div class=data>
-
-<div class = dataContainer id=n>
-&nbspName:&nbspname
-</div>
-<div class = dataContainer id=c>
-Class:&nbsptypeName
-</div>
-
-</div>
-
-<div class = ship>
-<img src={$image} alt="Ship Image"  onError="imgError(this);" />
-</div>
-
-<div class = data style = "width: 100%" >
-
-<div class = dataContainer id=t>
-Tonnage:0.0 GRT
-</div>
-<div class = dataContainer id=s>
-&nbspSpeed:0.0kt
-</div>
-<div class = dataContainer id=d>
-&nbspDraft:0.0ft
-</div>
-<div class = dataContainer id=h>
-&nbspHeight:0.0ft
-</div>
-<div class = dataContainer id=l>
-Length:0.0ft
-</div>
-<div class = dataContainer id=a>
-Aspect:NaN
+	<div class="AOBDesc cell">Aspect at AOB:</div>
+	<div class="deg cell">10&deg;: NaN</div>
+	<div class="deg cell">20&deg;: NaN</div>
+	<div class="deg cell">30&deg;: NaN</div>
+	<div class="deg cell">40&deg;: NaN</div>
+	<div class="deg cell">50&deg;: NaN</div>
+	<div class="deg cell">60&deg;: NaN</div>
+	<div class="deg cell">70&deg;: NaN</div>
+	<div class="deg cell">80&deg;: NaN</div>
+	<div class="deg cell">90&deg;: NaN</div>
 </div>
 
-</div>
-
-</div>
-</body>
-</html>

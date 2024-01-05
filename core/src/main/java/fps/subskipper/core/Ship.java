@@ -17,6 +17,8 @@ import static fps.subskipper.util.Constants.FEET_FOR_EVERY_METRE;
 @XmlRootElement(name = "ship")
 public class Ship implements Comparable<Ship> {
 
+    static final AtomicInteger idGen = new AtomicInteger(1);
+
     private int id;
     private String nation;
     private String name;
@@ -32,26 +34,12 @@ public class Ship implements Comparable<Ship> {
     private double refAspect;
     //TODO: Angle solver data
 
-    public Ship() {
-        this.id = new AtomicInteger().addAndGet(1);
-        this.nation = "none";
-        this.name = "";
-        this.type = -1;
-        this.typeName = "";
-        this.image = "";
-        this.maxSpeed = -1;
-        this.length = -1;
-        this.width = -1;
-        this.mast = -1;
-        this.draft = -1;
-        this.displacement = -1;
-        this.refAspect = length / mast;
-    }
+
 
     public Ship(String name, int type, String typeName, String image, double maxSpeed, double length, double width,
                 double mast, double draft, double displacement) {
 
-        this.id = new AtomicInteger().addAndGet(1);
+        this.id = idGen.getAndIncrement();
         this.nation = "none";
         this.name = name;
         this.type = type;

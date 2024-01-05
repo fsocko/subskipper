@@ -1,5 +1,6 @@
 package ship.data.reader.sh4;
 
+import fps.subskipper.core.Ship;
 import fps.subskipper.core.Ships;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -47,8 +48,8 @@ class ReadShipsFromSh4DataImplTest {
     void testMakeShip() throws IOException {
 
         // Act
-        RMShip ship1 = readShipsFromSh4Data.makeShip(this.testFile1);
-        RMShip ship118 = readShipsFromSh4Data.makeShip(this.testFile118);
+        Ship ship1 = readShipsFromSh4Data.makeShip(this.testFile1);
+        Ship ship118 = readShipsFromSh4Data.makeShip(this.testFile118);
 
         System.out.println(ship1.toString());
         System.out.println(ship118.toString());

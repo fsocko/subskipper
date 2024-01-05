@@ -18,22 +18,19 @@ import static fps.subskipper.util.Constants.UNIT_FOOT;
 public class ParseRecognitionManualShort {
 
     //takes Ship list Ships, takes filename of doc. - Short style
-    //shipList is a Ships object, filename is the name of output file, imperial=true converts
-    //units to imperial where relevant. AOB table generates a row of common AOB ratios.
-    public void writeRecogSHTML(Ships shipList, String filename, boolean imperial, boolean AOBTable) throws FileNotFoundException {
+    //shipList is a Ships object, filename is the name of output file, isImperial=true converts
+    //units to isImperial where relevant. AOB table generates a row of common AOB ratios.
+    public void writeRecogSHTML(Ships shipList, String filename, boolean isImperial, boolean withAOBTable) throws FileNotFoundException {
 
         StringBuilder htmlDoc = new StringBuilder();
-        htmlDoc.append(writeHead(imperial));
-        htmlDoc.append(startTable(imperial));
+        htmlDoc.append(writeHead(isImperial));
+        htmlDoc.append(startTable(isImperial));
 
         //Main Ship table row
         for (int i = 0; i < shipList.getShipList().size(); i++) {
-            htmlDoc.append(shipRow(shipList.getShipList().get(i), i, imperial));
-            if (AOBTable) {
+            htmlDoc.append(shipRow(shipList.getShipList().get(i), i, isImperial));
+            if (withAOBTable) {
                 htmlDoc.append(AOBRow(shipList.getShipList().get(i), i));
-            }
-            if (i % 50 == 0 && i > 0) {
-                htmlDoc.append(splitTable(imperial)); //split the table if this is a page break
             }
         }
         writeHTML(htmlDoc.toString(), filename);
@@ -41,13 +38,13 @@ public class ParseRecognitionManualShort {
 
 
     //Write HTML Head - done once at start.
-    private String writeHead(boolean imperial) {
+    private String writeHead(boolean isImperial) {
 
         Theme theme = new Theme();
         Chunk h = theme.makeChunk("recogSDiv#head"); //Chunk used to write to HTML: <head> only.
 
         String title = "Short Recognition Manual for SH4,TMO,SCAF.";
-        if (imperial) {
+        if (isImperial) {
             title = title + " (Imperial Version)";
         } else {
             title = title + " (Metric Version)";
@@ -70,7 +67,7 @@ public class ParseRecognitionManualShort {
     }
 
 
-    private String shipRow(Ship record, int i, boolean imperial) {
+    private String shipRow(Ship record, int i, boolean isImperial) {
 
         OutFormat f = new OutFormat();
         Theme theme = new Theme();
@@ -92,8 +89,8 @@ public class ParseRecognitionManualShort {
         h.set("length", f.twoDP(record.getLength()));
         h.set("height", f.twoDP(record.getMast()));
 
-        if (imperial) {
-            if (imperial) {
+        if (isImperial) {
+            if (isImperial) {
                 h.set("draft", f.twoDP(record.getImperialDraft()));
                 h.set("length", f.twoDP(record.getImperialLength()));
                 h.set("height", f.twoDP(record.getImperialMast()));
@@ -135,12 +132,13 @@ public class ParseRecognitionManualShort {
     }
 
 
-    //split the table for page breaks
-    private String splitTable(boolean imperial) {
-        String split = "</table>\n";
-        split += startTable(imperial);
-        return split.toString();
-    }
+    //TODO: deleteMe. We don't split HTML anymore.
+//    //split the table for page breaks
+//    private String splitTable(boolean imperial) {
+//        String split = "</table>\n";
+//        split += startTable(imperial);
+//        return split.toString();
+//    }
 
     private void writeHTML(String input, String path) throws FileNotFoundException {
         FileIO htmlWriter = new FileIO();
