@@ -5,12 +5,9 @@ import fps.subskipper.core.Ships;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import ship.data.reader.IShipDataReader;
-import ship.data.reader.RMShip;
 import ship.data.reader.sh4.image.processor.IImageProcessor;
 import ship.data.reader.sh4.image.processor.ImageProcessorImpl;
-import ship.data.writer.JsonEntityMarshaller;
 
-import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -67,7 +64,7 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
 
 
     //Format and construct a ship object using data in tempShips
-    public RMShip makeShip(String path) throws IOException {
+    public Ship makeShip(String path) throws IOException {
         String[] tempShips = formatScafShipRecord(path);
         stripVars(tempShips); //remove descriptor strings.
 
@@ -79,7 +76,6 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
         //this cuts off the last 4 letters in the string. Usually, this would be .cfg, but it might not be.
         //TODO: implement a better solution for finding the imagePath.
         imagePath += "_sil.dds";
-        imagePath = "\"" + imagePath + "\"";
 
         IImageProcessor sh4ImageProcessor = new ImageProcessorImpl();
         String image = sh4ImageProcessor.readDdsFileToB64Png(imagePath);
@@ -91,7 +87,7 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
         double draft = Double.parseDouble(tempShips[6]);
         double displacement = Double.parseDouble(tempShips[7]);
 
-        RMShip testShip = new RMShip(name, type, typeName, imagePath, image, maxSpeed, length, width, mast, draft, displacement);
+        Ship testShip = new Ship(name, type, typeName, image, maxSpeed, length, width, mast, draft, displacement);
         return testShip;
     }
 
@@ -100,7 +96,7 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
     //TODO: was private
     protected void listShipFiles(String directoryName) {
         File directory = new File(directoryName);
-        // recursively list files in directory and sub directories.
+        // recursively list files in directory and subdirectories.
         File[] fList = directory.listFiles();
 
         if(fList.length == 0){

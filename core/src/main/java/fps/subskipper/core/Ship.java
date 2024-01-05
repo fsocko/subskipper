@@ -3,10 +3,7 @@
 package fps.subskipper.core;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Comparator;
@@ -25,7 +22,7 @@ public class Ship implements Comparable<Ship> {
     private String name;
     private int type;
     private String typeName;
-    private String imagePath;
+    private String image;
     private double maxSpeed;
     private double length;
     private double width;
@@ -35,61 +32,13 @@ public class Ship implements Comparable<Ship> {
     private double refAspect;
     //TODO: Angle solver data
 
-    public Ship(String... params) {
-        this.id = new AtomicInteger().addAndGet(1);
-        this.nation = "none";
-        this.name = "";
-        this.type = -1;
-        this.typeName = "";
-        this.imagePath = "";
-        this.maxSpeed = -1;
-        this.length = -1;
-        this.width = -1;
-        this.mast = -1;
-        this.draft = -1;
-        this.displacement = -1;
-        this.refAspect = length / mast;
-
-        if (params.length >= 1) {
-            this.name = params[0];
-        }
-        if (params.length >= 2) {
-            this.type = Integer.parseInt(params[1]);
-        }
-        if (params.length >= 3) {
-            this.typeName = params[2];
-        }
-        if (params.length >= 4) {
-            this.imagePath = params[3];
-        }
-        if (params.length >= 5) {
-            this.maxSpeed = Double.parseDouble(params[4]);
-        }
-        if (params.length >= 6) {
-            this.length = Double.parseDouble(params[5]);
-        }
-        if (params.length >= 7) {
-            this.width = Double.parseDouble(params[6]);
-        }
-        if (params.length >= 8) {
-            this.mast = Double.parseDouble(params[7]);
-        }
-        if (params.length >= 9) {
-            this.draft = Double.parseDouble(params[8]);
-        }
-        if (params.length >= 10) {
-            this.displacement = Double.parseDouble(params[9]);
-        }
-        this.refAspect = length / mast;
-    }
-
     public Ship() {
         this.id = new AtomicInteger().addAndGet(1);
         this.nation = "none";
         this.name = "";
         this.type = -1;
         this.typeName = "";
-        this.imagePath = "";
+        this.image = "";
         this.maxSpeed = -1;
         this.length = -1;
         this.width = -1;
@@ -99,7 +48,7 @@ public class Ship implements Comparable<Ship> {
         this.refAspect = length / mast;
     }
 
-    public Ship(String name, int type, String typeName, String imagePath, double maxSpeed, double length, double width,
+    public Ship(String name, int type, String typeName, String image, double maxSpeed, double length, double width,
                 double mast, double draft, double displacement) {
 
         this.id = new AtomicInteger().addAndGet(1);
@@ -107,7 +56,7 @@ public class Ship implements Comparable<Ship> {
         this.name = name;
         this.type = type;
         this.typeName = typeName;
-        this.imagePath = imagePath;
+        this.image = image;
         this.maxSpeed = maxSpeed;
         this.length = length;
         this.width = width;
@@ -141,7 +90,7 @@ public class Ship implements Comparable<Ship> {
                 ", name='" + name + '\'' +
                 ", type=" + type +
                 ", typeName='" + typeName + '\'' +
-                ", imagePath='" + imagePath + '\'' +
+                ", imagePath='" + image + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 ", length=" + length +
                 ", width=" + width +

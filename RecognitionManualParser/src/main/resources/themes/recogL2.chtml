@@ -5,18 +5,11 @@
   <meta charset="UTF-8">
   <title>{$title}</title>
   <link rel="stylesheet" type="text/css" href="recogL.css" />
-  
-  <script language="JavaScript">
-	function imgError(image) {
-    image.onerror = "";
-    image.src = "../figures/noImage.png";
-    return true;
-	}
-  </script>
-  
+
+
 </head>
 <body>
-<div class = wrapper id = header>
+<div class=wrapper id="header">
 <h1>{$heading}</h1>
 </div>
 {#}
@@ -24,47 +17,49 @@
 {#ship}
 <div class=wrapper>
 
-<div class=flag>
-</div>
+    <div class=flag>
+    </div>
 
-<div class=data>
+    <div class=data>
+        <div class = dataContainer id=n>
+        &nbspName:&nbsp{$name}
+        </div>
 
-<div class = dataContainer id=n>
-&nbspName:&nbsp{$name}
-</div>
-<div class = dataContainer id=c>
-Class:&nbsp{$class}
-</div>
+        <div class = dataContainer id=c>
+        Class:&nbsp{$class}
+        </div>
+    </div>
 
-</div>
+    <div class = ship>
+        <img src="data:image/png;base64,{$image}" />
+    </div>
 
-<div class = ship>
-<img src={$image} alt="Ship Image"  onError="imgError(this);" />
-</div>
+    <div class=data style="width:100%" >
 
-<div class = data style = "width: 100%" >
+        <div class = dataContainer id=t>
+        Tonnage:{$displacement}
+        </div>
 
-<div class = dataContainer id=t>
-Tonnage:{$displacement}
-</div>
-<div class = dataContainer id=s>
-&nbspSpeed:{$speed}
-</div>
-<div class = dataContainer id=d>
-&nbspDraft:{$draft}
-</div>
-<div class = dataContainer id=h>
-&nbspHeight:{$height}
-</div>
-<div class = dataContainer id=l>
-Length:{$length}
-</div>
-<div class = dataContainer id=a>
-Aspect:{$aspect}
-</div>
+        <div class = dataContainer id=s>
+        &nbspSpeed:{$speed}
+        </div>
 
-</div>
+        <div class = dataContainer id=d>
+        &nbspDraft:{$draft}
+        </div>
 
+        <div class = dataContainer id=h>
+        &nbspHeight:{$height}
+        </div>
+
+        <div class = dataContainer id=l>
+        Length:{$length}
+        </div>
+
+        <div class = dataContainer id=a>
+        Aspect:{$aspect}
+        </div>
+    </div>
 </div>
 {#}
 

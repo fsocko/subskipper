@@ -18,15 +18,15 @@ public class ParseRecognitionManualLong {
 
     //takes Ship list Ships, takes filename of doc. - Long recog manual
     //with images and data in long format, styled with CSS.
-    //boolean imperial turns relevant units to "wrong units"
-    public void writeRecogLHTML(Ships shipList, String filename, boolean imperial) throws FileNotFoundException {
+    //boolean isImperial turns relevant units to "wrong units"
+    public void writeRecogLHTML(Ships shipList, String filename, boolean isImperial) throws FileNotFoundException {
         //<head>
         StringBuilder htmlDoc = new StringBuilder();
-        htmlDoc.append(HTMLStartL(imperial));
+        htmlDoc.append(HTMLStartL(isImperial));
 
         //Main Ship HTML
         for (Ship ship : shipList.getShipList()) {
-            htmlDoc.append(HTMLShipL(ship, imperial));
+            htmlDoc.append(HTMLShipL(ship, isImperial));
         }
         //Close remaining tags
         htmlDoc.append(HTMLEndL());
@@ -34,10 +34,10 @@ public class ParseRecognitionManualLong {
         log.info("HTML Written.");
     }
 
-    private String HTMLStartL(boolean imperial) {
+    private String HTMLStartL(boolean isImperial) {
 
         String title = "Long Recognition Manual for SH4,TMO,SCAF.";
-        if (imperial) {
+        if (isImperial) {
             title = title + " (Imperial Version)";
         } else {
             title = title + " (Metric Version)";
@@ -51,37 +51,29 @@ public class ParseRecognitionManualLong {
         return h.toString();
     }
 
-    private String HTMLShipL(Ship record, boolean imperial) {
+    private String HTMLShipL(Ship record, boolean isImperial) {
 
-        String unit = UNIT_METRE;
-
-        OutFormat formatter = new OutFormat();
         Theme theme = new Theme();
         Chunk h = theme.makeChunk("recogL2#ship");
         h.set("flag", "flag"); //TODO: figure out how ships are sorted, assign flags. Maybe typeInt?
         h.set("name", record.getName());
         h.set("class", record.getTypeName());
-        h.set("speed", formatter.addUnit(record.getMaxSpeed(), UNIT_KNOT));
+        h.set("speed", OutFormat.addUnit(record.getMaxSpeed(), UNIT_KNOT));
 
-        h.set("length", formatter.addUnit(record.getLength(), unit));
-        h.set("height", formatter.addUnit(record.getMast(), unit));
-        h.set("draft", formatter.addUnit(record.getDraft(), unit));
+        h.set("length", OutFormat.addUnit(record.getLength(), UNIT_METRE));
+        h.set("height", OutFormat.addUnit(record.getMast(), UNIT_METRE));
+        h.set("draft", OutFormat.addUnit(record.getDraft(), UNIT_METRE));
 
-        if(imperial){
-            h.set("length", formatter.addUnit(record.getImperialLength(), UNIT_FOOT));
-            h.set("height", formatter.addUnit(record.getImperialMast(), UNIT_FOOT));
-            h.set("draft", formatter.addUnit(record.getImperialDraft(), UNIT_FOOT));
+        if(isImperial){
+            h.set("length", OutFormat.addUnit(record.getImperialLength(), UNIT_FOOT));
+            h.set("height", OutFormat.addUnit(record.getImperialMast(), UNIT_FOOT));
+            h.set("draft", OutFormat.addUnit(record.getImperialDraft(), UNIT_FOOT));
         }
 
-        h.set("displacement", record.getDisplacement() + " GRT"); //FIXME: should be unit
-        h.set("aspect", formatter.fourDP(record.getReferenceAspectRatio()));
+        h.set("displacement", OutFormat.addUnit(record.getDisplacement(), UNIT_GROSS_TONS));
+        h.set("aspect", OutFormat.fourDP(record.getReferenceAspectRatio()) );
 
-        //TODO: implement image reader
-//        //Convert image path to filename
-//        String pngPath = record.getImagePath();
-//        pngPath = pngPath.substring((pngPath.lastIndexOf("\\") + 1), pngPath.lastIndexOf("."));
-//        String figPath = "../figures/" + pngPath + ".png";
-//        h.set("image", figPath);
+        h.set("image", record.getImage());
 
         return h.toString(); //Temporarily outputs to console. Will make it send to file.
     }

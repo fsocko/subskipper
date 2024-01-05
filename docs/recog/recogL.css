@@ -105,7 +105,7 @@ a: aspect
 	top: 0px;
 	overflow: hidden;
 	background-image: repeating-linear-gradient(0deg,transparent,transparent 13px, black 13px,black 14px),
-	repeating-linear-gradient(-90deg,transparent,transparent 32px,black 33px,black 32px);
+	repeating-linear-gradient(-90deg,transparent,transparent 32px,black 34px,black 32px);
 	background-size: 71px 71px;
 	border-bottom: 1px solid black;
 	

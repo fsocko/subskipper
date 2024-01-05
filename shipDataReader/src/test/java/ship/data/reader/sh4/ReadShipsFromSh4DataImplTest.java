@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Spy;
-import ship.data.reader.RMShip;
 
 import java.io.File;
 import java.io.IOException;
@@ -61,7 +60,7 @@ class ReadShipsFromSh4DataImplTest {
         assertEquals("Small Old Split Freighter", ship1.getName());
         assertEquals(16, ship1.getType());
         assertEquals("Elite Patrol Craft", ship1.getTypeName());
-        assertEquals(ship1ImagePath, ship1.getImagePath().replace("\"", ""));
+        assertEquals(ship1ImagePath, ship1.getImage().replace("\"", ""));
         assertNotNull(ship1.getImage());
         assertEquals(17.0, ship1.getMaxSpeed());
         assertEquals(80.5, ship1.getLength());
@@ -73,7 +72,7 @@ class ReadShipsFromSh4DataImplTest {
         assertEquals("Submarine Tender", ship118.getName());
         assertEquals(100, ship118.getType());
         assertEquals("Replenishment", ship118.getTypeName());
-        assertEquals(ship118ImagePath, ship118.getImagePath().replace("\"", ""));
+        assertEquals(ship118ImagePath, ship118.getImage().replace("\"", ""));
         assertNotNull(ship118.getImage());
         assertEquals(18.0, ship118.getMaxSpeed());
         assertEquals(201.0, ship118.getLength());
