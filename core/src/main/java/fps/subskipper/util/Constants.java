@@ -1,7 +1,6 @@
 package fps.subskipper.util;
 
 import java.io.File;
-import java.util.Base64;
 
 public class Constants {
 
@@ -26,12 +25,13 @@ public class Constants {
   //DATA READER
 
   public static final String SFS = File.separator;
-  public static final String RESOURCES_PATH = System.getProperty("user.dir")+SFS+"src"+SFS+"main"+SFS+"resources";
-  public static final String SHIPLIST_PATH = RESOURCES_PATH +SFS+ "shipList.json";
-  public static final String SCAF_ROOT_PATH = RESOURCES_PATH +SFS+"SCAF for TMO_2";
+  public static final String RESOURCES_PATH = System.getProperty("user.dir");
+  public static final String CORE_RESOURCES_PATH = System.getProperty("user.dir")+SFS+"core"+SFS+"src"+SFS+"main"+SFS+"resources";
+  public static final String SHIP_DATA_READER_RESOURCES_PATH = System.getProperty("user.dir")+SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources";
+  public static final String SHIPLIST_PATH = new File(System.getProperty("user.dir")).getParent() +SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "shipList.json";
+  public static final String SCAF_ROOT_PATH = RESOURCES_PATH +SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "SCAF for TMO_2";
   public static final String SCAF_DATA_PATH = SCAF_ROOT_PATH +SFS+ "Data";
   public static final String SCAF_NAMES_PATH = SCAF_ROOT_PATH +SFS+"Data"+SFS+"Roster"+SFS+"Names.cfg";
-  public static final String TARGET_PATH = System.getProperty("user.dir")+SFS+"target";
 
   //DDS Processor
   public static final String PNG_FORMAT_CONSTANT = "png";
@@ -42,7 +42,7 @@ public class Constants {
 
   //Recognition Manual
 
-  public static String RECOGNITION_MANUALS_TARGET_PATH = TARGET_PATH + "\\recognitionManuals";
+  public static final String RECOGNITION_MANUAL_TARGET_PATH = RESOURCES_PATH +SFS+ "docs" +SFS+ "recog";
   public static final String RECOGNITION_MANUAL_LONG_FILENAME = "recognitionManual_long.html";
   public static final String RECOGNITION_MANUAL_SHORT_FILENAME = "recognitionManual_short.html";
 

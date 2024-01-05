@@ -25,9 +25,9 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
 
     @Override
     public Ships readShipsFromData(File shipDataPath) {
-        try{
-            return this.loadShipsToMemory();
-        } catch(Exception e){
+        try {
+            return this.parseShipsFromScaf();
+        } catch (Exception e) {
             log.error("Failed to read SH4 Ships: ", e);
             throw new RuntimeException(e);
         }
@@ -35,21 +35,21 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
 
     public Ships loadShipsToMemory() throws IOException {
 
-        Ships ships = null;
-        try {
-            ships = JsonEntityMarshaller.readShipsFromFile();
-        } catch (Exception e) {
-            log.error("Threw exception when reading SH4 ships from existing JSON file.", e);
-        }
-        if(ships == null) {
-            try {
-                ships = parseShipsFromScaf();
-            } catch (IOException e) {
-                log.error("Threw IOException when parsing SH4 ships from SCAF.", e);
-                throw e;
-            }
-        }
-        return ships;
+        //FIXME: Read from existing file if possible
+//        Ships ships = null;
+//        try {
+//            ships = JsonEntityMarshaller.readShipsFromFile();
+//        } catch (Exception e) {
+//            log.error("Threw exception when reading SH4 ships from existing JSON file.", e);
+//
+//                try {
+//                    ships = parseShipsFromScaf();
+//                } catch (IOException ioe) {
+//                    log.error("Threw IOException when parsing SH4 ships from SCAF.", ioe);
+//                    throw ioe;
+//                }
+//        }
+        return parseShipsFromScaf();
     }
 
     public Ships parseShipsFromScaf() throws IOException {
@@ -102,6 +102,12 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
         File directory = new File(directoryName);
         // recursively list files in directory and sub directories.
         File[] fList = directory.listFiles();
+
+        if(fList.length == 0){
+            log.error("No Files found for SH4 SCAF.");
+            //TODO: throw exception;
+        }
+
         for (File file : fList) {
             if (file.isFile() &&
                     //file extension filter. We're only interested in .cfg

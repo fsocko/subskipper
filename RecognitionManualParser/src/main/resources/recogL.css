@@ -1,0 +1,130 @@
+h1{
+font-family: courier;
+font-size: 20pt;
+color: white;
+text-shadow: 2px 2px 0 #000000;
+text-align: center	
+}
+
+.wrapper{ 
+width: 512px;
+border: 1px solid red;
+/* background-image: url(brownbg.jpg); */
+background-color: grey;
+border: 3px dashed black;
+overflow: hidden;
+margin-bottom: 25px;
+}
+
+.flag{
+width: 50px; 
+height: 50px;
+/* border: 1px solid red; */
+float: left;
+}
+
+
+.data{
+float: right;
+font-family: courier;
+font-size: 11pt;
+color: white;
+text-shadow: 2px 2px 0 #000000;
+width: calc(100% - 55px);
+height: 50px;
+position: relative;
+
+}
+
+.dataContainer{
+	
+	float: left;
+	position: relative;
+	height: 15px;
+}
+
+/* 
+Divs containing data:
+n: name
+c: class
+t: tonnage
+s: speed
+d: draft
+h: height
+l: length
+a: aspect
+ */
+
+#n{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#c{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+
+}	
+
+/* Bottom data container */
+
+#t{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#s{	position: absolute;
+	top: 10px;
+	left: 200px;}
+
+#d{	position: absolute;
+	top: 10px;
+	right: 10px;}
+
+	/* Bottom row */
+	
+#h{	position: absolute;
+	bottom: 5px;
+	left: 10px;}
+
+#l{	position: absolute;
+	bottom: 5px;
+	left: 200px;}
+
+#a{	position: absolute;
+	bottom: 5px;
+	right: 10px;}
+
+
+.ship{
+	width: 512px;
+	height: 256px;
+	position: relative;
+	top: 0px;
+	overflow: hidden;
+	background-image: repeating-linear-gradient(0deg,transparent,transparent 13px, black 13px,black 14px),
+	repeating-linear-gradient(-90deg,transparent,transparent 32px,black 33px,black 32px);
+	background-size: 71px 71px;
+	border-bottom: 1px solid black;
+	
+}
+
+/* Not used at the moment because it's irrelevant with the length data */
+.lengthBar
+{
+	border: 1px solid grey;
+	width: 100%;
+	height: 5px;
+	
+	background: repeating-linear-gradient(
+	90deg,
+	#606dbc,
+	#606dbc 10px,
+	#465298 10px,
+	#465298 20px
+);
+	
+	
+}

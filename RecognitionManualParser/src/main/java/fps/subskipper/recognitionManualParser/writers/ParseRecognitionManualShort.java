@@ -85,7 +85,7 @@ public class ParseRecognitionManualShort {
          */
 
         h.set("name", record.getName());
-        h.set("disp", f.twoDP(record.getDisplacement()));
+        h.set("displacement", f.twoDP(record.getDisplacement()));
         h.set("speed", f.twoDP(record.getMaxSpeed()));
 
         h.set("draft", f.twoDP(record.getDraft()));

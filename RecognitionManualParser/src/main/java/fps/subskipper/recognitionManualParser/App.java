@@ -10,14 +10,16 @@ import java.util.concurrent.Callable;
 
 import static fps.subskipper.util.Constants.*;
 
+//TODO: parameterise SCAF path and/or UBOOT path
+
 /**
  * Simple main application
  *
  * Params:
  *
  */
-@CommandLine.Command(description = "Prints the checksum (MD5 by default) of a file to STDOUT.",
-        name = "checksum", mixinStandardHelpOptions = true, version = "checksum 3.0")
+@CommandLine.Command(description = "Writes Recognition Manual based on user options",
+        name = "writeRecognitionManual", mixinStandardHelpOptions = true, version = "writeRecognitionManual 0.1")
 @Slf4j
 public class App implements Callable<Integer> {
 
@@ -25,6 +27,7 @@ public class App implements Callable<Integer> {
     }
 
     RecognitionManualMainImpl recognitionManualMain = new RecognitionManualMainImpl();
+
     final Ships shipList = recognitionManualMain.loadShipsToMemory();
 
     @CommandLine.Option(names = {"-l", "--long"}, description = "Long manual (default is short)")
@@ -34,9 +37,9 @@ public class App implements Callable<Integer> {
     private boolean isImperial = false;
 
     @CommandLine.Option(names = {"-a", "--aob"}, description = "Prints aspects at common AOB values (Short manual only)")
-    private boolean isAOB;
+    private boolean isAOB = false;
 
-    @CommandLine.Parameters(index = "0", description = "Recognition Manual Target path. Filename is generated.")
+    @CommandLine.Option(names = {"-t", "--target"}, description = ("Recognition Manual Target path.") )
     private File targetPath;
 
     private String generateManualName(){
@@ -49,17 +52,15 @@ public class App implements Callable<Integer> {
             manualType.append("long_");
         }
         if (isImperial) {
-            manualType.append("imperial_");
+            manualType.append("imperial");
         } else {
-            manualType.append("metric_");
+            manualType.append("metric");
         }
 
         if(!isLongManual && isAOB){
-            manualType.append("withAobTable");
+            manualType.append("_withAobTable");
         }
-
         manualType.append(".html");
-
         return manualType.toString();
     }
 
@@ -68,7 +69,8 @@ public class App implements Callable<Integer> {
     public Integer call() throws Exception {
 
         if(targetPath == null){
-            targetPath = new File(RECOGNITION_MANUALS_TARGET_PATH);
+            System.out.printf("Recognition Manual Path not set, using default path: '%s' .", RECOGNITION_MANUAL_TARGET_PATH );
+            targetPath = new File(RECOGNITION_MANUAL_TARGET_PATH);
         }
 
         String pathWithFile = targetPath + File.separator + generateManualName();
@@ -82,7 +84,7 @@ public class App implements Callable<Integer> {
             return Integer.valueOf(1);
         }
         System.out.println("SUCCESS: Published recognition manual: " + pathWithFile);
-        return Integer.valueOf(1);
+        return Integer.valueOf(0);
     }
 
     public static void main(String... args) throws Exception {
@@ -91,11 +93,11 @@ public class App implements Callable<Integer> {
     }
 
     public void publishShortRecognitionManual (String manualTargetPath, Boolean isImperial, Boolean isAobTable) throws IOException {
-        recognitionManualMain.publishRecognitionManualShort(shipList, RESOURCES_PATH + "\\" + RECOGNITION_MANUAL_SHORT_FILENAME, false, false);
+        recognitionManualMain.publishRecognitionManualShort(shipList, targetPath + "\\" + RECOGNITION_MANUAL_SHORT_FILENAME, isImperial, false);
     }
 
     public void publishLongRecognitionManual (String manualTargetPath, Boolean isImperial) throws IOException {
-        recognitionManualMain.publishRecognitionManualLong(shipList, RESOURCES_PATH + "\\" + RECOGNITION_MANUAL_LONG_FILENAME, isImperial);
+        recognitionManualMain.publishRecognitionManualLong(shipList, targetPath + "\\" + RECOGNITION_MANUAL_LONG_FILENAME, isImperial);
     }
 }
 

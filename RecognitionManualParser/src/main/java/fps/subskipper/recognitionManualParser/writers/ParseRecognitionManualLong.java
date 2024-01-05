@@ -73,7 +73,7 @@ public class ParseRecognitionManualLong {
             h.set("draft", formatter.addUnit(record.getImperialDraft(), UNIT_FOOT));
         }
 
-        h.set("disp", record.getDisplacement() + " GRT"); //FIXME: should be unit
+        h.set("displacement", record.getDisplacement() + " GRT"); //FIXME: should be unit
         h.set("aspect", formatter.fourDP(record.getReferenceAspectRatio()));
 
         //TODO: implement image reader
