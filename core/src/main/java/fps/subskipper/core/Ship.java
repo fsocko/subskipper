@@ -39,7 +39,8 @@ public class Ship implements Comparable<Ship> {
     public Ship(String name, int type, String typeName, String image, double maxSpeed, double length, double width,
                 double mast, double draft, double displacement) {
 
-        this.id = idGen.getAndIncrement();
+        //this.id = idGen.getAndIncrement();
+        this.id = 0;
         this.nation = "none";
         this.name = name;
         this.type = type;

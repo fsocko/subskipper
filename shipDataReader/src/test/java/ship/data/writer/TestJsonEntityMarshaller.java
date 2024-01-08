@@ -39,7 +39,7 @@ public class TestJsonEntityMarshaller {
             String jsonContent = new String(Files.readAllBytes(Paths.get(SHIPLIST_PATH)));
 
             // Verify that the JSON content matches the expected output
-            String expectedJson = "[{\"id\":1,\"nation\":\"none\",\"name\":\"Ship1\",\"type\":1,\"typeName\":\"Type1\",\"image\":\"image1.jpg\",\"maxSpeed\":10.0,\"length\":100.0,\"width\":50.0,\"mast\":20.0,\"draft\":5.0,\"displacement\":200.0,\"refAspect\":5.0},{\"id\":2,\"nation\":\"none\",\"name\":\"Ship2\",\"type\":2,\"typeName\":\"Type2\",\"image\":\"image2.jpg\",\"maxSpeed\":15.0,\"length\":120.0,\"width\":60.0,\"mast\":25.0,\"draft\":6.0,\"displacement\":250.0,\"refAspect\":4.8}]";
+            String expectedJson = "[{\"id\":0,\"nation\":\"none\",\"name\":\"Ship1\",\"type\":1,\"typeName\":\"Type1\",\"image\":\"image1.jpg\",\"maxSpeed\":10.0,\"length\":100.0,\"width\":50.0,\"mast\":20.0,\"draft\":5.0,\"displacement\":200.0,\"refAspect\":5.0},{\"id\":0,\"nation\":\"none\",\"name\":\"Ship2\",\"type\":2,\"typeName\":\"Type2\",\"image\":\"image2.jpg\",\"maxSpeed\":15.0,\"length\":120.0,\"width\":60.0,\"mast\":25.0,\"draft\":6.0,\"displacement\":250.0,\"refAspect\":4.8}]";
             Assertions.assertEquals(expectedJson, jsonContent);
 
             // Clean up the test file
@@ -60,6 +60,7 @@ public class TestJsonEntityMarshaller {
             expectedShipList.add(new Ship("Ship1", 1, "Type1", "image1.jpg", 10.0, 100.0, 50.0, 20.0, 5.0, 200.0));
             expectedShipList.add(new Ship("Ship2", 2, "Type2", "image2.jpg", 15.0, 120.0, 60.0, 25.0, 6.0, 250.0));
             Ships expectedShips = new Ships(expectedShipList);
+
             Assertions.assertEquals(expectedShips, ships);
 
             // Clean up the test file
