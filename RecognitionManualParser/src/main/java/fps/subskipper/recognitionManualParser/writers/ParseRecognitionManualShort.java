@@ -41,7 +41,7 @@ public class ParseRecognitionManualShort {
     private String writeHead(boolean isImperial) {
 
         Theme theme = new Theme();
-        Chunk h = theme.makeChunk("recogSDiv#head"); //Chunk used to write to HTML: <head> only.
+        Chunk h = theme.makeChunk("recogS#head"); //Chunk used to write to HTML: <head> only.
 
         String title = "Short Recognition Manual for SH4,TMO,SCAF.";
         if (isImperial) {
@@ -57,7 +57,7 @@ public class ParseRecognitionManualShort {
     //start the table - return heading with correct units
     private String startTable(boolean imperial) {
         Theme theme = new Theme();
-        Chunk tableStart = theme.makeChunk("recogSDiv#startTable");
+        Chunk tableStart = theme.makeChunk("recogS#startTable");
         if (imperial) {
             tableStart.set("unit", UNIT_FOOT);
         } else {
@@ -67,13 +67,13 @@ public class ParseRecognitionManualShort {
     }
 
 
-    private String shipRow(Ship record, int i, boolean isImperial) {
+    private String shipRow(Ship record, int id, boolean isImperial) {
 
         OutFormat f = new OutFormat();
         Theme theme = new Theme();
-        Chunk h = theme.makeChunk("recogSDiv#ship");
+        Chunk h = theme.makeChunk("recogS#ship");
 
-        h.set("rowID", i); //was: h.set("rowID", record.getId());
+        h.set("rowID", id); //was: h.set("rowID", record.getId());
         /*Originally the rowID was the ID of the ship record.
          * If the records are sorted by Name, which is how I sorted
          * mine for my own use, the IDs would be all over the place.
@@ -82,22 +82,22 @@ public class ParseRecognitionManualShort {
          */
 
         h.set("name", record.getName());
-        h.set("displacement", f.twoDP(record.getDisplacement()));
-        h.set("speed", f.twoDP(record.getMaxSpeed()));
+        h.set("displacement", OutFormat.twoDP(record.getDisplacement()));
+        h.set("speed", OutFormat.twoDP(record.getMaxSpeed()));
 
-        h.set("draft", f.twoDP(record.getDraft()));
-        h.set("length", f.twoDP(record.getLength()));
-        h.set("height", f.twoDP(record.getMast()));
+        h.set("draft", OutFormat.twoDP(record.getDraft()));
+        h.set("length", OutFormat.twoDP(record.getLength()));
+        h.set("height", OutFormat.twoDP(record.getMast()));
 
         if (isImperial) {
             if (isImperial) {
-                h.set("draft", f.twoDP(record.getImperialDraft()));
-                h.set("length", f.twoDP(record.getImperialLength()));
-                h.set("height", f.twoDP(record.getImperialMast()));
+                h.set("draft", OutFormat.twoDP(record.getImperialDraft()));
+                h.set("length", OutFormat.twoDP(record.getImperialLength()));
+                h.set("height", OutFormat.twoDP(record.getImperialMast()));
             }
         }
 
-        h.set("aspect", f.fourDP(record.getReferenceAspectRatio()));
+        h.set("aspect", OutFormat.fourDP(record.getReferenceAspectRatio()));
         return h.toString();
     }
 
@@ -105,7 +105,7 @@ public class ParseRecognitionManualShort {
 
         OutFormat f = new OutFormat();
         Theme theme = new Theme();
-        Chunk h = theme.makeChunk("recogSDiv#AOBRow");
+        Chunk h = theme.makeChunk("recogS#AOBRow");
 
         h.set("AOBRowID", i); //This could be used for alternating colour rows.
         //Sin(AOB) * AR Ref = Aspect ratio at AOB

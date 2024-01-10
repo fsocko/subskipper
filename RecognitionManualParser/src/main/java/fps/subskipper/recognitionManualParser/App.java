@@ -1,12 +1,12 @@
 package fps.subskipper.recognitionManualParser;
 
+import fps.subskipper.core.CoreApp;
 import fps.subskipper.core.Ships;
 import lombok.extern.slf4j.Slf4j;
 import picocli.CommandLine;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.Callable;
 
 import static fps.subskipper.util.Constants.*;
 
@@ -18,86 +18,76 @@ import static fps.subskipper.util.Constants.*;
  * Params:
  *
  */
-@CommandLine.Command(description = "Writes Recognition Manual based on user options",
-        name = "writeRecognitionManual", mixinStandardHelpOptions = true, version = "writeRecognitionManual 0.1")
 @Slf4j
-public class App implements Callable<Integer> {
+public class App extends CoreApp {
+
+    final RecognitionManualMainImpl recognitionManualMain = new RecognitionManualMainImpl();
+
+
+
+    private static char manualType = 'l'; //l for long, s for short, b for both.
+    private static boolean isImperial = false;
+    private static boolean isAOB = false;
+    private static File recognitionManualTargetPath;
 
     public App() throws IOException {
     }
 
-    RecognitionManualMainImpl recognitionManualMain = new RecognitionManualMainImpl();
 
-    final Ships shipList = recognitionManualMain.loadShipsToMemory();
 
-    @CommandLine.Option(names = {"-l", "--long"}, description = "Long manual (default is short)")
-    private boolean isLongManual = true;
 
-    @CommandLine.Option(names = {"-i", "--imperial"}, description = "Converts measurements to imperial.")
-    private boolean isImperial = false;
+    public static void main(String... args) {
 
-    @CommandLine.Option(names = {"-a", "--aob"}, description = "Prints aspects at common AOB values (Short manual only)")
-    private boolean isAOB = false;
+        try {
+            RecognitionManualMainImpl recognitionManualMain = new RecognitionManualMainImpl();
+            System.out.println(SCAF_ROOT_PATH);
+            final Ships shipList = recognitionManualMain.loadShipsToMemory(new File(SCAF_ROOT_PATH));
 
-    @CommandLine.Option(names = {"-t", "--target"}, description = ("Recognition Manual Target path.") )
-    private File targetPath;
 
-    private String generateManualName(){
+            String manualTargetPath = RECOGNITION_MANUAL_TARGET_PATH + SFS + generateManualName();
 
-        StringBuffer manualType = new StringBuffer("recognitionManual_");
+            switch(manualType){
+                case 'l':
+                case 'L':
+                    recognitionManualMain.publishRecognitionManualLong(shipList, manualTargetPath, isImperial);
+                    break;
+                case 's':
+                case 'S':
 
-        if (!isLongManual) {
-            manualType.append("short_");
+                    recognitionManualMain.publishRecognitionManualShort(shipList, manualTargetPath, isImperial, false);
+                    break;
+                case 'b':
+                case 'B':
+                default:
+                    recognitionManualMain.publishRecognitionManualShort(shipList, manualTargetPath, isImperial, false);
+                    recognitionManualMain.publishRecognitionManualLong(shipList, manualTargetPath, isImperial);
+            }
+            System.out.println("SUCCESS: Published recognition manual: " + manualTargetPath);
+
+        } catch(Exception e){
+            log.error("Threw Exception when generating recognition manual:", e);
+        }
+    }
+
+    private static String generateManualName() {
+
+        StringBuffer manualName = new StringBuffer("recognitionManual_");
+
+        if (Character.toLowerCase(manualType) == 's') {
+            manualName.append("short_");
         } else {
-            manualType.append("long_");
+            manualName.append("long_");
         }
         if (isImperial) {
-            manualType.append("imperial");
+            manualName.append("imperial");
         } else {
-            manualType.append("metric");
+            manualName.append("metric");
         }
-
-        if(!isLongManual && isAOB){
-            manualType.append("_withAobTable");
+        if(Character.toLowerCase(manualType) == 'l' && isAOB){
+            manualName.append("_withAobTable");
         }
-        manualType.append(".html");
-        return manualType.toString();
-    }
-
-
-    @Override
-    public Integer call() throws Exception {
-
-        if(targetPath == null){
-            System.out.printf("Recognition Manual Path not set, using default path: '%s' .", RECOGNITION_MANUAL_TARGET_PATH );
-            targetPath = new File(RECOGNITION_MANUAL_TARGET_PATH);
-        }
-
-        String pathWithFile = targetPath + File.separator + generateManualName();
-
-        if(!isLongManual) {
-            publishShortRecognitionManual(pathWithFile, isImperial, isAOB);
-        } else if(isLongManual){
-            publishLongRecognitionManual(pathWithFile, isImperial);
-        } else{
-            System.err.println("ERROR: Failed to publish recognition manual: " + pathWithFile);
-            return Integer.valueOf(1);
-        }
-        System.out.println("SUCCESS: Published recognition manual: " + pathWithFile);
-        return Integer.valueOf(0);
-    }
-
-    public static void main(String... args) throws Exception {
-        int exitCode = new CommandLine(new App()).execute(args);
-        System.exit(exitCode);
-    }
-
-    public void publishShortRecognitionManual (String manualTargetPath, Boolean isImperial, Boolean isAobTable) throws IOException {
-        recognitionManualMain.publishRecognitionManualShort(shipList, targetPath + "\\" + RECOGNITION_MANUAL_SHORT_FILENAME, isImperial, false);
-    }
-
-    public void publishLongRecognitionManual (String manualTargetPath, Boolean isImperial) throws IOException {
-        recognitionManualMain.publishRecognitionManualLong(shipList, targetPath + "\\" + RECOGNITION_MANUAL_LONG_FILENAME, isImperial);
+        manualName.append(".html");
+        return manualName.toString();
     }
 }
 

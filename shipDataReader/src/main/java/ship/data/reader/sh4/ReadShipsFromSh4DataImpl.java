@@ -99,8 +99,8 @@ public class ReadShipsFromSh4DataImpl implements IShipDataReader {
         // recursively list files in directory and subdirectories.
         File[] fList = directory.listFiles();
 
-        if(fList.length == 0){
-            log.error("No Files found for SH4 SCAF.");
+        if(fList == null || fList.length == 0){
+            log.error("No Files found for SH4 SCAF at path: " + directoryName);
             //TODO: throw exception;
         }
 

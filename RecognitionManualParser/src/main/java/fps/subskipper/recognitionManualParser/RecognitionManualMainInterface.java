@@ -2,10 +2,13 @@ package fps.subskipper.recognitionManualParser;
 
 import fps.subskipper.core.Ships;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public interface RecognitionManualMainInterface {
+
+    Ships loadShipsToMemory(File dataPath) throws IOException;
 
     Ships loadShipsToMemory() throws IOException;
 

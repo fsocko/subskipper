@@ -70,7 +70,7 @@ public class ParseRecognitionManualLong {
             h.set("draft", OutFormat.addUnit(record.getImperialDraft(), UNIT_FOOT));
         }
 
-        h.set("displacement", OutFormat.addUnit(record.getDisplacement(), UNIT_GROSS_TONS));
+        h.set("displacement", OutFormat.addUnit(OutFormat.zeroDP(record.getDisplacement()), UNIT_GROSS_TONS));
         h.set("aspect", OutFormat.fourDP(record.getReferenceAspectRatio()) );
 
         h.set("image", record.getImage());

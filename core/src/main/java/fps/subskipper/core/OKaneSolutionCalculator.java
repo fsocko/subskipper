@@ -89,14 +89,14 @@ public class OKaneSolutionCalculator {
         }
         // If speed is 0, no lead required
         if (targS == 0) {
-            log.info("Lead is:{}", OutFormat.formatNumberToDegree(targS));
+            log.info("Lead is:{}", OutFormat.builder().value(targS).toDegrees().build());
             return 0;
         }
         double lead = 0;
         // 90 - inverseTan(torpS/targS)
         lead = 90 - Math.toDegrees(Math.atan(torpS / targS));
         if (lead > 90) {
-            log.error("Lead is:{}. Impossible solution.", OutFormat.formatNumberToDegree(lead));
+            log.error("Lead is:{}. Impossible solution.", (OutFormat.builder().value(lead).toDegrees().build()) );
             lead = -3;
 
         }

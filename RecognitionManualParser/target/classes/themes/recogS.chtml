@@ -12,12 +12,11 @@
 
 {#startTable}
 <table>
-<th>Name</th><th>Tonnage (GRT)</th><th>Speed (kn)</th><th>Length {$unit}</th><th>Height {$unit}</th><th>Draft {$unit}</th><th>Aspect</th>
+<th colspan="2">Name</th><th>Tonnage (GRT)</th><th>Speed (kn)</th><th>Length {$unit}</th><th>Height {$unit}</th><th>Draft {$unit}</th><th>Aspect</th>
 {#}
 
 {#ship}
-<tr id="{$rowID}" class="{$rowClass}">
-
+<tr id="{$rowID}" class="rowClass">
 <td class="name" colspan="2">{$name}</td>
 <td class="displacement">{$displacement}</td>
 <td class="speed">{$speed}</td>

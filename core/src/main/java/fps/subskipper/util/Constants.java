@@ -1,10 +1,12 @@
 package fps.subskipper.util;
 
 import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Constants {
+
+  private Constants(){
+    this.SS_ROOT_PATH = generateSSRootPath();
+  }
 
   //CORE:
   //Conversion constants
@@ -21,16 +23,23 @@ public class Constants {
   public  static final String UNIT_KNOT = "kt";
 
 
-
-
-  //DATA READER
+  //SS Constants
 
   public static final String SFS = File.separator;
-  public static final String RESOURCES_PATH = System.getProperty("user.dir");
-  public static final String CORE_RESOURCES_PATH = System.getProperty("user.dir")+SFS+"core"+SFS+"src"+SFS+"main"+SFS+"resources";
-  public static final String SHIP_DATA_READER_RESOURCES_PATH = System.getProperty("user.dir")+SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources";
-  public static final String SHIPLIST_PATH = new File(System.getProperty("user.dir")).getParent() +SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "shipList.json";
-  public static final String SCAF_ROOT_PATH = RESOURCES_PATH+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "SCAF for TMO_2";
+
+  public static String SS_ROOT_PATH = generateSSRootPath();
+
+  //This path is: "\002-git\subskipper".
+  public static final String generateSSRootPath() {
+    File rootPath = new File(System.getProperty("user.dir"));
+//    rootPath = rootPath.getParentFile();
+    return rootPath.getPath();
+  }
+
+  public static final String CORE_RESOURCES_PATH = SS_ROOT_PATH +SFS+"core"+SFS+"src"+SFS+"main"+SFS+"resources";
+  public static final String SHIP_DATA_READER_RESOURCES_PATH = SS_ROOT_PATH +SFS+ "shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources";
+  public static final String SHIPLIST_PATH = SS_ROOT_PATH +SFS+"shipDataReader"+SFS+"src"+SFS+"main"+SFS+"resources" +SFS+ "shipList.json";
+  public static final String SCAF_ROOT_PATH = SHIP_DATA_READER_RESOURCES_PATH +SFS+ "SCAF for TMO_2";
   public static final String SCAF_DATA_PATH = SCAF_ROOT_PATH +SFS+ "Data";
   public static final String SCAF_NAMES_PATH = SCAF_ROOT_PATH +SFS+"Data"+SFS+"Roster"+SFS+"Names.cfg";
 
@@ -40,16 +49,10 @@ public class Constants {
 
 
   //Recognition Manual
-  public static final String RECOGNITION_MANUAL_TARGET_PATH = RESOURCES_PATH +SFS+ "docs" +SFS+ "recog";
+  public static final String RECOGNITION_MANUAL_TARGET_PATH = SS_ROOT_PATH +SFS+ "docs" +SFS+ "recog";
   public static final String RECOGNITION_MANUAL_LONG_FILENAME = "recognitionManual_long.html";
   public static final String RECOGNITION_MANUAL_SHORT_FILENAME = "recognitionManual_short.html";
-  public static final Map<String, Boolean> RECOGNITION_MANUAL_TYPE = new HashMap<String, Boolean>();
 
-
-  //Recognition Manual CMD
-  @Deprecated
-  public static final String COMMAND_LINE_USAGE_MESSAGE = "*SubSkipper Recognition Manual Parser*" +
-          "Usage: ";
 
 }
 
