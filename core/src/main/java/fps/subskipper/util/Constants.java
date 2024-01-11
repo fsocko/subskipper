@@ -53,6 +53,20 @@ public class Constants {
   public static final String RECOGNITION_MANUAL_LONG_FILENAME = "recognitionManual_long.html";
   public static final String RECOGNITION_MANUAL_SHORT_FILENAME = "recognitionManual_short.html";
 
+  //Theme Chunks:
+
+  public static final String THEME_RECOGNITION_MANUAL_SHORT_HEAD = "recogS#head";
+  public static final String THEME_RECOGNITION_MANUAL_SHORT_START_TABLE = "recogS#startTable";
+  public static final String THEME_RECOGNITION_MANUAL_SHORT_AOB_ROW = "recogS#AOBRow";
+  public static final String THEME_RECOGNITION_MANUAL_SHORT_SHIP = "recogS#ship";
+
+  public static final String THEME_RECOGNITION_MANUAL_SHORT_TAIL = "recogS#terminate"; //TODO: #terminate
+
+  public static final String THEME_RECOGNITION_MANUAL_LONG_START = "recogL2#start";
+  public static final String THEME_RECOGNITION_MANUAL_LONG_SHIP = "recogL2#ship";
+
+  public static final String THEME_RECOGNITION_MANUAL_LONG_TAIL = "recogL2#terminate";
 
 }
+
 

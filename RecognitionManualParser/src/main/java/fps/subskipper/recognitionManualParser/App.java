@@ -25,7 +25,7 @@ public class App extends CoreApp {
 
 
 
-    private static char manualType = 'l'; //l for long, s for short, b for both.
+    private static char manualType = 's'; //l for long, s for short, b for both.
     private static boolean isImperial = false;
     private static boolean isAOB = false;
     private static File recognitionManualTargetPath;
@@ -53,14 +53,12 @@ public class App extends CoreApp {
                     break;
                 case 's':
                 case 'S':
-
                     recognitionManualMain.publishRecognitionManualShort(shipList, manualTargetPath, isImperial, false);
                     break;
-                case 'b':
-                case 'B':
                 default:
                     recognitionManualMain.publishRecognitionManualShort(shipList, manualTargetPath, isImperial, false);
                     recognitionManualMain.publishRecognitionManualLong(shipList, manualTargetPath, isImperial);
+                break;
             }
             System.out.println("SUCCESS: Published recognition manual: " + manualTargetPath);
 

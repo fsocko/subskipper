@@ -3,6 +3,12 @@ package fps.subskipper.core;
 import lombok.extern.slf4j.Slf4j;
 
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 import static fps.subskipper.util.Constants.*;
@@ -32,6 +38,13 @@ public class OutFormat {
         return new Builder();
     }
 
+    public static Builder builder(double value) {
+        Builder builder = new Builder();
+        builder.value = value;
+        return builder;
+
+    }
+
     public static class Builder {
         private Object value;
 
@@ -41,9 +54,6 @@ public class OutFormat {
 
         private int decimalPlaces;
         private String unit;
-        private String formattedValue;
-        private String toHoursString;
-        private String formattedStringValue;
         private double conversionFactor = 1.0d;
         private StringBuilder formattedOutputString;
 
@@ -58,9 +68,10 @@ public class OutFormat {
 
         public Builder value(String value) {
             try {
-                this.value = Double.parseDouble(value.trim());
-            } catch(NumberFormatException nfe){
-                this.value = value;
+                double parsedValue = Double.parseDouble(value.trim());
+                this.value = parsedValue;
+            } catch (NumberFormatException nfe) {
+                this.value = value.trim();
             }
             return this;
         }
@@ -70,10 +81,6 @@ public class OutFormat {
             return this;
         }
 
-        public Builder toDegrees() {
-            this.formatToDegrees = true;
-            return this;
-        }
 
         public Builder zeroDP() {
             this.decimalPlaces = 0;
@@ -95,59 +102,68 @@ public class OutFormat {
             return this;
         }
 
-        /**
-         * Hour out.
-         *
-         * @param millis the milliseconds in
-         * @return the string
-         */
-        public Builder toHours(long millis) {
-
-            this.formatToHours = true;
-
-            this.toHoursString = String.format("%02d:%02d:%02d",
-                    TimeUnit.MILLISECONDS.toHours(millis),
-                    TimeUnit.MILLISECONDS.toMinutes(millis) -
-                            TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
-                    TimeUnit.MILLISECONDS.toSeconds(millis) -
-                            TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
+        public Builder addUnit(String unit) {
+            this.unit = unit;
             return this;
         }
 
+        public Builder toHours() {
+            this.formatToHours = true;
+            return this;
+        }
+        public Builder toDegrees() {
+            this.formatToDegrees = true;
+            return this;
+        }
 
-
-        private Builder metrePerSecondToKnot(double ms) {
+        public Builder metrePerSecondToKnot() {
             this.conversionFactor = KNOTS_FOR_EVERY_METRE_PER_SECOND;
             return this;
         }
 
-        private Builder knotToKilometrePerHour(double knot)
-        {
+        public Builder knotToKilometrePerHour() {
             this.conversionFactor = KNOTS_FOR_EVERY_KILOMETRE_PER_HOUR;
             return this;
         }
 
-        private Builder meterPerMinuteToKnot(double mM) {
+        public Builder meterPerMinuteToKnot() {
             this.conversionFactor = METRES_PER_MINUTE_FOR_EVERY_KNOT;
             return this;
         }
 
-        public String build() {  //TODO: rename to format
+        public Builder metresToFeet() {
+            this.conversionFactor = FEET_FOR_EVERY_METRE;
+            return this;
+        }
 
-            if(formatToDegrees){
-                return formatValueToDegree((double)this.value);
+        public Builder addMultiplier(double multiplier) {
+            this.conversionFactor = multiplier;
+            return this;
+        }
+
+        public String build() {
+
+            //If String, and cannot be parsed into a double, only allow some methods.
+            if (value != null && value instanceof String) {
+                if (this.unit != null) {
+                    return addUnitToStringValue((String) value);
+                }
             }
-            else if (formatToHours){
-                return formatValueToHours((long)value);
-            }
-            else {
-                if(this.conversionFactor != 1){
-                    this.value = (double)value * conversionFactor;
+
+            if (formatToDegrees || (this.unit != null && this.unit.equals(UNIT_DEGREE))) {
+                return formatValueToDegree((double) this.value);
+
+            } else if (formatToHours) {
+                return formatValueToHours((long) value);
+
+            } else {
+                if (this.conversionFactor != 1) {
+                    this.value = (double) value * conversionFactor;
                 }
 
                 this.formattedOutputString = new StringBuilder(arbitraryDecimalPlaces((double) value, this.decimalPlaces));
 
-                if(this.unit != null ){
+                if (this.unit != null) {
                     this.formattedOutputString.append(" " + this.unit);
                 }
             }
@@ -160,117 +176,27 @@ public class OutFormat {
             return String.format(format, input);
         }
 
-        public String formatValueToDegree(double value) {
-            double degIn = (double)value;
-
-            if(degIn < 0 ){
+        private String formatValueToDegree(double value) {
+            double degIn = (double) value;
+            if (degIn < 0) {
                 degIn = Math.abs(360 + degIn);
             }
-
             DecimalFormat formatter = new DecimalFormat("000");
             degIn = degIn % 360; //TODO perhaps throw ex to check for invalid deg?
             return formatter.format(degIn) + UNIT_DEGREE;
         }
 
-        /**
-         * Hour out.
-         *
-         * @param millis the milliseconds in
-         * @return the string
-         */
         public String formatValueToHours(long millis) {
-
-            return String.format("%02d:%02d:%02d",
-                    TimeUnit.MILLISECONDS.toHours(millis),
-                    TimeUnit.MILLISECONDS.toMinutes(millis) -
-                            TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
-                    TimeUnit.MILLISECONDS.toSeconds(millis) -
-                            TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
+            DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm:ss");
+            Instant instant = Instant.ofEpochMilli(millis);
+            ZoneId zoneId = ZoneId.systemDefault();
+            LocalDateTime localDateTime = instant.atZone(zoneId).toLocalDateTime();
+            return localDateTime.format(timeFormatter).toString();
         }
 
-
-    }
-
-
-
-
-
-
-    /**
-     * Appends arbitrary unit to value.
-     *
-     * @param value the value
-     * @param unit  the unit
-     * @return the string
-     */
-//    private String addUnit(double value, String unit) {
-//
-//        String u = unit;
-//        String v = Double.toString(value);
-//
-//        if ("deg".equals(unit)) {
-//            v = formatNumberToDegree(value);
-//            u = UNIT_DEGREE;
-//        }
-//        return v + u;
-//    }
-
-    //If number is already formatted, just append the unit.
-    private String addUnit(String value, String unit) {
-        return value + unit;
-    }
-
-    private String arbitraryDecimalPlaces(double input, int decimalPlaces) {
-        String format = ("%." + decimalPlaces + "f");
-        return String.format(format, input);
-    }
-
-    public String zeroDP(double input) {
-        return arbitraryDecimalPlaces(input, 0);
-    }
-
-    public String twoDP(double input) {
-        return arbitraryDecimalPlaces(input, 2);
-    }
-
-    public String fourDP(double input) {
-        return arbitraryDecimalPlaces(input, 4);
-    }
-
-    public String formatValueToDegree(double degIn) {
-        DecimalFormat formatter = new DecimalFormat("000");
-        degIn = degIn % 360; //TODO perhaps throw ex to check for invalid deg?
-        return formatter.format(degIn);
-    }
-
-    /**
-     * Hour out.
-     *
-     * @param millis the milliseconds in
-     * @return the string
-     */
-    public String formatValueToHours(long millis) {
-
-        return String.format("%02d:%02d:%02d",
-                TimeUnit.MILLISECONDS.toHours(millis),
-                TimeUnit.MILLISECONDS.toMinutes(millis) -
-                        TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
-                TimeUnit.MILLISECONDS.toSeconds(millis) -
-                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
-    }
-
-
-
-        private double metrePerSecondToKnot(double ms) {
-            return ms * KNOTS_FOR_EVERY_METRE_PER_SECOND;
+        private String addUnitToStringValue(String value) {
+            return value.trim() + " " + this.unit;
         }
-
-        private double knotToKilometrePerHour(double knot) {
-            return knot * KNOTS_FOR_EVERY_KILOMETRE_PER_HOUR;
-        }
-
-        private double meterPerMinuteToKnot(double mM) {
-            return mM * METRES_PER_MINUTE_FOR_EVERY_KNOT;
-        }
-
     }
+
+}

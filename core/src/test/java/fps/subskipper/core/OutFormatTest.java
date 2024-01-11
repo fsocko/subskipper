@@ -8,6 +8,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.slf4j.Logger;
 
+import static fps.subskipper.util.Constants.UNIT_FOOT;
 import static org.mockito.Mockito.*;
 
 class OutFormatTest {
@@ -23,6 +24,15 @@ class OutFormatTest {
     void testDefaultFormat() {
         String result = outFormat.builder().value(111.55555d).build();
         Assertions.assertEquals("112", result);
+    }
+
+    @Test
+    void testStringValueFormat() {
+        String result = outFormat.builder().value("111.55555").build();
+        Assertions.assertEquals("112", result);
+
+        String unitResult = outFormat.builder().value("value|").addUnit("|unitTest").build();
+        Assertions.assertEquals("value| |unitTest", unitResult);
     }
 
     @Test
@@ -45,23 +55,28 @@ class OutFormatTest {
 
     @Test
     void testFormatNumberToDegree() {
-        String result = outFormat.builder().formatValueToDegree(271d);
+        String result = outFormat.builder(271d).toDegrees().build();
         Assertions.assertEquals("271°", result);
 
-        result = outFormat.builder().formatValueToDegree(370d);
+        result = outFormat.builder(370d).toDegrees().build();
         Assertions.assertEquals("010°", result);
 
-        result = outFormat.builder().formatValueToDegree(-20d);
+        result = outFormat.builder(-20d).toDegrees().build();
         Assertions.assertEquals("340°", result);
 
-        result = outFormat.builder().formatValueToDegree(-400d);
+        result = outFormat.builder(-400d).toDegrees().build();
         Assertions.assertEquals("040°", result);
-
     }
 
     @Test
     void testHourOut() {
-        String result = outFormat.formatValueToHours(2456565747L);
-        Assertions.assertEquals("replaceMeWithExpectedResult", result);
+        String result = outFormat.builder().formatValueToHours(1704933986L);
+        Assertions.assertEquals("06:35:33", result);
     }
+    @Test
+    void testAddUnit() {
+        String result = outFormat.builder().value(111.55555d).twoDP().addUnit(UNIT_FOOT).build();
+        Assertions.assertEquals("111.56 ft", result);
+    }
+
 }
