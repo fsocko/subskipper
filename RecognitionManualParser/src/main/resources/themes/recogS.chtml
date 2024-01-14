@@ -11,7 +11,7 @@
 {#}
 
 {#startTable}
-<table>
+<table border="1" width=50%>
 <th colspan="2">Name</th><th>Tonnage (GRT)</th><th>Speed (kn)</th><th>Length {$unit}</th><th>Height {$unit}</th><th>Draft {$unit}</th><th>Aspect</th>
 {#}
 
