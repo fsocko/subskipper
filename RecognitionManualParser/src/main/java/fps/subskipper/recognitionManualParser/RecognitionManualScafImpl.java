@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
 
 import static fps.subskipper.util.Constants.SCAF_ROOT_PATH;
 
-public class RecognitionManualMainImpl implements RecognitionManualMainInterface {
+public class RecognitionManualScafImpl implements RecognitionManualMainInterface {
 
     @Override
     public Ships loadShipsToMemory(File dataPath) {

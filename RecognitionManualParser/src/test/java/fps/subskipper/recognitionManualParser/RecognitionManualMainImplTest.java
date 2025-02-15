@@ -10,7 +10,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RecognitionManualMainImplTest {
-    RecognitionManualMainImpl recognitionManualMainImpl = new RecognitionManualMainImpl();
+    RecognitionManualScafImpl recognitionManualMainImpl = new RecognitionManualScafImpl();
 
     @Test
     public void testPublishRecognitionManualShort() throws Exception {

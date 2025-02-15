@@ -13,9 +13,9 @@ public interface RecognitionManualMainInterface {
     Ships loadShipsToMemory() throws IOException;
 
     //Publish Short Manual
-    void publishRecognitionManualShort(Ships shipList, String filename, boolean imperial, boolean AOBTable) throws FileNotFoundException;
+    void publishRecognitionManualShort(Ships shipList, String filename, boolean isImperial, boolean isGenerateAOBTable) throws FileNotFoundException;
 
     //Publish Long Manual
-    void publishRecognitionManualLong(Ships shipList, String filename, boolean imperial) throws FileNotFoundException;
+    void publishRecognitionManualLong(Ships shipList, String filename, boolean isImperial) throws FileNotFoundException;
 
 }

@@ -2,10 +2,12 @@ package fps.subskipper.recognitionManualParser;
 
 import fps.subskipper.core.CoreApp;
 import fps.subskipper.core.Ships;
+import fps.subskipper.util.Constants.ScafOrUboot;
 import lombok.extern.slf4j.Slf4j;
 import picocli.CommandLine;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import static fps.subskipper.util.Constants.*;
@@ -21,10 +23,6 @@ import static fps.subskipper.util.Constants.*;
 @Slf4j
 public class App extends CoreApp {
 
-    final RecognitionManualMainImpl recognitionManualMain = new RecognitionManualMainImpl();
-
-
-
     private static char manualType = 's'; //l for long, s for short, b for both.
     private static boolean isImperial = false;
     private static boolean isAOB = false;
@@ -34,38 +32,37 @@ public class App extends CoreApp {
     }
 
 
-
-
     public static void main(String... args) {
 
         try {
-            RecognitionManualMainImpl recognitionManualMain = new RecognitionManualMainImpl();
-            System.out.println(SCAF_ROOT_PATH);
-            final Ships shipList = recognitionManualMain.loadShipsToMemory(new File(SCAF_ROOT_PATH));
-
-
             String manualTargetPath = RECOGNITION_MANUAL_TARGET_PATH + SFS + generateManualName();
+            selectAndGenerate( ScafOrUboot.UBOOT, manualTargetPath );
 
-            switch(manualType){
-                case 'l':
-                case 'L':
-                    recognitionManualMain.publishRecognitionManualLong(shipList, manualTargetPath, isImperial);
-                    break;
-                case 's':
-                case 'S':
-                    recognitionManualMain.publishRecognitionManualShort(shipList, manualTargetPath, isImperial, false);
-                    break;
-                default:
-                    recognitionManualMain.publishRecognitionManualShort(shipList, manualTargetPath, isImperial, false);
-                    recognitionManualMain.publishRecognitionManualLong(shipList, manualTargetPath, isImperial);
-                break;
-            }
-            System.out.println("SUCCESS: Published recognition manual: " + manualTargetPath);
 
         } catch(Exception e){
             log.error("Threw Exception when generating recognition manual:", e);
         }
     }
+
+    private static void selectAndGenerate(ScafOrUboot scafOrUboot, String manualTargetPath ) throws FileNotFoundException, IOException {
+        
+        RecognitionManualMainInterface recognitionManualMain;
+        Ships shipList;
+
+        if(scafOrUboot == ScafOrUboot.SCAF){
+            recognitionManualMain = new RecognitionManualScafImpl();
+            shipList = recognitionManualMain.loadShipsToMemory(new File(SCAF_ROOT_PATH));
+        } else {
+            recognitionManualMain = new RecognitionManualUbootImpl();
+            shipList = recognitionManualMain.loadShipsToMemory();
+        }
+        
+        recognitionManualMain.publishRecognitionManualLong(shipList, manualTargetPath, isImperial);
+        recognitionManualMain.publishRecognitionManualShort(shipList, manualTargetPath, isImperial, false);
+
+        System.out.println("SUCCESS: Published recognition manual for: " + scafOrUboot.toString() + " Path: " + manualTargetPath);
+    }
+
 
     private static String generateManualName() {
 
@@ -87,6 +84,8 @@ public class App extends CoreApp {
         manualName.append(".html");
         return manualName.toString();
     }
+
+
 }
 
 

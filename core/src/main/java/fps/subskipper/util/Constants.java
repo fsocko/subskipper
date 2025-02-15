@@ -5,8 +5,28 @@ import java.io.File;
 public class Constants {
 
   private Constants(){
-    this.SS_ROOT_PATH = generateSSRootPath();
+    SS_ROOT_PATH = generateSSRootPath();
   }
+
+  public enum ScafOrUboot {
+    SCAF("Scaf"),
+    UBOOT("Uboot");
+
+    private final String name;
+
+    ScafOrUboot(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+}
 
   //CORE:
   //Conversion constants
@@ -31,9 +51,16 @@ public class Constants {
 
   //This path is: "\002-git\subskipper".
   public static final String generateSSRootPath() {
-    File rootPath = new File(System.getProperty("user.dir"));
-//    rootPath = rootPath.getParentFile();
-    return rootPath.getPath();
+    try {
+        String path = Constants.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        File rootPath = new File(path).getParentFile().getParentFile().getParentFile();
+        
+        System.out.println("generate root path:" + rootPath);
+        return rootPath.getPath();
+
+    } catch (Exception e) {
+        throw new RuntimeException("Failed to determine project root path", e);
+    }
   }
 
   public static final String CORE_RESOURCES_PATH = SS_ROOT_PATH +SFS+"core"+SFS+"src"+SFS+"main"+SFS+"resources";
@@ -42,6 +69,9 @@ public class Constants {
   public static final String SCAF_ROOT_PATH = SHIP_DATA_READER_RESOURCES_PATH +SFS+ "SCAF for TMO_2";
   public static final String SCAF_DATA_PATH = SCAF_ROOT_PATH +SFS+ "Data";
   public static final String SCAF_NAMES_PATH = SCAF_ROOT_PATH +SFS+"Data"+SFS+"Roster"+SFS+"Names.cfg";
+
+  public static final String UBOOT_ENTITIES_PATH = SHIP_DATA_READER_RESOURCES_PATH +SFS+ "Entities.xlsx";
+
 
   //DDS Processor
   public static final String PNG_FORMAT_CONSTANT = "png";
@@ -68,5 +98,3 @@ public class Constants {
   public static final String THEME_RECOGNITION_MANUAL_LONG_TAIL = "recogL2#terminate";
 
 }
-
-
