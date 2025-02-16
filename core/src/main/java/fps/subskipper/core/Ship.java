@@ -2,45 +2,44 @@
 //by SubSkipper Android.
 package fps.subskipper.core;
 
-import jakarta.xml.bind.annotation.XmlRootElement;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import static fps.subskipper.util.Constants.FEET_FOR_EVERY_METRE;
 
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static fps.subskipper.util.Constants.FEET_FOR_EVERY_METRE;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 
 
+@Data
 @Slf4j
-@Getter
 @XmlRootElement(name = "ship")
 public class Ship implements Comparable<Ship> {
 
-    static final AtomicInteger idGen = new AtomicInteger(1);
+    static final AtomicInteger idGen = new AtomicInteger(0);
 
     private int id;
     private String nation;
     private String name;
     private int type;
-    private String typeName;
+    private String typeName;        //TypeName
     private String image;
-    private double maxSpeed;
-    private double length;
-    private double width;
-    private double mast;
-    private double draft;
-    private double displacement;
-    private double refAspect;
-    //TODO: Angle solver data
+    private double maxSpeed;        //Kt
+    private double length;          //m
+    private double width;           //m
+    private double mast;            //m
+    private double draft;           //m
+    private double displacement;    //GRT
 
-
+    public Ship() {
+        this.id = idGen.getAndIncrement();
+    }
 
     public Ship(String name, int type, String typeName, String image, double maxSpeed, double length, double width,
                 double mast, double draft, double displacement) {
 
-        //this.id = idGen.getAndIncrement();
-        this.id = 0;
+        this.id = idGen.getAndIncrement();
         this.nation = "none";
         this.name = name;
         this.type = type;
@@ -52,7 +51,6 @@ public class Ship implements Comparable<Ship> {
         this.mast = mast;
         this.draft = draft;
         this.displacement = displacement;
-        this.refAspect = length / mast;
     }
 
     public double getImperialLength() {
@@ -66,28 +64,10 @@ public class Ship implements Comparable<Ship> {
     } //Imperial conversions
     public double getImperialDraft() {
         return draft * FEET_FOR_EVERY_METRE;
-    } //Imperial conversions
-    public double getReferenceAspectRatio() {
-        return refAspect;
     }
 
-    @Override
-    public String toString() {
-        return "Ship{" +
-                "id=" + id +
-                ", nation='" + nation + '\'' +
-                ", name='" + name + '\'' +
-                ", type=" + type +
-                ", typeName='" + typeName + '\'' +
-                ", imagePath='" + image + '\'' +
-                ", maxSpeed=" + maxSpeed +
-                ", length=" + length +
-                ", width=" + width +
-                ", mast=" + mast +
-                ", draft=" + draft +
-                ", displacement=" + displacement +
-                ", refAspect=" + refAspect +
-                '}';
+    public double getReferenceAspectRatio() {
+        return length / mast;
     }
 
     /*
@@ -110,6 +90,14 @@ public class Ship implements Comparable<Ship> {
             int s1T = s1.getType();
             int s2T = s2.getType();
             return s2T - s1T;
+        }
+    };
+
+    public static Comparator<Ship> sTypeNameComparatorDescending = new Comparator<Ship>() {
+        public int compare(Ship s1, Ship s2) {
+            String s1T = s1.getTypeName();
+            String s2T = s2.getTypeName();
+            return s1T.compareTo(s2T);
         }
     };
 

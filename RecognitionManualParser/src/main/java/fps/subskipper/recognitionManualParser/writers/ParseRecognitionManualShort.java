@@ -19,10 +19,10 @@ public class ParseRecognitionManualShort extends ParseRecognitionManual {
     //takes Ship list Ships, takes filename of doc. - Short style
     //shipList is a Ships object, filename is the name of output file, isImperial=true converts
     //units to isImperial where relevant. AOB table generates a row of common AOB ratios.
-    public void writeRecogSHTML(Ships shipList, String filename, boolean isImperial, boolean withAOBTable) throws FileNotFoundException {
+    public void writeRecogSHTML(Ships shipList, String filename, String title, boolean isImperial, boolean withAOBTable) throws FileNotFoundException {
 
         StringBuilder htmlDoc = new StringBuilder();
-        htmlDoc.append(this.writeHead(isImperial));
+        htmlDoc.append(this.writeHead(isImperial, title));
         htmlDoc.append(this.startTable(isImperial));
 
         //Main Ship HTML
@@ -35,8 +35,7 @@ public class ParseRecognitionManualShort extends ParseRecognitionManual {
         super.writeRecognitionManualToFile(htmlDoc.toString(), filename);
     }
 
-    private String writeHead(boolean isImperial) {
-        String title = "Short Recognition Manual for SH4,TMO,SCAF.";
+    private String writeHead(boolean isImperial, String title) {
         return super.createRecognitionManualHead(title, THEME_RECOGNITION_MANUAL_SHORT_HEAD, isImperial );
     }
 
@@ -84,8 +83,8 @@ public class ParseRecognitionManualShort extends ParseRecognitionManual {
 
     @Deprecated //(?)
     //function with an AOB as a parameter, for filling out AOB table.
-    private double aspectAtAOB(Ship record, int AOB) {
-        double refAspect = record.getReferenceAspectRatio();
+    private double aspectAtAOB(Ship shipRecord, int AOB) {
+        double refAspect = shipRecord.getReferenceAspectRatio();
         double radAOB = Math.toRadians((double) AOB);
         double ratio = Math.sin(radAOB) * refAspect;
         return ratio;

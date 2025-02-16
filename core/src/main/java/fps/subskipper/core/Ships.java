@@ -1,5 +1,7 @@
 package fps.subskipper.core;
 
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
@@ -8,12 +10,10 @@ import java.util.List;
 import java.util.Objects;
 
 @Slf4j
-//@Getter
-//@Setter
 @Deprecated
 public class Ships {
 
-    private List<Ship> ships;
+    private List<Ship> ships = new ArrayList<>();
 
     public Ships(List<Ship> ships) {
         this.setShips(ships);
@@ -42,6 +42,14 @@ public class Ships {
 
     //Sort Ships based on Type
     public Ships sortShipsByType() {
+        List sortedShips = new ArrayList(this.getShipList());
+        Collections.sort(this.ships, Ship.sTypeComparatorDescending);
+        this.setShips(sortedShips);
+        return this;
+    }
+
+    //Sort Ships based on TypeName
+    public Ships sortShipsByTypeName() {
         List sortedShips = new ArrayList(this.getShipList());
         Collections.sort(this.ships, Ship.sTypeComparatorDescending);
         this.setShips(sortedShips);

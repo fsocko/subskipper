@@ -10,7 +10,8 @@ public class Constants {
 
   public enum ScafOrUboot {
     SCAF("Scaf"),
-    UBOOT("Uboot");
+    UBOOT("Uboot"),
+    ALL("All");
 
     private final String name;
 
@@ -41,6 +42,10 @@ public class Constants {
   public  static final String UNIT_METRE = "m";
   public  static final String UNIT_GROSS_TONS = "GRT";
   public  static final String UNIT_KNOT = "kt";
+
+  public  static final String SCAF_TITLE = "Short Recognition Manual for SH4,TMO,SCAF.";
+  public  static final String UBOAT_TITLE = "Short Recognition Manual for UBoat.";
+
 
 
   //SS Constants
